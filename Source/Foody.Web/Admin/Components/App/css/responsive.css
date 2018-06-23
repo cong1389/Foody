@@ -1,0 +1,161 @@
+/*For device: tablet, mobile*/
+/*Min -> 320px -> 768px ->992px -> 1024px -> Max*/
+
+@media only screen and (min-width: 1201px) {
+	/*hover service page home*/
+	section.service-tour .block-sevice .item-sevice a.grid figure figcaption {padding: 3em;}
+	section.service-tour .block-sevice .item-sevice a{max-height:243px;}
+	section.service-tour .block-sevice .item-sevice a.grid figure.effect-apollo:hover figcaption::before {
+	-webkit-transform: scale3d(1.9,1.4,1) rotate3d(0,0,1,45deg) translate3d(0,100%,0);
+	transform: scale3d(1.9,1.4,1) rotate3d(0,0,1,45deg) translate3d(0,100%,0);
+	} 
+	section.service-tour .block-sevice .item-sevice a.grid figure.effect-apollo:hover:after {
+		opacity:1;	
+	}
+	section.service-tour .block-sevice .item-sevice a.grid figure.effect-apollo:hover .info-hover{
+		opacity:1;	
+	}
+	section.service-tour .block-sevice .item-sevice a.grid figure.effect-apollo:hover .block-bg{
+		animation: change-bg 1s ease-out;
+		top:30px;
+		width:51%;
+	}
+	section.service-tour .block-sevice .item-sevice a.grid figure.effect-apollo:hover .title-after{
+		text-align: left;
+	    left: 11px;
+		-webkit-transition: all 0.3s ease-in-out;
+		-moz-transition: all 0.3s ease-in-out;
+		-o-transition: all 0.3s ease-in-out;
+		transition: all 0.3s ease-in-out;
+	}
+	section.service-tour .block-sevice .item-sevice a.grid figure.effect-apollo:hover .block-bg::before{
+		animation: change-top 1s ease-out;
+	}
+	section.service-tour .block-sevice .item-sevice a:hover img{width:110%;}
+	figure.effect-apollo figcaption::before{background: rgba(255,255,255,0.5);}
+	
+	/*HOME album imgaes large*/
+	section.news .block-album  a.grid figure figcaption {padding: 3em;}
+	section.news .block-album a{max-height:375px;}
+	section.news .block-album a.grid figure.effect-apollo:hover figcaption::before {
+	-webkit-transform: scale3d(1.9,1.4,1) rotate3d(0,0,1,45deg) translate3d(0,100%,0);
+	transform: scale3d(1.9,1.4,1) rotate3d(0,0,1,45deg) translate3d(0,100%,0);
+	} 
+	section.news .block-album a.grid figure.effect-apollo:hover:after{
+		animation: light 1.6s ease-out;
+		animation-delay: 0.4s;
+		animation-iteration-count: infinite;
+	}
+	section.news .block-album a.grid figure.effect-apollo:hover .block-bg{
+	  animation: change-bg-album-lar 0.3s ease-out;
+	  border-top: 383px solid green;
+	  border-left: 60px solid rgba(255, 0, 0, 0);
+	}
+	section.news .block-album a.grid:hover .title-det{opacity:1;}
+	
+	section.news .block-album a:hover img{width:110%;}
+	/*HOME album imgaes right*/
+	section.news .block-album-right  a.grid figure figcaption {padding: 3em;}
+	section.news .block-album-right a{max-height:182px;}
+	section.news .block-album-right a.grid figure.effect-apollo:hover figcaption::before {
+	-webkit-transform: scale3d(1.9,1.4,1) rotate3d(0,0,1,45deg) translate3d(0,100%,0);
+	transform: scale3d(1.9,1.4,1) rotate3d(0,0,1,45deg) translate3d(0,100%,0);
+	} 
+	section.news .block-album-right a.grid figure.effect-apollo:hover:after {
+		opacity:1;	
+	}
+	section.news .block-album-right a.grid figure.effect-apollo:hover .block-bg{
+		animation: change-bg-album-right 0.7s ease-out;
+		border-top: 383px solid green;
+		border-left: 60px solid rgba(255, 0, 0, 0);
+	}
+	
+	section.news .block-album-right a:hover img{width:110%;}
+	/*HOME tuor tron goi*/
+	section.news .block-news  a.grid figure figcaption {padding: 3em;}
+	section.news .block-news a{max-height:250px;}
+	section.news .block-news a.grid figure.effect-apollo:hover figcaption::before {
+	-webkit-transform: scale3d(1.9,1.4,1) rotate3d(0,0,1,45deg) translate3d(0,100%,0);
+	transform: scale3d(1.9,1.4,1) rotate3d(0,0,1,45deg) translate3d(0,100%,0);
+	} 
+	section.news .block-album-right  a.grid figure.effect-apollo:hover:after{
+	   animation: border-right-album 0.4s ease-out;
+	   top:0;
+	   left:136px;
+	}
+	section.news .block-news a.grid figure.effect-apollo:hover:after {
+		opacity:1;	
+	}
+	section.news .block-news a.grid figure.effect-apollo:hover .block-bg{
+		animation: change-bg-album-right 0.3s ease-out;
+		border-top: 383px solid green;
+		border-left: 60px solid rgba(255, 0, 0, 0);
+	}
+	
+	section.news .block-news a:hover img{width:110%;}
+	
+	/*auto controll news page*/
+	section.news-page .block-item-img .contr .right, section.news-page .block-item-img .contr .left{display:none;}
+}
+@media only screen and (max-width: 1200px) {
+	section.menu-top ul.block-top{display:none;}
+	section.slider-top article{margin-top:100px;}
+	#wrap{top:30px;}
+	
+}
+
+@media only screen and (max-width: 1025px) {
+
+}
+
+@media only screen and (max-width: 991px) {
+	ul.address {margin:20px 0;}
+   section.footer .goTo {padding-top:15px;}
+	section.footer .goTo:after, section.footer .goTo:before{top:36px;}
+	section.dichvu-page .title-tour{margin: 15px 0 20px 0;}
+	section.introduce-page .image-album, section.introduce-page div#slider-r-4{margin-top:35px;}
+	section.introduce div.block-introduce ul.introduce-content{margin: 0 0 50px 15px;}
+}
+
+@media only screen and (max-width: 767px) {
+	section.footer .goTo:after, section.footer .goTo:before{width:43%;}
+	section.service-tour .block-tour .item-tour .title-detail-tour{height:auto;}
+}
+
+
+
+
+@media screen and (min-width:768px) and (max-width:992px) {
+ 	
+}
+@media only screen and (max-width: 600px) {
+	section.news .block-album-right a.grid figure.effect-apollo .block-bg{display:none;}
+	section.news .block-album-right a .info-hover .title-sor{display:none;}
+}
+
+
+
+@media only screen and (max-width: 648px) {
+	
+}
+
+@media only screen and (max-width: 650px) {
+	
+}
+@media only screen and (max-width: 500px) {
+	
+}
+@media only screen and (max-width: 530px) {
+	section.footer .goTo:after, section.footer .goTo:before{width:40%;}
+}
+
+@media only screen and (max-width: 480px) {
+	
+}
+
+
+@media only screen and (max-width: 360px) {
+	section.footer .goTo:after, section.footer .goTo:before{width:38%;}
+}
+
+

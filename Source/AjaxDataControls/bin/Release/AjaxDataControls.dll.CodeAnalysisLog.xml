@@ -1,0 +1,401 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="c:\program files (x86)\microsoft visual studio 14.0\team tools\static analysis tools\fxcop\Xml\CodeAnalysisReport.xsl"?>
+<FxCopReport Version="14.0">
+ <Targets>
+  <Target Name="D:\FreeLance\2017\Foody\Source\AjaxDataControls\bin\Release\AjaxDataControls.dll">
+   <Modules>
+    <Module Name="ajaxdatacontrols.dll">
+     <Messages>
+      <Message TypeName="AssembliesShouldHaveValidStrongNames" Category="Microsoft.Design" CheckId="CA2210" Status="Active" Created="2017-04-11 16:23:50Z" FixCategory="NonBreaking">
+       <Issue Name="NoStrongName" Certainty="95" Level="CriticalError">Sign 'AjaxDataControls.dll' with a strong name key.</Issue>
+      </Message>
+     </Messages>
+     <Namespaces>
+      <Namespace Name="AjaxDataControls">
+       <Types>
+        <Type Name="DataList" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Messages>
+          <Message TypeName="TransparentMethodsShouldNotDemandFxCopRule" Category="Microsoft.Security" CheckId="CA2143" Status="Active" Created="2017-04-11 16:23:50Z" FixCategory="NonBreaking">
+           <Issue Name="Declarative" Certainty="50" Level="CriticalWarning">'DataList', a transparent type or method, contains a declarative security demand for 'AspNetHostingPermissionAttribute'.  'DataList' should be made security-safe critical or the demand should be removed from the transparent code.</Issue>
+          </Message>
+         </Messages>
+        </Type>
+        <Type Name="GridView" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Messages>
+          <Message TypeName="TransparentMethodsShouldNotDemandFxCopRule" Category="Microsoft.Security" CheckId="CA2143" Status="Active" Created="2017-04-11 16:23:50Z" FixCategory="NonBreaking">
+           <Issue Name="Declarative" Certainty="50" Level="CriticalWarning">'GridView', a transparent type or method, contains a declarative security demand for 'AspNetHostingPermissionAttribute'.  'GridView' should be made security-safe critical or the demand should be removed from the transparent code.</Issue>
+          </Message>
+         </Messages>
+        </Type>
+        <Type Name="GridViewBaseColumn" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Messages>
+          <Message TypeName="TransparentMethodsShouldNotDemandFxCopRule" Category="Microsoft.Security" CheckId="CA2143" Status="Active" Created="2017-04-11 16:23:50Z" FixCategory="NonBreaking">
+           <Issue Name="Declarative" Certainty="50" Level="CriticalWarning">'GridViewBaseColumn', a transparent type or method, contains a declarative security demand for 'AspNetHostingPermissionAttribute'.  'GridViewBaseColumn' should be made security-safe critical or the demand should be removed from the transparent code.</Issue>
+          </Message>
+         </Messages>
+         <Members>
+          <Member Name="#CreateScript" Kind="Property" Static="False" Accessibility="Assembly" ExternallyVisible="False">
+           <Accessors>
+            <Accessor Name="#get_CreateScript()" Kind="Method" Static="False" Accessibility="Assembly" ExternallyVisible="False">
+             <Messages>
+              <Message Id="System.String.EndsWith(System.String)" TypeName="SpecifyStringComparison" Category="Microsoft.Globalization" CheckId="CA1307" Status="Active" Created="2017-04-11 16:23:50Z" FixCategory="NonBreaking">
+               <Issue Certainty="95" Level="Error" Path="D:\FreeLance\2017\Foody\Source\AjaxDataControls\GridView\Columns" File="GridViewBaseColumn.cs" Line="410">Because the behavior of 'string.EndsWith(string)' could vary based on the current user's locale settings, replace this call in 'GridViewBaseColumn.CreateScript.get()' with a call to 'string.EndsWith(string, StringComparison)'. If the result of 'string.EndsWith(string, StringComparison)' will be displayed to the user, such as when sorting a list of items for display in a list box, specify 'StringComparison.CurrentCulture' or 'StringComparison.CurrentCultureIgnoreCase' as the 'StringComparison' parameter. If comparing case-insensitive identifiers, such as file paths, environment variables, or registry keys and values, specify 'StringComparison.OrdinalIgnoreCase'. Otherwise, if comparing case-sensitive identifiers, specify 'StringComparison.Ordinal'.</Issue>
+              </Message>
+             </Messages>
+            </Accessor>
+           </Accessors>
+          </Member>
+          <Member Name="#RenderHeader(System.Web.UI.WebControls.TableCell)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="Dispose objects before losing scope" Category="Microsoft.Reliability" CheckId="CA2000" Status="Active" Created="2017-04-11 16:23:50Z" FixCategory="DependsOnFix">
+             <Issue Name="ExceptionEdge" Certainty="75" Level="Warning" Path="D:\FreeLance\2017\Foody\Source\AjaxDataControls\GridView\Columns" File="GridViewBaseColumn.cs" Line="512">In method 'GridViewBaseColumn.RenderHeader(TableCell)', object 'link' is not disposed along all exception paths. Call System.IDisposable.Dispose on object 'link' before all references to it are out of scope.</Issue>
+             <Issue Name="NonExceptionEdge" Certainty="75" Level="Warning" Path="D:\FreeLance\2017\Foody\Source\AjaxDataControls\GridView\Columns" File="GridViewBaseColumn.cs" Line="525">In method 'GridViewBaseColumn.RenderHeader(TableCell)', call System.IDisposable.Dispose on object 'new Image()' before all references to it are out of scope.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="GridViewBoundColumn" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Messages>
+          <Message TypeName="TransparentMethodsShouldNotDemandFxCopRule" Category="Microsoft.Security" CheckId="CA2143" Status="Active" Created="2017-04-11 16:23:50Z" FixCategory="NonBreaking">
+           <Issue Name="Declarative" Certainty="50" Level="CriticalWarning">'GridViewBoundColumn', a transparent type or method, contains a declarative security demand for 'AspNetHostingPermissionAttribute'.  'GridViewBoundColumn' should be made security-safe critical or the demand should be removed from the transparent code.</Issue>
+          </Message>
+         </Messages>
+        </Type>
+        <Type Name="GridViewButtonColumn" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Messages>
+          <Message TypeName="TransparentMethodsShouldNotDemandFxCopRule" Category="Microsoft.Security" CheckId="CA2143" Status="Active" Created="2017-04-11 16:23:50Z" FixCategory="NonBreaking">
+           <Issue Name="Declarative" Certainty="50" Level="CriticalWarning">'GridViewButtonColumn', a transparent type or method, contains a declarative security demand for 'AspNetHostingPermissionAttribute'.  'GridViewButtonColumn' should be made security-safe critical or the demand should be removed from the transparent code.</Issue>
+          </Message>
+         </Messages>
+         <Members>
+          <Member Name="#RenderData(System.Web.UI.WebControls.TableCell,System.String)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="Dispose objects before losing scope" Category="Microsoft.Reliability" CheckId="CA2000" Status="Active" Created="2017-04-11 16:23:50Z" FixCategory="DependsOnFix">
+             <Issue Name="ExceptionEdge" Certainty="75" Level="Warning" Path="D:\FreeLance\2017\Foody\Source\AjaxDataControls\GridView\Columns" File="GridViewButtonColumn.cs" Line="331">In method 'GridViewButtonColumn.RenderData(TableCell, string)', object 'button' is not disposed along all exception paths. Call System.IDisposable.Dispose on object 'button' before all references to it are out of scope.</Issue>
+             <Issue Name="ExceptionEdge" Certainty="75" Level="Warning" Path="D:\FreeLance\2017\Foody\Source\AjaxDataControls\GridView\Columns" File="GridViewButtonColumn.cs" Line="318">In method 'GridViewButtonColumn.RenderData(TableCell, string)', object 'img' is not disposed along all exception paths. Call System.IDisposable.Dispose on object 'img' before all references to it are out of scope.</Issue>
+             <Issue Name="ExceptionEdge" Certainty="75" Level="Warning" Path="D:\FreeLance\2017\Foody\Source\AjaxDataControls\GridView\Columns" File="GridViewButtonColumn.cs" Line="309">In method 'GridViewButtonColumn.RenderData(TableCell, string)', object 'link' is not disposed along all exception paths. Call System.IDisposable.Dispose on object 'link' before all references to it are out of scope.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="GridViewCheckBoxColumn" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Messages>
+          <Message TypeName="TransparentMethodsShouldNotDemandFxCopRule" Category="Microsoft.Security" CheckId="CA2143" Status="Active" Created="2017-04-11 16:23:50Z" FixCategory="NonBreaking">
+           <Issue Name="Declarative" Certainty="50" Level="CriticalWarning">'GridViewCheckBoxColumn', a transparent type or method, contains a declarative security demand for 'AspNetHostingPermissionAttribute'.  'GridViewCheckBoxColumn' should be made security-safe critical or the demand should be removed from the transparent code.</Issue>
+          </Message>
+         </Messages>
+         <Members>
+          <Member Name="#RenderData(System.Web.UI.WebControls.TableCell,System.String)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="Dispose objects before losing scope" Category="Microsoft.Reliability" CheckId="CA2000" Status="Active" Created="2017-04-11 16:23:50Z" FixCategory="DependsOnFix">
+             <Issue Name="ExceptionEdge" Certainty="75" Level="Warning" Path="D:\FreeLance\2017\Foody\Source\AjaxDataControls\GridView\Columns" File="GridViewCheckBoxColumn.cs" Line="192">In method 'GridViewCheckBoxColumn.RenderData(TableCell, string)', object 'chk' is not disposed along all exception paths. Call System.IDisposable.Dispose on object 'chk' before all references to it are out of scope.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="GridViewColumnCollection" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Messages>
+          <Message TypeName="TransparentMethodsShouldNotDemandFxCopRule" Category="Microsoft.Security" CheckId="CA2143" Status="Active" Created="2017-04-11 16:23:50Z" FixCategory="NonBreaking">
+           <Issue Name="Declarative" Certainty="50" Level="CriticalWarning">'GridViewColumnCollection', a transparent type or method, contains a declarative security demand for 'AspNetHostingPermissionAttribute'.  'GridViewColumnCollection' should be made security-safe critical or the demand should be removed from the transparent code.</Issue>
+          </Message>
+          <Message TypeName="TypesShouldNotExtendCertainBaseTypes" Category="Microsoft.Design" CheckId="CA1058" Status="Active" Created="2017-04-11 16:23:50Z" FixCategory="Breaking">
+           <Issue Name="System.Collections.CollectionBase" Certainty="75" Level="Error">Change the base type of 'GridViewColumnCollection' from 'CollectionBase' to its generic equivalent 'System.Collections.ObjectModel.Collection'.</Issue>
+          </Message>
+         </Messages>
+        </Type>
+        <Type Name="GridViewCommandColumn" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Messages>
+          <Message TypeName="TransparentMethodsShouldNotDemandFxCopRule" Category="Microsoft.Security" CheckId="CA2143" Status="Active" Created="2017-04-11 16:23:50Z" FixCategory="NonBreaking">
+           <Issue Name="Declarative" Certainty="50" Level="CriticalWarning">'GridViewCommandColumn', a transparent type or method, contains a declarative security demand for 'AspNetHostingPermissionAttribute'.  'GridViewCommandColumn' should be made security-safe critical or the demand should be removed from the transparent code.</Issue>
+          </Message>
+         </Messages>
+         <Members>
+          <Member Name="#CreateButton(System.String,System.String)" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="Dispose objects before losing scope" Category="Microsoft.Reliability" CheckId="CA2000" Status="Active" Created="2017-04-11 16:23:50Z" FixCategory="DependsOnFix">
+             <Issue Name="ExceptionEdge" Certainty="75" Level="Warning" Path="D:\FreeLance\2017\Foody\Source\AjaxDataControls\GridView\Columns" File="GridViewCommandColumn.cs" Line="887">In method 'GridViewCommandColumn.CreateButton(string, string)', object 'imageButton' is not disposed along all exception paths. Call System.IDisposable.Dispose on object 'imageButton' before all references to it are out of scope.</Issue>
+             <Issue Name="ExceptionEdge" Certainty="75" Level="Warning" Path="D:\FreeLance\2017\Foody\Source\AjaxDataControls\GridView\Columns" File="GridViewCommandColumn.cs" Line="902">In method 'GridViewCommandColumn.CreateButton(string, string)', object 'new Button()' is not disposed along all exception paths. Call System.IDisposable.Dispose on object 'new Button()' before all references to it are out of scope.</Issue>
+             <Issue Name="ExceptionEdge" Certainty="75" Level="Warning" Path="D:\FreeLance\2017\Foody\Source\AjaxDataControls\GridView\Columns" File="GridViewCommandColumn.cs" Line="878">In method 'GridViewCommandColumn.CreateButton(string, string)', object 'new HyperLink()' is not disposed along all exception paths. Call System.IDisposable.Dispose on object 'new HyperLink()' before all references to it are out of scope.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="GridViewDesigner" Kind="Class" Accessibility="Assembly" ExternallyVisible="False">
+         <Members>
+          <Member Name="#GetDesignTimeHtml()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="Dispose objects before losing scope" Category="Microsoft.Reliability" CheckId="CA2000" Status="Active" Created="2017-04-11 16:23:50Z" FixCategory="DependsOnFix">
+             <Issue Name="ExceptionEdge" Certainty="75" Level="Warning" Path="D:\FreeLance\2017\Foody\Source\AjaxDataControls\GridView" File="GridViewDesigner.cs" Line="77">In method 'GridViewDesigner.GetDesignTimeHtml()', object 'column' is not disposed along all exception paths. Call System.IDisposable.Dispose on object 'column' before all references to it are out of scope.</Issue>
+             <Issue Name="ExceptionEdge" Certainty="75" Level="Warning" Path="D:\FreeLance\2017\Foody\Source\AjaxDataControls\GridView" File="GridViewDesigner.cs" Line="156">In method 'GridViewDesigner.GetDesignTimeHtml()', object 'new StringWriter(new StringBuilder(), CultureInfo.CurrentCulture)' is not disposed along all exception paths. Call System.IDisposable.Dispose on object 'new StringWriter(new StringBuilder(), CultureInfo.CurrentCulture)' before all references to it are out of scope.</Issue>
+             <Issue Name="NonExceptionEdge" Certainty="75" Level="Warning" Path="D:\FreeLance\2017\Foody\Source\AjaxDataControls\GridView" File="GridViewDesigner.cs" Line="84">In method 'GridViewDesigner.GetDesignTimeHtml()', call System.IDisposable.Dispose on object 'table' before all references to it are out of scope.</Issue>
+            </Message>
+            <Message Id="AjaxDataControls.GridViewBaseColumn.set_HeaderText(System.String)" TypeName="Do not pass literals as localized parameters" Category="Microsoft.Globalization" CheckId="CA1303" Status="Active" Created="2017-04-11 16:23:50Z" FixCategory="DependsOnFix">
+             <Issue Name="KnownValue" Certainty="75" Level="Warning" Path="D:\FreeLance\2017\Foody\Source\AjaxDataControls\GridView" File="GridViewDesigner.cs" Line="79">Method 'GridViewDesigner.GetDesignTimeHtml()' passes a literal string as parameter 'value' of a call to 'GridViewBaseColumn.HeaderText.set(string)'. Retrieve the following string(s) from a resource table instead: "Column ".</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="GridViewHyperLinkColumn" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Messages>
+          <Message Id="HyperLink" TypeName="CompoundWordsShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1702" Status="Active" Created="2017-04-11 16:23:50Z" FixCategory="Breaking">
+           <Issue Name="TypeShouldBeDiscreteTerm" Certainty="80" Level="Error">The compound word 'HyperLink' in type name 'GridViewHyperLinkColumn' exists as a discrete term. If your usage is intended to be single word, case it as 'Hyperlink'.</Issue>
+          </Message>
+          <Message TypeName="TransparentMethodsShouldNotDemandFxCopRule" Category="Microsoft.Security" CheckId="CA2143" Status="Active" Created="2017-04-11 16:23:50Z" FixCategory="NonBreaking">
+           <Issue Name="Declarative" Certainty="50" Level="CriticalWarning">'GridViewHyperLinkColumn', a transparent type or method, contains a declarative security demand for 'AspNetHostingPermissionAttribute'.  'GridViewHyperLinkColumn' should be made security-safe critical or the demand should be removed from the transparent code.</Issue>
+          </Message>
+         </Messages>
+         <Members>
+          <Member Name="#RenderData(System.Web.UI.WebControls.TableCell,System.String)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="Dispose objects before losing scope" Category="Microsoft.Reliability" CheckId="CA2000" Status="Active" Created="2017-04-11 16:23:50Z" FixCategory="DependsOnFix">
+             <Issue Name="ExceptionEdge" Certainty="75" Level="Warning" Path="D:\FreeLance\2017\Foody\Source\AjaxDataControls\GridView\Columns" File="GridViewHyperLinkColumn.cs" Line="314">In method 'GridViewHyperLinkColumn.RenderData(TableCell, string)', object 'link' is not disposed along all exception paths. Call System.IDisposable.Dispose on object 'link' before all references to it are out of scope.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="GridViewImageColumn" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Messages>
+          <Message TypeName="TransparentMethodsShouldNotDemandFxCopRule" Category="Microsoft.Security" CheckId="CA2143" Status="Active" Created="2017-04-11 16:23:50Z" FixCategory="NonBreaking">
+           <Issue Name="Declarative" Certainty="50" Level="CriticalWarning">'GridViewImageColumn', a transparent type or method, contains a declarative security demand for 'AspNetHostingPermissionAttribute'.  'GridViewImageColumn' should be made security-safe critical or the demand should be removed from the transparent code.</Issue>
+          </Message>
+         </Messages>
+         <Members>
+          <Member Name="#RenderData(System.Web.UI.WebControls.TableCell,System.String)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="Dispose objects before losing scope" Category="Microsoft.Reliability" CheckId="CA2000" Status="Active" Created="2017-04-11 16:23:50Z" FixCategory="DependsOnFix">
+             <Issue Name="ExceptionEdge" Certainty="75" Level="Warning" Path="D:\FreeLance\2017\Foody\Source\AjaxDataControls\GridView\Columns" File="GridViewImageColumn.cs" Line="311">In method 'GridViewImageColumn.RenderData(TableCell, string)', object 'img' is not disposed along all exception paths. Call System.IDisposable.Dispose on object 'img' before all references to it are out of scope.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="GridViewRadioButtonColumn" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Messages>
+          <Message TypeName="TransparentMethodsShouldNotDemandFxCopRule" Category="Microsoft.Security" CheckId="CA2143" Status="Active" Created="2017-04-11 16:23:50Z" FixCategory="NonBreaking">
+           <Issue Name="Declarative" Certainty="50" Level="CriticalWarning">'GridViewRadioButtonColumn', a transparent type or method, contains a declarative security demand for 'AspNetHostingPermissionAttribute'.  'GridViewRadioButtonColumn' should be made security-safe critical or the demand should be removed from the transparent code.</Issue>
+          </Message>
+         </Messages>
+         <Members>
+          <Member Name="#RenderData(System.Web.UI.WebControls.TableCell,System.String)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="Dispose objects before losing scope" Category="Microsoft.Reliability" CheckId="CA2000" Status="Active" Created="2017-04-11 16:23:50Z" FixCategory="DependsOnFix">
+             <Issue Name="ExceptionEdge" Certainty="75" Level="Warning" Path="D:\FreeLance\2017\Foody\Source\AjaxDataControls\GridView\Columns" File="GridViewRadioButtonColumn.cs" Line="182">In method 'GridViewRadioButtonColumn.RenderData(TableCell, string)', object 'opt' is not disposed along all exception paths. Call System.IDisposable.Dispose on object 'opt' before all references to it are out of scope.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#SortField" Kind="Property" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="MarkMembersAsStatic" Category="Microsoft.Performance" CheckId="CA1822" Status="Active" Created="2017-04-11 16:23:50Z" FixCategory="DependsOnFix">
+             <Issue Certainty="95" Level="Warning" Path="D:\FreeLance\2017\Foody\Source\AjaxDataControls\GridView\Columns" File="GridViewRadioButtonColumn.cs" Line="138">The 'this' parameter (or 'Me' in Visual Basic) of 'GridViewRadioButtonColumn.SortField' is never used. Mark the member as static (or Shared in Visual Basic) or use 'this'/'Me' in the method body or at least one property accessor, if appropriate.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="GridViewTemplateColumn" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Messages>
+          <Message TypeName="TransparentMethodsShouldNotDemandFxCopRule" Category="Microsoft.Security" CheckId="CA2143" Status="Active" Created="2017-04-11 16:23:50Z" FixCategory="NonBreaking">
+           <Issue Name="Declarative" Certainty="50" Level="CriticalWarning">'GridViewTemplateColumn', a transparent type or method, contains a declarative security demand for 'AspNetHostingPermissionAttribute'.  'GridViewTemplateColumn' should be made security-safe critical or the demand should be removed from the transparent code.</Issue>
+          </Message>
+         </Messages>
+         <Members>
+          <Member Name="#AddTempateHtml(AjaxDataControls.GridViewColumnScriptDescriptor,System.String,System.Web.UI.ITemplate)" Kind="Method" Static="True" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="Dispose objects before losing scope" Category="Microsoft.Reliability" CheckId="CA2000" Status="Active" Created="2017-04-11 16:23:50Z" FixCategory="DependsOnFix">
+             <Issue Name="ExceptionEdge" Certainty="75" Level="Warning" Path="D:\FreeLance\2017\Foody\Source\AjaxDataControls\GridView\Columns" File="GridViewTemplateColumn.cs" Line="322">In method 'GridViewTemplateColumn.AddTempateHtml(GridViewColumnScriptDescriptor, string, ITemplate)', object 'new StringWriter(output, CultureInfo.CurrentCulture)' is not disposed along all exception paths. Call System.IDisposable.Dispose on object 'new StringWriter(output, CultureInfo.CurrentCulture)' before all references to it are out of scope.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="Pager" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Messages>
+          <Message TypeName="TransparentMethodsShouldNotDemandFxCopRule" Category="Microsoft.Security" CheckId="CA2143" Status="Active" Created="2017-04-11 16:23:50Z" FixCategory="NonBreaking">
+           <Issue Name="Declarative" Certainty="50" Level="CriticalWarning">'Pager', a transparent type or method, contains a declarative security demand for 'AspNetHostingPermissionAttribute'.  'Pager' should be made security-safe critical or the demand should be removed from the transparent code.</Issue>
+          </Message>
+         </Messages>
+        </Type>
+        <Type Name="PagerDesigner" Kind="Class" Accessibility="Assembly" ExternallyVisible="False">
+         <Members>
+          <Member Name="#GetDesignTimeHtml()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="Dispose objects before losing scope" Category="Microsoft.Reliability" CheckId="CA2000" Status="Active" Created="2017-04-11 16:23:50Z" FixCategory="DependsOnFix">
+             <Issue Name="ExceptionEdge" Certainty="75" Level="Warning" Path="D:\FreeLance\2017\Foody\Source\AjaxDataControls\Pager" File="PagerDesigner.cs" Line="64">In method 'PagerDesigner.GetDesignTimeHtml()', object 'new StringWriter(output, CultureInfo.CurrentCulture)' is not disposed along all exception paths. Call System.IDisposable.Dispose on object 'new StringWriter(output, CultureInfo.CurrentCulture)' before all references to it are out of scope.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="Repeater" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Messages>
+          <Message TypeName="TransparentMethodsShouldNotDemandFxCopRule" Category="Microsoft.Security" CheckId="CA2143" Status="Active" Created="2017-04-11 16:23:50Z" FixCategory="NonBreaking">
+           <Issue Name="Declarative" Certainty="50" Level="CriticalWarning">'Repeater', a transparent type or method, contains a declarative security demand for 'AspNetHostingPermissionAttribute'.  'Repeater' should be made security-safe critical or the demand should be removed from the transparent code.</Issue>
+          </Message>
+         </Messages>
+        </Type>
+        <Type Name="RepeaterDesigner" Kind="Class" Accessibility="Assembly" ExternallyVisible="False">
+         <Members>
+          <Member Name="#GetDesignTimeHtml()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="Dispose objects before losing scope" Category="Microsoft.Reliability" CheckId="CA2000" Status="Active" Created="2017-04-11 16:23:50Z" FixCategory="DependsOnFix">
+             <Issue Name="ExceptionEdge" Certainty="75" Level="Warning" Path="D:\FreeLance\2017\Foody\Source\AjaxDataControls\Repeater" File="RepeaterDesigner.cs" Line="63">In method 'RepeaterDesigner.GetDesignTimeHtml()', object 'new StringWriter(output, CultureInfo.CurrentCulture)' is not disposed along all exception paths. Call System.IDisposable.Dispose on object 'new StringWriter(output, CultureInfo.CurrentCulture)' before all references to it are out of scope.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="ScriptDescriptorHelper" Kind="Class" Accessibility="Assembly" ExternallyVisible="False">
+         <Members>
+          <Member Name="#AddTempateHtml(System.Web.UI.ScriptControlDescriptor,System.String,System.Web.UI.ITemplate)" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="Dispose objects before losing scope" Category="Microsoft.Reliability" CheckId="CA2000" Status="Active" Created="2017-04-11 16:23:50Z" FixCategory="DependsOnFix">
+             <Issue Name="ExceptionEdge" Certainty="75" Level="Warning" Path="D:\FreeLance\2017\Foody\Source\AjaxDataControls\Common" File="ScriptDescriptorHelper.cs" Line="75">In method 'ScriptDescriptorHelper.AddTempateHtml(ScriptControlDescriptor, string, ITemplate)', object 'new StringWriter(output, CultureInfo.CurrentCulture)' is not disposed along all exception paths. Call System.IDisposable.Dispose on object 'new StringWriter(output, CultureInfo.CurrentCulture)' before all references to it are out of scope.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="StyleConverter" Kind="Class" Accessibility="Assembly" ExternallyVisible="False">
+         <Members>
+          <Member Name="#Convert(System.Web.UI.WebControls.TableItemStyle)" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="NormalizeStringsToUppercase" Category="Microsoft.Globalization" CheckId="CA1308" Status="Active" Created="2017-04-11 16:23:50Z" FixCategory="NonBreaking">
+             <Issue Name="ToUpperInvariant" Certainty="90" Level="Error" Path="D:\FreeLance\2017\Foody\Source\AjaxDataControls\Common" File="StyleConverter.cs" Line="133">In method 'StyleConverter.Convert(TableItemStyle)', replace the call to 'string.ToLowerInvariant()' with String.ToUpperInvariant().</Issue>
+             <Issue Name="ToUpperInvariant" Certainty="90" Level="Error" Path="D:\FreeLance\2017\Foody\Source\AjaxDataControls\Common" File="StyleConverter.cs" Line="177">In method 'StyleConverter.Convert(TableItemStyle)', replace the call to 'string.ToLowerInvariant()' with String.ToUpperInvariant().</Issue>
+             <Issue Name="ToUpperInvariant" Certainty="90" Level="Error" Path="D:\FreeLance\2017\Foody\Source\AjaxDataControls\Common" File="StyleConverter.cs" Line="182">In method 'StyleConverter.Convert(TableItemStyle)', replace the call to 'string.ToLowerInvariant()' with String.ToUpperInvariant().</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+       </Types>
+      </Namespace>
+     </Namespaces>
+    </Module>
+   </Modules>
+  </Target>
+ </Targets>
+ <Rules>
+  <Rule TypeName="AssembliesShouldHaveValidStrongNames" Category="Microsoft.Design" CheckId="CA2210">
+   <Name>Assemblies should have valid strong names</Name>
+   <Description>Either the assembly has no strong name, an invalid one, or the strong name is valid only because of the computer configuration. The assembly should not be deployed in this state. The most common causes of this are: 1) The assembly's contents were modified after it was signed. 2) The signing process failed. 3) The assembly was delay-signed. 4) A registry key existed that allowed the check to pass (where it would not have otherwise).</Description>
+   <Resolution Name="NoStrongName">Sign {0} with a strong name key.</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms182127.aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="95">CriticalError</MessageLevel>
+   <File Name="designrules.dll" Version="14.0.0.0" />
+  </Rule>
+  <Rule TypeName="CompoundWordsShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1702">
+   <Name>Compound words should be cased correctly</Name>
+   <Description>Avoid creating compound words from terms which exist in the dictionary as discrete terms. Do not create a compound word such as 'StopWatch' or 'PopUp'. These terms are recognized in the dictionary and should be cased as 'Stopwatch' and 'Popup'.</Description>
+   <Resolution Name="TypeShouldBeDiscreteTerm">The compound word '{0}' in type name {1} exists as a discrete term. If your usage is intended to be single word, case it as '{2}'.</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/bb264474.aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="80">Error</MessageLevel>
+   <File Name="namingrules.dll" Version="14.0.0.0" />
+  </Rule>
+  <Rule TypeName="Dispose objects before losing scope" Category="Microsoft.Reliability" CheckId="CA2000">
+   <Name>Dispose objects before losing scope</Name>
+   <Description>If a disposable object is not explicitly disposed before all references to it are out of scope, the object will be disposed at some indeterminate time when the garbage collector runs the finalizer of the object. Because an exceptional event might occur that will prevent the finalizer of the object from running, the object should be explicitly disposed instead.</Description>
+   <Resolution Name="ExceptionEdge">In method {0}, object {1} is not disposed along all exception paths. Call System.IDisposable.Dispose on object {1} before all references to it are out of scope.</Resolution>
+   <Resolution Name="NonExceptionEdge">In method {0}, call System.IDisposable.Dispose on object {1} before all references to it are out of scope.</Resolution>
+   <Owner>RuleOwner</Owner>
+   <Url>http://msdn.microsoft.com/library/ms182289.aspx</Url>
+   <Email />
+   <MessageLevel Certainty="75">Warning</MessageLevel>
+   <File Name="dataflowrules.dll" Version="14.0.0.0" />
+  </Rule>
+  <Rule TypeName="Do not pass literals as localized parameters" Category="Microsoft.Globalization" CheckId="CA1303">
+   <Name>Do not pass literals as localized parameters</Name>
+   <Description>Literal strings that are embedded in source code are difficult to localize. Avoid passing literal strings as arguments in circumstances where a localized string is generally expected.</Description>
+   <Resolution Name="KnownValue">Method {0} passes a literal string as parameter '{1}' of a call to {2}. Retrieve the following string(s) from a resource table instead: {3}.</Resolution>
+   <Owner>RuleOwner</Owner>
+   <Url>http://msdn.microsoft.com/library/ms182187.aspx</Url>
+   <Email />
+   <MessageLevel Certainty="75">Warning</MessageLevel>
+   <File Name="dataflowrules.dll" Version="14.0.0.0" />
+  </Rule>
+  <Rule TypeName="MarkMembersAsStatic" Category="Microsoft.Performance" CheckId="CA1822">
+   <Name>Mark members as static</Name>
+   <Description>Methods which do not access instance data or call instance methods can be marked as static (Shared in Visual Basic). After doing so, the compiler will emit non-virtual call sites to these members which will prevent a check at runtime for each call that ensures the current object pointer is non-null. This can result in a measurable performance gain for performance-sensitive code. In some cases, the failure to access the current object instance represents a correctness issue.</Description>
+   <Resolution Name="Default">The 'this' parameter (or 'Me' in Visual Basic) of {0} is never used. Mark the member as static (or Shared in Visual Basic) or use 'this'/'Me' in the method body or at least one property accessor, if appropriate.</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms245046.aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="95">Warning</MessageLevel>
+   <File Name="performancerules.dll" Version="14.0.0.0" />
+  </Rule>
+  <Rule TypeName="NormalizeStringsToUppercase" Category="Microsoft.Globalization" CheckId="CA1308">
+   <Name>Normalize strings to uppercase</Name>
+   <Description>Strings should be normalized to upper-case.</Description>
+   <Resolution Name="ToUpperInvariant">In method {0}, replace the call to {1} with String.ToUpperInvariant().</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/bb386042.aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="90">Error</MessageLevel>
+   <File Name="globalizationrules.dll" Version="14.0.0.0" />
+  </Rule>
+  <Rule TypeName="SpecifyStringComparison" Category="Microsoft.Globalization" CheckId="CA1307">
+   <Name>Specify StringComparison</Name>
+   <Description>If an overload exists that takes a StringComparison argument, it should always be called in favor of an overload that does not.</Description>
+   <Resolution Name="Default">Because the behavior of {0} could vary based on the current user's locale settings, replace this call in {1} with a call to {2}. If the result of {2} will be displayed to the user, such as when sorting a list of items for display in a list box, specify 'StringComparison.CurrentCulture' or 'StringComparison.CurrentCultureIgnoreCase' as the 'StringComparison' parameter. If comparing case-insensitive identifiers, such as file paths, environment variables, or registry keys and values, specify 'StringComparison.OrdinalIgnoreCase'. Otherwise, if comparing case-sensitive identifiers, specify 'StringComparison.Ordinal'.</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/bb386080.aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="95">Error</MessageLevel>
+   <File Name="globalizationrules.dll" Version="14.0.0.0" />
+  </Rule>
+  <Rule TypeName="TransparentMethodsShouldNotDemandFxCopRule" Category="Microsoft.Security" CheckId="CA2143">
+   <Name>Transparent methods should not use security demands</Name>
+   <Description>Security transparent code should not be responsible for verifying the security of an operation, and therefore should not demand permissions.  Any code which is performing security checks, such as security demands, should be safe-critical instead.</Description>
+   <Resolution Name="Declarative">{0}, a transparent type or method, contains a declarative security demand for {1}.  {0} should be made security-safe critical or the demand should be removed from the transparent code.</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/dd997566(VS.100).aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="50">CriticalWarning</MessageLevel>
+   <File Name="securitytransparencyrules.dll" Version="4.0.0.0" />
+  </Rule>
+  <Rule TypeName="TypesShouldNotExtendCertainBaseTypes" Category="Microsoft.Design" CheckId="CA1058">
+   <Name>Types should not extend certain base types</Name>
+   <Description>It is best not to extend some base types or to prefer extending better alternatives to those base types.</Description>
+   <Resolution Name="System.Collections.CollectionBase">Change the base type of {0} from {1} to its generic equivalent 'System.Collections.ObjectModel.Collection'.</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms182171.aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="75">Error</MessageLevel>
+   <File Name="designrules.dll" Version="14.0.0.0" />
+  </Rule>
+ </Rules>
+ <Localized>
+  <String Key="Category">Category</String>
+  <String Key="Certainty">Certainty</String>
+  <String Key="CollapseAll">Collapse All</String>
+  <String Key="CheckId">Check Id</String>
+  <String Key="Error">Error</String>
+  <String Key="Errors">error(s)</String>
+  <String Key="ExpandAll">Expand All</String>
+  <String Key="Help">Help</String>
+  <String Key="Line">Line</String>
+  <String Key="Messages">message(s)</String>
+  <String Key="LocationNotStoredInPdb">[Location not stored in Pdb]</String>
+  <String Key="Project">Project</String>
+  <String Key="Resolution">Resolution</String>
+  <String Key="Rule">Rule</String>
+  <String Key="RuleFile">Rule File</String>
+  <String Key="RuleDescription">Rule Description</String>
+  <String Key="Source">Source</String>
+  <String Key="Status">Status</String>
+  <String Key="Target">Target</String>
+  <String Key="Warning">Warning</String>
+  <String Key="Warnings">warning(s)</String>
+  <String Key="ReportTitle">Code Analysis Report</String>
+ </Localized>
+</FxCopReport>

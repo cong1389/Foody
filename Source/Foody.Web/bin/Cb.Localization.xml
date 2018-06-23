@@ -1,0 +1,208 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Cb.Localization</name>
+    </assembly>
+    <members>
+        <member name="T:Cb.Localization.resources.labels">
+            <summary>
+              A strongly-typed resource class, for looking up localized strings, etc.
+            </summary>
+        </member>
+        <member name="P:Cb.Localization.resources.labels.ResourceManager">
+            <summary>
+              Returns the cached ResourceManager instance used by this class.
+            </summary>
+        </member>
+        <member name="P:Cb.Localization.resources.labels.Culture">
+            <summary>
+              Overrides the current thread's CurrentUICulture property for all
+              resource lookups using this strongly typed resource class.
+            </summary>
+        </member>
+        <member name="P:Cb.Localization.resources.labels.btnLogin">
+            <summary>
+              Looks up a localized string similar to Đăng nhập.
+            </summary>
+        </member>
+        <member name="P:Cb.Localization.resources.labels.enuBannerPosition_logo_bottom">
+            <summary>
+              Looks up a localized string similar to Logo dưới.
+            </summary>
+        </member>
+        <member name="P:Cb.Localization.resources.labels.enuBannerPosition_logo_left">
+            <summary>
+              Looks up a localized string similar to Logo trái.
+            </summary>
+        </member>
+        <member name="P:Cb.Localization.resources.labels.enuBannerPosition_main">
+            <summary>
+              Looks up a localized string similar to Trang chính.
+            </summary>
+        </member>
+        <member name="P:Cb.Localization.resources.labels.enuCostId_dong">
+            <summary>
+              Looks up a localized string similar to VNĐ.
+            </summary>
+        </member>
+        <member name="P:Cb.Localization.resources.labels.enuCostId_luongSJC">
+            <summary>
+              Looks up a localized string similar to lượng.
+            </summary>
+        </member>
+        <member name="P:Cb.Localization.resources.labels.enuCostId_tidong">
+            <summary>
+              Looks up a localized string similar to tỉ VNĐ.
+            </summary>
+        </member>
+        <member name="P:Cb.Localization.resources.labels.enuCostId_trieudong">
+            <summary>
+              Looks up a localized string similar to triệu.
+            </summary>
+        </member>
+        <member name="P:Cb.Localization.resources.labels.enuCostId_usd">
+            <summary>
+              Looks up a localized string similar to USD.
+            </summary>
+        </member>
+        <member name="P:Cb.Localization.resources.labels.enulogoPosition_logo_left">
+            <summary>
+              Looks up a localized string similar to Banner.
+            </summary>
+        </member>
+        <member name="P:Cb.Localization.resources.labels.ltrCompanyName">
+            <summary>
+              Looks up a localized string similar to Tên công ty.
+            </summary>
+        </member>
+        <member name="P:Cb.Localization.resources.labels.ltrEmail">
+            <summary>
+              Looks up a localized string similar to Email.
+            </summary>
+        </member>
+        <member name="P:Cb.Localization.resources.labels.ltrFooterAddress">
+            <summary>
+              Looks up a localized string similar to Địa chỉ 1.
+            </summary>
+        </member>
+        <member name="P:Cb.Localization.resources.labels.ltrTel">
+            <summary>
+              Looks up a localized string similar to Điện thoại.
+            </summary>
+        </member>
+        <member name="P:Cb.Localization.resources.labels.statement_username">
+            <summary>
+              Looks up a localized string similar to Tên đăng nhập.
+            </summary>
+        </member>
+        <member name="P:Cb.Localization.resources.labels.strAdminPublish">
+            <summary>
+              Looks up a localized string similar to Kích hoạt.
+            </summary>
+        </member>
+        <member name="P:Cb.Localization.resources.labels.strAdminUnpublish">
+            <summary>
+              Looks up a localized string similar to Khóa lại.
+            </summary>
+        </member>
+        <member name="P:Cb.Localization.resources.labels.strEmail">
+            <summary>
+              Looks up a localized string similar to Email của bạn.
+            </summary>
+        </member>
+        <member name="P:Cb.Localization.resources.labels.strImage">
+            <summary>
+              Looks up a localized string similar to Hình ảnh.
+            </summary>
+        </member>
+        <member name="P:Cb.Localization.resources.labels.strName">
+            <summary>
+              Looks up a localized string similar to Tên.
+            </summary>
+        </member>
+        <member name="P:Cb.Localization.resources.labels.strOrdering">
+            <summary>
+              Looks up a localized string similar to Sắp xếp.
+            </summary>
+        </member>
+        <member name="P:Cb.Localization.resources.labels.strPage">
+            <summary>
+              Looks up a localized string similar to Trang.
+            </summary>
+        </member>
+        <member name="P:Cb.Localization.resources.labels.strPosition">
+            <summary>
+              Looks up a localized string similar to Vị trí.
+            </summary>
+        </member>
+        <member name="P:Cb.Localization.resources.labels.strRoleName">
+            <summary>
+              Looks up a localized string similar to Nhóm quyền.
+            </summary>
+        </member>
+        <member name="P:Cb.Localization.resources.labels.strSave">
+            <summary>
+              Looks up a localized string similar to Lưu.
+            </summary>
+        </member>
+        <member name="P:Cb.Localization.resources.labels.strSearch">
+            <summary>
+              Looks up a localized string similar to Tìm kiếm.
+            </summary>
+        </member>
+        <member name="P:Cb.Localization.resources.labels.strSiteName">
+            <summary>
+              Looks up a localized string similar to Tên website.
+            </summary>
+        </member>
+        <member name="P:Cb.Localization.resources.labels.strUpdate">
+            <summary>
+              Looks up a localized string similar to Cập nhật.
+            </summary>
+        </member>
+        <member name="P:Cb.Localization.resources.labels.strUpdateDate">
+            <summary>
+              Looks up a localized string similar to Ngày cập nhật.
+            </summary>
+        </member>
+        <member name="P:Cb.Localization.resources.labels.strVietNam">
+            <summary>
+              Looks up a localized string similar to Tiếng Việt.
+            </summary>
+        </member>
+        <member name="M:Cb.Localization.LocalizationUtility.AddHoverHtml(System.Web.UI.WebControls.HyperLink,System.String)">
+            <summary>
+            Adds the hover HTML.
+            </summary>
+            <param name="hyperlink">The hyperlink.</param>
+            <param name="html">The HTML.</param>
+        </member>
+        <member name="M:Cb.Localization.LocalizationUtility.AddImageAlternateText(System.Web.UI.WebControls.Image)">
+            <summary>
+            Adds the image alternate text.
+            </summary>
+            <param name="image">The image.</param>
+        </member>
+        <member name="M:Cb.Localization.LocalizationUtility.GetText(System.String)">
+            <summary>
+            Gets the text.
+            </summary>
+            <param name="name">The name.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Cb.Localization.LocalizationUtility.GetCriticalMessageText(System.String)">
+            <summary>
+            Gets the critical message text.
+            </summary>
+            <param name="message">The message.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Cb.Localization.LocalizationUtility.GetPaymentProviderErrorText(System.String)">
+            <summary>
+            Gets the payment provider error text.
+            </summary>
+            <param name="message">The message.</param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>

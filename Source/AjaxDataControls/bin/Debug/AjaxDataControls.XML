@@ -1,0 +1,2272 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>AjaxDataControls</name>
+    </assembly>
+    <members>
+        <member name="T:AjaxDataControls.BaseDataControl">
+            <summary>
+            Base class for creating data controls.
+            </summary>
+        </member>
+        <member name="M:AjaxDataControls.BaseDataControl.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:AjaxDataControls.BaseDataControl"/> class.
+            </summary>
+        </member>
+        <member name="P:AjaxDataControls.BaseDataControl.UseExternalScripts">
+            <summary>
+            Gets or sets a value indicating whether the control will use the embedded script of the resource.
+            For optimization reson we you can choose to not include the script from the resource, 
+            instead you can combine its scripts with the other scripts to cache it in client.
+            </summary>
+            <value>
+            <c>true</c> to include the scripts from embedded resource; otherwise, <c>false</c>. The default is <c>false</c>.
+            </value>
+        </member>
+        <member name="M:AjaxDataControls.BaseDataControl.CreateDescriptor">
+            <summary>
+            Creates the control descriptor with the same class name.
+            </summary>
+            <returns>Returns the control descriptor.</returns>
+        </member>
+        <member name="M:AjaxDataControls.BaseDataControl.GetProperScriptReference(System.String)">
+            <summary>
+            Returns the proper script depending upon the debug/release mode.
+            </summary>
+            <remarks>
+            The methods returns the minified version of the specified script if the application is running in release mode.
+            </remarks>
+            <param name="baseName">Base Name of the JS Resource.</param>
+            <returns>Returns the script reference.</returns>
+        </member>
+        <member name="T:AjaxDataControls.DataListRepeatDirection">
+            <summary>
+            Specifies the direction in which items of a DataList control are displayed.
+            </summary>
+        </member>
+        <member name="F:AjaxDataControls.DataListRepeatDirection.Vertical">
+            <summary>
+            Items of a DataList are displayed vertically in columns from top to bottom, and then left to right, until all items are rendered.
+            </summary>
+        </member>
+        <member name="F:AjaxDataControls.DataListRepeatDirection.Horizontal">
+            <summary>
+            Items of a DateList are displayed horizontally in rows from left to right, then top to bottom, until all items are rendered.
+            </summary>
+        </member>
+        <member name="T:AjaxDataControls.DataList">
+            <summary>
+            A data bound list control that displays items using templates.
+            </summary>
+            <seealso cref="T:AjaxDataControls.Repeater">Repeater Control</seealso>
+            <seealso cref="T:AjaxDataControls.GridView">GridView Control</seealso>
+            <seealso cref="T:AjaxDataControls.Pager">Pager Control</seealso>>
+        </member>
+        <member name="P:AjaxDataControls.DataList.CellPadding">
+            <summary>
+            Gets or sets the amount of space between the contents of a cell and the cell's border.
+            </summary>
+            <value>The amount of space (in pixels) between the contents of a cell and the cell's border. The default value is -1, which indicates that this property is not set.</value>
+        </member>
+        <member name="P:AjaxDataControls.DataList.CellSpacing">
+            <summary>
+            Gets or sets the amount of space between cells.
+            </summary>
+            <value>The amount of space (in pixels) between cells. The default value is 0.</value>
+        </member>
+        <member name="P:AjaxDataControls.DataList.HorizontalAlign">
+            <summary>
+            Gets or sets the horizontal alignment of the DataList control within its container.
+            </summary>
+            <value>The horizontal align. The default value is NotSet.</value>
+        </member>
+        <member name="P:AjaxDataControls.DataList.HeaderTemplate">
+            <summary>
+            Gets or sets the <see cref="T:System.Web.UI.ITemplate">System.Web.UI.ITemplate</see> for the heading section of the DataList control.
+            </summary>
+            <value>The header template. The default value is a null reference (<b>Nothing</b> in Visual Basic)</value>
+        </member>
+        <member name="P:AjaxDataControls.DataList.ItemTemplate">
+            <summary>
+            Gets or sets the <see cref="T:System.Web.UI.ITemplate">System.Web.UI.ITemplate</see> for the items in the DataList control.
+            </summary>
+            <value>The item template. The default value is a null reference (<b>Nothing</b> in Visual Basic)</value>
+        </member>
+        <member name="P:AjaxDataControls.DataList.SeparatorTemplate">
+            <summary>
+            Gets or sets the <see cref="T:System.Web.UI.ITemplate">System.Web.UI.ITemplate</see> for the separator between the items of the DataList control.
+            </summary>
+            <value>The separator template. The default value is a null reference (<b>Nothing</b> in Visual Basic)</value>
+        </member>
+        <member name="P:AjaxDataControls.DataList.AlternatingItemTemplate">
+            <summary>
+            Gets or sets the <see cref="T:System.Web.UI.ITemplate">System.Web.UI.ITemplate</see> for alternating items in the DataList.
+            </summary>
+            <value>The alternating item template. The default value is a null reference (<b>Nothing</b> in Visual Basic)</value>
+        </member>
+        <member name="P:AjaxDataControls.DataList.FooterTemplate">
+            <summary>
+            Gets or sets the <see cref="T:System.Web.UI.ITemplate">System.Web.UI.ITemplate</see> for the footer section of the DataList control.
+            </summary>
+            <value>The footer template. The default value is a null reference (<b>Nothing</b> in Visual Basic)</value>
+        </member>
+        <member name="P:AjaxDataControls.DataList.SelectedItemTemplate">
+            <summary>
+            Gets or sets the <see cref="T:System.Web.UI.ITemplate">System.Web.UI.ITemplate</see> for the selected item in the DataList control.
+            </summary>
+            <value>The selected item template. The default value is a null reference (<b>Nothing</b> in Visual Basic)</value>
+        </member>
+        <member name="P:AjaxDataControls.DataList.EditItemTemplate">
+            <summary>
+            Gets or sets the <see cref="T:System.Web.UI.ITemplate">System.Web.UI.ITemplate</see> for the item selected for editing in the DataList control.
+            </summary>
+            <value>The edit item template. The default value is a null reference (<b>Nothing</b> in Visual Basic)</value>
+        </member>
+        <member name="P:AjaxDataControls.DataList.ShowHeader">
+            <summary>
+            Gets or sets a value indicating whether the header section is displayed in the DataList control.
+            </summary>
+            <value><c>true</c> to show the header section; otherwise, <c>false</c>.The default is <c>true</c>.</value>
+        </member>
+        <member name="P:AjaxDataControls.DataList.ShowFooter">
+            <summary>
+            Gets or sets a value indicating whether the footer section is displayed in the DataList control.
+            </summary>
+            <value><c>true</c> to show the footer section; otherwise, <c>false</c>.The default is <c>true</c>.</value>
+        </member>
+        <member name="P:AjaxDataControls.DataList.AllowDragAndDrop">
+            <summary>
+            Gets or sets a value indicating whether drag and drop is supported between the items of the DataList.
+            </summary>
+            <remarks>
+            The Asp.net Ajax Framework Drag Drop script(s) needs to be present in the page.
+            </remarks>
+            <value><c>true</c> if drag and drop is allowed; otherwise, <c>false</c>.The default is <c>true</c>.</value>
+        </member>
+        <member name="P:AjaxDataControls.DataList.DragOpacity">
+            <summary>
+            Gets or sets the drag opacity of the dragging item.
+            </summary>
+            <value>The drag opacity. The default value is 70.</value>
+        </member>
+        <member name="P:AjaxDataControls.DataList.Animate">
+            <summary>
+            Gets or sets a value indicating whether this <see cref="T:AjaxDataControls.DataList"/> is animated when binding data.
+            </summary>
+            <remarks>
+            The Asp.net Ajax Framework Glitz script(s) needs to be present in the page.
+            </remarks>
+            <value><c>true</c> to animate; otherwise, <c>false</c>.The default is <c>true</c></value>
+        </member>
+        <member name="P:AjaxDataControls.DataList.AnimationDuration">
+            <summary>
+            Gets or sets the animation duration in seconds.
+            </summary>
+            <value>The animation duration. The default value is 0.3 seconds</value>
+        </member>
+        <member name="P:AjaxDataControls.DataList.AnimationFps">
+            <summary>
+            Gets or sets the animation frames per second.
+            </summary>
+            <value>The animation frame per second. The default value is 25.</value>
+        </member>
+        <member name="P:AjaxDataControls.DataList.HeaderStyle">
+            <summary>
+            Gets the style properties for the heading section of the DataList control.
+            </summary>
+            <value>The header style. The default value is empty style.</value>
+        </member>
+        <member name="P:AjaxDataControls.DataList.ItemStyle">
+            <summary>
+            Gets the style properties for the items in the DataList control.
+            </summary>
+            <value>The item style. The default value is empty style.</value>
+        </member>
+        <member name="P:AjaxDataControls.DataList.SeparatorStyle">
+            <summary>
+            Gets the style properties of the separator between each item in the DataList control.
+            </summary>
+            <value>The separator style. The default value is empty style.</value>
+        </member>
+        <member name="P:AjaxDataControls.DataList.AlternatingItemStyle">
+            <summary>
+            Gets the style properties for alternating items in the DataList control.
+            </summary>
+            <value>The alternating item style. The default value is empty style.</value>
+        </member>
+        <member name="P:AjaxDataControls.DataList.FooterStyle">
+            <summary>
+            Gets the style properties for the footer section of the DataList control.
+            </summary>
+            <value>The footer style. The default value is empty style.</value>
+        </member>
+        <member name="P:AjaxDataControls.DataList.SelectedItemStyle">
+            <summary>
+            Gets the style properties for the selected item in the DataList control.
+            </summary>
+            <value>The selected item style. The default value is empty style.</value>
+        </member>
+        <member name="P:AjaxDataControls.DataList.EditItemStyle">
+            <summary>
+            Gets the style properties for the item selected for editing in the DataList control.
+            </summary>
+            <value>The edit item style. The default value is empty style.</value>
+        </member>
+        <member name="P:AjaxDataControls.DataList.RepeatColumns">
+            <summary>
+            Gets or sets the number of columns to display in the DataList control.
+            </summary>
+            <value>The number of columns to display in the DataList control. The default value is 0, which indicates that the items in the DataList control are displayed in a single row or column, based on the value of the <see cref="P:AjaxDataControls.DataList.RepeatDirection"/> property.</value>
+        </member>
+        <member name="P:AjaxDataControls.DataList.RepeatDirection">
+            <summary>
+            Gets or sets whether the DataList control displays vertically or horizontally.
+            </summary>
+            <value>The repeat direction. The default is Vertical.</value>
+        </member>
+        <member name="P:AjaxDataControls.DataList.EditItemIndex">
+            <summary>
+            Gets or sets the index number of the selected item in the DataList control to edit.
+            </summary>
+            <remarks>To unselect an item, set the EditItemIndex property to -1.</remarks>
+            <value>The index number of the selected item in the DataList control to edit.</value>
+        </member>
+        <member name="P:AjaxDataControls.DataList.SelectedIndex">
+            <summary>
+            Gets or sets the index of the selected item in the DataList control.
+            </summary>
+            <remarks>
+            To deselect an item, set the SelectedIndex property to -1.
+            </remarks>
+            <value>The index of the selected item in the DataList control.</value>
+        </member>
+        <member name="P:AjaxDataControls.DataList.DataKeyField">
+            <summary>
+            Gets or sets the key field in the data source specified by the DataSource property in the client side.
+            </summary>
+            <value>The name of the key field in the data source specified by DataSource.</value>
+        </member>
+        <member name="P:AjaxDataControls.DataList.ItemDragStartEvent">
+            <summary>
+            Occurs when user starts dragging of an item in the DataList control.
+            </summary>
+            <value>The item drag start event. The default value is empty function.</value>
+        </member>
+        <member name="P:AjaxDataControls.DataList.ItemDroppedEvent">
+            <summary>
+            Occurs when user drops an item in the DataList control.
+            </summary>
+            <value>The item dropped event. The default value is empty function.</value>
+        </member>
+        <member name="P:AjaxDataControls.DataList.ItemCreatedEvent">
+            <summary>
+            Occurs on the client side when an item in the DataList control is created.
+            </summary>
+            <value>The item created event. The default value is empty function.</value>
+        </member>
+        <member name="P:AjaxDataControls.DataList.ItemDataBoundEvent">
+            <summary>
+            Occurs on the client side when an item in the DataList control is going to be data-bound.
+            </summary>
+            <value>The item data bound event. The default value is empty function.</value>
+        </member>
+        <member name="P:AjaxDataControls.DataList.SelectedIndexChangedEvent">
+            <summary>
+            Occurs on the client side when a different item is selected in a DataList control through select command.
+            </summary>
+            <value>The selected index changed event. The default value is empty function.</value>
+        </member>
+        <member name="P:AjaxDataControls.DataList.EditCommandEvent">
+            <summary>
+            Occurs on the client side when the Edit button is clicked for an item in the DataList control.
+            </summary>
+            <value>The edit command event. The default value is empty function.</value>
+        </member>
+        <member name="P:AjaxDataControls.DataList.UpdateCommandEvent">
+            <summary>
+            Occurs on the client side when the Update button is clicked for an item in the DataList control.
+            </summary>
+            <value>The update command event. The default value is empty function.</value>
+        </member>
+        <member name="P:AjaxDataControls.DataList.CancelCommandEvent">
+            <summary>
+            Occurs on the client side when the Cancel button is clicked for an item in the DataList control.
+            </summary>
+            <value>The cancel command event. The default value is empty function.</value>
+        </member>
+        <member name="P:AjaxDataControls.DataList.DeleteCommandEvent">
+            <summary>
+            Occurs on the client side when the Delete button is clicked for an item in the DataList control.
+            </summary>
+            <value>The delete command event. The default value is empty function.</value>
+        </member>
+        <member name="P:AjaxDataControls.DataList.ItemCommandEvent">
+            <summary>
+            Occurs on the client side when a button which has associated commandName is clicked in the DataList control.
+            </summary>
+            <value>The item command event. The default value is empty function.</value>
+        </member>
+        <member name="P:AjaxDataControls.DataList.TagKey">
+            <summary>
+            Gets the <see cref="T:System.Web.UI.HtmlTextWriterTag"/> value that corresponds to this Web server control. This property is used primarily by control developers.
+            </summary>
+            <value></value>
+            <returns>One of the <see cref="T:System.Web.UI.HtmlTextWriterTag"/> enumeration values.</returns>
+        </member>
+        <member name="M:AjaxDataControls.DataList.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:AjaxDataControls.DataList"/> class.
+            </summary>
+        </member>
+        <member name="M:AjaxDataControls.DataList.CreateControlStyle">
+            <summary>
+            Creates the style object that is used internally by the <see cref="T:System.Web.UI.WebControls.WebControl"/> class to implement all style related properties. This method is used primarily by control developers.
+            </summary>
+            <returns>
+            A <see cref="T:System.Web.UI.WebControls.Style"/> that is used to implement all style-related properties of the control.
+            </returns>
+        </member>
+        <member name="M:AjaxDataControls.DataList.GetScriptDescriptors">
+            <summary>
+            Gets the script descriptors.
+            </summary>
+            <returns>Returns the ScriptDescriptors which are associated with this control</returns>
+        </member>
+        <member name="M:AjaxDataControls.DataList.GetScriptReferences">
+            <summary>
+            Gets the script references.
+            </summary>
+            <returns>Returns the ScriptReferences which are associated with this control</returns>
+        </member>
+        <member name="T:AjaxDataControls.GridViewCommandColumn">
+            <summary>
+            Represents a special column that displays command buttons to perform selecting, editing, or deleting operations in a <see cref="T:AjaxDataControls.GridView"/> control.
+            </summary>
+            <seealso cref="T:AjaxDataControls.GridView"/>
+            <seealso cref="T:AjaxDataControls.GridViewBoundColumn"/>
+            <seealso cref="T:AjaxDataControls.GridViewButtonColumn"/>
+            <seealso cref="T:AjaxDataControls.GridViewCheckBoxColumn"/>
+            <seealso cref="T:AjaxDataControls.GridViewHyperLinkColumn"/>
+            <seealso cref="T:AjaxDataControls.GridViewImageColumn"/>
+            <seealso cref="T:AjaxDataControls.GridViewTemplateColumn"/>
+        </member>
+        <member name="P:AjaxDataControls.GridViewCommandColumn.ButtonType">
+            <summary>
+            Gets or sets the button type to display in the <see cref="T:AjaxDataControls.GridViewCommandColumn"/>.
+            </summary>
+            <remarks>
+            Use the ButtonType property to specify which type of button is displayed in a <see cref="T:AjaxDataControls.GridViewCommandColumn"/>.
+            </remarks>
+            <value>One of the ButtonType values. The default is <b>GridViewColumnButtonType.Link</b>.</value>
+        </member>
+        <member name="P:AjaxDataControls.GridViewCommandColumn.CancelImageUrl">
+            <summary>
+            Gets or sets the URL to an image to display for the Cancel button in a <see cref="T:AjaxDataControls.GridViewCommandColumn"/>.
+            </summary>
+            <remarks>
+            When the <see cref="P:AjaxDataControls.GridViewCommandColumn.ButtonType"/> property of a <see cref="T:AjaxDataControls.GridViewCommandColumn"/> is set to <b>ButtonType.Image</b>, use the <b>CancelImageUrl</b> property to specify the image to display for the Cancel button. This image can be in any file format (.jpg, .gif, .bmp, and so on), as long as the client's browser supports that format.
+            </remarks>
+            <value>The URL to an image to display for the Cancel button in a <see cref="T:AjaxDataControls.GridViewCommandColumn"/>. The default is an empty string (""), which indicates that this property is not set.</value>
+        </member>
+        <member name="P:AjaxDataControls.GridViewCommandColumn.CancelText">
+            <summary>
+            Gets or sets the caption for the Cancel button displayed in a <see cref="T:AjaxDataControls.GridViewCommandColumn"/>.
+            </summary>
+            <remarks>
+            When the <see cref="P:AjaxDataControls.GridViewCommandColumn.ButtonType"/> property of a <see cref="T:AjaxDataControls.GridViewCommandColumn"/> field is set to <b>ButtonType.Button</b> or <b>ButtonType.Link</b>, use the <b>CancelText</b> property to specify the text to display for the Cancel button.
+            </remarks>
+            <value>The caption for the Cancel button in a <see cref="T:AjaxDataControls.GridViewCommandColumn"/>. The default is "Cancel".</value>
+        </member>
+        <member name="P:AjaxDataControls.GridViewCommandColumn.DeleteImageUrl">
+            <summary>
+            Gets or sets the URL to an image to display for the Delete button in a <see cref="T:AjaxDataControls.GridViewCommandColumn"/>.
+            </summary>
+            <remarks>
+            When the <see cref="P:AjaxDataControls.GridViewCommandColumn.ButtonType"/> property of a <see cref="T:AjaxDataControls.GridViewCommandColumn"/> is set to <b>ButtonType.Image</b>, use the <b>DeleteImageUrl</b> property to specify the image to display for the Delete button. This image can be in any file format (.jpg, .gif, .bmp, and so on), as long as the client's browser supports that format.
+            </remarks>
+            <value>The URL to an image to display for the Delete button in a <see cref="T:AjaxDataControls.GridViewCommandColumn"/>. The default is an empty string (""), which indicates that this property is not set.</value>
+        </member>
+        <member name="P:AjaxDataControls.GridViewCommandColumn.DeleteText">
+            <summary>
+            Gets or sets the caption for the Delete button displayed in a <see cref="T:AjaxDataControls.GridViewCommandColumn"/>.
+            </summary>
+            <remarks>
+            When the <see cref="P:AjaxDataControls.GridViewCommandColumn.ButtonType"/> property of a <see cref="T:AjaxDataControls.GridViewCommandColumn"/> field is set to <b>ButtonType.Button</b> or <b>ButtonType.Link</b>, use the <b>DeleteText</b> property to specify the text to display for the Delete button.
+            </remarks>
+            <value>The caption for the Delete button in a <see cref="T:AjaxDataControls.GridViewCommandColumn"/>. The default is "Delete".</value>
+        </member>
+        <member name="P:AjaxDataControls.GridViewCommandColumn.EditImageUrl">
+            <summary>
+            Gets or sets the URL to an image to display for the Edit button in a <see cref="T:AjaxDataControls.GridViewCommandColumn"/>.
+            </summary>
+            <remarks>
+            When the <see cref="P:AjaxDataControls.GridViewCommandColumn.ButtonType"/> property of a <see cref="T:AjaxDataControls.GridViewCommandColumn"/> is set to <b>ButtonType.Image</b>, use the <b>EditImageUrl</b> property to specify the image to display for the Edit button. This image can be in any file format (.jpg, .gif, .bmp, and so on), as long as the client's browser supports that format.
+            </remarks>
+            <value>The URL to an image to display for the Edit button in a <see cref="T:AjaxDataControls.GridViewCommandColumn"/>. The default is an empty string (""), which indicates that this property is not set.</value>
+        </member>
+        <member name="P:AjaxDataControls.GridViewCommandColumn.EditText">
+            <summary>
+            Gets or sets the caption for the Edit button displayed in a <see cref="T:AjaxDataControls.GridViewCommandColumn"/>.
+            </summary>
+            <remarks>
+            When the <see cref="P:AjaxDataControls.GridViewCommandColumn.ButtonType"/> property of a <see cref="T:AjaxDataControls.GridViewCommandColumn"/> field is set to <b>ButtonType.Button</b> or <b>ButtonType.Link</b>, use the <b>EditText</b> property to specify the text to display for the Edit button.
+            </remarks>
+            <value>The caption for the Edit button in a <see cref="T:AjaxDataControls.GridViewCommandColumn"/>. The default is "Edit".</value>
+        </member>
+        <member name="P:AjaxDataControls.GridViewCommandColumn.SelectImageUrl">
+            <summary>
+            Gets or sets the URL to an image to display for the Select button in a <see cref="T:AjaxDataControls.GridViewCommandColumn"/>.
+            </summary>
+            <remarks>
+            When the <see cref="P:AjaxDataControls.GridViewCommandColumn.ButtonType"/> property of a <see cref="T:AjaxDataControls.GridViewCommandColumn"/> is set to <b>ButtonType.Image</b>, use the <b>SelectImageUrl</b> property to specify the image to display for the Select button. This image can be in any file format (.jpg, .gif, .bmp, and so on), as long as the client's browser supports that format.
+            </remarks>
+            <value>The URL to an image to display for the Select button in a <see cref="T:AjaxDataControls.GridViewCommandColumn"/>. The default is an empty string (""), which indicates that this property is not set.</value>
+        </member>
+        <member name="P:AjaxDataControls.GridViewCommandColumn.SelectText">
+            <summary>
+            Gets or sets the caption for the Select button displayed in a <see cref="T:AjaxDataControls.GridViewCommandColumn"/>.
+            </summary>
+            <remarks>
+            When the <see cref="P:AjaxDataControls.GridViewCommandColumn.ButtonType"/> property of a <see cref="T:AjaxDataControls.GridViewCommandColumn"/> field is set to <b>ButtonType.Button</b> or <b>ButtonType.Link</b>, use the <b>SelectText</b> property to specify the text to display for the Select button.
+            </remarks>
+            <value>The caption for the Select button in a <see cref="T:AjaxDataControls.GridViewCommandColumn"/>. The default is "Select".</value>
+        </member>
+        <member name="P:AjaxDataControls.GridViewCommandColumn.UpdateImageUrl">
+            <summary>
+            Gets or sets the URL to an image to display for the Update button in a <see cref="T:AjaxDataControls.GridViewCommandColumn"/>.
+            </summary>
+            <remarks>
+            When the <see cref="P:AjaxDataControls.GridViewCommandColumn.ButtonType"/> property of a <see cref="T:AjaxDataControls.GridViewCommandColumn"/> is set to <b>ButtonType.Image</b>, use the <b>UpdateImageUrl</b> property to specify the image to display for the Update button. This image can be in any file format (.jpg, .gif, .bmp, and so on), as long as the client's browser supports that format.
+            </remarks>
+            <value>The URL to an image to display for the Update button in a <see cref="T:AjaxDataControls.GridViewCommandColumn"/>. The default is an empty string (""), which indicates that this property is not set.</value>
+        </member>
+        <member name="P:AjaxDataControls.GridViewCommandColumn.UpdateText">
+            <summary>
+            Gets or sets the caption for the Update button displayed in a <see cref="T:AjaxDataControls.GridViewCommandColumn"/>.
+            </summary>
+            <remarks>
+            When the <see cref="P:AjaxDataControls.GridViewCommandColumn.ButtonType"/> property of a <see cref="T:AjaxDataControls.GridViewCommandColumn"/> field is set to <b>ButtonType.Button</b> or <b>ButtonType.Link</b>, use the <b>UpdateText</b> property to specify the text to display for the Update button.
+            </remarks>
+            <value>The caption for the Update button in a <see cref="T:AjaxDataControls.GridViewCommandColumn"/>. The default is "Update".</value>
+        </member>
+        <member name="P:AjaxDataControls.GridViewCommandColumn.ShowCancelButton">
+            <summary>
+            Gets or sets a value indicating whether a Cancel button is displayed in a <see cref="T:AjaxDataControls.GridViewCommandColumn"/>.
+            </summary>
+            <remarks>
+            Use the <b>ShowCancelButton</b> property to specify whether the Cancel button is displayed in a <see cref="T:AjaxDataControls.GridViewCommandColumn"/> object. A Cancel button can be displayed in a <see cref="T:AjaxDataControls.GridViewCommandColumn"/> when the corresponding record in GridView control is in edit mode. The Cancel button allows the user to cancel the edit operation and returns the record to its normal display mode. When the <see cref="P:AjaxDataControls.GridViewCommandColumn.ButtonType"/> property of a <see cref="T:AjaxDataControls.GridViewCommandColumn"/> is set to <b>ButtonType.Button</b> or <b>ButtonType.Link</b>, use the <see cref="P:AjaxDataControls.GridViewCommandColumn.CancelText"/> property to specify the text to display for a Cancel button. Alternatively, you can display an image by first setting the <see cref="P:AjaxDataControls.GridViewCommandColumn.ButtonType"/> property to <b>ButtonType.Image</b> and then setting the <see cref="P:AjaxDataControls.GridViewCommandColumn.CancelImageUrl"/> property.
+            </remarks>
+            <value><c>true</c> to display a Cancel button in a <see cref="T:AjaxDataControls.GridViewCommandColumn"/>; otherwise, <c>false</c>. The default is <c>true</c>.</value>
+        </member>
+        <member name="P:AjaxDataControls.GridViewCommandColumn.ShowDeleteButton">
+            <summary>
+            Gets or sets a value indicating whether a Delete button is displayed in a <see cref="T:AjaxDataControls.GridViewCommandColumn"/>.
+            </summary>
+            <remarks>
+            Use the <b>ShowDeleteButton</b> property to specify whether a Delete button is displayed in a <see cref="T:AjaxDataControls.GridViewCommandColumn"/> for each record in the GridView control. The Delete button allows you to remove a record from the data source.
+            </remarks>
+            <value><c>true</c> to display a Delete button in a <see cref="T:AjaxDataControls.GridViewCommandColumn"/>; otherwise, <c>false</c>. The default is <c>false</c>.</value>
+        </member>
+        <member name="P:AjaxDataControls.GridViewCommandColumn.ShowEditButton">
+            <summary>
+            Gets or sets a value indicating whether a Edit button is displayed in a <see cref="T:AjaxDataControls.GridViewCommandColumn"/>.
+            </summary>
+            <remarks>
+            Use the <b>ShowEditButton</b> property to specify whether an Edit button is displayed in the <see cref="T:AjaxDataControls.GridViewCommandColumn"/> for each record in the GridView control. The Edit button allows you to edit the values of a record. When the user clicks an Edit button, input controls are displayed for each column in the record. The Edit button for the record is replaced with an Update button and a Cancel button, and all other command buttons for the record are hidden. Clicking the Update button updates the record with the new values in the data source, whereas clicking the Cancel button cancels the operation.
+            </remarks>
+            <value><c>true</c> to display a Edit button in a <see cref="T:AjaxDataControls.GridViewCommandColumn"/>; otherwise, <c>false</c>. The default is <c>false</c>.</value>
+        </member>
+        <member name="P:AjaxDataControls.GridViewCommandColumn.ShowSelectButton">
+            <summary>
+            Gets or sets a value indicating whether a Select button is displayed in a <see cref="T:AjaxDataControls.GridViewCommandColumn"/>.
+            </summary>
+            <remarks>
+            Use the <b>ShowSelectButton</b> property to specify whether a Select button is displayed in a <see cref="T:AjaxDataControls.GridViewCommandColumn"/> for each record in the GridView control. The Select button allows the user to select a row in the GridView control. When the Select button for a record is clicked, the GridView control responds accordingly. For example, a it updates the <b>SelectedIndex</b>, <b>SelectedRow</b>, and <b>SelectedValue</b> properties to values corresponding to the selected row. The <b>SelectedRowStyle</b> style is then applied to the selected row and the SelectedIndexChanged event is raised.
+            </remarks>
+            <value><c>true</c> to display a Select button in a <see cref="T:AjaxDataControls.GridViewCommandColumn"/>; otherwise, <c>false</c>. The default is <c>false</c>.</value>
+        </member>
+        <member name="P:AjaxDataControls.GridViewCommandColumn.ScriptBaseFileName">
+            <summary>
+            Gets the base name of the script file without the extension.
+            </summary>
+            <value>The name of the script file base name.</value>
+            <remarks>
+            This method will return the base name without the .debug.js or .js extension of the associated script file of this column.
+            </remarks>
+        </member>
+        <member name="M:AjaxDataControls.GridViewCommandColumn.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:AjaxDataControls.GridViewCommandColumn"/> class.
+            </summary>
+        </member>
+        <member name="M:AjaxDataControls.GridViewCommandColumn.RenderData(System.Web.UI.WebControls.TableCell,System.String)">
+            <summary>
+            Renders the data column. Used by the designer to render the column data in the design time.
+            </summary>
+            <remarks>
+            This method should be used to show the rendered data in the Designer for the custom column. You do need this method otherwise.
+            </remarks>
+            <param name="container">The container.</param>
+            <param name="data">The data.</param>
+        </member>
+        <member name="M:AjaxDataControls.GridViewCommandColumn.BuildDescriptor">
+            <summary>
+            Builds the descriptor for this column.
+            </summary>
+            <returns>
+            Returns the descriptor embedding all the properties of this column.
+            </returns>
+        </member>
+        <member name="M:AjaxDataControls.GridViewCommandColumn.LoadViewState(System.Object)">
+            <summary>
+            When implemented by a class, loads the server control's previously saved view state to the control.
+            </summary>
+            <param name="state">An <see cref="T:System.Object"/> that contains the saved view state values for the control.</param>
+        </member>
+        <member name="M:AjaxDataControls.GridViewCommandColumn.SaveViewState">
+            <summary>
+            When implemented by a class, saves the changes to a server control's view state to an <see cref="T:System.Object"/>.
+            </summary>
+            <returns>
+            The <see cref="T:System.Object"/> that contains the view state changes.
+            </returns>
+        </member>
+        <member name="T:AjaxDataControls.GridViewColumnButtonType">
+            <summary>
+            Specifies the different types of buttons that can be rendered in a <see cref="T:AjaxDataControls.GridView"/> control.
+            </summary>
+        </member>
+        <member name="F:AjaxDataControls.GridViewColumnButtonType.Button">
+            <summary>
+            A command button.
+            </summary>
+        </member>
+        <member name="F:AjaxDataControls.GridViewColumnButtonType.Image">
+            <summary>
+            A button that displays an image. 
+            </summary>
+        </member>
+        <member name="F:AjaxDataControls.GridViewColumnButtonType.Link">
+            <summary>
+            A hyperlink-style button.
+            </summary>
+        </member>
+        <member name="T:AjaxDataControls.GridViewButtonColumn">
+            <summary>
+            Represents a column that is displayed as a button in a <see cref="T:AjaxDataControls.GridView"/> control.
+            </summary>
+            <seealso cref="T:AjaxDataControls.GridView"/>
+            <seealso cref="T:AjaxDataControls.GridViewBoundColumn"/>
+            <seealso cref="T:AjaxDataControls.GridViewCheckBoxColumn"/>
+            <seealso cref="T:AjaxDataControls.GridViewCommandColumn"/>
+            <seealso cref="T:AjaxDataControls.GridViewHyperLinkColumn"/>
+            <seealso cref="T:AjaxDataControls.GridViewImageColumn"/>
+            <seealso cref="T:AjaxDataControls.GridViewTemplateColumn"/>
+        </member>
+        <member name="P:AjaxDataControls.GridViewButtonColumn.ButtonType">
+            <summary>
+            Gets or sets the button type to display in the <see cref="T:AjaxDataControls.GridViewCommandColumn"/>.
+            </summary>
+            <remarks>
+            Use the ButtonType property to specify which type of button is displayed in a <see cref="T:AjaxDataControls.GridViewCommandColumn"/>.
+            </remarks>
+            <value>One of the ButtonType values. The default is <b>GridViewColumnButtonType.Link</b>.</value>
+        </member>
+        <member name="P:AjaxDataControls.GridViewButtonColumn.CommandName">
+            <summary>
+            Gets or sets a string that represents the action to perform when a button in a <see cref="T:AjaxDataControls.GridViewButtonColumn"/> object is clicked.
+            </summary>
+            <remarks>
+            Use the CommandName property to associate a command name, such as "Add" or "Remove", with the buttons in the <see cref="T:AjaxDataControls.GridViewButtonColumn"/> object. You can set the CommandName property to any string that identifies the action to perform when the command button is clicked. You can then programmatically determine the command name in an event handler and perform the appropriate actions.
+            </remarks>
+            <value>The name of the action to perform when a button in the <see cref="T:AjaxDataControls.GridViewButtonColumn"/> is clicked.</value>
+        </member>
+        <member name="P:AjaxDataControls.GridViewButtonColumn.DataTextField">
+            <summary>
+            Gets or sets the name of the data field for which the value is bound to the Text property of the Button control that is rendered by the <see cref="T:AjaxDataControls.GridViewButtonColumn"/> object.
+            </summary>
+            <remarks>
+            When the <see cref="P:AjaxDataControls.GridViewButtonColumn.ButtonType"/> property of a <see cref="T:AjaxDataControls.GridViewButtonColumn"/> object is set to the <see cref="T:AjaxDataControls.GridViewColumnButtonType">Button</see> or <see cref="T:AjaxDataControls.GridViewColumnButtonType">Link</see> value, use the <see cref="P:AjaxDataControls.GridViewButtonColumn.DataTextField"/> property to specify the name of the field to bind to the <see cref="T:AjaxDataControls.GridViewButtonColumn"/> object. The values of the field are then displayed as the text for the buttons in the <see cref="T:AjaxDataControls.GridViewButtonColumn"/> object. Optionally, you can format the displayed text by setting the <see cref="P:AjaxDataControls.GridViewButtonColumn.DataTextFormatString"/> property. Instead of using the <see cref="P:AjaxDataControls.GridViewButtonColumn.DataTextField"/> property to bind a <see cref="T:AjaxDataControls.GridViewButtonColumn"/> object to a field from a data source, you can use the <see cref="P:AjaxDataControls.GridViewButtonColumn.Text"/> property to display static text for the text of the buttons in the <see cref="T:AjaxDataControls.GridViewButtonColumn"/> object. When the <see cref="P:AjaxDataControls.GridViewButtonColumn.Text"/> property is used, each button shares the same caption.
+            </remarks>
+            <value>The name of the field to bind to the <see cref="T:AjaxDataControls.GridViewButtonColumn"/>. The default is an empty string (""), which indicates that the DataTextField property is not set.</value>
+        </member>
+        <member name="P:AjaxDataControls.GridViewButtonColumn.DataTextFormatString">
+            <summary>
+            Gets or sets the string that specifies the display format for the value of the column.
+            </summary>
+            <remarks>
+            Use the <b>DataTextFormatString</b> property to specify a custom display format for the values that are displayed in the <see cref="T:AjaxDataControls.GridViewButtonColumn"/> object. If the <b>DataTextFormatString</b> property is not set, the value for the field is displayed without any special formatting.
+            </remarks>
+            <value>A format string that specifies the display format for the value of the field. The default is an empty string (""), which indicates that no special formatting is applied to the field value.</value>
+        </member>
+        <member name="P:AjaxDataControls.GridViewButtonColumn.ImageUrl">
+            <summary>
+            Gets or sets the image to display for each button in the <see cref="T:AjaxDataControls.GridViewButtonColumn"/> object.
+            </summary>
+            <remarks>
+            When the <see cref="P:AjaxDataControls.GridViewButtonColumn.ButtonType"/> property of a <see cref="T:AjaxDataControls.GridViewButtonColumn"/> object is set to the <see cref="T:AjaxDataControls.GridViewColumnButtonType">Image</see> value, use the <b>ImageUrl</b> property to specify the image to display for each button. This image can be in any file format (.jpg, .gif, .bmp, and so on), as long as the client browser supports that format.
+            </remarks>
+            <value>The image to display for each button in the <see cref="T:AjaxDataControls.GridViewButtonColumn"/>. The default is an empty string (""), which indicates that the ImageUrl property is not set.</value>
+        </member>
+        <member name="P:AjaxDataControls.GridViewButtonColumn.Text">
+            <summary>
+            Gets or sets the static caption that is displayed for each button in the <see cref="T:AjaxDataControls.GridViewButtonColumn"/> object.
+            </summary>
+            <remarks>
+            When the <see cref="P:AjaxDataControls.GridViewButtonColumn.ButtonType"/> property of a <see cref="T:AjaxDataControls.GridViewButtonColumn"/> object is set to the <see cref="T:AjaxDataControls.GridViewColumnButtonType">Button</see> or <see cref="T:AjaxDataControls.GridViewColumnButtonType">Link</see> value, use sthe <b>Text</b> property to display static text for the caption of the buttons in the <see cref="T:AjaxDataControls.GridViewButtonColumn"/>. Each button shares the same caption. Instead of using the <b>Text</b> property to display static text in a <see cref="T:AjaxDataControls.GridViewButtonColumn"/> object, you can use the <see cref="P:AjaxDataControls.GridViewButtonColumn.DataTextField"/> property to bind the <see cref="T:AjaxDataControls.GridViewButtonColumn"/> to a field in a data source. The values of the field are then displayed as the caption of the buttons.
+            </remarks>
+            <value>The caption displayed for each button in the <see cref="T:AjaxDataControls.GridViewButtonColumn"/>. The default is an empty string ("").</value>
+        </member>
+        <member name="P:AjaxDataControls.GridViewButtonColumn.ScriptBaseFileName">
+            <summary>
+            Gets the base name of the script file without the extension.
+            </summary>
+            <value>The name of the script file base name.</value>
+            <remarks>
+            This method will return the base name without the .debug.js or .js extension of the associated script file of this column.
+            </remarks>
+        </member>
+        <member name="M:AjaxDataControls.GridViewButtonColumn.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:AjaxDataControls.GridViewButtonColumn"/> class.
+            </summary>
+        </member>
+        <member name="M:AjaxDataControls.GridViewButtonColumn.RenderData(System.Web.UI.WebControls.TableCell,System.String)">
+            <summary>
+            Renders the data column. Used by the designer to render the column data in the design time.
+            </summary>
+            <remarks>
+            This method should be used to show the rendered data in the Designer for the custom column. You do need this method otherwise.
+            </remarks>
+            <param name="container">The container.</param>
+            <param name="data">The data.</param>
+        </member>
+        <member name="M:AjaxDataControls.GridViewButtonColumn.BuildDescriptor">
+            <summary>
+            Builds the descriptor for this column.
+            </summary>
+            <returns>
+            Returns the descriptor embedding all the properties of this column.
+            </returns>
+        </member>
+        <member name="M:AjaxDataControls.GridViewButtonColumn.LoadViewState(System.Object)">
+            <summary>
+            When implemented by a class, loads the server control's previously saved view state to the control.
+            </summary>
+            <param name="state">An <see cref="T:System.Object"/> that contains the saved view state values for the control.</param>
+        </member>
+        <member name="M:AjaxDataControls.GridViewButtonColumn.SaveViewState">
+            <summary>
+            When implemented by a class, saves the changes to a server control's view state to an <see cref="T:System.Object"/>.
+            </summary>
+            <returns>
+            The <see cref="T:System.Object"/> that contains the view state changes.
+            </returns>
+        </member>
+        <member name="T:AjaxDataControls.GridViewColumnScriptDescriptor">
+            <summary>
+            A helper class to generate the Asp.net Ajax $create statment for the GridView Column.
+            </summary>
+        </member>
+        <member name="P:AjaxDataControls.GridViewColumnScriptDescriptor.CreateScript">
+            <summary>
+            Gets the create script for GridView Column.
+            </summary>
+            <value>The create script.</value>
+        </member>
+        <member name="M:AjaxDataControls.GridViewColumnScriptDescriptor.#ctor(System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:AjaxDataControls.GridViewColumnScriptDescriptor"/> class.
+            </summary>
+            <param name="type">The type.</param>
+        </member>
+        <member name="T:AjaxDataControls.GridViewBoundColumn">
+            <summary>
+            Represents a column that is displayed as text in a <see cref="T:AjaxDataControls.GridView"/> control.
+            </summary>
+            <seealso cref="T:AjaxDataControls.GridView"/>
+            <seealso cref="T:AjaxDataControls.GridViewButtonColumn"/>
+            <seealso cref="T:AjaxDataControls.GridViewCheckBoxColumn"/>
+            <seealso cref="T:AjaxDataControls.GridViewCommandColumn"/>
+            <seealso cref="T:AjaxDataControls.GridViewHyperLinkColumn"/>
+            <seealso cref="T:AjaxDataControls.GridViewImageColumn"/>
+            <seealso cref="T:AjaxDataControls.GridViewTemplateColumn"/>
+        </member>
+        <member name="P:AjaxDataControls.GridViewBoundColumn.ApplyFormatInEditMode">
+            <summary>
+            Gets or sets a value indicating whether the formatting string specified by the DataFormatString property is applied to field values when the <see cref="T:AjaxDataControls.GridView"/> control that contains the <see cref="T:AjaxDataControls.GridViewBoundColumn"/> object is in edit mode.
+            </summary>
+            <remarks>
+            <see cref="T:AjaxDataControls.GridView"/> has display modes that allow the user to read or edit records. By default, the formatting string specified by the <see cref="P:AjaxDataControls.GridViewBoundColumn.DataFormatString"/> property is applied to column values only when the <see cref="T:AjaxDataControls.GridView"/> control is in read-only mode. To apply the formatting string to values displayed while the <see cref="T:AjaxDataControls.GridView"/> control is in edit mode, set the <b>ApplyFormatInEditMode</b> property to <b>true</b>.
+            </remarks>
+            <value>
+            <c>true</c> to apply the formatting string to column values in edit mode; otherwise, <c>false</c>. The default is <c>false</c>.
+            </value>
+        </member>
+        <member name="P:AjaxDataControls.GridViewBoundColumn.DataField">
+            <summary>
+            Gets or sets the name of the data field to bind to the <see cref="T:AjaxDataControls.GridViewBoundColumn"/> object.
+            </summary>
+            <remarks>
+            Use the DataField property to specify the name of the data field to bind to the <see cref="T:AjaxDataControls.GridViewBoundColumn"/> object. The values of the specified field are displayed in the <see cref="T:AjaxDataControls.GridViewBoundColumn"/> object as text. You can optionally format the displayed text by setting the <see cref="P:AjaxDataControls.GridViewBoundColumn.DataFormatString"/> property.
+            </remarks>
+            <value>The name of the data field to bind to the <see cref="T:AjaxDataControls.GridViewBoundColumn"/>. The default is an empty string (""), which indicates that this property is not set.</value>
+        </member>
+        <member name="P:AjaxDataControls.GridViewBoundColumn.DataFormatString">
+            <summary>
+            Gets or sets the string that specifies the display format for the value of the field.
+            </summary>
+            <remarks>
+            Use the <b>DataFormatString</b> property to specify a custom display format for the values displayed in the <see cref="T:AjaxDataControls.GridViewBoundColumn"/> object. If the DataFormatString property is not set, the field's value is displayed without any special formatting.
+            </remarks>
+            <value>A formatting string that specifies the display format for the value of the column. The default is an empty string (""), which indicates that no special formatting is applied to the field value.</value>
+        </member>
+        <member name="P:AjaxDataControls.GridViewBoundColumn.NullDisplayText">
+            <summary>
+            Gets or sets the caption displayed for a column when the field's value is null.
+            </summary>
+            <remarks>
+            Sometimes a field's value is stored as null in the data source. You can specify a custom caption to display for fields that have a null value by setting the <b>NullDisplayText</b> property. If this property is not set, null field values are displayed as empty strings ("").
+            </remarks>
+            <value>The caption displayed for a field when the field's value is null. The default is an empty string (""), which indicates that this property is not set.</value>
+        </member>
+        <member name="P:AjaxDataControls.GridViewBoundColumn.ReadOnly">
+            <summary>
+            Gets or sets a value indicating whether the value of the field can be modified in edit mode.
+            </summary>
+            <value><c>true</c> to prevent the value of the field from being modified in edit mode; otherwise, <c>false</c>. The default is <c>false</c>.</value>
+        </member>
+        <member name="P:AjaxDataControls.GridViewBoundColumn.ScriptBaseFileName">
+            <summary>
+            Gets the base name of the script file without the extension.
+            </summary>
+            <value>The name of the script file base name.</value>
+            <remarks>
+            This method will return the base name without the .debug.js or .js extension of the associated script file of this column.
+            </remarks>
+        </member>
+        <member name="M:AjaxDataControls.GridViewBoundColumn.RenderData(System.Web.UI.WebControls.TableCell,System.String)">
+            <summary>
+            Renders the data column. Used by the designer to render the column data in the design time.
+            </summary>
+            <remarks>
+            This method should be used to show the rendered data in the Designer for the custom column. You do need this method otherwise.
+            </remarks>
+            <param name="container">The container.</param>
+            <param name="data">The data.</param>
+        </member>
+        <member name="M:AjaxDataControls.GridViewBoundColumn.BuildDescriptor">
+            <summary>
+            Builds the descriptor for this column.
+            </summary>
+            <returns>
+            Returns the descriptor embedding all the properties of this column.
+            </returns>
+        </member>
+        <member name="M:AjaxDataControls.GridViewBoundColumn.LoadViewState(System.Object)">
+            <summary>
+            When implemented by a class, loads the server control's previously saved view state to the control.
+            </summary>
+            <param name="state">An <see cref="T:System.Object"/> that contains the saved view state values for the control.</param>
+        </member>
+        <member name="M:AjaxDataControls.GridViewBoundColumn.SaveViewState">
+            <summary>
+            When implemented by a class, saves the changes to a server control's view state to an <see cref="T:System.Object"/>.
+            </summary>
+            <returns>
+            The <see cref="T:System.Object"/> that contains the view state changes.
+            </returns>
+        </member>
+        <member name="T:AjaxDataControls.GridViewBaseColumn">
+            <summary>
+            The base class which represent a column of <see cref="T:AjaxDataControls.GridView"/> Control.
+            </summary>
+        </member>
+        <member name="P:AjaxDataControls.GridViewBaseColumn.ColumnID">
+            <summary>
+            Gets or sets the ID of the column which is used to uniquely identify the column.
+            </summary>
+            <value>The ID of the column.</value>
+        </member>
+        <member name="P:AjaxDataControls.GridViewBaseColumn.HeaderText">
+            <summary>
+            Gets or sets the text that is displayed in the header item of a <see cref="T:AjaxDataControls.GridView"/>.
+            </summary>
+            <remarks>
+            Use the <b>HeaderText</b> property to identify a field in a data control with a friendly name. The most common application of the <b>HeaderText</b> property is to provide meaningful column names for data-bound fields in a <see cref="T:AjaxDataControls.GridView"/> control.
+            </remarks>
+            <value>A string that is displayed in the header item of the <see cref="T:AjaxDataControls.GridViewBaseColumn"/>.</value>
+        </member>
+        <member name="P:AjaxDataControls.GridViewBaseColumn.FooterText">
+            <summary>
+            Gets or sets the text that is displayed in the footer item of a <see cref="T:AjaxDataControls.GridView"/>.
+            </summary>
+            <remarks>
+            Use the <b>FooterText</b> property to add notes or comments to a data control field, or for other data related to the field.
+            </remarks>
+            <value>A string that is displayed in the footer item of the <see cref="T:AjaxDataControls.GridViewBaseColumn"/>.</value>
+        </member>
+        <member name="P:AjaxDataControls.GridViewBaseColumn.SortField">
+            <summary>
+            Gets or sets a sort field that is used by a data source control to sort its data.
+            </summary>
+            <value>The sort field in the data source that is used by a data source control to sort data. The default value is an empty string ("").</value>
+        </member>
+        <member name="P:AjaxDataControls.GridViewBaseColumn.AllowDragAndDrop">
+            <summary>
+            Gets or sets a value indicating whether drag and drop is supported for this column.
+            </summary>
+            <remarks>
+            The Asp.net Ajax Framework Drag Drop script(s) needs to be present in the page.
+            </remarks>
+            <value><c>true</c> if drag and drop is allowed; otherwise, <c>false</c>.The default is <c>true</c>.</value>
+        </member>
+        <member name="P:AjaxDataControls.GridViewBaseColumn.Visible">
+            <summary>
+            Gets or sets a value indicating whether the column is rendered.
+            </summary>
+            <remarks>
+            Use the <b>Visible</b> property to show or hide <see cref="T:AjaxDataControls.GridViewBaseColumn"/> objects in a <see cref="T:AjaxDataControls.GridView"/> control.
+            </remarks>
+            <value><c>true</c> if visible; otherwise, <c>false</c>. The default value is <c>true</c>.</value>
+        </member>
+        <member name="P:AjaxDataControls.GridViewBaseColumn.HeaderStyle">
+            <summary>
+            Gets or sets the style of the header of the column.
+            </summary>
+            <remarks>
+            The <b>HeaderStyle</b> property governs the appearance of any text displayed in the header item of a type derived from <see cref="T:AjaxDataControls.GridViewBaseColumn"/>.
+            </remarks>
+            <value>A <see cref="T:System.Web.UI.WebControls.TableItemStyle"/> that governs the appearance of the <see cref="T:AjaxDataControls.GridViewBaseColumn"/> header item.</value>
+        </member>
+        <member name="P:AjaxDataControls.GridViewBaseColumn.FooterStyle">
+            <summary>
+            Gets or sets the style of the footer of the column.
+            </summary>
+            <remarks>
+            The <b>FooterStyle</b> property governs the appearance of any text displayed in the footer item of a type derived from <see cref="T:AjaxDataControls.GridViewBaseColumn"/>.
+            </remarks>
+            <value>A <see cref="T:System.Web.UI.WebControls.TableItemStyle"/> that governs the appearance of the <see cref="T:AjaxDataControls.GridViewBaseColumn"/> footer item.</value>
+        </member>
+        <member name="P:AjaxDataControls.GridViewBaseColumn.ItemStyle">
+            <summary>
+            Gets the style of any text-based content displayed by the column.
+            </summary>
+            <remarks>
+            The <b>ItemStyle</b> property governs the appearance of any text data displayed by a type derived from <see cref="T:AjaxDataControls.GridViewBaseColumn"/>. For example, when you bind a <see cref="T:AjaxDataControls.GridViewBoundColumn">BoundColumn</see> control to text data, you can use the ItemStyle property to alter the appearance of the text that is displayed.
+            </remarks>
+            <value>A <see cref="T:System.Web.UI.WebControls.TableItemStyle"/> that governs the appearance of the text displayed in a <see cref="T:AjaxDataControls.GridViewBaseColumn"/>.</value>
+        </member>
+        <member name="P:AjaxDataControls.GridViewBaseColumn.ControlStyle">
+            <summary>
+            Gets or sets the style of the controls contained by the column.
+            </summary>
+            <value>A <see cref="T:System.Web.UI.WebControls.Style"/> that governs the appearance of controls contained by the column.</value>
+        </member>
+        <member name="P:AjaxDataControls.GridViewBaseColumn.ScriptBaseFileName">
+            <summary>
+            Gets the base name of the script file without the extension.
+            </summary>
+            <remarks>
+            This method will return the base name without the .debug.js or .js extension of the associated script file of this column.
+            </remarks>
+            <value>The name of the script file base name.</value>
+        </member>
+        <member name="P:AjaxDataControls.GridViewBaseColumn.Owner">
+            <summary>
+            The owner <see cref="T:AjaxDataControls.GridView"/> of this column.
+            </summary>
+            <value>The owner GridView which holds this column.</value>
+        </member>
+        <member name="P:AjaxDataControls.GridViewBaseColumn.IsTrackingViewState">
+            <summary>
+            When implemented by a class, gets a value indicating whether a server control is tracking its view state changes.
+            </summary>
+            <value></value>
+            <returns>true if a server control is tracking its view state changes; otherwise, false.</returns>
+        </member>
+        <member name="M:AjaxDataControls.GridViewBaseColumn.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:AjaxDataControls.GridViewBaseColumn"/> class.
+            </summary>
+        </member>
+        <member name="M:AjaxDataControls.GridViewBaseColumn.Dispose">
+            <summary>
+            Performs application-defined tasks associated with freeing, releasing, or resetting unmanaged resources.
+            </summary>
+        </member>
+        <member name="M:AjaxDataControls.GridViewBaseColumn.Dispose(System.Boolean)">
+            <summary>
+            Releases unmanaged and - optionally - managed resources
+            </summary>
+            <param name="disposing"><c>true</c> to release both managed and unmanaged resources; <c>false</c> to release only unmanaged resources.</param>
+        </member>
+        <member name="M:AjaxDataControls.GridViewBaseColumn.Finalize">
+            <summary>
+            Releases unmanaged resources and performs other cleanup operations before the
+            <see cref="T:AjaxDataControls.GridViewBaseColumn"/> is reclaimed by garbage collection.
+            </summary>
+        </member>
+        <member name="M:AjaxDataControls.GridViewBaseColumn.RenderHeader(System.Web.UI.WebControls.TableCell)">
+            <summary>
+            Renders the header. Used by the designer to render the column header in the design time.
+            </summary>
+            <remarks>
+            This method should be used to show the rendered data in the Designer for the custom column. You do need this method otherwise.
+            </remarks>
+            <param name="container">The container.</param>
+        </member>
+        <member name="M:AjaxDataControls.GridViewBaseColumn.RenderData(System.Web.UI.WebControls.TableCell,System.String)">
+            <summary>
+            Renders the data column. Used by the designer to render the column data in the design time.
+            </summary>
+            <remarks>
+            This method should be used to show the rendered data in the Designer for the custom column. You do need this method otherwise.
+            </remarks>
+            <param name="container">The container.</param>
+            <param name="data">The data.</param>
+        </member>
+        <member name="M:AjaxDataControls.GridViewBaseColumn.RenderFooter(System.Web.UI.WebControls.TableCell)">
+            <summary>
+            Renders the footer. Used by the designer to render the column footer in the design time.
+            </summary>
+            <remarks>
+            This method should be used to show the rendered data in the Designer for the custom column. You do need this method otherwise.
+            </remarks>
+            <param name="container">The container.</param>
+        </member>
+        <member name="M:AjaxDataControls.GridViewBaseColumn.SetOwner(AjaxDataControls.GridView)">
+            <summary>
+            Sets the owner. Used by the control internally.
+            </summary>
+            <param name="owner">The owner.</param>
+        </member>
+        <member name="M:AjaxDataControls.GridViewBaseColumn.BuildDescriptor">
+            <summary>
+            Builds the descriptor for this column.
+            </summary>
+            <returns>Returns the descriptor embedding all the properties of this column.</returns>
+        </member>
+        <member name="M:AjaxDataControls.GridViewBaseColumn.LoadViewState(System.Object)">
+            <summary>
+            When implemented by a class, loads the server control's previously saved view state to the control.
+            </summary>
+            <param name="state">An <see cref="T:System.Object"/> that contains the saved view state values for the control.</param>
+        </member>
+        <member name="M:AjaxDataControls.GridViewBaseColumn.SaveViewState">
+            <summary>
+            When implemented by a class, saves the changes to a server control's view state to an <see cref="T:System.Object"/>.
+            </summary>
+            <returns>
+            The <see cref="T:System.Object"/> that contains the view state changes.
+            </returns>
+        </member>
+        <member name="M:AjaxDataControls.GridViewBaseColumn.TrackViewState">
+            <summary>
+            When implemented by a class, instructs the server control to track changes to its view state.
+            </summary>
+        </member>
+        <member name="M:AjaxDataControls.GridViewBaseColumn.AddProperty(AjaxDataControls.GridViewColumnScriptDescriptor,System.String,System.String)">
+            <summary>
+            Adds the property if the value is not blank.
+            </summary>
+            <param name="descriptor">The descriptor.</param>
+            <param name="propertyName">Name of the property.</param>
+            <param name="propertyValue">The property value.</param>
+        </member>
+        <member name="M:AjaxDataControls.GridViewBaseColumn.AddEvent(AjaxDataControls.GridViewColumnScriptDescriptor,System.String,System.String)">
+            <summary>
+            Adds theevent if the value is not blank.
+            </summary>
+            <param name="descriptor">The descriptor.</param>
+            <param name="eventName">Name of the event.</param>
+            <param name="eventValue">The event value.</param>
+        </member>
+        <member name="M:AjaxDataControls.GridViewBaseColumn.AddStyle(AjaxDataControls.GridViewColumnScriptDescriptor,System.String,System.Web.UI.WebControls.Style)">
+            <summary>
+            Converts a Server side style object in script descriptor.
+            </summary>
+            <param name="descriptor">The descriptor.</param>
+            <param name="propertyName">Name of the property.</param>
+            <param name="style">The style.</param>
+        </member>
+        <member name="M:AjaxDataControls.GridViewBaseColumn.AddStyle(AjaxDataControls.GridViewColumnScriptDescriptor,System.String,System.Web.UI.WebControls.TableItemStyle)">
+            <summary>
+            Converts a Server side style object in script descriptor.
+            </summary>
+            <param name="descriptor">The descriptor.</param>
+            <param name="propertyName">Name of the property.</param>
+            <param name="style">The style.</param>
+        </member>
+        <member name="M:AjaxDataControls.GridViewBaseColumn.AddImage(System.Web.UI.ScriptComponentDescriptor,System.String,System.String)">
+            <summary>
+            Adds the image url in descriptor.
+            </summary>
+            <param name="descriptor">The descriptor.</param>
+            <param name="propertyName">Name of the property.</param>
+            <param name="imageUrl">The image URL.</param>
+        </member>
+        <member name="P:AjaxDataControls.GridViewBaseColumn.System#Web#UI#IStateManager#IsTrackingViewState">
+            <summary>
+            When implemented by a class, gets a value indicating whether a server control is tracking its view state changes.
+            </summary>
+            <value></value>
+            <returns>true if a server control is tracking its view state changes; otherwise, false.</returns>
+        </member>
+        <member name="M:AjaxDataControls.GridViewBaseColumn.System#Web#UI#IStateManager#LoadViewState(System.Object)">
+            <summary>
+            When implemented by a class, loads the server control's previously saved view state to the control.
+            </summary>
+            <param name="state">An <see cref="T:System.Object"/> that contains the saved view state values for the control.</param>
+        </member>
+        <member name="M:AjaxDataControls.GridViewBaseColumn.System#Web#UI#IStateManager#SaveViewState">
+            <summary>
+            When implemented by a class, saves the changes to a server control's view state to an <see cref="T:System.Object"/>.
+            </summary>
+            <returns>
+            The <see cref="T:System.Object"/> that contains the view state changes.
+            </returns>
+        </member>
+        <member name="M:AjaxDataControls.GridViewBaseColumn.System#Web#UI#IStateManager#TrackViewState">
+            <summary>
+            When implemented by a class, instructs the server control to track changes to its view state.
+            </summary>
+        </member>
+        <member name="T:AjaxDataControls.GridViewColumnCollection">
+            <summary>
+            Represents a collection of <see cref="T:AjaxDataControls.GridViewBaseColumn"/> objects in a <see cref="T:AjaxDataControls.GridView"/> control.
+            </summary>
+        </member>
+        <member name="P:AjaxDataControls.GridViewColumnCollection.Item(System.Int32)">
+            <summary>
+            Gets or sets the <see cref="T:AjaxDataControls.GridViewBaseColumn"/> at the specified index.
+            </summary>
+            <value></value>
+        </member>
+        <member name="M:AjaxDataControls.GridViewColumnCollection.Add(AjaxDataControls.GridViewBaseColumn)">
+            <summary>
+            Adds a column.
+            </summary>
+            <param name="value">The value.</param>
+            <returns></returns>
+        </member>
+        <member name="M:AjaxDataControls.GridViewColumnCollection.Contains(AjaxDataControls.GridViewBaseColumn)">
+            <summary>
+            Determines whether it contains the specified column.
+            </summary>
+            <param name="value">The value.</param>
+            <returns>
+            	<c>true</c> if [contains] [the specified value]; otherwise, <c>false</c>.
+            </returns>
+        </member>
+        <member name="M:AjaxDataControls.GridViewColumnCollection.IndexOf(AjaxDataControls.GridViewBaseColumn)">
+            <summary>
+            Returns the Indexes of the specified column.
+            </summary>
+            <param name="value">The value.</param>
+            <returns></returns>
+        </member>
+        <member name="M:AjaxDataControls.GridViewColumnCollection.Insert(System.Int32,AjaxDataControls.GridViewBaseColumn)">
+            <summary>
+            Inserts the columns in specified index.
+            </summary>
+            <param name="index">The index.</param>
+            <param name="value">The value.</param>
+        </member>
+        <member name="M:AjaxDataControls.GridViewColumnCollection.Remove(AjaxDataControls.GridViewBaseColumn)">
+            <summary>
+            Removes the specified column.
+            </summary>
+            <param name="value">The value.</param>
+        </member>
+        <member name="M:AjaxDataControls.GridViewColumnCollection.CopyTo(AjaxDataControls.GridViewBaseColumn[],System.Int32)">
+            <summary>
+            Copies the column to the specified array.
+            </summary>
+            <param name="array">The array.</param>
+            <param name="index">The index.</param>
+        </member>
+        <member name="M:AjaxDataControls.GridViewColumnCollection.GetEnumerator">
+            <summary>
+            Returns an enumerator that iterates through the collection.
+            </summary>
+            <returns>
+            A <see cref="T:System.Collections.Generic.IEnumerator`1"/> that can be used to iterate through the collection.
+            </returns>
+        </member>
+        <member name="P:AjaxDataControls.GridViewColumnCollection.System#Web#UI#IStateManager#IsTrackingViewState">
+            <summary>
+            When implemented by a class, gets a value indicating whether a server control is tracking its view state changes.
+            </summary>
+            <value></value>
+            <returns>true if a server control is tracking its view state changes; otherwise, false.</returns>
+        </member>
+        <member name="M:AjaxDataControls.GridViewColumnCollection.System#Web#UI#IStateManager#LoadViewState(System.Object)">
+            <summary>
+            When implemented by a class, loads the server control's previously saved view state to the control.
+            </summary>
+            <param name="state">An <see cref="T:System.Object"/> that contains the saved view state values for the control.</param>
+        </member>
+        <member name="M:AjaxDataControls.GridViewColumnCollection.System#Web#UI#IStateManager#SaveViewState">
+            <summary>
+            When implemented by a class, saves the changes to a server control's view state to an <see cref="T:System.Object"/>.
+            </summary>
+            <returns>
+            The <see cref="T:System.Object"/> that contains the view state changes.
+            </returns>
+        </member>
+        <member name="M:AjaxDataControls.GridViewColumnCollection.System#Web#UI#IStateManager#TrackViewState">
+            <summary>
+            When implemented by a class, instructs the server control to track changes to its view state.
+            </summary>
+        </member>
+        <member name="T:AjaxDataControls.GridViewRadioButtonColumn">
+            <summary>
+            Represents a selecting option that is displayed as a radio button in a <see cref="T:AjaxDataControls.GridView"/> control.
+            </summary>
+            <seealso cref="T:AjaxDataControls.GridView"/>
+            <seealso cref="T:AjaxDataControls.GridViewBoundColumn"/>
+            <seealso cref="T:AjaxDataControls.GridViewButtonColumn"/>
+            <seealso cref="T:AjaxDataControls.GridViewCommandColumn"/>
+            <seealso cref="T:AjaxDataControls.GridViewHyperLinkColumn"/>
+            <seealso cref="T:AjaxDataControls.GridViewImageColumn"/>
+            <seealso cref="T:AjaxDataControls.GridViewTemplateColumn"/>
+        </member>
+        <member name="P:AjaxDataControls.GridViewRadioButtonColumn.GroupName">
+            <summary>
+            Gets or sets the group to which radio button belongs to <see cref="T:AjaxDataControls.GridViewRadioButtonColumn"/>.
+            </summary>
+        </member>
+        <member name="P:AjaxDataControls.GridViewRadioButtonColumn.Text">
+            <summary>
+            Gets or sets the caption to display next to each radio button in a <see cref="T:AjaxDataControls.GridViewRadioButtonColumn"/> object.
+            </summary>
+            <remarks>
+            The <b>Text</b> property is used to display a caption next to each check box in a <see cref="T:AjaxDataControls.GridViewRadioButtonColumn"/> object. If the <b>Text</b> property is set to an empty string, no caption is displayed.
+            </remarks>
+            <value>The caption displayed next to each check box in the RadioButtonField. The default is an empty string ("").</value>
+        </member>
+        <member name="P:AjaxDataControls.GridViewRadioButtonColumn.SortField">
+            <summary>
+            The Property is not implemented for GridViewRadioButtonColumn.
+            </summary>
+            <value>
+            Not Implemented.
+            </value>
+        </member>
+        <member name="P:AjaxDataControls.GridViewRadioButtonColumn.ScriptBaseFileName">
+            <summary>
+            Gets the base name of the script file without the extension.
+            </summary>
+            <value>The name of the script file base name.</value>
+            <remarks>
+            This method will return the base name without the .debug.js or .js extension of the associated script file of this column.
+            </remarks>
+        </member>
+        <member name="M:AjaxDataControls.GridViewRadioButtonColumn.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:AjaxDataControls.GridViewRadioButtonColumn"/> class.
+            </summary>
+        </member>
+        <member name="M:AjaxDataControls.GridViewRadioButtonColumn.RenderData(System.Web.UI.WebControls.TableCell,System.String)">
+            <summary>
+            Renders the data column. Used by the designer to render the column data in the design time.
+            </summary>
+            <remarks>
+            This method should be used to show the rendered data in the Designer for the custom column. You do need this method otherwise.
+            </remarks>
+            <param name="container">The container.</param>
+            <param name="data">The data.</param>
+        </member>
+        <member name="M:AjaxDataControls.GridViewRadioButtonColumn.BuildDescriptor">
+            <summary>
+            Builds the descriptor for this column.
+            </summary>
+            <returns>
+            Returns the descriptor embedding all the properties of this column.
+            </returns>
+        </member>
+        <member name="M:AjaxDataControls.GridViewRadioButtonColumn.LoadViewState(System.Object)">
+            <summary>
+            When implemented by a class, loads the server control's previously saved view state to the control.
+            </summary>
+            <param name="state">An <see cref="T:System.Object"/> that contains the saved view state values for the control.</param>
+        </member>
+        <member name="M:AjaxDataControls.GridViewRadioButtonColumn.SaveViewState">
+            <summary>
+            When implemented by a class, saves the changes to a server control's view state to an <see cref="T:System.Object"/>.
+            </summary>
+            <returns>
+            The <see cref="T:System.Object"/> that contains the view state changes.
+            </returns>
+        </member>
+        <member name="T:AjaxDataControls.GridViewSortOrder">
+            <summary>
+            Specifies the direction in which to sort the GridView Rows.
+            </summary>
+        </member>
+        <member name="F:AjaxDataControls.GridViewSortOrder.None">
+            <summary>
+            Do not sort.
+            </summary>
+        </member>
+        <member name="F:AjaxDataControls.GridViewSortOrder.Ascending">
+            <summary>
+            Sort from smallest to largest. For example, from A to Z.
+            </summary>
+        </member>
+        <member name="F:AjaxDataControls.GridViewSortOrder.Descending">
+            <summary>
+            Sort from largest to smallest. For example, from Z to A.
+            </summary>
+        </member>
+        <member name="T:AjaxDataControls.GridView">
+            <summary>
+            Displays the values of a data source in a table where each column represents a column and each row represents a record. The GridView control allows you to select, sort, and edit these items.
+            </summary>
+            <seealso cref="T:AjaxDataControls.Repeater">Repeater Control</seealso>
+            <seealso cref="T:AjaxDataControls.DataList">DataList Control</seealso>
+            <seealso cref="T:AjaxDataControls.Pager">Pager Control</seealso>>
+        </member>
+        <member name="P:AjaxDataControls.GridView.CellPadding">
+            <summary>
+            Gets or sets the amount of space between the contents of a cell and the cell's border.
+            </summary>
+            <value>The amount of space (in pixels) between the contents of a cell and the cell's border. The default value is -1, which indicates that this property is not set.</value>
+        </member>
+        <member name="P:AjaxDataControls.GridView.CellSpacing">
+            <summary>
+            Gets or sets the amount of space between cells.
+            </summary>
+            <value>The amount of space (in pixels) between cells. The default value is 0.</value>
+        </member>
+        <member name="P:AjaxDataControls.GridView.HorizontalAlign">
+            <summary>
+            Gets or sets the horizontal alignment of the GridView control within its container.
+            </summary>
+            <value>The horizontal align. The default value is NotSet.</value>
+        </member>
+        <member name="P:AjaxDataControls.GridView.AutoGenerateDeleteButton">
+            <summary>
+            Gets or sets a value indicating whether a <see cref="T:AjaxDataControls.GridViewCommandColumn"/> column with a Delete button for each data row is automatically added to a GridView control.
+            </summary>
+            <value>
+            <c>true</c> to automatically add a <see cref="T:AjaxDataControls.GridViewCommandColumn"/> with a Delete button for each data row; otherwise, <c>false</c>. The default is <c>false</c>.
+            </value>
+        </member>
+        <member name="P:AjaxDataControls.GridView.AutoGenerateEditButton">
+            <summary>
+            Gets or sets a value indicating whether a <see cref="T:AjaxDataControls.GridViewCommandColumn"/> column with a Edit button for each data row is automatically added to a GridView control.
+            </summary>
+            <value>
+            <c>true</c> to automatically add a <see cref="T:AjaxDataControls.GridViewCommandColumn"/> with a Edit button for each data row; otherwise, <c>false</c>. The default is <c>false</c>.
+            </value>
+        </member>
+        <member name="P:AjaxDataControls.GridView.AutoGenerateSelectButton">
+            <summary>
+            Gets or sets a value indicating whether a <see cref="T:AjaxDataControls.GridViewCommandColumn"/> column with a Select button for each data row is automatically added to a GridView control.
+            </summary>
+            <value>
+            <c>true</c> to automatically add a <see cref="T:AjaxDataControls.GridViewCommandColumn"/> with a Select button for each data row; otherwise, <c>false</c>. The default is <c>false</c>.
+            </value>
+        </member>
+        <member name="P:AjaxDataControls.GridView.DataKeyName">
+            <summary>
+            Gets or sets an the name of the primary key field for the row displayed in a <b>GridView</b> control.
+            </summary>
+            <remarks>
+            Use the <b>DataKeyName</b> property to specify the field that represent the primary key of the data source.
+            </remarks>
+            <value>The name of the key field in the data source specified by DataSource.</value>
+        </member>
+        <member name="P:AjaxDataControls.GridView.EmptyDataTemplate">
+            <summary>
+            Gets or sets the user-defined content for the empty data row rendered when a GridView control is bound to a data source that does not contain any records.
+            </summary>
+            <remarks>
+            The empty data row is displayed in a GridView control when the data source that is bound to the control does not contain any records. You can define your own custom user interface (UI) for the empty data row by using the <b>EmptyDataTemplate</b> property. To specify a custom template for the empty data row, first place &lt;EmptyDataTemplate&gt; tags between the opening and closing tags of the GridView control. You can then list the contents of the template between the opening and closing &lt;EmptyDataTemplate&gt; tags. To control the style of the empty data row, use the <see cref="P:AjaxDataControls.GridView.EmptyDataRowStyle"/> property. Alternatively, you can use the built-in UI for the empty data row by setting the <see cref="P:AjaxDataControls.GridView.EmptyDataText"/> property instead of this property.
+            </remarks>
+            <value>A <see cref="T:System.Web.UI.ITemplate"/> that contains the custom content for the empty data row. The default value is a null reference (<b>Nothing</b> in Visual Basic), which indicates that this property is not set.</value>
+        </member>
+        <member name="P:AjaxDataControls.GridView.EmptyDataText">
+            <summary>
+            Gets or sets the text to display in the empty data row rendered when a GridView control is bound to a data source that does not contain any records.
+            </summary>
+            <remarks>
+            The empty data row is displayed in a GridView control when the data source that is bound to the control does not contain any records. Use the <b>EmptyDataText</b> property to specify the text to display in the empty data row. Alternatively, you can define your own custom user interface (UI) for the empty data row by setting the <see cref="P:AjaxDataControls.GridView.EmptyDataTemplate"/> property instead of this property.
+            </remarks>
+            <value>The text to display in the empty data row. The default is an empty string (""), which indicates that this property is not set.</value>
+        </member>
+        <member name="P:AjaxDataControls.GridView.EditIndex">
+            <summary>
+            Gets or sets the index of the row to edit.
+            </summary>
+            <remarks>
+            Use the <b>EditIndex</b> property to programmatically specify or determine which row in a <b>GridView</b> control to edit. When this property is set to the index of a row in the control, that row enters edit mode. In edit mode, each column field in the row that is not read-only displays the appropriate input control for the field's data type, such as a TextBox control. This allows the user to modify the field's value. To exit edit mode, set this property to -1.
+            </remarks>
+            <value>The zero-based index of the row to edit. The default is -1, which indicates that no row is being edited.</value>
+        </member>
+        <member name="P:AjaxDataControls.GridView.SelectedIndex">
+            <summary>
+            Gets or sets the index of the selected row in the <b>GridView</b> control.
+            </summary>
+            <remarks>
+            Use the <b>SelectedIndex</b> property to determine the index of the currently selected row in a GridView control. You can also use this property to programmatically select a row in the control. To clear the selection of a row, set this property to -1. The appearance of the currently selected row can be customized by using the <see cref="P:AjaxDataControls.GridView.SelectedRowStyle"/> property. To access the currently selected row, use the SelectedRow property of the client side.
+            </remarks>
+            <value>The zero-based index of the selected row in a GridView control. The default is -1, which indicates that no row is currently selected.</value>
+        </member>
+        <member name="P:AjaxDataControls.GridView.SortColumn">
+            <summary>
+            Gets or sets the sort column which is associated to sort the data source.
+            </summary>
+            <value>The column that the data source is currently sorted. The default is an empty string (""), which indicates that this property is not set.</value>
+        </member>
+        <member name="P:AjaxDataControls.GridView.SortOrder">
+            <summary>
+            Gets or sets the sort order of the data source.
+            </summary>
+            <remarks>
+            Use the SortOrder property to determine whether the <see cref="P:AjaxDataControls.GridView.SortColumn"/> being sorted is sorted in ascending or descending order.
+            </remarks>
+            <value>One of the <see cref="T:AjaxDataControls.GridViewSortOrder"/> values. The default is <b>GridViewSortOrder.Ascending</b>.</value>
+        </member>
+        <member name="P:AjaxDataControls.GridView.SortOrderAscendingImageUrl">
+            <summary>
+            Gets or sets the sort order ascending image URL.
+            </summary>
+            <value>The image URL which indicates the column is currently sorted in ascending order. The default is an empty string (""), which indicates that this property is not set.</value>
+        </member>
+        <member name="P:AjaxDataControls.GridView.SortOrderDescendingImageUrl">
+            <summary>
+            Gets or sets the sort order descending image URL.
+            </summary>
+            <value>The image URL which indicates the column is currently sorted in descending order. The default is an empty string (""), which indicates that this property is not set.</value>
+        </member>
+        <member name="P:AjaxDataControls.GridView.DragOpacity">
+            <summary>
+            Gets or sets the drag opacity of the column that is being dragged.
+            </summary>
+            <value>The drag opacity. The default is 70.</value>
+        </member>
+        <member name="P:AjaxDataControls.GridView.Animate">
+            <summary>
+            Gets or sets a value indicating whether this <b>GridView</b> is animated when binding data.
+            </summary>
+            <remarks>
+            The Asp.net Ajax Framework Glitz script(s) needs to be present in the page.
+            </remarks>
+            <value><c>true</c> if animate; otherwise, <c>false</c>.</value>
+        </member>
+        <member name="P:AjaxDataControls.GridView.AnimationDuration">
+            <summary>
+            Gets or sets the animation duration in seconds.
+            </summary>
+            <value>The animation duration. The default value is 0.3 seconds</value>
+        </member>
+        <member name="P:AjaxDataControls.GridView.AnimationFps">
+            <summary>
+            Gets or sets the animation frames per second.
+            </summary>
+            <value>The animation frame per second. The default value is 25.</value>
+        </member>
+        <member name="P:AjaxDataControls.GridView.ShowHeader">
+            <summary>
+            Gets or sets a value indicating whether header row is shown.
+            </summary>
+            <remarks>
+            Use the <b>ShowHeader</b> property to specify whether a <b>GridView</b> control displays the header row. To control the appearance of the header row, use the <see cref="P:AjaxDataControls.GridView.HeaderStyle"/> property.
+            </remarks>
+            <value><c>true</c> to display the header row; otherwise, <c>false</c>. The default is <c>true</c>.</value>
+        </member>
+        <member name="P:AjaxDataControls.GridView.ShowFooter">
+            <summary>
+            Gets or sets a value indicating whether footer row is shown.
+            </summary>
+            <remarks>
+            Use the <b>ShowFooter</b> property to specify whether a <b>GridView</b> control displays the footer row. To control the appearance of the footer row, use the <see cref="P:AjaxDataControls.GridView.FooterStyle"/> property.
+            </remarks>
+            <value><c>true</c> to display the footer row; otherwise, <c>false</c>. The default is <c>false</c>.</value>
+        </member>
+        <member name="P:AjaxDataControls.GridView.HeaderStyle">
+            <summary>
+            Gets a reference to the <see cref="T:System.Web.UI.WebControls.TableItemStyle" /> object that allows you to set the appearance of the header row in a GridView control.
+            </summary>
+            <value>A reference to the <b>TableItemStyle</b> that represents the style of the header row in a <b>GridView</b> control.</value>
+        </member>
+        <member name="P:AjaxDataControls.GridView.RowStyle">
+            <summary>
+            Gets a reference to the <see cref="T:System.Web.UI.WebControls.TableItemStyle" /> object that allows you to set the appearance of the data rows in a GridView control.
+            </summary>
+            <value>A reference to the <b>TableItemStyle</b> that represents the style of the data rows in a <b>GridView</b> control.</value>
+        </member>
+        <member name="P:AjaxDataControls.GridView.AlternatingRowStyle">
+            <summary>
+            Gets a reference to the <see cref="T:System.Web.UI.WebControls.TableItemStyle" /> object that allows you to set the appearance of alternating data rows in a GridView control.
+            </summary>
+            <value>A reference to the <b>TableItemStyle</b> that represents the style of alternating data rows in a <b>GridView</b> control.</value>
+        </member>
+        <member name="P:AjaxDataControls.GridView.FooterStyle">
+            <summary>
+            Gets a reference to the <see cref="T:System.Web.UI.WebControls.TableItemStyle" /> object that allows you to set the appearance of the footer row in a GridView control.
+            </summary>
+            <value>A reference to the <b>TableItemStyle</b> that represents the style of the footer row in a <b>GridView</b> control.</value>
+        </member>
+        <member name="P:AjaxDataControls.GridView.SelectedRowStyle">
+            <summary>
+            Gets a reference to the <see cref="T:System.Web.UI.WebControls.TableItemStyle" /> object that allows you to set the appearance of the selected row in a GridView control.
+            </summary>
+            <value>A reference to the <b>TableItemStyle</b> that represents the style of the selected row in a <b>GridView</b> control.</value>
+        </member>
+        <member name="P:AjaxDataControls.GridView.EditRowStyle">
+            <summary>
+            Gets a reference to the <see cref="T:System.Web.UI.WebControls.TableItemStyle" /> object that allows you to set the appearance of the row selected for editing in a GridView control.
+            </summary>
+            <value>A reference to the <b>TableItemStyle</b> that represents the style of the row being edited in a <b>GridView</b> control.</value>
+        </member>
+        <member name="P:AjaxDataControls.GridView.EmptyDataRowStyle">
+            <summary>
+            Gets a reference to the <see cref="T:System.Web.UI.WebControls.TableItemStyle" /> object that allows you to set the appearance of the empty data row rendered when a GridView control is bound to a data source that does not contain any records.
+            </summary>
+            <value>A reference to the <b>TableItemStyle</b> that allows you to set the appearance of the null row.</value>
+        </member>
+        <member name="P:AjaxDataControls.GridView.Columns">
+            <summary>
+            Gets a collection of <see cref="T:AjaxDataControls.GridViewBaseColumn"/> objects that represent the columns in a GridView control.
+            </summary>
+            <remarks>
+            The Columns property (collection) is used to store all the explicitly declared columns that get rendered in the GridView control. You can also use the Columns collection to programmatically manage the collection of column fields.
+            </remarks>
+            <seealso cref="T:AjaxDataControls.GridViewBoundColumn"/>
+            <seealso cref="T:AjaxDataControls.GridViewButtonColumn"/>
+            <seealso cref="T:AjaxDataControls.GridViewCheckBoxColumn"/>
+            <seealso cref="T:AjaxDataControls.GridViewCommandColumn"/>
+            <seealso cref="T:AjaxDataControls.GridViewHyperLinkColumn"/>
+            <seealso cref="T:AjaxDataControls.GridViewImageColumn"/>
+            <seealso cref="T:AjaxDataControls.GridViewTemplateColumn"/>
+            <value>A <see cref="T:AjaxDataControls.GridViewColumnCollection"/> that contains all the columns in the GridView control.</value>
+        </member>
+        <member name="P:AjaxDataControls.GridView.ColumnsLoadedFromProfileEvent">
+            <summary>
+            Occurs after the columns are loaded from Ajax Profile Service.
+            </summary>
+            <value>The columns loaded from profile event.</value>
+        </member>
+        <member name="P:AjaxDataControls.GridView.ColumnsSavedToProfileEvent">
+            <summary>
+            Occurs after the columns are saved to Ajax Profile Service.
+            </summary>
+            <value>The columns saved to profile event.</value>
+        </member>
+        <member name="P:AjaxDataControls.GridView.ColumnDragStartEvent">
+            <summary>
+            Occurs when user starts dragging of an column in the GridView control.
+            </summary>
+            <value>The column drag start event.</value>
+        </member>
+        <member name="P:AjaxDataControls.GridView.ColumnDroppedEvent">
+            <summary>
+            Occurs when user drops a column in the GridView control.
+            </summary>
+            <value>The column dropped event.</value>
+        </member>
+        <member name="P:AjaxDataControls.GridView.SortCommandEvent">
+            <summary>
+            Occurs when the a Column header is clicked to change the Sort column or order.
+            </summary>
+            <value>The sort command event.</value>
+        </member>
+        <member name="P:AjaxDataControls.GridView.SelectedIndexChangedEvent">
+            <summary>
+            Occurs on the client side when a different row is selected GridView through select command.
+            </summary>
+            <value>The selected index changed event.</value>
+        </member>
+        <member name="P:AjaxDataControls.GridView.EditCommandEvent">
+            <summary>
+            Occurs on the client side when the Edit button is clicked for a row in the GridView control.
+            </summary>
+            <value>The edit command event.</value>
+        </member>
+        <member name="P:AjaxDataControls.GridView.UpdateCommandEvent">
+            <summary>
+            Occurs on the client side when the Update button is clicked for a row in the GridView control.
+            </summary>
+            <value>The update command event.</value>
+        </member>
+        <member name="P:AjaxDataControls.GridView.CancelCommandEvent">
+            <summary>
+            Occurs on the client side when the Cancel button is clicked for a row in the GridView control.
+            </summary>
+            <value>The cancel command event.</value>
+        </member>
+        <member name="P:AjaxDataControls.GridView.DeleteCommandEvent">
+            <summary>
+            Occurs on the client side when the Delete button is clicked for a row in the GridView control.
+            </summary>
+            <value>The delete command event.</value>
+        </member>
+        <member name="P:AjaxDataControls.GridView.RowCommandEvent">
+            <summary>
+            Occurs on the client side when any button is clicked in the GridView control which has associated commandName.
+            </summary>
+            <value>The row command event.</value>
+        </member>
+        <member name="P:AjaxDataControls.GridView.RowCreatedEvent">
+            <summary>
+            Occurs on the client side when a row in the GridView control is created.
+            </summary>
+            <value>The row created event.</value>
+        </member>
+        <member name="P:AjaxDataControls.GridView.RowDataBoundEvent">
+            <summary>
+            Occurs on the client side when a row in the GridVie control is going to be data-bound.
+            </summary>
+            <value>The row data bound event.</value>
+        </member>
+        <member name="P:AjaxDataControls.GridView.TagKey">
+            <summary>
+            Gets the <see cref="T:System.Web.UI.HtmlTextWriterTag"/> value that corresponds to this Web server control. This property is used primarily by control developers.
+            </summary>
+            <value></value>
+            <returns>One of the <see cref="T:System.Web.UI.HtmlTextWriterTag"/> enumeration values.</returns>
+        </member>
+        <member name="M:AjaxDataControls.GridView.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:AjaxDataControls.GridView"/> class.
+            </summary>
+        </member>
+        <member name="M:AjaxDataControls.GridView.CreateControlStyle">
+            <summary>
+            Creates the style object that is used internally by the <see cref="T:System.Web.UI.WebControls.WebControl"/> class to implement all style related properties. This method is used primarily by control developers.
+            </summary>
+            <returns>
+            A <see cref="T:System.Web.UI.WebControls.Style"/> that is used to implement all style-related properties of the control.
+            </returns>
+        </member>
+        <member name="M:AjaxDataControls.GridView.GetScriptDescriptors">
+            <summary>
+            Gets the script descriptors.
+            </summary>
+            <returns>Returns the ScriptDescriptors which are associated with this control</returns>
+        </member>
+        <member name="M:AjaxDataControls.GridView.GetScriptReferences">
+            <summary>
+            Gets the script references.
+            </summary>
+            <returns>Returns the ScriptReferences which are associated with this control</returns>
+        </member>
+        <member name="M:AjaxDataControls.GridView.LoadViewState(System.Object)">
+            <summary>
+            Restores view-state information from a previous request that was saved with the <see cref="M:System.Web.UI.WebControls.WebControl.SaveViewState"/> method.
+            </summary>
+            <param name="savedState">An object that represents the control state to restore.</param>
+        </member>
+        <member name="M:AjaxDataControls.GridView.SaveViewState">
+            <summary>
+            Saves any state that was modified after the <see cref="M:System.Web.UI.WebControls.Style.TrackViewState"/> method was invoked.
+            </summary>
+            <returns>
+            An object that contains the current view state of the control; otherwise, if there is no view state associated with the control, null.
+            </returns>
+        </member>
+        <member name="M:AjaxDataControls.GridView.TrackViewState">
+            <summary>
+            Causes the control to track changes to its view state so they can be stored in the object's <see cref="P:System.Web.UI.Control.ViewState"/> property.
+            </summary>
+        </member>
+        <member name="T:AjaxDataControls.GridViewCheckBoxColumn">
+            <summary>
+            Represents a Boolean field that is displayed as a check box in a <see cref="T:AjaxDataControls.GridView"/> control. 
+            </summary>
+            <seealso cref="T:AjaxDataControls.GridView"/>
+            <seealso cref="T:AjaxDataControls.GridViewBoundColumn"/>
+            <seealso cref="T:AjaxDataControls.GridViewButtonColumn"/>
+            <seealso cref="T:AjaxDataControls.GridViewCommandColumn"/>
+            <seealso cref="T:AjaxDataControls.GridViewHyperLinkColumn"/>
+            <seealso cref="T:AjaxDataControls.GridViewImageColumn"/>
+            <seealso cref="T:AjaxDataControls.GridViewTemplateColumn"/>
+        </member>
+        <member name="P:AjaxDataControls.GridViewCheckBoxColumn.DataField">
+            <summary>
+            Gets or sets the name of the data field to bind to the <see cref="T:AjaxDataControls.GridViewCheckBoxColumn"/> object.
+            </summary>
+            <remarks>
+            Use the <b>DataField</b> property to specify the name of the data field to bind to the <see cref="T:AjaxDataControls.GridViewCheckBoxColumn"/> object.
+            </remarks>
+            <value>The name of the data field to bind to the CheckBoxField. The default is an empty string (""), which indicates that this property is not set.</value>
+        </member>
+        <member name="P:AjaxDataControls.GridViewCheckBoxColumn.ReadOnly">
+            <summary>
+            Gets or sets a value indicating whether the value of the field can be modified in edit mode.
+            </summary>
+            <value><c>true</c> to prevent the value of the field from being modified in edit mode; otherwise, <c>false</c>. The default is <c>false</c>.</value>
+        </member>
+        <member name="P:AjaxDataControls.GridViewCheckBoxColumn.Text">
+            <summary>
+            Gets or sets the caption to display next to each check box in a <see cref="T:AjaxDataControls.GridViewCheckBoxColumn"/> object.
+            </summary>
+            <remarks>
+            The <b>Text</b> property is used to display a caption next to each check box in a <see cref="T:AjaxDataControls.GridViewCheckBoxColumn"/> object. If the <b>Text</b> property is set to an empty string, no caption is displayed.
+            </remarks>
+            <value>The caption displayed next to each check box in the CheckBoxField. The default is an empty string ("").</value>
+        </member>
+        <member name="P:AjaxDataControls.GridViewCheckBoxColumn.ScriptBaseFileName">
+            <summary>
+            Gets the base name of the script file without the extension.
+            </summary>
+            <value>The name of the script file base name.</value>
+            <remarks>
+            This method will return the base name without the .debug.js or .js extension of the associated script file of this column.
+            </remarks>
+        </member>
+        <member name="M:AjaxDataControls.GridViewCheckBoxColumn.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:AjaxDataControls.GridViewCheckBoxColumn"/> class.
+            </summary>
+        </member>
+        <member name="M:AjaxDataControls.GridViewCheckBoxColumn.RenderData(System.Web.UI.WebControls.TableCell,System.String)">
+            <summary>
+            Renders the data column. Used by the designer to render the column data in the design time.
+            </summary>
+            <remarks>
+            This method should be used to show the rendered data in the Designer for the custom column. You do need this method otherwise.
+            </remarks>
+            <param name="container">The container.</param>
+            <param name="data">The data.</param>
+        </member>
+        <member name="M:AjaxDataControls.GridViewCheckBoxColumn.BuildDescriptor">
+            <summary>
+            Builds the descriptor for this column.
+            </summary>
+            <returns>
+            Returns the descriptor embedding all the properties of this column.
+            </returns>
+        </member>
+        <member name="M:AjaxDataControls.GridViewCheckBoxColumn.LoadViewState(System.Object)">
+            <summary>
+            When implemented by a class, loads the server control's previously saved view state to the control.
+            </summary>
+            <param name="state">An <see cref="T:System.Object"/> that contains the saved view state values for the control.</param>
+        </member>
+        <member name="M:AjaxDataControls.GridViewCheckBoxColumn.SaveViewState">
+            <summary>
+            When implemented by a class, saves the changes to a server control's view state to an <see cref="T:System.Object"/>.
+            </summary>
+            <returns>
+            The <see cref="T:System.Object"/> that contains the view state changes.
+            </returns>
+        </member>
+        <member name="T:AjaxDataControls.GridViewImageColumn">
+            <summary>
+            Represents a column that is displayed as an image in a <see cref="T:AjaxDataControls.GridView"/> control.
+            </summary>
+            <seealso cref="T:AjaxDataControls.GridViewBoundColumn"/>
+            <seealso cref="T:AjaxDataControls.GridViewButtonColumn"/>
+            <seealso cref="T:AjaxDataControls.GridViewCheckBoxColumn"/>
+            <seealso cref="T:AjaxDataControls.GridViewCommandColumn"/>
+            <seealso cref="T:AjaxDataControls.GridViewHyperLinkColumn"/>
+            <seealso cref="T:AjaxDataControls.GridViewTemplateColumn"/>
+        </member>
+        <member name="P:AjaxDataControls.GridViewImageColumn.AlternateText">
+            <summary>
+            Gets or sets the alternate text displayed for an image in the <see cref="T:AjaxDataControls.GridViewImageColumn"/> object.
+            </summary>
+            <remarks>
+            Use the <b>AlternateText</b> property to specify the alternate text for the images displayed in an <see cref="T:AjaxDataControls.GridViewImageColumn"/> object. The alternate text is displayed when an image cannot be loaded or is unavailable. Browsers that support the ToolTips feature also display this text as a ToolTip.
+            </remarks>
+            <value>The alternate text for an image displayed in the <see cref="T:AjaxDataControls.GridViewImageColumn"/> object. The default is an empty string (""), which indicates that this property is not set.</value>
+        </member>
+        <member name="P:AjaxDataControls.GridViewImageColumn.DataAlternateTextField">
+            <summary>
+            Gets or sets the name of the field from the data source that contains the values to bind to the AlternateText property of each image in an <see cref="T:AjaxDataControls.GridViewImageColumn"/> object.
+            </summary>
+            <remarks>
+            Use the <b>DataAlternateTextField</b> property to specify the name of the field from the data source that contains the values to bind to the <b>AlternateText</b> property of each image in an <see cref="T:AjaxDataControls.GridViewImageColumn"/> object. This enables you to have different alternate text for each image displayed. The alternate text is displayed when an image cannot be loaded or is unavailable. Browsers that support the ToolTips feature also display this text as a ToolTip.
+            </remarks>
+            <value>The name of the field to bind the <b>AlternateText</b> property of each image in an ImageField object.</value>
+        </member>
+        <member name="P:AjaxDataControls.GridViewImageColumn.DataAlternateTextFormatString">
+            <summary>
+            Gets or sets the string that specifies the format in which the alternate text for each image in an <see cref="T:AjaxDataControls.GridViewImageColumn"/> object is rendered.
+            </summary>
+            <remarks>
+            Use the <b>DataAlternateTextFormatString</b> property to specify a custom format for the alternate text values of the images displayed in an <see cref="T:AjaxDataControls.GridViewImageColumn"/> object.
+            </remarks>
+            <value>A string that specifies the format in which the alternate text for each image in an <see cref="T:AjaxDataControls.GridViewImageColumn"/> object is rendered. The default is an empty string (""), which indicates that now special formatting is applied to the alternate text.</value>
+        </member>
+        <member name="P:AjaxDataControls.GridViewImageColumn.DataImageUrlField">
+            <summary>
+            Gets or sets the name of the field from the data source that contains the values to bind to the ImageUrl property of each image in an <see cref="T:AjaxDataControls.GridViewImageColumn"/> object.
+            </summary>
+            <remarks>
+            Use the <b>DataImageUrlField</b> property to specify the name of the field to bind to the <b>ImageUrl</b> property of each image in an <see cref="T:AjaxDataControls.GridViewImageColumn"/> object. The specified field must contain the URLs for the images to display in the <see cref="T:AjaxDataControls.GridViewImageColumn"/> object. You can optionally format the URL values by setting the <see cref="P:AjaxDataControls.GridViewImageColumn.DataImageUrlFormatString"/> property.
+            </remarks>
+            <value>The name of the field to bind to the <b>ImageUrl</b> property of each image in an <see cref="T:AjaxDataControls.GridViewImageColumn"/> object.</value>
+        </member>
+        <member name="P:AjaxDataControls.GridViewImageColumn.DataImageUrlFormatString">
+            <summary>
+            Gets or sets the string that specifies the format in which the URL for each image in an <see cref="T:AjaxDataControls.GridViewImageColumn"/> object is rendered.
+            </summary>
+            <remarks>
+            Use the <b>DataImageUrlFormatString</b> property to specify a custom format for the URLs of the images displayed in an <see cref="T:AjaxDataControls.GridViewImageColumn"/> object. This is useful when you need to generate a URL, such as when the <see cref="T:AjaxDataControls.GridViewImageColumn"/> object simply contains the file name. If the DataImageUrlFormatString property is not set, the URL values do not get any special formatting.
+            </remarks>
+            <value>A string that specifies the format in which the URL for each image in an <see cref="T:AjaxDataControls.GridViewImageColumn"/> object is rendered. The default is the empty string ("") , which indicates that no special formatting is applied to the URLs.</value>
+        </member>
+        <member name="P:AjaxDataControls.GridViewImageColumn.NullDisplayText">
+            <summary>
+            Gets or sets the text to display in an <see cref="T:AjaxDataControls.GridViewImageColumn"/> object when the value of the field specified by the DataImageUrlField property is a null reference (Nothing in Visual Basic).
+            </summary>
+            <remarks>
+            When the value of the field specified by the <see cref="P:AjaxDataControls.GridViewImageColumn.DataImageUrlField"/> property is a null reference (<b>Nothing</b> in Visual Basic), an image cannot be displayed in an <see cref="T:AjaxDataControls.GridViewImageColumn"/> object. Use the <b>NullDisplayText</b> property to specify the text to display in the image's place. The text usually indicates that the normal image is not available or cannot be found.
+            </remarks>
+            <value>The text to display when the value of a field is a null reference (<b>Nothing</b> in Visual Basic). The default is an empty string (""), which indicates that this property is not set.</value>
+        </member>
+        <member name="P:AjaxDataControls.GridViewImageColumn.NullImageUrl">
+            <summary>
+            Gets or sets the URL to an alternate image displayed in an <see cref="T:AjaxDataControls.GridViewImageColumn"/> object when the value of the field specified by the DataImageUrlField property is a null reference (Nothing in Visual Basic).
+            </summary>
+            <remarks>
+            When the value of the field specified by the <see cref="P:AjaxDataControls.GridViewImageColumn.DataImageUrlField"/> property is a null reference (<b>Nothing</b> in Visual Basic), an image cannot be displayed in an ImageColum object. Use the <b>NullImageUrl</b> property to specify the URL to an alternate image to display. The alternate image is usually an image that indicates that the normal image is not available or cannot be found.
+            </remarks>
+            <value>The URL to an alternate image displayed when the value of a field is a null reference (<b>Nothing</b> in Visual Basic). The default is an empty string (""), which indicates that this property is not set.</value>
+        </member>
+        <member name="P:AjaxDataControls.GridViewImageColumn.ScriptBaseFileName">
+            <summary>
+            Gets the base name of the script file without the extension.
+            </summary>
+            <value>The name of the script file base name.</value>
+            <remarks>
+            This method will return the base name without the .debug.js or .js extension of the associated script file of this column.
+            </remarks>
+        </member>
+        <member name="M:AjaxDataControls.GridViewImageColumn.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:AjaxDataControls.GridViewImageColumn"/> class.
+            </summary>
+        </member>
+        <member name="M:AjaxDataControls.GridViewImageColumn.RenderData(System.Web.UI.WebControls.TableCell,System.String)">
+            <summary>
+            Renders the data column. Used by the designer to render the column data in the design time.
+            </summary>
+            <param name="container">The container.</param>
+            <param name="data">The data.</param>
+            <remarks>
+            This method should be used to show the rendered data in the Designer for the custom column. You do need this method otherwise.
+            </remarks>
+        </member>
+        <member name="M:AjaxDataControls.GridViewImageColumn.BuildDescriptor">
+            <summary>
+            Builds the descriptor for this column.
+            </summary>
+            <returns>
+            Returns the descriptor embedding all the properties of this column.
+            </returns>
+        </member>
+        <member name="M:AjaxDataControls.GridViewImageColumn.LoadViewState(System.Object)">
+            <summary>
+            When implemented by a class, loads the server control's previously saved view state to the control.
+            </summary>
+            <param name="state">An <see cref="T:System.Object"/> that contains the saved view state values for the control.</param>
+        </member>
+        <member name="M:AjaxDataControls.GridViewImageColumn.SaveViewState">
+            <summary>
+            When implemented by a class, saves the changes to a server control's view state to an <see cref="T:System.Object"/>.
+            </summary>
+            <returns>
+            The <see cref="T:System.Object"/> that contains the view state changes.
+            </returns>
+        </member>
+        <member name="T:AjaxDataControls.GridViewTemplateColumn">
+            <summary>
+            Represents a field that displays custom content in a <see cref="T:AjaxDataControls.GridView"/> control.
+            </summary>
+            <seealso cref="T:AjaxDataControls.GridViewBoundColumn"/>
+            <seealso cref="T:AjaxDataControls.GridViewButtonColumn"/>
+            <seealso cref="T:AjaxDataControls.GridViewCheckBoxColumn"/>
+            <seealso cref="T:AjaxDataControls.GridViewCommandColumn"/>
+            <seealso cref="T:AjaxDataControls.GridViewHyperLinkColumn"/>
+            <seealso cref="T:AjaxDataControls.GridViewImageColumn"/>
+        </member>
+        <member name="P:AjaxDataControls.GridViewTemplateColumn.HeaderTemplate">
+            <summary>
+            Gets or sets the <see cref="T:System.Web.UI.ITemplate">System.Web.UI.ITemplate</see> for displaying the header section of a <see cref="T:AjaxDataControls.GridViewTemplateColumn"/> object.
+            </summary>
+            <remarks>
+            Use the <b>HeaderTemplate</b> property to specify the custom content displayed for the header section of a <see cref="T:AjaxDataControls.GridViewTemplateColumn"/> object. Define the content by creating a template that specifies how the header section is rendered. To specify a template, first place opening and closing &lt;HeaderTemplate&gt; tags between the opening and closing tags of the &lt;GridViewTemplateColumn&gt; element. Next, add the custom content between the opening and closing &lt;HeaderTemplate&gt; tags. The content can be as simple as plain text or more complex (embedding other controls in the template, for example).
+            </remarks>
+            <value>A <see cref="T:System.Web.UI.ITemplate"/>-implemented object that contains the template for displaying the header section of a <see cref="T:AjaxDataControls.GridViewTemplateColumn"/> in a GridView control. The default is a null reference (<b>Nothing</b> in Visual Basic), which indicates that this property is not set.</value>
+        </member>
+        <member name="P:AjaxDataControls.GridViewTemplateColumn.ItemTemplate">
+            <summary>
+            Gets or sets the <see cref="T:System.Web.UI.ITemplate">System.Web.UI.ITemplate</see> for displaying an item in a GridView control.
+            </summary>
+            <remarks>
+            Use the <b>ItemTemplate</b> property to specify the custom content displayed for the items in a <see cref="T:AjaxDataControls.GridViewTemplateColumn"/> object. Define the content by creating a template that specifies how the items are rendered. To specify a template, first place opening and closing &lt;ItemTemplate&gt; tags between the opening and closing tags of the &lt;GridViewTemplateColumn&gt; element. Next, add the custom content between the opening and closing &lt;ItemTemplate&gt; tags. The content can be as simple as plain text or more complex (embedding other controls in the template, for example).
+            </remarks>
+            <value>A <see cref="T:System.Web.UI.ITemplate"/>-implemented object that contains the template for displaying an item in a <see cref="T:AjaxDataControls.GridViewTemplateColumn"/>. The default is a null reference (<b>Nothing</b> in Visual Basic), which indicates that this property is not set.</value>
+        </member>
+        <member name="P:AjaxDataControls.GridViewTemplateColumn.AlternatingItemTemplate">
+            <summary>
+            Gets or sets the <see cref="T:System.Web.UI.ITemplate">System.Web.UI.ITemplate</see> for displaying the alternating items in a <see cref="T:AjaxDataControls.GridViewTemplateColumn"/> object.
+            </summary>
+            <remarks>
+            Use the <b>AlternatingItemTemplate</b> property to specify the custom content displayed for the alternating items in a <see cref="T:AjaxDataControls.GridViewTemplateColumn"/> object. Define the content by creating a template that specifies how the alternating items are rendered. To specify a template, first place opening and closing &lt;AlternatingItemTemplate&gt; tags between the opening and closing tags of the &lt;GridViewTemplateColumn&gt; element. Next, add the custom content between the opening and closing &lt;AlternatingItemTemplate&gt; tags. The content can be as simple as plain text or more complex (embedding other controls in the template, for example).
+            </remarks>
+            <value>A <see cref="T:System.Web.UI.ITemplate"/>-implemented object that contains the template for displaying the alternating items in a <see cref="T:AjaxDataControls.GridViewTemplateColumn"/>. The default is a null reference (<b>Nothing</b> in Visual Basic), which indicates that this property is not set.</value>
+        </member>
+        <member name="P:AjaxDataControls.GridViewTemplateColumn.FooterTemplate">
+            <summary>
+            Gets or sets the <see cref="T:System.Web.UI.ITemplate">System.Web.UI.ITemplate</see> for displaying the footer section of a <see cref="T:AjaxDataControls.GridViewTemplateColumn"/> object.
+            </summary>
+            <remarks>
+            Use the <b>FooterTemplate</b> property to specify the custom content displayed in the footer section of a <see cref="T:AjaxDataControls.GridViewTemplateColumn"/> object. Define the content by creating a template that specifies how the footer section is rendered. To specify a template, first place opening and closing &lt;FooterTemplate&gt; tags between the opening and closing tags of the &lt;GridViewTemplateColumn&gt; element. Next, add the custom content between the opening and closing &lt;FooterTemplate&gt; tags. The content can be as simple as plain text or more complex (embedding other controls in the template, for example).
+            </remarks>
+            <value>A <see cref="T:System.Web.UI.ITemplate"/>-implemented object that contains the template for displaying the footer section of a <see cref="T:AjaxDataControls.GridViewTemplateColumn"/>. The default is a null reference (<b>Nothing</b> in Visual Basic), which indicates that this property is not set.</value>
+        </member>
+        <member name="P:AjaxDataControls.GridViewTemplateColumn.EditItemTemplate">
+            <summary>
+            Gets or sets the <see cref="T:System.Web.UI.ITemplate">System.Web.UI.ITemplate</see> for displaying an item in edit mode in a <see cref="T:AjaxDataControls.GridViewTemplateColumn"/> object.
+            </summary>
+            <remarks>
+            Use the <b>EditItemTemplate</b> property to specify the custom content displayed for an item that is in edit mode in a <see cref="T:AjaxDataControls.GridViewTemplateColumn"/> object. Define the content by creating a template that specifies how an item in edit mode is rendered. The <b>EditItemTemplate</b> property usually contains input controls for the user to modify a value in a data source. To specify a template, first place opening and closing &lt;EditItemTemplate&gt; tags between the opening and closing tags of the &lt;GridViewTemplateColumn&gt; element. Next, add the custom content between the opening and closing &lt;EditItemTemplate&gt; tags. The content can be as simple as plain text or more complex (embedding other controls in the template, for example).
+            </remarks>
+            <value>A <see cref="T:System.Web.UI.ITemplate"/>-implemented object that contains the template for displaying an item in edit mode in a <see cref="T:AjaxDataControls.GridViewTemplateColumn"/>. The default is a null reference (<b>Nothing</b> in Visual Basic), which indicates that this property is not set.</value>
+        </member>
+        <member name="P:AjaxDataControls.GridViewTemplateColumn.ScriptBaseFileName">
+            <summary>
+            Gets the base name of the script file without the extension.
+            </summary>
+            <value>The name of the script file base name.</value>
+            <remarks>
+            This method will return the base name without the .debug.js or .js extension of the associated script file of this column.
+            </remarks>
+        </member>
+        <member name="M:AjaxDataControls.GridViewTemplateColumn.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:AjaxDataControls.GridViewTemplateColumn"/> class.
+            </summary>
+        </member>
+        <member name="M:AjaxDataControls.GridViewTemplateColumn.RenderHeader(System.Web.UI.WebControls.TableCell)">
+            <summary>
+            Renders the header. Used by the designer to render the column header in the design time.
+            </summary>
+            <param name="container">The container.</param>
+            <remarks>
+            This method should be used to show the rendered data in the Designer for the custom column. You do need this method otherwise.
+            </remarks>
+        </member>
+        <member name="M:AjaxDataControls.GridViewTemplateColumn.RenderData(System.Web.UI.WebControls.TableCell,System.String)">
+            <summary>
+            Renders the data column. Used by the designer to render the column data in the design time.
+            </summary>
+            <param name="container">The container.</param>
+            <param name="data">The data.</param>
+            <remarks>
+            This method should be used to show the rendered data in the Designer for the custom column. You do need this method otherwise.
+            </remarks>
+        </member>
+        <member name="M:AjaxDataControls.GridViewTemplateColumn.RenderFooter(System.Web.UI.WebControls.TableCell)">
+            <summary>
+            Renders the footer. Used by the designer to render the column footer in the design time.
+            </summary>
+            <param name="container">The container.</param>
+            <remarks>
+            This method should be used to show the rendered data in the Designer for the custom column. You do need this method otherwise.
+            </remarks>
+        </member>
+        <member name="M:AjaxDataControls.GridViewTemplateColumn.BuildDescriptor">
+            <summary>
+            Builds the descriptor for this column.
+            </summary>
+            <returns>
+            Returns the descriptor embedding all the properties of this column.
+            </returns>
+        </member>
+        <member name="T:AjaxDataControls.Pager">
+            <summary>
+            A helper control which works with the other data controls to show paged data.
+            </summary>
+            <seealso cref="T:AjaxDataControls.Repeater">Repeater Control</seealso>
+            <seealso cref="T:AjaxDataControls.DataList">DataList Control</seealso>
+            <seealso cref="T:AjaxDataControls.GridView">GridView Control</seealso>
+        </member>
+        <member name="P:AjaxDataControls.Pager.InfoStyle">
+            <summary>
+            Gets the style properties for the info section of the Pager control.
+            </summary>
+            <value>The info style. The default value is empty style.</value>
+        </member>
+        <member name="P:AjaxDataControls.Pager.CurrentPageStyle">
+            <summary>
+            Gets the style properties for the current page element of the Pager control.
+            </summary>
+            <value>The current page style. The default value is empty style.</value>
+        </member>
+        <member name="P:AjaxDataControls.Pager.OtherPageStyle">
+            <summary>
+            Gets the style properties for the other elements which includes the First/Last, Previous/Next, Numeric elements of the Pager control.
+            </summary>
+            <value>The other page style. The default value is empty style.</value>
+        </member>
+        <member name="P:AjaxDataControls.Pager.FirstPageText">
+            <summary>
+            Gets or sets the first page link button text.
+            </summary>
+            <value>The first text. The default value is &lt;&lt;.</value>
+        </member>
+        <member name="P:AjaxDataControls.Pager.PreviousPageText">
+            <summary>
+            Gets or sets the previous page link button text.
+            </summary>
+            <value>The previous text. The default value is &lt;.</value>
+        </member>
+        <member name="P:AjaxDataControls.Pager.NextPageText">
+            <summary>
+            Gets or sets the next page link button text.
+            </summary>
+            <value>The next text. The default value is &gt;.</value>
+        </member>
+        <member name="P:AjaxDataControls.Pager.LastPageText">
+            <summary>
+            Gets or sets the last page link button text.
+            </summary>
+            <value>The last text. The default value is &gt;&gt;.</value>
+        </member>
+        <member name="P:AjaxDataControls.Pager.ShowInfo">
+            <summary>
+            Gets or sets a value indicating whether to show the info section.
+            </summary>
+            <value><c>true</c> if the info section is rendered; otherwise, <c>false</c>.The default is <c>false</c>.</value>
+        </member>
+        <member name="P:AjaxDataControls.Pager.ShowFirstAndLast">
+            <summary>
+            Gets or sets a value indicating whether to show the first and last link button.
+            </summary>
+            <value><c>true</c> if first and last link button is rendered; otherwise, <c>false</c>..The default is <c>true</c>.</value>
+        </member>
+        <member name="P:AjaxDataControls.Pager.ShowPreviousAndNext">
+            <summary>
+            Gets or sets a value indicating whether to show the previous and next link button.
+            </summary>
+            <value>
+            <c>true</c> if previous and next link button is rendered; otherwise, <c>false</c>..The default is <c>false</c>.
+            </value>
+        </member>
+        <member name="P:AjaxDataControls.Pager.ShowNumeric">
+            <summary>
+            Gets or sets a value indicating whether to show the numeric page link buttons.
+            </summary>
+            <value><c>true</c> if numeric page buttons are rendered; otherwise, <c>false</c>..The default is <c>true</c>.</value>
+        </member>
+        <member name="P:AjaxDataControls.Pager.UseSlider">
+            <summary>
+            Gets or sets a value indicating whether the pager will rendered in slider mode.
+            </summary>
+            <value><c>true</c> if slider behavior is enabled; otherwise, <c>false</c>..The default is <c>true</c>.</value>
+        </member>
+        <member name="P:AjaxDataControls.Pager.SliderSize">
+            <summary>
+            Gets or sets the size of the slider. This is used to show the maximum number of numeric buttons.
+            </summary>
+            <value>The size of the slider. The default value is 8.</value>
+        </member>
+        <member name="P:AjaxDataControls.Pager.PageSize">
+            <summary>
+            Gets or sets the size of each page. This is used to show the maximum number of records on a page.
+            </summary>
+            <value>The size of the page. The default value is 10.</value>
+        </member>
+        <member name="P:AjaxDataControls.Pager.PageIndex">
+            <summary>
+            Gets or sets the index of the current page.
+            </summary>
+            <value>The index of the page. The default value is 0.</value>
+        </member>
+        <member name="P:AjaxDataControls.Pager.HideOnSinglePage">
+            <summary>
+            Gets or sets a value indicating whether to hide the pager if all the records fits in a single page.
+            </summary>
+            <value><c>true</c> if control is not rendered in single page; otherwise, <c>false</c>..The default is <c>true</c>.</value>
+        </member>
+        <member name="P:AjaxDataControls.Pager.PageChangedEvent">
+            <summary>
+            Occurs on the client side when any page button is clicked in the Pager control.
+            </summary>
+            <value>The page change event. The default value is empty function.</value>
+        </member>
+        <member name="P:AjaxDataControls.Pager.TagKey">
+            <summary>
+            Gets the <see cref="T:System.Web.UI.HtmlTextWriterTag"/> value that corresponds to this Web server control. This property is used primarily by control developers.
+            </summary>
+            <value></value>
+            <returns>One of the <see cref="T:System.Web.UI.HtmlTextWriterTag"/> enumeration values.</returns>
+        </member>
+        <member name="M:AjaxDataControls.Pager.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:AjaxDataControls.Pager"/> class.
+            </summary>
+        </member>
+        <member name="M:AjaxDataControls.Pager.GetScriptDescriptors">
+            <summary>
+            Gets the script descriptors.
+            </summary>
+            <returns>Returns the ScriptDescriptors which are associated with this control</returns>
+        </member>
+        <member name="M:AjaxDataControls.Pager.GetScriptReferences">
+            <summary>
+            Gets the script references.
+            </summary>
+            <returns>Returns the ScriptReferences which are associated with this control</returns>
+        </member>
+        <member name="T:AjaxDataControls.GridViewHyperLinkColumn">
+            <summary>
+            Represents a column that is displayed as a hyperlink in a <see cref="T:AjaxDataControls.GridView"/> control.
+            </summary>
+            <seealso cref="T:AjaxDataControls.GridView"/>
+            <seealso cref="T:AjaxDataControls.GridViewBoundColumn"/>
+            <seealso cref="T:AjaxDataControls.GridViewButtonColumn"/>
+            <seealso cref="T:AjaxDataControls.GridViewCommandColumn"/>
+            <seealso cref="T:AjaxDataControls.GridViewCheckBoxColumn"/>
+            <seealso cref="T:AjaxDataControls.GridViewImageColumn"/>
+            <seealso cref="T:AjaxDataControls.GridViewTemplateColumn"/>
+        </member>
+        <member name="P:AjaxDataControls.GridViewHyperLinkColumn.DataTextField">
+            <summary>
+            Gets or sets the name of the field from the data source containing the text to display for the hyperlink captions in the HyperLinkColumn object.
+            </summary>
+            <remarks>
+            Use the <b>DataTextField</b> property to specify the name of the field that contains the text to display for the hyperlink captions in the HyperLinkColumn object. Instead of using this property to bind the hyperlink captions to a field, you can use the <see cref="P:AjaxDataControls.GridViewHyperLinkColumn.Text"/> property to set the hyperlink captions to a static value. With this option, each hyperlink shares the same caption.
+            </remarks>
+            <value>The name of the field from the data source containing the values to display for the hyperlink captions in the HyperLinkColumn. The default is an empty string (""), which indicates that this property is not set.</value>
+        </member>
+        <member name="P:AjaxDataControls.GridViewHyperLinkColumn.DataTextFormatString">
+            <summary>
+            Get or sets the string that specifies the format in which the hyperlink captions in a HyperLinkColumn object are displayed.
+            </summary>
+            <remarks>
+            Use the <b>DataTextFormatString</b> property to specify a custom display format for the captions displayed in the HyperLinkColumn object. If the <b>DataTextFormatString</b> property is not set, the field's value is displayed without any special formatting.
+            </remarks>
+            <value>A string that specifies the format in which the hyperlink captions in a HyperLinkColumn are displayed. The default is an empty string (""), which indicates that no special formatting is applied to the hyperlink captions.</value>
+        </member>
+        <member name="P:AjaxDataControls.GridViewHyperLinkColumn.DataNavigateUrlFields">
+            <summary>
+            Gets or sets the names of the fields from the data source used to construct the URLs for the hyperlinks in the HyperLinkColumn object.
+            </summary>
+            <remarks>
+            Use the <b>DataNavigateUrlFields</b> property when the data source contains multiple fields that must be combined to create the hyperlinks for the HyperLinkColum object. The fields specified in the <b>DataNavigateUrlFields</b> property are combined with the format string in the <see cref="P:AjaxDataControls.GridViewHyperLinkColumn.DataNavigateUrlFormatString"/> property to construct the hyperlinks in the HyperLinkColum object. Instead of using this property to bind the URLs of the hyperlinks to a field, you can use the <see cref="P:AjaxDataControls.GridViewHyperLinkColumn.NavigateUrl"/> property to set the hyperlinks' URL to a static value. With this option, each hyperlink shares the same URL.
+            </remarks>
+            <value>An comma delimited string containing the names of the fields from the data source used to construct the URLs for the hyperlinks in the HyperLinkColumn. The default is an empty string, indicating that <b>DataNavigateUrlFields</b> is not set.</value>
+        </member>
+        <member name="P:AjaxDataControls.GridViewHyperLinkColumn.DataNavigateUrlFormatString">
+            <summary>
+            Gets or sets the string that specifies the format in which the URLs for the hyperlinks in a HyperLinkColumn object are rendered.
+            </summary>
+            <value>A string that specifies the format in which the URLs for the hyperlinks in a HyperLinkColumn are rendered. The default is an empty string (""), which indicates that no special formatting is applied to the URL values.</value>
+        </member>
+        <member name="P:AjaxDataControls.GridViewHyperLinkColumn.Target">
+            <summary>
+            Gets or sets the target window or frame in which to display the Web page linked to when a hyperlink in a HyperLinkColumn object is clicked.
+            </summary>
+            <remarks>
+            Use the <b>Target</b> property to specify the window or frame in which to display the Web content linked to a hyperlink when that hyperlink is clicked.
+            </remarks>
+            <value>The target window or frame in which to load the Web page linked to when a hyperlink in a HyperLinkColumn is clicked. The default is an empty string (""), which indicates that this property is not set.</value>
+        </member>
+        <member name="P:AjaxDataControls.GridViewHyperLinkColumn.Text">
+            <summary>
+            Gets or sets the text to display for each hyperlink in the HyperLinkColumn object.
+            </summary>
+            <remarks>
+            Use the <b>Text</b> property to specify the caption to display for the hyperlinks in a HyperLinkColumn object. When this property is set, each hyperlink shares the same caption. Instead of using this property to set the hyperlink captions, you can use the <see cref="P:AjaxDataControls.GridViewHyperLinkColumn.DataTextField"/> property to bind the hyperlink captions to a field in a data source. This allows you to display a different caption for each hyperlink.
+            </remarks>
+            <value>The text to display for each hyperlink in the HyperLinkColumn. The default is an empty string (""), which indicates that this property is not set.</value>
+        </member>
+        <member name="P:AjaxDataControls.GridViewHyperLinkColumn.NavigateUrl">
+            <summary>
+            Gets or sets the URL to navigate to when a hyperlink in a HyperLinkColumn object is clicked.
+            </summary>
+            <remarks>
+            Use the <b>NavigateUrl</b> property to specify the URL to navigate to when a hyperlink in a HyperLinkColumn object is clicked. When this property is set, each hyperlink shares the same navigation URL. Instead of using this property to set the URL for the hyperlinks, you can use the <see cref="P:AjaxDataControls.GridViewHyperLinkColumn.DataNavigateUrlFields"/> property to bind the URLs of the hyperlinks to a field in a data source. This allows you to have a different URL for each hyperlink.
+            </remarks>
+            <value>The URL to navigate to when a hyperlink in a HyperLinkColumn is clicked. The default is an empty string (""), which indicates that this property is not set.</value>
+        </member>
+        <member name="P:AjaxDataControls.GridViewHyperLinkColumn.ScriptBaseFileName">
+            <summary>
+            Gets the base name of the script file without the extension.
+            </summary>
+            <value>The name of the script file base name.</value>
+            <remarks>
+            This method will return the base name without the .debug.js or .js extension of the associated script file of this column.
+            </remarks>
+        </member>
+        <member name="M:AjaxDataControls.GridViewHyperLinkColumn.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:AjaxDataControls.GridViewHyperLinkColumn"/> class.
+            </summary>
+        </member>
+        <member name="M:AjaxDataControls.GridViewHyperLinkColumn.RenderData(System.Web.UI.WebControls.TableCell,System.String)">
+            <summary>
+            Renders the data column. Used by the designer to render the column data in the design time.
+            </summary>
+            <remarks>
+            This method should be used to show the rendered data in the Designer for the custom column. You do need this method otherwise.
+            </remarks>
+            <param name="container">The container.</param>
+            <param name="data">The data.</param>
+        </member>
+        <member name="M:AjaxDataControls.GridViewHyperLinkColumn.BuildDescriptor">
+            <summary>
+            Builds the descriptor for this column.
+            </summary>
+            <returns>
+            Returns the descriptor embedding all the properties of this column.
+            </returns>
+        </member>
+        <member name="M:AjaxDataControls.GridViewHyperLinkColumn.LoadViewState(System.Object)">
+            <summary>
+            When implemented by a class, loads the server control's previously saved view state to the control.
+            </summary>
+            <param name="state">An <see cref="T:System.Object"/> that contains the saved view state values for the control.</param>
+        </member>
+        <member name="M:AjaxDataControls.GridViewHyperLinkColumn.SaveViewState">
+            <summary>
+            When implemented by a class, saves the changes to a server control's view state to an <see cref="T:System.Object"/>.
+            </summary>
+            <returns>
+            The <see cref="T:System.Object"/> that contains the view state changes.
+            </returns>
+        </member>
+        <member name="T:AjaxDataControls.Repeater">
+            <summary>
+            A data-bound list control that allows custom layout by repeating a specified template for each item displayed in the list.
+            </summary>
+            <seealso cref="T:AjaxDataControls.DataList">DataList Control</seealso>
+            <seealso cref="T:AjaxDataControls.GridView">GridView COntrol</seealso>>
+            <seealso cref="T:AjaxDataControls.Pager">Pager Control</seealso>>
+        </member>
+        <member name="P:AjaxDataControls.Repeater.RenderAs">
+            <summary>
+            Gets or sets the html tag of the repeater.
+            </summary>
+            <value>The html tag that the control will be rendered as. The Default value is DIV.</value>
+        </member>
+        <member name="P:AjaxDataControls.Repeater.HeaderTemplate">
+            <summary>
+            Gets or sets the <see cref="T:System.Web.UI.ITemplate">System.Web.UI.ITemplate</see> that defines how the header section of the Repeater control is displayed.
+            </summary>
+            <remarks>
+            Use this property to create a template that controls how the header section of a <b>Repeater</b> control is displayed.
+            </remarks>
+            <value>The header template. The default value is a null reference (<b>Nothing</b> in Visual Basic)</value>
+        </member>
+        <member name="P:AjaxDataControls.Repeater.ItemTemplate">
+            <summary>
+            Gets or sets the <see cref="T:System.Web.UI.ITemplate">System.Web.UI.ITemplate</see> that defines how items in the Repeater control are displayed.
+            </summary>
+            <remarks>
+            Use this property to create a template that controls how items in the <b>Repeater</b> control are displayed.
+            </remarks>
+            <value>The item template. The default value is a null reference (<b>Nothing</b> in Visual Basic)</value>
+        </member>
+        <member name="P:AjaxDataControls.Repeater.SeparatorTemplate">
+            <summary>
+            Gets or sets the <see cref="T:System.Web.UI.ITemplate">System.Web.UI.ITemplate</see> interface that defines how the separator between items is displayed.
+            </summary>
+            <remarks>
+            Use the <b>SeparatorTemplate</b> property to create a template that controls how the separator between items is displayed.
+            </remarks>
+            <value>The separator template. The default value is a null reference (<b>Nothing</b> in Visual Basic)</value>
+        </member>
+        <member name="P:AjaxDataControls.Repeater.AlternatingItemTemplate">
+            <summary>
+            Gets or sets the object implementing <see cref="T:System.Web.UI.ITemplate">System.Web.UI.ITemplate</see> that defines how alternating items in the control are displayed.
+            </summary>
+            <remarks>
+            Use this property to provide a different appearance for alternating items in the <see cref="T:AjaxDataControls.Repeater"/> control from what is specified in the <see cref="P:AjaxDataControls.Repeater.ItemTemplate"/>.
+            </remarks>
+            <value>The alternating item template. The default value is a null reference (<b>Nothing</b> in Visual Basic)</value>
+        </member>
+        <member name="P:AjaxDataControls.Repeater.FooterTemplate">
+            <summary>
+            Gets or sets the <see cref="T:System.Web.UI.ITemplate">System.Web.UI.ITemplate</see> that defines how the footer section of the Repeater control is displayed.
+            </summary>
+            <value>The footer template. The default value is a null reference (<b>Nothing</b> in Visual Basic)</value>
+            <remarks>
+            Use this property to create a template that controls how the footer section of a <b>Repeater</b> control is displayed.
+            </remarks>
+        </member>
+        <member name="P:AjaxDataControls.Repeater.Animate">
+            <summary>
+            Gets or sets a value indicating whether this <see cref="T:AjaxDataControls.Repeater"/> is animated when binding data.
+            </summary>
+            <remarks>
+            The Asp.net Ajax Framework Glitz script(s) needs to be present in the page.
+            </remarks>
+            <value><c>true</c> if animate; otherwise, <c>false</c>..The default is <c>true</c>.</value>
+        </member>
+        <member name="P:AjaxDataControls.Repeater.AnimationDuration">
+            <summary>
+            Gets or sets the animation duration in seconds.
+            </summary>
+            <value>The animation duration. The default value is 0.3 seconds</value>
+        </member>
+        <member name="P:AjaxDataControls.Repeater.AnimationFps">
+            <summary>
+            Gets or sets the animation frames per second.
+            </summary>
+            <value>The animation frame per second. The default value is 25.</value>
+        </member>
+        <member name="P:AjaxDataControls.Repeater.ItemCreatedEvent">
+            <summary>
+            Occurs on the client side when an item is created in the Repeater control.
+            </summary>
+            <remarks>
+            This event is raised when an item is created in the <b>Repeater</b> control.
+            </remarks>
+            <value>The item created event. The default value is empty function.</value>
+        </member>
+        <member name="P:AjaxDataControls.Repeater.ItemDataBoundEvent">
+            <summary>
+            Occurs on the client side when an item in the Repeater control is going to be data-bound.
+            </summary>
+            <remarks>
+            This event is raised when an item in the Repeater control is data-bound.
+            </remarks>
+            <value>The item data bound event. The default value is empty function.</value>
+        </member>
+        <member name="P:AjaxDataControls.Repeater.ItemCommandEvent">
+            <summary>
+            Occurs on the client side when a button is clicked in the Repeater control which has associated commandName.
+            </summary>
+            <remarks>
+            This event is raised when a button in the <b>Repeater</b> control is clicked.
+            </remarks>
+            <value>The item command event. The default value is empty function.</value>
+        </member>
+        <member name="P:AjaxDataControls.Repeater.TagKey">
+            <summary>
+            Gets the <see cref="T:System.Web.UI.HtmlTextWriterTag"/> value that corresponds to this Web server control. This property is used primarily by control developers.
+            </summary>
+            <value></value>
+            <returns>One of the <see cref="T:System.Web.UI.HtmlTextWriterTag"/> enumeration values.</returns>
+        </member>
+        <member name="M:AjaxDataControls.Repeater.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:AjaxDataControls.Repeater"/> class.
+            </summary>
+        </member>
+        <member name="M:AjaxDataControls.Repeater.GetScriptDescriptors">
+            <summary>
+            Gets the script descriptors.
+            </summary>
+            <returns>Returns the ScriptDescriptors which are associated with this control</returns>
+        </member>
+        <member name="M:AjaxDataControls.Repeater.GetScriptReferences">
+            <summary>
+            Gets the script references.
+            </summary>
+            <returns>Returns the ScriptReferences which are associated with this control</returns>
+        </member>
+    </members>
+</doc>

@@ -1,0 +1,171 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{7CE3E98F-F386-4007-8C24-EFD1719708CC}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>AjaxDataControls</RootNamespace>
+    <AssemblyName>AjaxDataControls</AssemblyName>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <SignAssembly>true</SignAssembly>
+    <AssemblyOriginatorKeyFile>
+    </AssemblyOriginatorKeyFile>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>2.0</OldToolsVersion>
+    <UpgradeBackupLocation />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <RunCodeAnalysis>false</RunCodeAnalysis>
+    <DocumentationFile>bin\Debug\AjaxDataControls.XML</DocumentationFile>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <RunCodeAnalysis>true</RunCodeAnalysis>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Common\BaseDataControl.cs" />
+    <Compile Include="Common\ScriptDescriptorHelper.cs" />
+    <Compile Include="Common\StyleConverter.cs" />
+    <Compile Include="DataList\DataListDesigner.cs" />
+    <Compile Include="DataList\DataList.cs" />
+    <Compile Include="GridView\Columns\GridViewCommandColumn.cs" />
+    <Compile Include="GridView\Columns\GridViewButtonColumn.cs" />
+    <Compile Include="GridView\Columns\GridViewColumnScriptDescriptor.cs" />
+    <Compile Include="GridView\Columns\GridViewBoundColumn.cs" />
+    <Compile Include="GridView\Columns\GridViewBaseColumn.cs" />
+    <Compile Include="GridView\Columns\GridViewColumnCollection.cs" />
+    <Compile Include="GridView\Columns\GridViewRadioButtonColumn.cs" />
+    <Compile Include="GridView\GridView.cs" />
+    <Compile Include="GridView\GridViewDesigner.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="GridView\Columns\GridViewCheckBoxColumn.cs" />
+    <Compile Include="GridView\Columns\GridViewImageColumn.cs" />
+    <Compile Include="GridView\Columns\GridViewTemplateColumn.cs" />
+    <Compile Include="Pager\PagerDesigner.cs" />
+    <Compile Include="Pager\Pager.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="GridView\Columns\GridViewHyperLinkColumn.cs" />
+    <Compile Include="Repeater\RepeaterDesigner.cs" />
+    <Compile Include="Repeater\Repeater.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Pager\Pager.debug.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Repeater\Repeater.debug.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="DataList\DataList.debug.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="GridView\GridView.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Common\Common.debug.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Pager\Pager.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Repeater\Repeater.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Common\Common.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="DataList\DataList.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="GridView\GridView.debug.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="GridView\Columns\GridViewBoundColumn.debug.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="GridView\Columns\GridViewButtonColumn.debug.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="GridView\Columns\GridViewCommandColumn.debug.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="GridView\Columns\GridViewCheckBoxColumn.debug.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="GridView\Columns\GridViewHyperLinkColumn.debug.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="GridView\Columns\GridViewImageColumn.debug.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="GridView\Columns\GridViewTemplateColumn.debug.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="GridView\Columns\GridViewBoundColumn.js" />
+    <EmbeddedResource Include="GridView\Columns\GridViewCheckBoxColumn.js" />
+    <EmbeddedResource Include="GridView\Columns\GridViewCommandColumn.js" />
+    <EmbeddedResource Include="GridView\Columns\GridViewHyperLinkColumn.js" />
+    <EmbeddedResource Include="GridView\Columns\GridViewImageColumn.js" />
+    <EmbeddedResource Include="GridView\Columns\GridViewTemplateColumn.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="GridView\Columns\GridViewButtonColumn.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="DataList\DataList.bmp" />
+    <EmbeddedResource Include="GridView\GridView.bmp" />
+    <EmbeddedResource Include="Repeater\Repeater.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Pager\Pager.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="GridView\Columns\GridViewRadioButtonColumn.debug.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="GridView\Columns\GridViewRadioButtonColumn.js" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,110 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="admin_site.master.cs"
+    Inherits="Cb.Web.Admin.admin_site" %>
+
+<%@ Register TagPrefix="dgc" TagName="topmenu" Src="~/Admin/Controls/topmenu.ascx" %>
+<%@ Register TagPrefix="dgc" TagName="breakumb" Src="~/Admin/Controls/breakumb.ascx" %>
+<%@ Register TagPrefix="dgc" TagName="leftmenu" Src="~/Admin/Controls/leftmenu.ascx" %>
+<%@ Register TagPrefix="dgc" TagName="footer" Src="~/Admin/Controls/footer.ascx" %>
+
+<!DOCTYPE html>
+<html>
+<head id="Head1" runat="server">
+    <title>Cấu hình Website</title>
+    <meta charset="UTF-8" />
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport" />
+    <link href="/Admin/Images/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="robots" content="index, follow" />
+    <%-- <script type="text/javascript">
+        var domainUrl = "/admin";
+    </script>--%>
+
+    <!-- -----------------App js------------------------------------------->
+    <script src="/Admin/Components/jQuery/jQuery-2.1.4.min.js" type="text/javascript"></script>
+    <script src="/Admin/Components/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
+    <script src="/Admin/Components/App/js/wow.min.js" type="text/javascript"></script>
+    <script src="/Admin/Components/App/js/frontend.js" type="text/javascript"></script>
+    <script src="/Admin/Components/jQuery/jquery-ui.min.js" type="text/javascript"></script>
+
+    <!-- -----------------App css------------------------------------------->
+    <link href="/Admin/Components/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="/Admin/Components/App/css/animate.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="/Admin/Components/App/css/content.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="/Admin/Components/App/css/responsive.css" rel="stylesheet" type="text/css" media="all" />
+
+    <!--Custom css-->
+    <link href="/Admin/Style/style.css" rel="stylesheet" type="text/css" media="all" />
+
+    <!--font awesome-->
+    <link href="/Admin/Components/App/css/font-awesome.min.css" rel="stylesheet" type="text/css" media="all" />
+
+    <!-- Ionicons 2.0.0 -->
+    <link href="/Admin/Components/App/ionicons/ionicons.min.css" rel="stylesheet" />
+
+    <!--Admin Webone-->
+    <script src="/Admin/Components/jquery-slimscroll/jquery.slimscroll.min.js" type="text/javascript"></script>
+    <script src="/Admin/Components/bootstrap-tabdrop/js/bootstrap-tabdrop.js" type="text/javascript"></script>
+    <link href="/Admin/Components/WebOne/css/plugins.min.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="/Admin/Components/WebOne/css/components.min.css" rel="stylesheet" type="text/css" media="all" />
+    <script src="/Admin/Components/WebOne/js/app.min.js" type="text/javascript"></script>
+
+    <!--AdminLTE-->
+    <link href="/Admin/Components/App/css/AdminLTE.css" rel="stylesheet" type="text/css" media="all" />
+    <script src="/Admin/Components/App/js/app.js" type="text/javascript"></script>
+
+    <!-- uniform -->
+   <%-- <script type="text/javascript" src="/Admin/Components/uniform/jquery.uniform.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="/Admin/Components/uniform/css/uniform.default.css" />--%>
+
+    <!-- bootstrap-touchspin -->
+    <script type="text/javascript" src="/Admin/Components/bootstrap-touchspin/bootstrap.touchspin.js"></script>
+    <link rel="stylesheet" type="text/css" href="/Admin/Components/bootstrap-touchspin/bootstrap.touchspin.css" />
+
+    <!--Jcrop--->
+    <%--<link rel="stylesheet" type="text/css" href="/Admin/Components/plugins/jcrop/jquery.Jcrop.css" />
+    <script type="text/javascript" src="/Admin/Components/plugins/jcrop/jquery.Jcrop.min.js"></script>
+    <script>        jQuery.noConflict();</script>--%>
+
+    <!-- fancybox -->
+    <script type="text/javascript" src="/Admin/Components/jQuery/jquery.min 1.5.2.js"></script>
+    <link rel="stylesheet" type="text/css" href="/Admin/Components/fancybox/jquery.fancybox-1.3.4.css" />
+    <script type="text/javascript" src="/Admin/Components/fancybox/jquery.fancybox-1.3.4.pack.js"></script>
+
+    <script> jQuery.noConflict();</script>
+
+</head>
+<body class="skin-blue sidebar-mini">
+    <form id="aspnetForm" runat="server">
+        <div class="container-fluid">
+            <div class="row">
+                <dgc:topmenu ID="topmenu" runat="server" />
+
+                <aside class="main-sidebar col-lg-3">
+                    <section class="sidebar" style="height: auto;">
+                        <dgc:leftmenu ID="leftmenu" runat="server" />
+                    </section>
+                </aside>
+                <section id="conten-admin" class="content-wrapper ">
+                    <div class="">
+                        <dgc:breakumb ID="breakumb" runat="server" />
+
+                        <!-- Main content -->
+                        <asp:ContentPlaceHolder ID="contentSite" runat="server">
+                        </asp:ContentPlaceHolder>
+                        <!-- end Main content -->
+                    </div>
+                </section>
+                <div class="clearfix"></div>
+
+                <dgc:footer ID="footer" runat="server" />
+
+            </div>
+
+        </div>
+
+        <!-- modal loading -->
+        <div class="modal"></div>
+
+    </form>
+</body>
+</html>

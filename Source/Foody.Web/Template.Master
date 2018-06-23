@@ -1,0 +1,236 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Template.Master.cs" Inherits="Cb.Web.Template" %>
+
+<%@ Register TagPrefix="dgc" TagName="top_menu" Src="~/Controls/top_menu.ascx" %>
+<%@ Register TagPrefix="dgc" TagName="footer" Src="~/Controls/footer.ascx" %>
+<%--<%@ Register TagPrefix="dgc" TagName="block_slide" Src="~/Controls/block_slide.ascx" %>--%>
+<!doctype html>
+<html lang="en">
+<head runat="server">
+    <meta charset="UTF-8" />
+    <meta name="author" content="Easy Host" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <link rel="shortcut icon" href="/Images/favicon.png" />
+
+    <script type="text/javascript" src="/assets/wp-includes/js/jquery/jquery.js"></script>
+    <script type="text/javascript" src="/assets/wp-content/plugins/revslider/public/assets/js/jquery.themepunch.revolution.min.js?ver=5.1.6"></script>
+
+    <link rel='stylesheet' href='/assets/wp-includes/css/dashicons.mind22c.css?ver=4.4.4' type='text/css' media='all' />
+    <link rel='stylesheet' href='/assets/wp-includes/css/jquery-ui-dialog.mind22c.css?ver=4.4.4' type='text/css' media='all' />
+    <link rel='stylesheet' href='/assets/wp-content/plugins/contact-form-7/includes/css/styles5b31.css?ver=4.3.1' type='text/css' media='all' />
+    <link rel='stylesheet' href='/assets/wp-content/plugins/essential-grid/public/assets/css/settings.css?ver=2.0.9.1' type='text/css' media='all' />
+
+    <%--<link rel='stylesheet' href='/assets/wp-content/plugins/revslider/public/assets/css/settingsb62d.css?ver=5.1.6' type='text/css' media='all' />--%>
+
+    <link rel='stylesheet' href='/assets/wp-content/plugins/userpro/css/userpro.mind22c.css?ver=4.4.4' type='text/css' media='all' />
+    <link rel='stylesheet' href='/assets/wp-content/plugins/userpro/css/lightview/lightviewd22c.css?ver=4.4.4' type='text/css' media='all' />
+    <link rel='stylesheet' href='/assets/wp-content/plugins/userpro/css/userpro-jquery-uid22c.css?ver=4.4.4' type='text/css' media='all' />
+    <link rel='stylesheet' href='/assets/wp-content/plugins/userpro/skins/elegant/styled22c.css?ver=4.4.4' type='text/css' media='all' />
+    <link rel='stylesheet' href='/assets/wp-content/plugins/wp-pagenavi/pagenavi-css44fd.css?ver=2.70' type='text/css' media='all' />
+    <link rel='stylesheet' href='/assets/wp-content/themes/easyweb/inc/woocommerce/woocommerce.css' type='text/css' media='all' />
+    <link href='/assets/wp-content/themes/easyweb/css/master8a54.css?ver=1.0.0' media='all' rel='stylesheet' type='text/css' />
+    <link rel='stylesheet' href='/assets/wp-content/themes/easyweb/css/dyncssd22c.css?ver=4.4.4' type='text/css' media='all' />
+
+    <%--<link rel='stylesheet' href='/assets/wp-content/uploads/titan-framework-wdc-options-cssd22c.css?ver=4.4.4' type='text/css' media='all' />--%>
+    <link rel='stylesheet' href='/assets/wp-content/plugins/tablepress/css/default.min97e1.css?ver=1.7' type='text/css' media='all' />
+    <link rel='stylesheet' href='/assets/wp-content/plugins/whmpress/styles/defaultd22c.css?ver=4.4.4' type='text/css' media='all' />
+    <link rel='stylesheet' href='/assets/wp-content/plugins/whmpress/includes/DataTables/datatables.mind22c.css?ver=4.4.4' type='text/css' media='all' />
+    <link rel='stylesheet' href='/assets/wp-content/plugins/whmpress/templates/whmpressd22c.css?ver=4.4.4' type='text/css' media='all' />
+    <link rel='stylesheet' href='/assets/wp-content/plugins/wp-domain-checker/assets/styled22c.css' type='text/css' media='all' />
+    <link rel='stylesheet' href='/assets/wp-content/plugins/wp-domain-checker/assets/bootstrap-flat-extrasd22c.css?ver=4.4.4' type='text/css' media='all' />
+    <link rel='stylesheet' href='/assets/wp-content/plugins/wp-domain-checker/assets/bootstrap-flatd22c.css?ver=4.4.4' type='text/css' media='all' />
+
+    <script type='text/javascript' src='/assets/wp-includes/js/jquery/jquery-migrate.min1576.js?ver=1.2.1'></script>
+    <script type='text/javascript' src='/assets/wp-content/plugins/essential-grid/public/assets/js/lightbox.js?ver=2.0.9.1'></script>
+    <script type='text/javascript' src='/assets/wp-content/plugins/essential-grid/public/assets/js/jquery.themepunch.tools.min.js?ver=2.0.9.1'></script>
+    <script type='text/javascript' src='/assets/wp-content/plugins/essential-grid/public/assets/js/jquery.themepunch.essential.min.js?ver=2.0.9.1'></script>
+    <script type='text/javascript' src='/assets/wp-content/plugins/revslider/public/assets/js/jquery.themepunch.revolution.minb62d.js?ver=5.1.6'></script>
+
+    <script type='text/javascript' src='/assets/wp-content/plugins/woocommerce/assets/js/frontend/add-to-cart.min16b9.js?ver=2.5.2'></script>
+    <script type='text/javascript' src='/assets/wp-content/plugins/js_composer/assets/js/vendors/woocommerce-add-to-cart20fd.js?ver=4.9.2'></script>
+    <script type='text/javascript' src='/assets/wp-content/plugins/userpro/addons/social/scripts/userpro-social.mind22c.js?ver=4.4.4'></script>
+
+    <link rel="stylesheet" type="text/css" href="/assets/wp-content/plugins/whmcs-bridge-sso/css/five.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="/assets/wp-content/plugins/whmcs-bridge-sso/css/bridge.css" media="screen" />
+
+    <!--bootstrap-->
+    <link rel="stylesheet" type="text/css" href="/Admin/Components/bootstrap/css/bootstrap.min.css" media="screen" />
+    <script src="/Admin/Components/bootstrap/js/bootstrap.min.js"></script>
+
+    <!--font awesome-->
+    <link href="/Admin/Components/App/css/font-awesome.min.css" rel="stylesheet" type="text/css" media="all" />
+
+    <!--style package-->
+    <link href="/Styles/style.package.min.css" rel="stylesheet" type="text/css" media="all" />
+    <script src="/Styles/jquery.package.js"></script>
+
+    <!--lightbox-->
+    <link rel='stylesheet' href='/assets/wp-content/plugins/essential-grid/public/assets/css/lightbox.css' type='text/css' media='all' />
+    <link rel='stylesheet' href='/assets/wp-content/plugins/essential-grid/public/assets/css/settings.css' type='text/css' media='all' />
+    <script type='text/javascript' src='/assets/wp-content/plugins/essential-grid/public/assets/js/lightbox.js'></script>
+    <script type='text/javascript' src='/assets/wp-content/plugins/essential-grid/public/assets/js/jquery.themepunch.tools.min.js'></script>
+    <script type='text/javascript' src='/assets/wp-content/plugins/essential-grid/public/assets/js/jquery.themepunch.essential.min.js'></script>
+
+
+    <!--Custom css-->
+    <link rel="stylesheet" type="text/css" href="/Styles/Site.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="/Styles/Style.css" media="screen" />
+
+    <!--Alert-->
+    <link href="/Admin/Style/jquery.alerts.css" rel="stylesheet" />
+    <script src="/Admin/JavaScript/jquery.alerts.js"></script>
+
+    <!--photobox-->
+    <link rel="stylesheet" type="text/css" href="/assets/wp-content/plugins/photobox/photobox.css" media="screen" />
+    <script type='text/javascript' src='/assets/wp-content/plugins/photobox/jquery.photobox.js'></script>
+
+    <!--Fane page FB-->
+    <%-- <div id="fb-root"></div>
+    <script>(function (d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v2.6";
+    fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>--%>
+</head>
+
+<body class="woocommerce  home page page-id-5712 page-template-default  has-topbar-w smooth-scroll has-header-type11 wpb-js-composer js-comp-ver-4.9.2 vc_responsive">
+    <form id="aspnetForm" runat="server">
+        <div id="wrap" class=" easyhost-t">
+
+
+            <dgc:top_menu ID="top_menu" runat="server" />
+
+            <div runat="server" id="main">
+                <section id="main-content" class="container">
+                    <div class="row-wrapper-x"></div>
+                </section>
+            </div>
+
+
+
+
+            <%-- @*<div class="container">
+                    *@--%>
+
+            <asp:ContentPlaceHolder ID="mainContent" runat="server" />
+
+            <%-- @*
+                </div>
+                *@--%>
+
+            <dgc:footer ID="footer" runat="server" />
+
+            <span id="scroll-top"><a class="scrollup"><i class="fa-chevron-up"></i></a></span>
+
+            <div class="advisor-pop hidden-xs" style="right: -340px;">
+                <div style="position: relative">
+                    <div class="close2"><i class="fa fa-times" aria-hidden="true"></i></div>
+                    <div id="TA_selfserveprop468" class="TA_selfserveprop">
+                        <div id="TA_selfserveprop853" class="TA_selfserveprop">
+                            <a target="_blank" href="https://www.tripadvisor.co.uk/"></a>
+                        </div>
+                        <script src="https://www.jscache.com/wejs?wtype=selfserveprop&amp;uniq=853&amp;locationId=8094955&amp;lang=en_UK&amp;rating=true&amp;nreviews=5&amp;writereviewlink=true&amp;popIdx=true&amp;iswide=false&amp;border=true&amp;display_version=2"></script>
+                    </div>
+                </div>
+            </div>
+            <div class="advisor-open hidden-xs" style="right: 0px;">
+                <img src="http://saigonadventure.com/asset/frontend/images/advisor-open.png">
+            </div>
+
+        </div>
+
+        <script type='text/javascript' src='/assets/wp-includes/js/jquery/ui/core.mine899.js?ver=1.11.4'></script>
+        <script type='text/javascript' src='/assets/wp-includes/js/jquery/ui/widget.mine899.js?ver=1.11.4'></script>
+        <script type='text/javascript' src='/assets/wp-includes/js/jquery/ui/mouse.mine899.js?ver=1.11.4'></script>
+        <script type='text/javascript' src='/assets/wp-includes/js/jquery/ui/slider.mine899.js?ver=1.11.4'></script>
+        <script type='text/javascript' src='/assets/wp-includes/js/jquery/ui/button.mine899.js?ver=1.11.4'></script>
+        <script type='text/javascript' src='/assets/wp-includes/js/jquery/ui/resizable.mine899.js?ver=1.11.4'></script>
+        <script type='text/javascript' src='/assets/wp-includes/js/jquery/ui/draggable.mine899.js?ver=1.11.4'></script>
+        <script type='text/javascript' src='/assets/wp-includes/js/jquery/ui/position.mine899.js?ver=1.11.4'></script>
+        <script type='text/javascript' src='/assets/wp-includes/js/jquery/ui/dialog.mine899.js?ver=1.11.4'></script>
+        <script type='text/javascript' src='/assets/wp-includes/js/wpdialog.mind22c.js?ver=4.4.4'></script>
+        <script type='text/javascript' src='/assets/wp-content/plugins/contact-form-7/includes/js/jquery.form.mind03d.js?ver=3.51.0-2014.06.20'></script>
+
+        <script type='text/javascript' src='/assets/wp-content/plugins/contact-form-7/includes/js/scripts5b31.js?ver=4.3.1'></script>
+        <script type='text/javascript' src='/assets/code.tidio.co/code.tidio.co.js?ver=3.0.0'></script>
+        <script type='text/javascript' src='/assets/wp-includes/js/jquery/ui/datepicker.mine899.js?ver=1.11.4'></script>
+        <script type='text/javascript' src='/assets/wp-content/plugins/userpro/scripts/swfobjectd22c.js?ver=4.4.4'></script>
+        <script type='text/javascript' src='/assets/wp-content/plugins/userpro/scripts/spinners/spinners.mind22c.js?ver=4.4.4'></script>
+        <script type='text/javascript' src='/assets/wp-content/plugins/userpro/scripts/lightview/lightviewd22c.js?ver=4.4.4'></script>
+        <script type='text/javascript' src='/assets/wp-content/plugins/userpro/scripts/scripts.mind22c.js?ver=4.4.4'></script>
+        <script type='text/javascript' src='/assets/wp-content/plugins/userpro/scripts/performanced22c.js?ver=4.4.4'></script>
+        <script type='text/javascript' src='/assets/wp-content/plugins/woocommerce/assets/js/prettyPhoto/jquery.prettyPhoto.min005e.js?ver=3.1.6'></script>
+        <script type='text/javascript' src='/assets/wp-content/plugins/woocommerce/assets/js/prettyPhoto/jquery.prettyPhoto.init.min16b9.js?ver=2.5.2'></script>
+        <script type='text/javascript'>        var wc_single_product_params = { "i18n_required_rating_text": "Please select a rating", "review_rating_required": "yes" };</script>
+        <script type='text/javascript' src='/assets/wp-content/plugins/woocommerce/assets/js/frontend/single-product.min16b9.js?ver=2.5.2'></script>
+        <script type='text/javascript' src='/assets/wp-content/plugins/woocommerce/assets/js/jquery-blockui/jquery.blockUI.min44fd.js?ver=2.70'></script>
+
+        <script type='text/javascript' src='/assets/wp-content/plugins/woocommerce/assets/js/frontend/woocommerce.min16b9.js?ver=2.5.2'></script>
+        <script type='text/javascript' src='/assets/wp-content/plugins/woocommerce/assets/js/jquery-cookie/jquery_cookie.mine7f0.js?ver=1.3.1'></script>
+
+        <script type='text/javascript' src='/assets/wp-content/plugins/woocommerce/assets/js/frontend/cart-fragments.min16b9.js?ver=2.5.2'></script>
+        <%--<script type='text/javascript' src='/assets/wp-includes/js/comment-reply.mind22c.js?ver=4.4.4'></script>--%>
+        <script type='text/javascript' src='/assets/wp-content/themes/easyweb/js/jquery.plugins.js'></script>
+
+        <script type='text/javascript' src='/assets/wp-includes/js/mediaelement/mediaelement-and-player.min7796.js?ver=2.18.1-a'></script>
+        <script type='text/javascript' src='/assets/wp-content/themes/easyweb/js/webnus-custom.js'></script>
+        <script type='text/javascript' src='/assets/wp-content/themes/easyweb/js/colorize.js'></script>
+
+        <script type='text/javascript' src='/assets/wp-content/plugins/whmpress/js/whmpress8a54.js?ver=1.0.0'></script>
+        <script type='text/javascript' src='/assets/wp-content/plugins/whmpress/js/jquery.quicksearchd22c.js?ver=4.4.4'></script>
+        <script type='text/javascript' src='/assets/wp-content/plugins/whmpress/includes/DataTables/datatables.mind22c.js?ver=4.4.4'></script>
+
+        <script type='text/javascript' src='/assets/wp-content/plugins/wp-domain-checker/assets/script68b3.js?ver=1'></script>
+        <%--<script type='text/javascript' src='/assets/www.google.com/recaptcha/api2120.js?onload=onloadCallback&amp;render=explicit&amp;ver=1'></script>--%>
+        <script type='text/javascript' src='/assets/wp-includes/js/wp-embed.mind22c.js?ver=4.4.4'></script>
+        <script type='text/javascript' src='/assets/wp-content/themes/easyweb/js/live-search.js'></script>
+        <script type='text/javascript' src='/assets/wp-content/plugins/js_composer/assets/js/dist/js_composer_front.min.js?ver=4.9.2'></script>
+
+        <script type='text/javascript' src='/assets/wp-content/plugins/js_composer/assets/lib/vc_accordion/vc-accordion.min20fd.js?ver=4.9.2'></script>
+
+        <script src="/Scripts/script.js"></script>
+    </form>
+</body>
+
+<script type="text/javascript">
+    $('.advisor-open').click(function () {
+        setTimeout(function () {
+            $('.advisor-pop').animate(
+                {
+                    'right': '0'
+                    // to move it towards the right and, probably, off-screen.
+                }, 1000
+            )
+        }, 550);
+
+        $('.advisor-open').animate(
+            {
+                'right': '-50px'
+                // to move it towards the right and, probably, off-screen.
+            }, 500
+            );
+
+    });
+    $('.close2').click(function () {
+        $('.advisor-pop').animate(
+            {
+                'right': '-340px'
+                // to move it towards the right and, probably, off-screen.
+            }, 1000
+            );
+        setTimeout(function () {
+            $('.advisor-open').animate(
+                {
+                    'right': '0px'
+                    // to move it towards the right and, probably, off-screen.
+                }, 500
+                )
+        }, 1050);
+        $()
+    });
+</script>
+
+
+</html>
+

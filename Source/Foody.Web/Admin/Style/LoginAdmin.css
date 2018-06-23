@@ -1,0 +1,26 @@
+﻿
+/*.user-login-5 {
+    min-height: 100vh;
+    background: #39a9a4 !important;
+}
+
+.backstretch {
+    left: 31%;
+    top: 7%;
+    overflow: hidden;
+    margin: 0px;
+    padding: 8px;
+    z-index: -999998;
+    position: absolute;
+    background: #ddd;
+    border-radius: 14px;
+    border-radius: 10px !Important;
+}
+
+.user-login-5 .login-container > .login-content > h1 {
+    color: #fff;
+}
+
+.user-login-5 .login-container > .login-footer .login-copyright > p {
+    color: #fff;
+}*/

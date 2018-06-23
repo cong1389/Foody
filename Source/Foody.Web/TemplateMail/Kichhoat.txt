@@ -1,0 +1,9 @@
+﻿Xin chào {0}<br />
+<br />
+Chúc mừng tài khoản của bạn đã được đăng ký thành công tại thaytro.vn<br/>
+Tên đăng nhập là: {1}.<br />
+Email của bạn là: {2}.<br />
+Vui lòng nhấn vào đường dẫn dưới đây để xác nhận đăng ký tại website thaytro.vn:<br />
+<a href='{3}'>{3}</a>.<br />
+Bạn hãy dùng mật khẩu sau để đăng nhập:{4}. Khi đăng nhập bạn nhớ đổi mật khẩu<br/>
+Xin cám ơn bạn đã đến với website của chúng tôi.<br />

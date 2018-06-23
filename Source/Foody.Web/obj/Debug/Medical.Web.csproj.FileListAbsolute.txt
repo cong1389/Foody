@@ -1,0 +1,871 @@
+D:\projects\Dorris\MedicalCenter\trunk\Medical.Web\bin\Medical.Web.dll
+D:\projects\Dorris\MedicalCenter\trunk\Medical.Web\bin\Medical.Web.pdb
+D:\projects\Dorris\MedicalCenter\trunk\Medical.Web\bin\Cb.DBUtility.dll
+D:\projects\Dorris\MedicalCenter\trunk\Medical.Web\bin\Cb.Model.dll
+D:\projects\Dorris\MedicalCenter\trunk\Medical.Web\bin\Cb.SQLServerDAL.dll
+D:\projects\Dorris\MedicalCenter\trunk\Medical.Web\bin\Cb.Utility.dll
+D:\projects\Dorris\MedicalCenter\trunk\Medical.Web\bin\Cybervn.BLL.dll
+D:\projects\Dorris\MedicalCenter\trunk\Medical.Web\bin\Cb.IDAL.dll
+D:\projects\Dorris\MedicalCenter\trunk\Medical.Web\bin\Cb.DAL.dll
+D:\projects\Dorris\MedicalCenter\trunk\Medical.Web\bin\Microsoft.Practices.EnterpriseLibrary.Data.dll
+D:\projects\Dorris\MedicalCenter\trunk\Medical.Web\bin\Microsoft.Practices.EnterpriseLibrary.Common.dll
+D:\projects\Dorris\MedicalCenter\trunk\Medical.Web\bin\Cybervn.BLL.pdb
+D:\projects\Dorris\MedicalCenter\trunk\Medical.Web\bin\Cb.DBUtility.pdb
+D:\projects\Dorris\MedicalCenter\trunk\Medical.Web\bin\Cb.Model.pdb
+D:\projects\Dorris\MedicalCenter\trunk\Medical.Web\bin\Cb.SQLServerDAL.pdb
+D:\projects\Dorris\MedicalCenter\trunk\Medical.Web\bin\Cb.Utility.pdb
+D:\projects\Dorris\MedicalCenter\trunk\Medical.Web\bin\Cb.IDAL.pdb
+D:\projects\Dorris\MedicalCenter\trunk\Medical.Web\bin\Cb.DAL.pdb
+D:\projects\Dorris\MedicalCenter\trunk\Medical.Web\obj\Debug\ResolveAssemblyReference.cache
+D:\projects\Dorris\MedicalCenter\trunk\Medical.Web\obj\Debug\Medical.Web.dll.licenses
+D:\projects\Dorris\MedicalCenter\trunk\Medical.Web\obj\Debug\Medical.Web.dll
+D:\projects\Dorris\MedicalCenter\trunk\Medical.Web\obj\Debug\Medical.Web.pdb
+D:\DGC\Project\MediacallCenter\trunk\Medical.Web\bin\Medical.Web.dll
+D:\DGC\Project\MediacallCenter\trunk\Medical.Web\bin\Medical.Web.pdb
+D:\DGC\Project\MediacallCenter\trunk\Medical.Web\bin\AjaxControlToolkit.dll
+D:\DGC\Project\MediacallCenter\trunk\Medical.Web\bin\AntiXSSLibrary.dll
+D:\DGC\Project\MediacallCenter\trunk\Medical.Web\bin\Cb.DBUtility.dll
+D:\DGC\Project\MediacallCenter\trunk\Medical.Web\bin\Cb.Localization.dll
+D:\DGC\Project\MediacallCenter\trunk\Medical.Web\bin\Cb.Model.dll
+D:\DGC\Project\MediacallCenter\trunk\Medical.Web\bin\Cb.SQLServerDAL.dll
+D:\DGC\Project\MediacallCenter\trunk\Medical.Web\bin\Cb.Utility.dll
+D:\DGC\Project\MediacallCenter\trunk\Medical.Web\bin\Cb.WebControls.dll
+D:\DGC\Project\MediacallCenter\trunk\Medical.Web\bin\Cybervn.BLL.dll
+D:\DGC\Project\MediacallCenter\trunk\Medical.Web\bin\HtmlSanitizationLibrary.dll
+D:\DGC\Project\MediacallCenter\trunk\Medical.Web\bin\Intelligencia.UrlRewriter.dll
+D:\DGC\Project\MediacallCenter\trunk\Medical.Web\bin\Cb.IDAL.dll
+D:\DGC\Project\MediacallCenter\trunk\Medical.Web\bin\Cb.DAL.dll
+D:\DGC\Project\MediacallCenter\trunk\Medical.Web\bin\Microsoft.Practices.EnterpriseLibrary.Data.dll
+D:\DGC\Project\MediacallCenter\trunk\Medical.Web\bin\Microsoft.Practices.EnterpriseLibrary.Common.dll
+D:\DGC\Project\MediacallCenter\trunk\Medical.Web\bin\Cybervn.BLL.pdb
+D:\DGC\Project\MediacallCenter\trunk\Medical.Web\bin\Cb.DBUtility.pdb
+D:\DGC\Project\MediacallCenter\trunk\Medical.Web\bin\Cb.Localization.pdb
+D:\DGC\Project\MediacallCenter\trunk\Medical.Web\bin\Cb.Model.pdb
+D:\DGC\Project\MediacallCenter\trunk\Medical.Web\bin\Cb.SQLServerDAL.pdb
+D:\DGC\Project\MediacallCenter\trunk\Medical.Web\bin\Cb.Utility.pdb
+D:\DGC\Project\MediacallCenter\trunk\Medical.Web\bin\Cb.WebControls.pdb
+D:\DGC\Project\MediacallCenter\trunk\Medical.Web\bin\Cb.IDAL.pdb
+D:\DGC\Project\MediacallCenter\trunk\Medical.Web\bin\Cb.DAL.pdb
+D:\DGC\Project\MediacallCenter\trunk\Medical.Web\bin\en-US\Cb.Localization.resources.dll
+D:\DGC\Project\MediacallCenter\trunk\Medical.Web\bin\vi-VN\Cb.Localization.resources.dll
+D:\DGC\Project\MediacallCenter\trunk\Medical.Web\obj\Debug\Medical.Web.csprojResolveAssemblyReference.cache
+D:\DGC\Project\MediacallCenter\trunk\Medical.Web\obj\Debug\Medical.Web.dll.licenses
+D:\DGC\Project\MediacallCenter\trunk\Medical.Web\obj\Debug\Medical.Web.dll
+D:\DGC\Project\MediacallCenter\trunk\Medical.Web\obj\Debug\Medical.Web.pdb
+D:\DGC\FreeSoft\trunk\Medical.Web\bin\Cb.Web.dll
+D:\DGC\FreeSoft\trunk\Medical.Web\bin\Cb.Web.pdb
+D:\DGC\FreeSoft\trunk\Medical.Web\bin\AjaxControlToolkit.dll
+D:\DGC\FreeSoft\trunk\Medical.Web\bin\AntiXSSLibrary.dll
+D:\DGC\FreeSoft\trunk\Medical.Web\bin\Cb.BLL.dll
+D:\DGC\FreeSoft\trunk\Medical.Web\bin\Cb.DBUtility.dll
+D:\DGC\FreeSoft\trunk\Medical.Web\bin\Cb.Localization.dll
+D:\DGC\FreeSoft\trunk\Medical.Web\bin\Cb.Model.dll
+D:\DGC\FreeSoft\trunk\Medical.Web\bin\Cb.SQLServerDAL.dll
+D:\DGC\FreeSoft\trunk\Medical.Web\bin\Cb.Utility.dll
+D:\DGC\FreeSoft\trunk\Medical.Web\bin\Cb.WebControls.dll
+D:\DGC\FreeSoft\trunk\Medical.Web\bin\CuteWebUI.AjaxUploader.dll
+D:\DGC\FreeSoft\trunk\Medical.Web\bin\HtmlSanitizationLibrary.dll
+D:\DGC\FreeSoft\trunk\Medical.Web\bin\Intelligencia.UrlRewriter.dll
+D:\DGC\FreeSoft\trunk\Medical.Web\bin\Cb.IDAL.dll
+D:\DGC\FreeSoft\trunk\Medical.Web\bin\Cb.DALFactory.dll
+D:\DGC\FreeSoft\trunk\Medical.Web\bin\Cb.DAL.dll
+D:\DGC\FreeSoft\trunk\Medical.Web\bin\Microsoft.Practices.EnterpriseLibrary.Data.dll
+D:\DGC\FreeSoft\trunk\Medical.Web\bin\Microsoft.Practices.EnterpriseLibrary.Common.dll
+D:\DGC\FreeSoft\trunk\Medical.Web\bin\Cb.BLL.pdb
+D:\DGC\FreeSoft\trunk\Medical.Web\bin\Cb.DBUtility.pdb
+D:\DGC\FreeSoft\trunk\Medical.Web\bin\Cb.Localization.pdb
+D:\DGC\FreeSoft\trunk\Medical.Web\bin\Cb.Model.pdb
+D:\DGC\FreeSoft\trunk\Medical.Web\bin\Cb.SQLServerDAL.pdb
+D:\DGC\FreeSoft\trunk\Medical.Web\bin\Cb.Utility.pdb
+D:\DGC\FreeSoft\trunk\Medical.Web\bin\Cb.WebControls.pdb
+D:\DGC\FreeSoft\trunk\Medical.Web\bin\Cb.IDAL.pdb
+D:\DGC\FreeSoft\trunk\Medical.Web\bin\Cb.DALFactory.pdb
+D:\DGC\FreeSoft\trunk\Medical.Web\bin\Cb.DAL.pdb
+D:\DGC\FreeSoft\trunk\Medical.Web\bin\en-US\Cb.Localization.resources.dll
+D:\DGC\FreeSoft\trunk\Medical.Web\bin\vi-VN\Cb.Localization.resources.dll
+D:\DGC\FreeSoft\trunk\Medical.Web\obj\Debug\Medical.Web.csprojResolveAssemblyReference.cache
+D:\DGC\FreeSoft\trunk\Medical.Web\obj\Debug\Cb.Web.dll.licenses
+D:\DGC\FreeSoft\trunk\Medical.Web\obj\Debug\Cb.Web.dll
+D:\DGC\FreeSoft\trunk\Medical.Web\obj\Debug\Cb.Web.pdb
+D:\DAMBRI\trunk\Medical.Web\bin\Cb.Web.dll
+D:\DAMBRI\trunk\Medical.Web\bin\Cb.Web.pdb
+D:\DAMBRI\trunk\Medical.Web\bin\AjaxControlToolkit.dll
+D:\DAMBRI\trunk\Medical.Web\bin\AntiXSSLibrary.dll
+D:\DAMBRI\trunk\Medical.Web\bin\Cb.BLL.dll
+D:\DAMBRI\trunk\Medical.Web\bin\Cb.DBUtility.dll
+D:\DAMBRI\trunk\Medical.Web\bin\Cb.Localization.dll
+D:\DAMBRI\trunk\Medical.Web\bin\Cb.Model.dll
+D:\DAMBRI\trunk\Medical.Web\bin\Cb.SQLServerDAL.dll
+D:\DAMBRI\trunk\Medical.Web\bin\Cb.Utility.dll
+D:\DAMBRI\trunk\Medical.Web\bin\Cb.WebControls.dll
+D:\DAMBRI\trunk\Medical.Web\bin\CuteWebUI.AjaxUploader.dll
+D:\DAMBRI\trunk\Medical.Web\bin\HtmlSanitizationLibrary.dll
+D:\DAMBRI\trunk\Medical.Web\bin\Intelligencia.UrlRewriter.dll
+D:\DAMBRI\trunk\Medical.Web\bin\Cb.IDAL.dll
+D:\DAMBRI\trunk\Medical.Web\bin\Cb.DALFactory.dll
+D:\DAMBRI\trunk\Medical.Web\bin\Cb.DAL.dll
+D:\DAMBRI\trunk\Medical.Web\bin\Microsoft.Practices.EnterpriseLibrary.Data.dll
+D:\DAMBRI\trunk\Medical.Web\bin\Microsoft.Practices.EnterpriseLibrary.Common.dll
+D:\DAMBRI\trunk\Medical.Web\bin\Cb.BLL.pdb
+D:\DAMBRI\trunk\Medical.Web\bin\Cb.DBUtility.pdb
+D:\DAMBRI\trunk\Medical.Web\bin\Cb.Localization.pdb
+D:\DAMBRI\trunk\Medical.Web\bin\Cb.Model.pdb
+D:\DAMBRI\trunk\Medical.Web\bin\Cb.SQLServerDAL.pdb
+D:\DAMBRI\trunk\Medical.Web\bin\Cb.Utility.pdb
+D:\DAMBRI\trunk\Medical.Web\bin\Cb.WebControls.pdb
+D:\DAMBRI\trunk\Medical.Web\bin\Cb.IDAL.pdb
+D:\DAMBRI\trunk\Medical.Web\bin\Cb.DALFactory.pdb
+D:\DAMBRI\trunk\Medical.Web\bin\Cb.DAL.pdb
+D:\DAMBRI\trunk\Medical.Web\bin\en-US\Cb.Localization.resources.dll
+D:\DAMBRI\trunk\Medical.Web\bin\vi-VN\Cb.Localization.resources.dll
+D:\DAMBRI\trunk\Medical.Web\obj\Debug\Medical.Web.csprojResolveAssemblyReference.cache
+D:\DAMBRI\trunk\Medical.Web\obj\Debug\Cb.Web.dll.licenses
+D:\DAMBRI\trunk\Medical.Web\obj\Debug\Cb.Web.dll
+D:\DAMBRI\trunk\Medical.Web\obj\Debug\Cb.Web.pdb
+D:\DAMBRI\trunk\Medical.Web\obj\Debug\Cb.Web.Global.resources
+D:\DAMBRI\trunk\Medical.Web\obj\Debug\Medical.Web.csproj.GenerateResource.Cache
+C:\Users\User\Desktop\New folder (4)\Medical.Web\bin\Cb.Web.dll
+C:\Users\User\Desktop\New folder (4)\Medical.Web\bin\Cb.Web.pdb
+C:\Users\User\Desktop\New folder (4)\Medical.Web\bin\AjaxControlToolkit.dll
+C:\Users\User\Desktop\New folder (4)\Medical.Web\bin\AntiXSSLibrary.dll
+C:\Users\User\Desktop\New folder (4)\Medical.Web\bin\Cb.BLL.dll
+C:\Users\User\Desktop\New folder (4)\Medical.Web\bin\Cb.DBUtility.dll
+C:\Users\User\Desktop\New folder (4)\Medical.Web\bin\Cb.Localization.dll
+C:\Users\User\Desktop\New folder (4)\Medical.Web\bin\Cb.Model.dll
+C:\Users\User\Desktop\New folder (4)\Medical.Web\bin\Cb.SQLServerDAL.dll
+C:\Users\User\Desktop\New folder (4)\Medical.Web\bin\Cb.Utility.dll
+C:\Users\User\Desktop\New folder (4)\Medical.Web\bin\Cb.WebControls.dll
+C:\Users\User\Desktop\New folder (4)\Medical.Web\bin\CuteWebUI.AjaxUploader.dll
+C:\Users\User\Desktop\New folder (4)\Medical.Web\bin\HtmlSanitizationLibrary.dll
+C:\Users\User\Desktop\New folder (4)\Medical.Web\bin\Intelligencia.UrlRewriter.dll
+C:\Users\User\Desktop\New folder (4)\Medical.Web\bin\Telerik.Web.UI.dll
+C:\Users\User\Desktop\New folder (4)\Medical.Web\bin\Cb.IDAL.dll
+C:\Users\User\Desktop\New folder (4)\Medical.Web\bin\Cb.DALFactory.dll
+C:\Users\User\Desktop\New folder (4)\Medical.Web\bin\Cb.DAL.dll
+C:\Users\User\Desktop\New folder (4)\Medical.Web\bin\Microsoft.Practices.EnterpriseLibrary.Data.dll
+C:\Users\User\Desktop\New folder (4)\Medical.Web\bin\Microsoft.Practices.EnterpriseLibrary.Common.dll
+C:\Users\User\Desktop\New folder (4)\Medical.Web\bin\Cb.BLL.pdb
+C:\Users\User\Desktop\New folder (4)\Medical.Web\bin\Cb.DBUtility.pdb
+C:\Users\User\Desktop\New folder (4)\Medical.Web\bin\Cb.Localization.pdb
+C:\Users\User\Desktop\New folder (4)\Medical.Web\bin\Cb.Model.pdb
+C:\Users\User\Desktop\New folder (4)\Medical.Web\bin\Cb.SQLServerDAL.pdb
+C:\Users\User\Desktop\New folder (4)\Medical.Web\bin\Cb.Utility.pdb
+C:\Users\User\Desktop\New folder (4)\Medical.Web\bin\Cb.WebControls.pdb
+C:\Users\User\Desktop\New folder (4)\Medical.Web\bin\Cb.IDAL.pdb
+C:\Users\User\Desktop\New folder (4)\Medical.Web\bin\Cb.DALFactory.pdb
+C:\Users\User\Desktop\New folder (4)\Medical.Web\bin\Cb.DAL.pdb
+C:\Users\User\Desktop\New folder (4)\Medical.Web\bin\en-US\Cb.Localization.resources.dll
+C:\Users\User\Desktop\New folder (4)\Medical.Web\bin\vi-VN\Cb.Localization.resources.dll
+C:\Users\User\Desktop\New folder (4)\Medical.Web\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\User\Desktop\New folder (4)\Medical.Web\obj\Debug\Cb.Web.Global.resources
+C:\Users\User\Desktop\New folder (4)\Medical.Web\obj\Debug\GenerateResource.read.1.tlog
+C:\Users\User\Desktop\New folder (4)\Medical.Web\obj\Debug\GenerateResource.write.1.tlog
+C:\Users\User\Desktop\New folder (4)\Medical.Web\obj\Debug\Cb.Web.dll.licenses
+C:\Users\User\Desktop\New folder (4)\Medical.Web\obj\Debug\Cb.Web.dll
+C:\Users\User\Desktop\New folder (4)\Medical.Web\obj\Debug\Cb.Web.pdb
+D:\DAMBRI\Dambri3107\Medical.Web\bin\Cb.Web.dll
+D:\DAMBRI\Dambri3107\Medical.Web\bin\Cb.Web.pdb
+D:\DAMBRI\Dambri3107\Medical.Web\bin\AjaxControlToolkit.dll
+D:\DAMBRI\Dambri3107\Medical.Web\bin\AntiXSSLibrary.dll
+D:\DAMBRI\Dambri3107\Medical.Web\bin\Cb.BLL.dll
+D:\DAMBRI\Dambri3107\Medical.Web\bin\Cb.DBUtility.dll
+D:\DAMBRI\Dambri3107\Medical.Web\bin\Cb.Localization.dll
+D:\DAMBRI\Dambri3107\Medical.Web\bin\Cb.Model.dll
+D:\DAMBRI\Dambri3107\Medical.Web\bin\Cb.SQLServerDAL.dll
+D:\DAMBRI\Dambri3107\Medical.Web\bin\Cb.Utility.dll
+D:\DAMBRI\Dambri3107\Medical.Web\bin\Cb.WebControls.dll
+D:\DAMBRI\Dambri3107\Medical.Web\bin\CuteWebUI.AjaxUploader.dll
+D:\DAMBRI\Dambri3107\Medical.Web\bin\HtmlSanitizationLibrary.dll
+D:\DAMBRI\Dambri3107\Medical.Web\bin\Intelligencia.UrlRewriter.dll
+D:\DAMBRI\Dambri3107\Medical.Web\bin\Cb.IDAL.dll
+D:\DAMBRI\Dambri3107\Medical.Web\bin\Cb.DALFactory.dll
+D:\DAMBRI\Dambri3107\Medical.Web\bin\Cb.DAL.dll
+D:\DAMBRI\Dambri3107\Medical.Web\bin\Microsoft.Practices.EnterpriseLibrary.Data.dll
+D:\DAMBRI\Dambri3107\Medical.Web\bin\Microsoft.Practices.EnterpriseLibrary.Common.dll
+D:\DAMBRI\Dambri3107\Medical.Web\bin\Cb.BLL.pdb
+D:\DAMBRI\Dambri3107\Medical.Web\bin\Cb.DBUtility.pdb
+D:\DAMBRI\Dambri3107\Medical.Web\bin\Cb.Localization.pdb
+D:\DAMBRI\Dambri3107\Medical.Web\bin\Cb.Model.pdb
+D:\DAMBRI\Dambri3107\Medical.Web\bin\Cb.SQLServerDAL.pdb
+D:\DAMBRI\Dambri3107\Medical.Web\bin\Cb.Utility.pdb
+D:\DAMBRI\Dambri3107\Medical.Web\bin\Cb.WebControls.pdb
+D:\DAMBRI\Dambri3107\Medical.Web\bin\Cb.IDAL.pdb
+D:\DAMBRI\Dambri3107\Medical.Web\bin\Cb.DALFactory.pdb
+D:\DAMBRI\Dambri3107\Medical.Web\bin\Cb.DAL.pdb
+D:\DAMBRI\Dambri3107\Medical.Web\bin\en-US\Cb.Localization.resources.dll
+D:\DAMBRI\Dambri3107\Medical.Web\bin\vi-VN\Cb.Localization.resources.dll
+D:\DAMBRI\Dambri3107\Medical.Web\obj\Debug\Medical.Web.csprojResolveAssemblyReference.cache
+D:\DAMBRI\Dambri3107\Medical.Web\obj\Debug\Cb.Web.Global.resources
+D:\DAMBRI\Dambri3107\Medical.Web\obj\Debug\Medical.Web.csproj.GenerateResource.Cache
+D:\DAMBRI\Dambri3107\Medical.Web\obj\Debug\Cb.Web.dll.licenses
+D:\DAMBRI\Dambri3107\Medical.Web\obj\Debug\Cb.Web.dll
+D:\DAMBRI\Dambri3107\Medical.Web\obj\Debug\Cb.Web.pdb
+D:\DAMBRI\dambri0108\Dambri3107\Medical.Web\bin\Cb.Web.dll
+D:\DAMBRI\dambri0108\Dambri3107\Medical.Web\bin\Cb.Web.pdb
+D:\DAMBRI\dambri0108\Dambri3107\Medical.Web\bin\AjaxControlToolkit.dll
+D:\DAMBRI\dambri0108\Dambri3107\Medical.Web\bin\AntiXSSLibrary.dll
+D:\DAMBRI\dambri0108\Dambri3107\Medical.Web\bin\Cb.BLL.dll
+D:\DAMBRI\dambri0108\Dambri3107\Medical.Web\bin\Cb.DBUtility.dll
+D:\DAMBRI\dambri0108\Dambri3107\Medical.Web\bin\Cb.Localization.dll
+D:\DAMBRI\dambri0108\Dambri3107\Medical.Web\bin\Cb.Model.dll
+D:\DAMBRI\dambri0108\Dambri3107\Medical.Web\bin\Cb.SQLServerDAL.dll
+D:\DAMBRI\dambri0108\Dambri3107\Medical.Web\bin\Cb.Utility.dll
+D:\DAMBRI\dambri0108\Dambri3107\Medical.Web\bin\Cb.WebControls.dll
+D:\DAMBRI\dambri0108\Dambri3107\Medical.Web\bin\CuteWebUI.AjaxUploader.dll
+D:\DAMBRI\dambri0108\Dambri3107\Medical.Web\bin\eStreamChat.dll
+D:\DAMBRI\dambri0108\Dambri3107\Medical.Web\bin\eStreamChat.Interfaces.dll
+D:\DAMBRI\dambri0108\Dambri3107\Medical.Web\bin\eStreamChat.SampleProviders.dll
+D:\DAMBRI\dambri0108\Dambri3107\Medical.Web\bin\HtmlSanitizationLibrary.dll
+D:\DAMBRI\dambri0108\Dambri3107\Medical.Web\bin\Intelligencia.UrlRewriter.dll
+D:\DAMBRI\dambri0108\Dambri3107\Medical.Web\bin\Microsoft.Practices.ServiceLocation.dll
+D:\DAMBRI\dambri0108\Dambri3107\Medical.Web\bin\Microsoft.Practices.Unity.Configuration.dll
+D:\DAMBRI\dambri0108\Dambri3107\Medical.Web\bin\Microsoft.Practices.Unity.dll
+D:\DAMBRI\dambri0108\Dambri3107\Medical.Web\bin\Cb.IDAL.dll
+D:\DAMBRI\dambri0108\Dambri3107\Medical.Web\bin\Cb.DALFactory.dll
+D:\DAMBRI\dambri0108\Dambri3107\Medical.Web\bin\Cb.DAL.dll
+D:\DAMBRI\dambri0108\Dambri3107\Medical.Web\bin\Microsoft.Practices.EnterpriseLibrary.Data.dll
+D:\DAMBRI\dambri0108\Dambri3107\Medical.Web\bin\Microsoft.Practices.EnterpriseLibrary.Common.dll
+D:\DAMBRI\dambri0108\Dambri3107\Medical.Web\bin\Cb.BLL.pdb
+D:\DAMBRI\dambri0108\Dambri3107\Medical.Web\bin\Cb.DBUtility.pdb
+D:\DAMBRI\dambri0108\Dambri3107\Medical.Web\bin\Cb.Localization.pdb
+D:\DAMBRI\dambri0108\Dambri3107\Medical.Web\bin\Cb.Model.pdb
+D:\DAMBRI\dambri0108\Dambri3107\Medical.Web\bin\Cb.SQLServerDAL.pdb
+D:\DAMBRI\dambri0108\Dambri3107\Medical.Web\bin\Cb.Utility.pdb
+D:\DAMBRI\dambri0108\Dambri3107\Medical.Web\bin\Cb.WebControls.pdb
+D:\DAMBRI\dambri0108\Dambri3107\Medical.Web\bin\eStreamChat.Interfaces.pdb
+D:\DAMBRI\dambri0108\Dambri3107\Medical.Web\bin\eStreamChat.SampleProviders.pdb
+D:\DAMBRI\dambri0108\Dambri3107\Medical.Web\bin\Microsoft.Practices.Unity.xml
+D:\DAMBRI\dambri0108\Dambri3107\Medical.Web\bin\Microsoft.Practices.Unity.Configuration.xml
+D:\DAMBRI\dambri0108\Dambri3107\Medical.Web\bin\Cb.IDAL.pdb
+D:\DAMBRI\dambri0108\Dambri3107\Medical.Web\bin\Cb.DALFactory.pdb
+D:\DAMBRI\dambri0108\Dambri3107\Medical.Web\bin\Cb.DAL.pdb
+D:\DAMBRI\dambri0108\Dambri3107\Medical.Web\bin\en-US\Cb.Localization.resources.dll
+D:\DAMBRI\dambri0108\Dambri3107\Medical.Web\bin\vi-VN\Cb.Localization.resources.dll
+D:\DAMBRI\dambri0108\Dambri3107\Medical.Web\obj\Debug\Medical.Web.csprojResolveAssemblyReference.cache
+D:\DAMBRI\dambri0108\Dambri3107\Medical.Web\obj\Debug\Cb.Web.Global.resources
+D:\DAMBRI\dambri0108\Dambri3107\Medical.Web\obj\Debug\Medical.Web.csproj.GenerateResource.Cache
+D:\DAMBRI\dambri0108\Dambri3107\Medical.Web\obj\Debug\Cb.Web.dll.licenses
+D:\DAMBRI\dambri0108\Dambri3107\Medical.Web\obj\Debug\Cb.Web.dll
+D:\DAMBRI\dambri0108\Dambri3107\Medical.Web\obj\Debug\Cb.Web.pdb
+D:\DAMBRI\dambri0108\Dambri3107\Dambri3107\Medical.Web\bin\Cb.Web.dll
+D:\DAMBRI\dambri0108\Dambri3107\Dambri3107\Medical.Web\bin\Cb.Web.pdb
+D:\DAMBRI\dambri0108\Dambri3107\Dambri3107\Medical.Web\bin\AjaxControlToolkit.dll
+D:\DAMBRI\dambri0108\Dambri3107\Dambri3107\Medical.Web\bin\AntiXSSLibrary.dll
+D:\DAMBRI\dambri0108\Dambri3107\Dambri3107\Medical.Web\bin\Cb.BLL.dll
+D:\DAMBRI\dambri0108\Dambri3107\Dambri3107\Medical.Web\bin\Cb.DBUtility.dll
+D:\DAMBRI\dambri0108\Dambri3107\Dambri3107\Medical.Web\bin\Cb.Localization.dll
+D:\DAMBRI\dambri0108\Dambri3107\Dambri3107\Medical.Web\bin\Cb.Model.dll
+D:\DAMBRI\dambri0108\Dambri3107\Dambri3107\Medical.Web\bin\Cb.SQLServerDAL.dll
+D:\DAMBRI\dambri0108\Dambri3107\Dambri3107\Medical.Web\bin\Cb.Utility.dll
+D:\DAMBRI\dambri0108\Dambri3107\Dambri3107\Medical.Web\bin\Cb.WebControls.dll
+D:\DAMBRI\dambri0108\Dambri3107\Dambri3107\Medical.Web\bin\CuteWebUI.AjaxUploader.dll
+D:\DAMBRI\dambri0108\Dambri3107\Dambri3107\Medical.Web\bin\eStreamChat.dll
+D:\DAMBRI\dambri0108\Dambri3107\Dambri3107\Medical.Web\bin\eStreamChat.Interfaces.dll
+D:\DAMBRI\dambri0108\Dambri3107\Dambri3107\Medical.Web\bin\eStreamChat.SampleProviders.dll
+D:\DAMBRI\dambri0108\Dambri3107\Dambri3107\Medical.Web\bin\HtmlSanitizationLibrary.dll
+D:\DAMBRI\dambri0108\Dambri3107\Dambri3107\Medical.Web\bin\Intelligencia.UrlRewriter.dll
+D:\DAMBRI\dambri0108\Dambri3107\Dambri3107\Medical.Web\bin\Microsoft.Practices.ServiceLocation.dll
+D:\DAMBRI\dambri0108\Dambri3107\Dambri3107\Medical.Web\bin\Microsoft.Practices.Unity.Configuration.dll
+D:\DAMBRI\dambri0108\Dambri3107\Dambri3107\Medical.Web\bin\Microsoft.Practices.Unity.dll
+D:\DAMBRI\dambri0108\Dambri3107\Dambri3107\Medical.Web\bin\Cb.IDAL.dll
+D:\DAMBRI\dambri0108\Dambri3107\Dambri3107\Medical.Web\bin\Cb.DALFactory.dll
+D:\DAMBRI\dambri0108\Dambri3107\Dambri3107\Medical.Web\bin\Cb.DAL.dll
+D:\DAMBRI\dambri0108\Dambri3107\Dambri3107\Medical.Web\bin\Microsoft.Practices.EnterpriseLibrary.Data.dll
+D:\DAMBRI\dambri0108\Dambri3107\Dambri3107\Medical.Web\bin\Microsoft.Practices.EnterpriseLibrary.Common.dll
+D:\DAMBRI\dambri0108\Dambri3107\Dambri3107\Medical.Web\bin\Cb.BLL.pdb
+D:\DAMBRI\dambri0108\Dambri3107\Dambri3107\Medical.Web\bin\Cb.DBUtility.pdb
+D:\DAMBRI\dambri0108\Dambri3107\Dambri3107\Medical.Web\bin\Cb.Localization.pdb
+D:\DAMBRI\dambri0108\Dambri3107\Dambri3107\Medical.Web\bin\Cb.Model.pdb
+D:\DAMBRI\dambri0108\Dambri3107\Dambri3107\Medical.Web\bin\Cb.SQLServerDAL.pdb
+D:\DAMBRI\dambri0108\Dambri3107\Dambri3107\Medical.Web\bin\Cb.Utility.pdb
+D:\DAMBRI\dambri0108\Dambri3107\Dambri3107\Medical.Web\bin\Cb.WebControls.pdb
+D:\DAMBRI\dambri0108\Dambri3107\Dambri3107\Medical.Web\bin\eStreamChat.Interfaces.pdb
+D:\DAMBRI\dambri0108\Dambri3107\Dambri3107\Medical.Web\bin\eStreamChat.SampleProviders.pdb
+D:\DAMBRI\dambri0108\Dambri3107\Dambri3107\Medical.Web\bin\Microsoft.Practices.Unity.xml
+D:\DAMBRI\dambri0108\Dambri3107\Dambri3107\Medical.Web\bin\Microsoft.Practices.Unity.Configuration.xml
+D:\DAMBRI\dambri0108\Dambri3107\Dambri3107\Medical.Web\bin\Cb.IDAL.pdb
+D:\DAMBRI\dambri0108\Dambri3107\Dambri3107\Medical.Web\bin\Cb.DALFactory.pdb
+D:\DAMBRI\dambri0108\Dambri3107\Dambri3107\Medical.Web\bin\Cb.DAL.pdb
+D:\DAMBRI\dambri0108\Dambri3107\Dambri3107\Medical.Web\bin\en-US\Cb.Localization.resources.dll
+D:\DAMBRI\dambri0108\Dambri3107\Dambri3107\Medical.Web\bin\vi-VN\Cb.Localization.resources.dll
+D:\DAMBRI\dambri0108\Dambri3107\Dambri3107\Medical.Web\obj\Debug\Medical.Web.csprojResolveAssemblyReference.cache
+D:\DAMBRI\dambri0108\Dambri3107\Dambri3107\Medical.Web\obj\Debug\Cb.Web.Global.resources
+D:\DAMBRI\dambri0108\Dambri3107\Dambri3107\Medical.Web\obj\Debug\Medical.Web.csproj.GenerateResource.Cache
+D:\DAMBRI\dambri0108\Dambri3107\Dambri3107\Medical.Web\obj\Debug\Cb.Web.dll.licenses
+D:\DAMBRI\dambri0108\Dambri3107\Dambri3107\Medical.Web\obj\Debug\Cb.Web.dll
+D:\DAMBRI\dambri0108\Dambri3107\Dambri3107\Medical.Web\obj\Debug\Cb.Web.pdb
+C:\Users\User\Desktop\Dambri0708\Dambri\Medical.Web\bin\Cb.Web.dll
+C:\Users\User\Desktop\Dambri0708\Dambri\Medical.Web\bin\Cb.Web.pdb
+C:\Users\User\Desktop\Dambri0708\Dambri\Medical.Web\bin\AjaxControlToolkit.dll
+C:\Users\User\Desktop\Dambri0708\Dambri\Medical.Web\bin\AntiXSSLibrary.dll
+C:\Users\User\Desktop\Dambri0708\Dambri\Medical.Web\bin\Cb.BLL.dll
+C:\Users\User\Desktop\Dambri0708\Dambri\Medical.Web\bin\Cb.DBUtility.dll
+C:\Users\User\Desktop\Dambri0708\Dambri\Medical.Web\bin\Cb.Localization.dll
+C:\Users\User\Desktop\Dambri0708\Dambri\Medical.Web\bin\Cb.Model.dll
+C:\Users\User\Desktop\Dambri0708\Dambri\Medical.Web\bin\Cb.SQLServerDAL.dll
+C:\Users\User\Desktop\Dambri0708\Dambri\Medical.Web\bin\Cb.Utility.dll
+C:\Users\User\Desktop\Dambri0708\Dambri\Medical.Web\bin\Cb.WebControls.dll
+C:\Users\User\Desktop\Dambri0708\Dambri\Medical.Web\bin\CuteWebUI.AjaxUploader.dll
+C:\Users\User\Desktop\Dambri0708\Dambri\Medical.Web\bin\eStreamChat.dll
+C:\Users\User\Desktop\Dambri0708\Dambri\Medical.Web\bin\eStreamChat.Interfaces.dll
+C:\Users\User\Desktop\Dambri0708\Dambri\Medical.Web\bin\eStreamChat.SampleProviders.dll
+C:\Users\User\Desktop\Dambri0708\Dambri\Medical.Web\bin\HtmlSanitizationLibrary.dll
+C:\Users\User\Desktop\Dambri0708\Dambri\Medical.Web\bin\Intelligencia.UrlRewriter.dll
+C:\Users\User\Desktop\Dambri0708\Dambri\Medical.Web\bin\Microsoft.Practices.ServiceLocation.dll
+C:\Users\User\Desktop\Dambri0708\Dambri\Medical.Web\bin\Microsoft.Practices.Unity.Configuration.dll
+C:\Users\User\Desktop\Dambri0708\Dambri\Medical.Web\bin\Microsoft.Practices.Unity.dll
+C:\Users\User\Desktop\Dambri0708\Dambri\Medical.Web\bin\Cb.IDAL.dll
+C:\Users\User\Desktop\Dambri0708\Dambri\Medical.Web\bin\Cb.DALFactory.dll
+C:\Users\User\Desktop\Dambri0708\Dambri\Medical.Web\bin\Cb.DAL.dll
+C:\Users\User\Desktop\Dambri0708\Dambri\Medical.Web\bin\Microsoft.Practices.EnterpriseLibrary.Data.dll
+C:\Users\User\Desktop\Dambri0708\Dambri\Medical.Web\bin\Microsoft.Practices.EnterpriseLibrary.Common.dll
+C:\Users\User\Desktop\Dambri0708\Dambri\Medical.Web\bin\Cb.BLL.pdb
+C:\Users\User\Desktop\Dambri0708\Dambri\Medical.Web\bin\Cb.DBUtility.pdb
+C:\Users\User\Desktop\Dambri0708\Dambri\Medical.Web\bin\Cb.Localization.pdb
+C:\Users\User\Desktop\Dambri0708\Dambri\Medical.Web\bin\Cb.Model.pdb
+C:\Users\User\Desktop\Dambri0708\Dambri\Medical.Web\bin\Cb.SQLServerDAL.pdb
+C:\Users\User\Desktop\Dambri0708\Dambri\Medical.Web\bin\Cb.Utility.pdb
+C:\Users\User\Desktop\Dambri0708\Dambri\Medical.Web\bin\Cb.WebControls.pdb
+C:\Users\User\Desktop\Dambri0708\Dambri\Medical.Web\bin\eStreamChat.Interfaces.pdb
+C:\Users\User\Desktop\Dambri0708\Dambri\Medical.Web\bin\eStreamChat.SampleProviders.pdb
+C:\Users\User\Desktop\Dambri0708\Dambri\Medical.Web\bin\Microsoft.Practices.Unity.xml
+C:\Users\User\Desktop\Dambri0708\Dambri\Medical.Web\bin\Microsoft.Practices.Unity.Configuration.xml
+C:\Users\User\Desktop\Dambri0708\Dambri\Medical.Web\bin\Cb.IDAL.pdb
+C:\Users\User\Desktop\Dambri0708\Dambri\Medical.Web\bin\Cb.DALFactory.pdb
+C:\Users\User\Desktop\Dambri0708\Dambri\Medical.Web\bin\Cb.DAL.pdb
+C:\Users\User\Desktop\Dambri0708\Dambri\Medical.Web\bin\en-US\Cb.Localization.resources.dll
+C:\Users\User\Desktop\Dambri0708\Dambri\Medical.Web\bin\vi-VN\Cb.Localization.resources.dll
+C:\Users\User\Desktop\Dambri0708\Dambri\Medical.Web\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\User\Desktop\Dambri0708\Dambri\Medical.Web\obj\Debug\Cb.Web.Global.resources
+C:\Users\User\Desktop\Dambri0708\Dambri\Medical.Web\obj\Debug\GenerateResource.read.1.tlog
+C:\Users\User\Desktop\Dambri0708\Dambri\Medical.Web\obj\Debug\GenerateResource.write.1.tlog
+C:\Users\User\Desktop\Dambri0708\Dambri\Medical.Web\obj\Debug\Cb.Web.dll.licenses
+C:\Users\User\Desktop\Dambri0708\Dambri\Medical.Web\obj\Debug\Cb.Web.dll
+C:\Users\User\Desktop\Dambri0708\Dambri\Medical.Web\obj\Debug\Cb.Web.pdb
+D:\SkyDrive\Dambri\Medical.Web\obj\Debug\Medical.Web.csprojResolveAssemblyReference.cache
+D:\SkyDrive\Dambri\Medical.Web\obj\Debug\Cb.Web.Global.resources
+D:\SkyDrive\Dambri\Medical.Web\obj\Debug\Medical.Web.csproj.GenerateResource.Cache
+D:\SkyDrive\Dambri\Medical.Web\obj\Debug\Cb.Web.dll.licenses
+D:\SkyDrive\Dambri\Medical.Web\bin\Cb.Web.dll
+D:\SkyDrive\Dambri\Medical.Web\bin\Cb.Web.pdb
+D:\SkyDrive\Dambri\Medical.Web\bin\AjaxControlToolkit.dll
+D:\SkyDrive\Dambri\Medical.Web\bin\AntiXSSLibrary.dll
+D:\SkyDrive\Dambri\Medical.Web\bin\Cb.BLL.dll
+D:\SkyDrive\Dambri\Medical.Web\bin\Cb.DBUtility.dll
+D:\SkyDrive\Dambri\Medical.Web\bin\Cb.Localization.dll
+D:\SkyDrive\Dambri\Medical.Web\bin\Cb.Model.dll
+D:\SkyDrive\Dambri\Medical.Web\bin\Cb.SQLServerDAL.dll
+D:\SkyDrive\Dambri\Medical.Web\bin\Cb.Utility.dll
+D:\SkyDrive\Dambri\Medical.Web\bin\Cb.WebControls.dll
+D:\SkyDrive\Dambri\Medical.Web\bin\CuteWebUI.AjaxUploader.dll
+D:\SkyDrive\Dambri\Medical.Web\bin\eStreamChat.dll
+D:\SkyDrive\Dambri\Medical.Web\bin\eStreamChat.Interfaces.dll
+D:\SkyDrive\Dambri\Medical.Web\bin\eStreamChat.SampleProviders.dll
+D:\SkyDrive\Dambri\Medical.Web\bin\facebook.desktop.dll
+D:\SkyDrive\Dambri\Medical.Web\bin\facebook.dll
+D:\SkyDrive\Dambri\Medical.Web\bin\facebook.web.dll
+D:\SkyDrive\Dambri\Medical.Web\bin\HtmlSanitizationLibrary.dll
+D:\SkyDrive\Dambri\Medical.Web\bin\Intelligencia.UrlRewriter.dll
+D:\SkyDrive\Dambri\Medical.Web\bin\Microsoft.Practices.ServiceLocation.dll
+D:\SkyDrive\Dambri\Medical.Web\bin\Microsoft.Practices.Unity.Configuration.dll
+D:\SkyDrive\Dambri\Medical.Web\bin\Microsoft.Practices.Unity.dll
+D:\SkyDrive\Dambri\Medical.Web\bin\Cb.IDAL.dll
+D:\SkyDrive\Dambri\Medical.Web\bin\Cb.DALFactory.dll
+D:\SkyDrive\Dambri\Medical.Web\bin\Cb.DAL.dll
+D:\SkyDrive\Dambri\Medical.Web\bin\Microsoft.Practices.EnterpriseLibrary.Data.dll
+D:\SkyDrive\Dambri\Medical.Web\bin\Microsoft.Xml.Schema.Linq.dll
+D:\SkyDrive\Dambri\Medical.Web\bin\Microsoft.Practices.EnterpriseLibrary.Common.dll
+D:\SkyDrive\Dambri\Medical.Web\bin\Cb.BLL.pdb
+D:\SkyDrive\Dambri\Medical.Web\bin\Cb.DBUtility.pdb
+D:\SkyDrive\Dambri\Medical.Web\bin\Cb.Localization.pdb
+D:\SkyDrive\Dambri\Medical.Web\bin\Cb.Model.pdb
+D:\SkyDrive\Dambri\Medical.Web\bin\Cb.SQLServerDAL.pdb
+D:\SkyDrive\Dambri\Medical.Web\bin\Cb.Utility.pdb
+D:\SkyDrive\Dambri\Medical.Web\bin\Cb.WebControls.pdb
+D:\SkyDrive\Dambri\Medical.Web\bin\facebook.xml
+D:\SkyDrive\Dambri\Medical.Web\bin\facebook.desktop.xml
+D:\SkyDrive\Dambri\Medical.Web\bin\facebook.web.xml
+D:\SkyDrive\Dambri\Medical.Web\bin\Microsoft.Practices.Unity.xml
+D:\SkyDrive\Dambri\Medical.Web\bin\Microsoft.Practices.Unity.Configuration.xml
+D:\SkyDrive\Dambri\Medical.Web\bin\Cb.IDAL.pdb
+D:\SkyDrive\Dambri\Medical.Web\bin\Cb.DALFactory.pdb
+D:\SkyDrive\Dambri\Medical.Web\bin\Cb.DAL.pdb
+D:\SkyDrive\Dambri\Medical.Web\bin\en-US\Cb.Localization.resources.dll
+D:\SkyDrive\Dambri\Medical.Web\bin\vi-VN\Cb.Localization.resources.dll
+D:\SkyDrive\Dambri\Medical.Web\obj\Debug\Cb.Web.dll
+D:\SkyDrive\Dambri\Medical.Web\obj\Debug\Cb.Web.pdb
+E:\ \2808\Dambri\Medical.Web\bin\Cb.Web.dll
+E:\ \2808\Dambri\Medical.Web\bin\Cb.Web.pdb
+E:\ \2808\Dambri\Medical.Web\bin\AjaxControlToolkit.dll
+E:\ \2808\Dambri\Medical.Web\bin\AntiXSSLibrary.dll
+E:\ \2808\Dambri\Medical.Web\bin\Cb.BLL.dll
+E:\ \2808\Dambri\Medical.Web\bin\Cb.DBUtility.dll
+E:\ \2808\Dambri\Medical.Web\bin\Cb.Localization.dll
+E:\ \2808\Dambri\Medical.Web\bin\Cb.Model.dll
+E:\ \2808\Dambri\Medical.Web\bin\Cb.SQLServerDAL.dll
+E:\ \2808\Dambri\Medical.Web\bin\Cb.Utility.dll
+E:\ \2808\Dambri\Medical.Web\bin\Cb.WebControls.dll
+E:\ \2808\Dambri\Medical.Web\bin\CuteWebUI.AjaxUploader.dll
+E:\ \2808\Dambri\Medical.Web\bin\eStreamChat.dll
+E:\ \2808\Dambri\Medical.Web\bin\eStreamChat.Interfaces.dll
+E:\ \2808\Dambri\Medical.Web\bin\eStreamChat.SampleProviders.dll
+E:\ \2808\Dambri\Medical.Web\bin\HtmlSanitizationLibrary.dll
+E:\ \2808\Dambri\Medical.Web\bin\Intelligencia.UrlRewriter.dll
+E:\ \2808\Dambri\Medical.Web\bin\Microsoft.Practices.ServiceLocation.dll
+E:\ \2808\Dambri\Medical.Web\bin\Microsoft.Practices.Unity.Configuration.dll
+E:\ \2808\Dambri\Medical.Web\bin\Microsoft.Practices.Unity.dll
+E:\ \2808\Dambri\Medical.Web\bin\Cb.IDAL.dll
+E:\ \2808\Dambri\Medical.Web\bin\Cb.DALFactory.dll
+E:\ \2808\Dambri\Medical.Web\bin\Cb.DAL.dll
+E:\ \2808\Dambri\Medical.Web\bin\Microsoft.Practices.EnterpriseLibrary.Data.dll
+E:\ \2808\Dambri\Medical.Web\bin\Microsoft.Xml.Schema.Linq.dll
+E:\ \2808\Dambri\Medical.Web\bin\Microsoft.Practices.EnterpriseLibrary.Common.dll
+E:\ \2808\Dambri\Medical.Web\bin\Cb.BLL.pdb
+E:\ \2808\Dambri\Medical.Web\bin\Cb.DBUtility.pdb
+E:\ \2808\Dambri\Medical.Web\bin\Cb.Localization.pdb
+E:\ \2808\Dambri\Medical.Web\bin\Cb.Model.pdb
+E:\ \2808\Dambri\Medical.Web\bin\Cb.SQLServerDAL.pdb
+E:\ \2808\Dambri\Medical.Web\bin\Cb.Utility.pdb
+E:\ \2808\Dambri\Medical.Web\bin\Cb.WebControls.pdb
+E:\ \2808\Dambri\Medical.Web\bin\facebook.xml
+E:\ \2808\Dambri\Medical.Web\bin\facebook.desktop.xml
+E:\ \2808\Dambri\Medical.Web\bin\facebook.web.xml
+E:\ \2808\Dambri\Medical.Web\bin\Microsoft.Practices.Unity.xml
+E:\ \2808\Dambri\Medical.Web\bin\Microsoft.Practices.Unity.Configuration.xml
+E:\ \2808\Dambri\Medical.Web\bin\Cb.IDAL.pdb
+E:\ \2808\Dambri\Medical.Web\bin\Cb.DALFactory.pdb
+E:\ \2808\Dambri\Medical.Web\bin\Cb.DAL.pdb
+E:\ \2808\Dambri\Medical.Web\bin\en-US\Cb.Localization.resources.dll
+E:\ \2808\Dambri\Medical.Web\bin\vi-VN\Cb.Localization.resources.dll
+E:\ \2808\Dambri\Medical.Web\obj\Debug\Medical.Web.csprojResolveAssemblyReference.cache
+E:\ \2808\Dambri\Medical.Web\obj\Debug\Cb.Web.Global.resources
+E:\ \2808\Dambri\Medical.Web\obj\Debug\Medical.Web.csproj.GenerateResource.Cache
+E:\ \2808\Dambri\Medical.Web\obj\Debug\Cb.Web.dll.licenses
+E:\ \2808\Dambri\Medical.Web\obj\Debug\Cb.Web.dll
+E:\ \2808\Dambri\Medical.Web\obj\Debug\Cb.Web.pdb
+H:\ \2808\Dambri\Medical.Web\bin\Cb.Web.dll
+H:\ \2808\Dambri\Medical.Web\bin\Cb.Web.pdb
+H:\ \2808\Dambri\Medical.Web\bin\AjaxControlToolkit.dll
+H:\ \2808\Dambri\Medical.Web\bin\AntiXSSLibrary.dll
+H:\ \2808\Dambri\Medical.Web\bin\Cb.BLL.dll
+H:\ \2808\Dambri\Medical.Web\bin\Cb.DBUtility.dll
+H:\ \2808\Dambri\Medical.Web\bin\Cb.Localization.dll
+H:\ \2808\Dambri\Medical.Web\bin\Cb.Model.dll
+H:\ \2808\Dambri\Medical.Web\bin\Cb.SQLServerDAL.dll
+H:\ \2808\Dambri\Medical.Web\bin\Cb.Utility.dll
+H:\ \2808\Dambri\Medical.Web\bin\Cb.WebControls.dll
+H:\ \2808\Dambri\Medical.Web\bin\CuteWebUI.AjaxUploader.dll
+H:\ \2808\Dambri\Medical.Web\bin\eStreamChat.dll
+H:\ \2808\Dambri\Medical.Web\bin\eStreamChat.Interfaces.dll
+H:\ \2808\Dambri\Medical.Web\bin\eStreamChat.SampleProviders.dll
+H:\ \2808\Dambri\Medical.Web\bin\HtmlSanitizationLibrary.dll
+H:\ \2808\Dambri\Medical.Web\bin\Intelligencia.UrlRewriter.dll
+H:\ \2808\Dambri\Medical.Web\bin\Microsoft.Practices.ServiceLocation.dll
+H:\ \2808\Dambri\Medical.Web\bin\Microsoft.Practices.Unity.Configuration.dll
+H:\ \2808\Dambri\Medical.Web\bin\Microsoft.Practices.Unity.dll
+H:\ \2808\Dambri\Medical.Web\bin\Cb.IDAL.dll
+H:\ \2808\Dambri\Medical.Web\bin\Cb.DALFactory.dll
+H:\ \2808\Dambri\Medical.Web\bin\Cb.DAL.dll
+H:\ \2808\Dambri\Medical.Web\bin\Microsoft.Practices.EnterpriseLibrary.Data.dll
+H:\ \2808\Dambri\Medical.Web\bin\Microsoft.Xml.Schema.Linq.dll
+H:\ \2808\Dambri\Medical.Web\bin\Microsoft.Practices.EnterpriseLibrary.Common.dll
+H:\ \2808\Dambri\Medical.Web\bin\Cb.BLL.pdb
+H:\ \2808\Dambri\Medical.Web\bin\Cb.DBUtility.pdb
+H:\ \2808\Dambri\Medical.Web\bin\Cb.Localization.pdb
+H:\ \2808\Dambri\Medical.Web\bin\Cb.Model.pdb
+H:\ \2808\Dambri\Medical.Web\bin\Cb.SQLServerDAL.pdb
+H:\ \2808\Dambri\Medical.Web\bin\Cb.Utility.pdb
+H:\ \2808\Dambri\Medical.Web\bin\Cb.WebControls.pdb
+H:\ \2808\Dambri\Medical.Web\bin\facebook.xml
+H:\ \2808\Dambri\Medical.Web\bin\facebook.desktop.xml
+H:\ \2808\Dambri\Medical.Web\bin\facebook.web.xml
+H:\ \2808\Dambri\Medical.Web\bin\Microsoft.Practices.Unity.xml
+H:\ \2808\Dambri\Medical.Web\bin\Microsoft.Practices.Unity.Configuration.xml
+H:\ \2808\Dambri\Medical.Web\bin\Cb.IDAL.pdb
+H:\ \2808\Dambri\Medical.Web\bin\Cb.DALFactory.pdb
+H:\ \2808\Dambri\Medical.Web\bin\Cb.DAL.pdb
+H:\ \2808\Dambri\Medical.Web\bin\en-US\Cb.Localization.resources.dll
+H:\ \2808\Dambri\Medical.Web\bin\vi-VN\Cb.Localization.resources.dll
+H:\ \2808\Dambri\Medical.Web\obj\Debug\Medical.Web.csprojResolveAssemblyReference.cache
+H:\ \2808\Dambri\Medical.Web\obj\Debug\Cb.Web.Global.resources
+H:\ \2808\Dambri\Medical.Web\obj\Debug\Medical.Web.csproj.GenerateResource.Cache
+H:\ \2808\Dambri\Medical.Web\obj\Debug\Cb.Web.dll.licenses
+H:\ \2808\Dambri\Medical.Web\obj\Debug\Cb.Web.dll
+H:\ \2808\Dambri\Medical.Web\obj\Debug\Cb.Web.pdb
+D:\SkyDrive\3108\Medical.Web\bin\Cb.Web.dll
+D:\SkyDrive\3108\Medical.Web\bin\Cb.Web.pdb
+D:\SkyDrive\3108\Medical.Web\bin\AjaxControlToolkit.dll
+D:\SkyDrive\3108\Medical.Web\bin\AntiXSSLibrary.dll
+D:\SkyDrive\3108\Medical.Web\bin\Cb.BLL.dll
+D:\SkyDrive\3108\Medical.Web\bin\Cb.DBUtility.dll
+D:\SkyDrive\3108\Medical.Web\bin\Cb.Localization.dll
+D:\SkyDrive\3108\Medical.Web\bin\Cb.Model.dll
+D:\SkyDrive\3108\Medical.Web\bin\Cb.SQLServerDAL.dll
+D:\SkyDrive\3108\Medical.Web\bin\Cb.Utility.dll
+D:\SkyDrive\3108\Medical.Web\bin\Cb.WebControls.dll
+D:\SkyDrive\3108\Medical.Web\bin\CuteWebUI.AjaxUploader.dll
+D:\SkyDrive\3108\Medical.Web\bin\eStreamChat.dll
+D:\SkyDrive\3108\Medical.Web\bin\eStreamChat.Interfaces.dll
+D:\SkyDrive\3108\Medical.Web\bin\eStreamChat.SampleProviders.dll
+D:\SkyDrive\3108\Medical.Web\bin\facebook.desktop.dll
+D:\SkyDrive\3108\Medical.Web\bin\facebook.dll
+D:\SkyDrive\3108\Medical.Web\bin\facebook.web.dll
+D:\SkyDrive\3108\Medical.Web\bin\HtmlSanitizationLibrary.dll
+D:\SkyDrive\3108\Medical.Web\bin\Intelligencia.UrlRewriter.dll
+D:\SkyDrive\3108\Medical.Web\bin\Microsoft.Practices.ServiceLocation.dll
+D:\SkyDrive\3108\Medical.Web\bin\Microsoft.Practices.Unity.Configuration.dll
+D:\SkyDrive\3108\Medical.Web\bin\Microsoft.Practices.Unity.dll
+D:\SkyDrive\3108\Medical.Web\bin\Cb.IDAL.dll
+D:\SkyDrive\3108\Medical.Web\bin\Cb.DALFactory.dll
+D:\SkyDrive\3108\Medical.Web\bin\Cb.DAL.dll
+D:\SkyDrive\3108\Medical.Web\bin\Microsoft.Practices.EnterpriseLibrary.Data.dll
+D:\SkyDrive\3108\Medical.Web\bin\Microsoft.Xml.Schema.Linq.dll
+D:\SkyDrive\3108\Medical.Web\bin\Microsoft.Practices.EnterpriseLibrary.Common.dll
+D:\SkyDrive\3108\Medical.Web\bin\Cb.BLL.pdb
+D:\SkyDrive\3108\Medical.Web\bin\Cb.DBUtility.pdb
+D:\SkyDrive\3108\Medical.Web\bin\Cb.Localization.pdb
+D:\SkyDrive\3108\Medical.Web\bin\Cb.Model.pdb
+D:\SkyDrive\3108\Medical.Web\bin\Cb.SQLServerDAL.pdb
+D:\SkyDrive\3108\Medical.Web\bin\Cb.Utility.pdb
+D:\SkyDrive\3108\Medical.Web\bin\Cb.WebControls.pdb
+D:\SkyDrive\3108\Medical.Web\bin\facebook.xml
+D:\SkyDrive\3108\Medical.Web\bin\facebook.desktop.xml
+D:\SkyDrive\3108\Medical.Web\bin\facebook.web.xml
+D:\SkyDrive\3108\Medical.Web\bin\Microsoft.Practices.Unity.xml
+D:\SkyDrive\3108\Medical.Web\bin\Microsoft.Practices.Unity.Configuration.xml
+D:\SkyDrive\3108\Medical.Web\bin\Cb.IDAL.pdb
+D:\SkyDrive\3108\Medical.Web\bin\Cb.DALFactory.pdb
+D:\SkyDrive\3108\Medical.Web\bin\Cb.DAL.pdb
+D:\SkyDrive\3108\Medical.Web\bin\en-US\Cb.Localization.resources.dll
+D:\SkyDrive\3108\Medical.Web\bin\vi-VN\Cb.Localization.resources.dll
+D:\SkyDrive\3108\Medical.Web\obj\Debug\Medical.Web.csprojResolveAssemblyReference.cache
+D:\SkyDrive\3108\Medical.Web\obj\Debug\Cb.Web.Global.resources
+D:\SkyDrive\3108\Medical.Web\obj\Debug\Medical.Web.csproj.GenerateResource.Cache
+D:\SkyDrive\3108\Medical.Web\obj\Debug\Cb.Web.dll.licenses
+D:\SkyDrive\3108\Medical.Web\obj\Debug\Cb.Web.dll
+D:\SkyDrive\3108\Medical.Web\obj\Debug\Cb.Web.pdb
+D:\Dambri\3108\Medical.Web\bin\Cb.Web.dll
+D:\Dambri\3108\Medical.Web\bin\Cb.Web.pdb
+D:\Dambri\3108\Medical.Web\bin\AjaxControlToolkit.dll
+D:\Dambri\3108\Medical.Web\bin\AntiXSSLibrary.dll
+D:\Dambri\3108\Medical.Web\bin\Cb.BLL.dll
+D:\Dambri\3108\Medical.Web\bin\Cb.DBUtility.dll
+D:\Dambri\3108\Medical.Web\bin\Cb.Localization.dll
+D:\Dambri\3108\Medical.Web\bin\Cb.Model.dll
+D:\Dambri\3108\Medical.Web\bin\Cb.SQLServerDAL.dll
+D:\Dambri\3108\Medical.Web\bin\Cb.Utility.dll
+D:\Dambri\3108\Medical.Web\bin\Cb.WebControls.dll
+D:\Dambri\3108\Medical.Web\bin\eStreamChat.dll
+D:\Dambri\3108\Medical.Web\bin\eStreamChat.Interfaces.dll
+D:\Dambri\3108\Medical.Web\bin\eStreamChat.SampleProviders.dll
+D:\Dambri\3108\Medical.Web\bin\HtmlSanitizationLibrary.dll
+D:\Dambri\3108\Medical.Web\bin\Intelligencia.UrlRewriter.dll
+D:\Dambri\3108\Medical.Web\bin\Microsoft.Practices.ServiceLocation.dll
+D:\Dambri\3108\Medical.Web\bin\Microsoft.Practices.Unity.Configuration.dll
+D:\Dambri\3108\Medical.Web\bin\Microsoft.Practices.Unity.dll
+D:\Dambri\3108\Medical.Web\bin\Cb.IDAL.dll
+D:\Dambri\3108\Medical.Web\bin\Cb.DALFactory.dll
+D:\Dambri\3108\Medical.Web\bin\Microsoft.Practices.EnterpriseLibrary.Data.dll
+D:\Dambri\3108\Medical.Web\bin\CuteWebUI.AjaxUploader.dll
+D:\Dambri\3108\Medical.Web\bin\Microsoft.Practices.EnterpriseLibrary.Common.dll
+D:\Dambri\3108\Medical.Web\bin\Cb.BLL.pdb
+D:\Dambri\3108\Medical.Web\bin\Cb.DBUtility.pdb
+D:\Dambri\3108\Medical.Web\bin\Cb.Localization.pdb
+D:\Dambri\3108\Medical.Web\bin\Cb.Model.pdb
+D:\Dambri\3108\Medical.Web\bin\Cb.SQLServerDAL.pdb
+D:\Dambri\3108\Medical.Web\bin\Cb.Utility.pdb
+D:\Dambri\3108\Medical.Web\bin\Cb.WebControls.pdb
+D:\Dambri\3108\Medical.Web\bin\Microsoft.Practices.Unity.xml
+D:\Dambri\3108\Medical.Web\bin\Microsoft.Practices.Unity.Configuration.xml
+D:\Dambri\3108\Medical.Web\bin\Cb.IDAL.pdb
+D:\Dambri\3108\Medical.Web\bin\Cb.DALFactory.pdb
+D:\Dambri\3108\Medical.Web\bin\en-US\Cb.Localization.resources.dll
+D:\Dambri\3108\Medical.Web\bin\vi-VN\Cb.Localization.resources.dll
+D:\Dambri\3108\Medical.Web\obj\Debug\Medical.Web.csprojResolveAssemblyReference.cache
+D:\Dambri\3108\Medical.Web\obj\Debug\Cb.Web.Global.resources
+D:\Dambri\3108\Medical.Web\obj\Debug\Medical.Web.csproj.GenerateResource.Cache
+D:\Dambri\3108\Medical.Web\obj\Debug\Cb.Web.dll.licenses
+D:\Dambri\3108\Medical.Web\obj\Debug\Cb.Web.dll
+D:\Dambri\3108\Medical.Web\obj\Debug\Cb.Web.pdb
+C:\Users\SUCCESS\Desktop\Source\Medical.Web\obj\Debug\Medical.Web.csprojResolveAssemblyReference.cache
+C:\Users\SUCCESS\Desktop\Source\Medical.Web\obj\Debug\Cb.Web.Global.resources
+C:\Users\SUCCESS\Desktop\Source\Medical.Web\obj\Debug\Medical.Web.csproj.GenerateResource.Cache
+C:\Users\SUCCESS\Desktop\Source\Medical.Web\obj\Debug\Cb.Web.dll.licenses
+C:\Users\SUCCESS\Desktop\Source\Medical.Web\obj\Debug\Cb.Web.dll
+C:\Users\SUCCESS\Desktop\Source\Medical.Web\bin\Cb.Web.dll
+C:\Users\SUCCESS\Desktop\Source\Medical.Web\bin\Cb.Web.pdb
+C:\Users\SUCCESS\Desktop\Source\Medical.Web\bin\AjaxControlToolkit.dll
+C:\Users\SUCCESS\Desktop\Source\Medical.Web\bin\AntiXSSLibrary.dll
+C:\Users\SUCCESS\Desktop\Source\Medical.Web\bin\Cb.BLL.dll
+C:\Users\SUCCESS\Desktop\Source\Medical.Web\bin\Cb.DBUtility.dll
+C:\Users\SUCCESS\Desktop\Source\Medical.Web\bin\Cb.Localization.dll
+C:\Users\SUCCESS\Desktop\Source\Medical.Web\bin\Cb.Model.dll
+C:\Users\SUCCESS\Desktop\Source\Medical.Web\bin\Cb.SQLServerDAL.dll
+C:\Users\SUCCESS\Desktop\Source\Medical.Web\bin\Cb.Utility.dll
+C:\Users\SUCCESS\Desktop\Source\Medical.Web\bin\Cb.WebControls.dll
+C:\Users\SUCCESS\Desktop\Source\Medical.Web\bin\HtmlSanitizationLibrary.dll
+C:\Users\SUCCESS\Desktop\Source\Medical.Web\bin\Intelligencia.UrlRewriter.dll
+C:\Users\SUCCESS\Desktop\Source\Medical.Web\bin\Microsoft.Practices.ServiceLocation.dll
+C:\Users\SUCCESS\Desktop\Source\Medical.Web\bin\Microsoft.Practices.Unity.Configuration.dll
+C:\Users\SUCCESS\Desktop\Source\Medical.Web\bin\Microsoft.Practices.Unity.dll
+C:\Users\SUCCESS\Desktop\Source\Medical.Web\bin\Cb.IDAL.dll
+C:\Users\SUCCESS\Desktop\Source\Medical.Web\bin\Cb.DALFactory.dll
+C:\Users\SUCCESS\Desktop\Source\Medical.Web\bin\Microsoft.Practices.EnterpriseLibrary.Data.dll
+C:\Users\SUCCESS\Desktop\Source\Medical.Web\bin\Microsoft.Practices.EnterpriseLibrary.Common.dll
+C:\Users\SUCCESS\Desktop\Source\Medical.Web\bin\Cb.BLL.pdb
+C:\Users\SUCCESS\Desktop\Source\Medical.Web\bin\Cb.DBUtility.pdb
+C:\Users\SUCCESS\Desktop\Source\Medical.Web\bin\Cb.Localization.pdb
+C:\Users\SUCCESS\Desktop\Source\Medical.Web\bin\Cb.Model.pdb
+C:\Users\SUCCESS\Desktop\Source\Medical.Web\bin\Cb.SQLServerDAL.pdb
+C:\Users\SUCCESS\Desktop\Source\Medical.Web\bin\Cb.Utility.pdb
+C:\Users\SUCCESS\Desktop\Source\Medical.Web\bin\Cb.WebControls.pdb
+C:\Users\SUCCESS\Desktop\Source\Medical.Web\bin\Microsoft.Practices.Unity.xml
+C:\Users\SUCCESS\Desktop\Source\Medical.Web\bin\Microsoft.Practices.Unity.Configuration.xml
+C:\Users\SUCCESS\Desktop\Source\Medical.Web\bin\Cb.IDAL.pdb
+C:\Users\SUCCESS\Desktop\Source\Medical.Web\bin\Cb.DALFactory.pdb
+C:\Users\SUCCESS\Desktop\Source\Medical.Web\bin\en-US\Cb.Localization.resources.dll
+C:\Users\SUCCESS\Desktop\Source\Medical.Web\bin\vi-VN\Cb.Localization.resources.dll
+C:\Users\SUCCESS\Desktop\Source\Medical.Web\obj\Debug\Cb.Web.pdb
+E:\Working\Source\Medical.Web\bin\Cb.Web.dll
+E:\Working\Source\Medical.Web\bin\Cb.Web.pdb
+E:\Working\Source\Medical.Web\bin\AjaxControlToolkit.dll
+E:\Working\Source\Medical.Web\bin\AntiXSSLibrary.dll
+E:\Working\Source\Medical.Web\bin\Cb.BLL.dll
+E:\Working\Source\Medical.Web\bin\Cb.DBUtility.dll
+E:\Working\Source\Medical.Web\bin\Cb.Localization.dll
+E:\Working\Source\Medical.Web\bin\Cb.Model.dll
+E:\Working\Source\Medical.Web\bin\Cb.SQLServerDAL.dll
+E:\Working\Source\Medical.Web\bin\Cb.Utility.dll
+E:\Working\Source\Medical.Web\bin\Cb.WebControls.dll
+E:\Working\Source\Medical.Web\bin\HtmlSanitizationLibrary.dll
+E:\Working\Source\Medical.Web\bin\Intelligencia.UrlRewriter.dll
+E:\Working\Source\Medical.Web\bin\Cb.IDAL.dll
+E:\Working\Source\Medical.Web\bin\Cb.DALFactory.dll
+E:\Working\Source\Medical.Web\bin\Microsoft.Practices.EnterpriseLibrary.Data.dll
+E:\Working\Source\Medical.Web\bin\Microsoft.Practices.EnterpriseLibrary.Common.dll
+E:\Working\Source\Medical.Web\bin\Cb.BLL.pdb
+E:\Working\Source\Medical.Web\bin\Cb.DBUtility.pdb
+E:\Working\Source\Medical.Web\bin\Cb.Localization.pdb
+E:\Working\Source\Medical.Web\bin\Cb.Model.pdb
+E:\Working\Source\Medical.Web\bin\Cb.SQLServerDAL.pdb
+E:\Working\Source\Medical.Web\bin\Cb.Utility.pdb
+E:\Working\Source\Medical.Web\bin\Cb.WebControls.pdb
+E:\Working\Source\Medical.Web\bin\Microsoft.Practices.Unity.xml
+E:\Working\Source\Medical.Web\bin\Microsoft.Practices.Unity.Configuration.xml
+E:\Working\Source\Medical.Web\bin\Cb.IDAL.pdb
+E:\Working\Source\Medical.Web\bin\Cb.DALFactory.pdb
+E:\Working\Source\Medical.Web\bin\en-US\Cb.Localization.resources.dll
+E:\Working\Source\Medical.Web\bin\vi-VN\Cb.Localization.resources.dll
+E:\Working\Source\Medical.Web\obj\Debug\Medical.Web.csprojResolveAssemblyReference.cache
+E:\Working\Source\Medical.Web\obj\Debug\Cb.Web.Global.resources
+E:\Working\Source\Medical.Web\obj\Debug\Medical.Web.csproj.GenerateResource.Cache
+E:\Working\Source\Medical.Web\obj\Debug\Cb.Web.dll.licenses
+E:\Working\Source\Medical.Web\obj\Debug\Cb.Web.dll
+E:\Working\Source\Medical.Web\obj\Debug\Cb.Web.pdb
+E:\Working\SourceNew\Source\Medical.Web\bin\Cb.Web.dll
+E:\Working\SourceNew\Source\Medical.Web\bin\Cb.Web.pdb
+E:\Working\SourceNew\Source\Medical.Web\bin\AjaxControlToolkit.dll
+E:\Working\SourceNew\Source\Medical.Web\bin\AntiXSSLibrary.dll
+E:\Working\SourceNew\Source\Medical.Web\bin\Cb.BLL.dll
+E:\Working\SourceNew\Source\Medical.Web\bin\Cb.DBUtility.dll
+E:\Working\SourceNew\Source\Medical.Web\bin\Cb.Localization.dll
+E:\Working\SourceNew\Source\Medical.Web\bin\Cb.Model.dll
+E:\Working\SourceNew\Source\Medical.Web\bin\Cb.SQLServerDAL.dll
+E:\Working\SourceNew\Source\Medical.Web\bin\Cb.Utility.dll
+E:\Working\SourceNew\Source\Medical.Web\bin\Cb.WebControls.dll
+E:\Working\SourceNew\Source\Medical.Web\bin\HtmlSanitizationLibrary.dll
+E:\Working\SourceNew\Source\Medical.Web\bin\Intelligencia.UrlRewriter.dll
+E:\Working\SourceNew\Source\Medical.Web\bin\Cb.IDAL.dll
+E:\Working\SourceNew\Source\Medical.Web\bin\Cb.DALFactory.dll
+E:\Working\SourceNew\Source\Medical.Web\bin\Microsoft.Practices.EnterpriseLibrary.Data.dll
+E:\Working\SourceNew\Source\Medical.Web\bin\Microsoft.Practices.EnterpriseLibrary.Common.dll
+E:\Working\SourceNew\Source\Medical.Web\bin\Cb.BLL.pdb
+E:\Working\SourceNew\Source\Medical.Web\bin\Cb.DBUtility.pdb
+E:\Working\SourceNew\Source\Medical.Web\bin\Cb.Localization.pdb
+E:\Working\SourceNew\Source\Medical.Web\bin\Cb.Model.pdb
+E:\Working\SourceNew\Source\Medical.Web\bin\Cb.SQLServerDAL.pdb
+E:\Working\SourceNew\Source\Medical.Web\bin\Cb.Utility.pdb
+E:\Working\SourceNew\Source\Medical.Web\bin\Cb.WebControls.pdb
+E:\Working\SourceNew\Source\Medical.Web\bin\Microsoft.Practices.Unity.Configuration.xml
+E:\Working\SourceNew\Source\Medical.Web\bin\Cb.IDAL.pdb
+E:\Working\SourceNew\Source\Medical.Web\bin\Cb.DALFactory.pdb
+E:\Working\SourceNew\Source\Medical.Web\bin\en-US\Cb.Localization.resources.dll
+E:\Working\SourceNew\Source\Medical.Web\bin\vi-VN\Cb.Localization.resources.dll
+E:\Working\SourceNew\Source\Medical.Web\obj\Debug\Medical.Web.csprojResolveAssemblyReference.cache
+E:\Working\SourceNew\Source\Medical.Web\obj\Debug\Cb.Web.Global.resources
+E:\Working\SourceNew\Source\Medical.Web\obj\Debug\Medical.Web.csproj.GenerateResource.Cache
+E:\Working\SourceNew\Source\Medical.Web\obj\Debug\Cb.Web.dll.licenses
+E:\Working\SourceNew\Source\Medical.Web\obj\Debug\Cb.Web.dll
+E:\Working\SourceNew\Source\Medical.Web\obj\Debug\Cb.Web.pdb
+H:\Working\Source18052014\Source\Medical.Web\bin\Cb.Web.dll
+H:\Working\Source18052014\Source\Medical.Web\bin\Cb.Web.pdb
+H:\Working\Source18052014\Source\Medical.Web\bin\AjaxControlToolkit.dll
+H:\Working\Source18052014\Source\Medical.Web\bin\AntiXSSLibrary.dll
+H:\Working\Source18052014\Source\Medical.Web\bin\Cb.BLL.dll
+H:\Working\Source18052014\Source\Medical.Web\bin\Cb.DBUtility.dll
+H:\Working\Source18052014\Source\Medical.Web\bin\Cb.Localization.dll
+H:\Working\Source18052014\Source\Medical.Web\bin\Cb.Model.dll
+H:\Working\Source18052014\Source\Medical.Web\bin\Cb.SQLServerDAL.dll
+H:\Working\Source18052014\Source\Medical.Web\bin\Cb.Utility.dll
+H:\Working\Source18052014\Source\Medical.Web\bin\Cb.WebControls.dll
+H:\Working\Source18052014\Source\Medical.Web\bin\HtmlSanitizationLibrary.dll
+H:\Working\Source18052014\Source\Medical.Web\bin\Intelligencia.UrlRewriter.dll
+H:\Working\Source18052014\Source\Medical.Web\bin\Cb.IDAL.dll
+H:\Working\Source18052014\Source\Medical.Web\bin\Cb.DALFactory.dll
+H:\Working\Source18052014\Source\Medical.Web\bin\Microsoft.Practices.EnterpriseLibrary.Data.dll
+H:\Working\Source18052014\Source\Medical.Web\bin\Microsoft.Practices.EnterpriseLibrary.Common.dll
+H:\Working\Source18052014\Source\Medical.Web\bin\Cb.BLL.pdb
+H:\Working\Source18052014\Source\Medical.Web\bin\Cb.DBUtility.pdb
+H:\Working\Source18052014\Source\Medical.Web\bin\Cb.Localization.pdb
+H:\Working\Source18052014\Source\Medical.Web\bin\Cb.Model.pdb
+H:\Working\Source18052014\Source\Medical.Web\bin\Cb.SQLServerDAL.pdb
+H:\Working\Source18052014\Source\Medical.Web\bin\Cb.Utility.pdb
+H:\Working\Source18052014\Source\Medical.Web\bin\Cb.WebControls.pdb
+H:\Working\Source18052014\Source\Medical.Web\bin\Microsoft.Practices.Unity.Configuration.xml
+H:\Working\Source18052014\Source\Medical.Web\bin\Cb.IDAL.pdb
+H:\Working\Source18052014\Source\Medical.Web\bin\Cb.DALFactory.pdb
+H:\Working\Source18052014\Source\Medical.Web\bin\en-US\Cb.Localization.resources.dll
+H:\Working\Source18052014\Source\Medical.Web\bin\vi-VN\Cb.Localization.resources.dll
+H:\Working\Source18052014\Source\Medical.Web\obj\Debug\Medical.Web.csprojResolveAssemblyReference.cache
+H:\Working\Source18052014\Source\Medical.Web\obj\Debug\Cb.Web.Global.resources
+H:\Working\Source18052014\Source\Medical.Web\obj\Debug\Medical.Web.csproj.GenerateResource.Cache
+H:\Working\Source18052014\Source\Medical.Web\obj\Debug\Cb.Web.dll.licenses
+H:\Working\Source18052014\Source\Medical.Web\obj\Debug\Cb.Web.dll
+H:\Working\Source18052014\Source\Medical.Web\obj\Debug\Cb.Web.pdb
+G:\Working\20150125Source\Source\Medical.Web\obj\Debug\Medical.Web.csprojResolveAssemblyReference.cache
+G:\Working\20150125Source\Source\Medical.Web\obj\Debug\Cb.Web.Global.resources
+G:\Working\20150125Source\Source\Medical.Web\obj\Debug\Medical.Web.csproj.GenerateResource.Cache
+G:\Working\20150125Source\Source\Medical.Web\obj\Debug\Cb.Web.dll.licenses
+G:\Working\20150125Source\Source\Medical.Web\obj\Debug\Cb.Web.dll
+G:\Working\20150125Source\Source\Medical.Web\bin\Cb.Web.dll
+G:\Working\20150125Source\Source\Medical.Web\bin\Cb.Web.pdb
+G:\Working\20150125Source\Source\Medical.Web\bin\AjaxControlToolkit.dll
+G:\Working\20150125Source\Source\Medical.Web\bin\AntiXSSLibrary.dll
+G:\Working\20150125Source\Source\Medical.Web\bin\Cb.BLL.dll
+G:\Working\20150125Source\Source\Medical.Web\bin\Cb.DBUtility.dll
+G:\Working\20150125Source\Source\Medical.Web\bin\Cb.Localization.dll
+G:\Working\20150125Source\Source\Medical.Web\bin\Cb.Model.dll
+G:\Working\20150125Source\Source\Medical.Web\bin\Cb.SQLServerDAL.dll
+G:\Working\20150125Source\Source\Medical.Web\bin\Cb.Utility.dll
+G:\Working\20150125Source\Source\Medical.Web\bin\Cb.WebControls.dll
+G:\Working\20150125Source\Source\Medical.Web\bin\HtmlSanitizationLibrary.dll
+G:\Working\20150125Source\Source\Medical.Web\bin\Intelligencia.UrlRewriter.dll
+G:\Working\20150125Source\Source\Medical.Web\bin\Cb.IDAL.dll
+G:\Working\20150125Source\Source\Medical.Web\bin\Cb.DALFactory.dll
+G:\Working\20150125Source\Source\Medical.Web\bin\Microsoft.Practices.EnterpriseLibrary.Data.dll
+G:\Working\20150125Source\Source\Medical.Web\bin\Microsoft.Practices.EnterpriseLibrary.Common.dll
+G:\Working\20150125Source\Source\Medical.Web\bin\Cb.BLL.pdb
+G:\Working\20150125Source\Source\Medical.Web\bin\Cb.DBUtility.pdb
+G:\Working\20150125Source\Source\Medical.Web\bin\Cb.Localization.pdb
+G:\Working\20150125Source\Source\Medical.Web\bin\Cb.Model.pdb
+G:\Working\20150125Source\Source\Medical.Web\bin\Cb.SQLServerDAL.pdb
+G:\Working\20150125Source\Source\Medical.Web\bin\Cb.Utility.pdb
+G:\Working\20150125Source\Source\Medical.Web\bin\Cb.WebControls.pdb
+G:\Working\20150125Source\Source\Medical.Web\bin\Microsoft.Practices.Unity.Configuration.xml
+G:\Working\20150125Source\Source\Medical.Web\bin\Cb.IDAL.pdb
+G:\Working\20150125Source\Source\Medical.Web\bin\Cb.DALFactory.pdb
+G:\Working\20150125Source\Source\Medical.Web\bin\Microsoft.Practices.EnterpriseLibrary.Common.xml
+G:\Working\20150125Source\Source\Medical.Web\bin\en-US\Cb.Localization.resources.dll
+G:\Working\20150125Source\Source\Medical.Web\bin\vi-VN\Cb.Localization.resources.dll
+G:\Working\20150125Source\Source\Medical.Web\obj\Debug\Cb.Web.pdb
+D:\SourceGod\Source\Medical.Web\obj\Debug\Medical.Web.csprojResolveAssemblyReference.cache
+D:\SourceGod\Source\Medical.Web\obj\Debug\Cb.Web.Global.resources
+D:\SourceGod\Source\Medical.Web\obj\Debug\Medical.Web.csproj.GenerateResource.Cache
+D:\SourceGod\Source\Medical.Web\obj\Debug\Cb.Web.dll.licenses
+D:\SourceGod\Source\Medical.Web\bin\Cb.Web.dll
+D:\SourceGod\Source\Medical.Web\bin\Cb.Web.pdb
+D:\SourceGod\Source\Medical.Web\bin\AjaxControlToolkit.dll
+D:\SourceGod\Source\Medical.Web\bin\AntiXSSLibrary.dll
+D:\SourceGod\Source\Medical.Web\bin\Cb.BLL.dll
+D:\SourceGod\Source\Medical.Web\bin\Cb.DBUtility.dll
+D:\SourceGod\Source\Medical.Web\bin\Cb.Localization.dll
+D:\SourceGod\Source\Medical.Web\bin\Cb.Model.dll
+D:\SourceGod\Source\Medical.Web\bin\Cb.SQLServerDAL.dll
+D:\SourceGod\Source\Medical.Web\bin\Cb.Utility.dll
+D:\SourceGod\Source\Medical.Web\bin\Cb.WebControls.dll
+D:\SourceGod\Source\Medical.Web\bin\HtmlSanitizationLibrary.dll
+D:\SourceGod\Source\Medical.Web\bin\Intelligencia.UrlRewriter.dll
+D:\SourceGod\Source\Medical.Web\bin\Cb.IDAL.dll
+D:\SourceGod\Source\Medical.Web\bin\Cb.DALFactory.dll
+D:\SourceGod\Source\Medical.Web\bin\Microsoft.Practices.EnterpriseLibrary.Data.dll
+D:\SourceGod\Source\Medical.Web\bin\Microsoft.Practices.EnterpriseLibrary.Common.dll
+D:\SourceGod\Source\Medical.Web\bin\Cb.BLL.pdb
+D:\SourceGod\Source\Medical.Web\bin\Cb.DBUtility.pdb
+D:\SourceGod\Source\Medical.Web\bin\Cb.Localization.pdb
+D:\SourceGod\Source\Medical.Web\bin\Cb.Model.pdb
+D:\SourceGod\Source\Medical.Web\bin\Cb.SQLServerDAL.pdb
+D:\SourceGod\Source\Medical.Web\bin\Cb.Utility.pdb
+D:\SourceGod\Source\Medical.Web\bin\Cb.WebControls.pdb
+D:\SourceGod\Source\Medical.Web\bin\Cb.IDAL.pdb
+D:\SourceGod\Source\Medical.Web\bin\Cb.DALFactory.pdb
+D:\SourceGod\Source\Medical.Web\bin\Microsoft.Practices.EnterpriseLibrary.Common.xml
+D:\SourceGod\Source\Medical.Web\bin\en-US\Cb.Localization.resources.dll
+D:\SourceGod\Source\Medical.Web\bin\vi-VN\Cb.Localization.resources.dll
+D:\SourceGod\Source\Medical.Web\obj\Debug\Cb.Web.dll
+D:\SourceGod\Source\Medical.Web\obj\Debug\Cb.Web.pdb
+D:\Parttime\SourceGod\Source\Medical.Web\obj\Debug\Medical.Web.csprojResolveAssemblyReference.cache
+D:\Parttime\SourceGod\Source\Medical.Web\obj\Debug\Cb.Web.Global.resources
+D:\Parttime\SourceGod\Source\Medical.Web\obj\Debug\Medical.Web.csproj.GenerateResource.Cache
+D:\Parttime\SourceGod\Source\Medical.Web\obj\Debug\Cb.Web.dll.licenses
+D:\Parttime\SourceGod\Source\Medical.Web\bin\Cb.Web.dll
+D:\Parttime\SourceGod\Source\Medical.Web\bin\Cb.Web.pdb
+D:\Parttime\SourceGod\Source\Medical.Web\bin\Cb.BLL.dll
+D:\Parttime\SourceGod\Source\Medical.Web\bin\Cb.DBUtility.dll
+D:\Parttime\SourceGod\Source\Medical.Web\bin\Cb.Localization.dll
+D:\Parttime\SourceGod\Source\Medical.Web\bin\Cb.Model.dll
+D:\Parttime\SourceGod\Source\Medical.Web\bin\Cb.SQLServerDAL.dll
+D:\Parttime\SourceGod\Source\Medical.Web\bin\Cb.Utility.dll
+D:\Parttime\SourceGod\Source\Medical.Web\bin\Cb.WebControls.dll
+D:\Parttime\SourceGod\Source\Medical.Web\bin\CKFinder.dll
+D:\Parttime\SourceGod\Source\Medical.Web\bin\HtmlSanitizationLibrary.dll
+D:\Parttime\SourceGod\Source\Medical.Web\bin\Intelligencia.UrlRewriter.dll
+D:\Parttime\SourceGod\Source\Medical.Web\bin\Cb.IDAL.dll
+D:\Parttime\SourceGod\Source\Medical.Web\bin\Cb.DALFactory.dll
+D:\Parttime\SourceGod\Source\Medical.Web\bin\Microsoft.Practices.EnterpriseLibrary.Data.dll
+D:\Parttime\SourceGod\Source\Medical.Web\bin\Microsoft.Practices.EnterpriseLibrary.Common.dll
+D:\Parttime\SourceGod\Source\Medical.Web\bin\Cb.BLL.pdb
+D:\Parttime\SourceGod\Source\Medical.Web\bin\Cb.DBUtility.pdb
+D:\Parttime\SourceGod\Source\Medical.Web\bin\Cb.Localization.pdb
+D:\Parttime\SourceGod\Source\Medical.Web\bin\Cb.Model.pdb
+D:\Parttime\SourceGod\Source\Medical.Web\bin\Cb.SQLServerDAL.pdb
+D:\Parttime\SourceGod\Source\Medical.Web\bin\Cb.Utility.pdb
+D:\Parttime\SourceGod\Source\Medical.Web\bin\Cb.WebControls.pdb
+D:\Parttime\SourceGod\Source\Medical.Web\bin\Cb.IDAL.pdb
+D:\Parttime\SourceGod\Source\Medical.Web\bin\Cb.DALFactory.pdb
+D:\Parttime\SourceGod\Source\Medical.Web\bin\Microsoft.Practices.EnterpriseLibrary.Common.xml
+D:\Parttime\SourceGod\Source\Medical.Web\bin\en-US\Cb.Localization.resources.dll
+D:\Parttime\SourceGod\Source\Medical.Web\bin\vi-VN\Cb.Localization.resources.dll
+D:\Parttime\SourceGod\Source\Medical.Web\obj\Debug\Cb.Web.dll
+D:\Parttime\SourceGod\Source\Medical.Web\obj\Debug\Cb.Web.pdb
+D:\Parttime\2015\SourceGod\Source\Medical.Web\bin\Cb.Web.dll
+D:\Parttime\2015\SourceGod\Source\Medical.Web\bin\Cb.Web.pdb
+D:\Parttime\2015\SourceGod\Source\Medical.Web\bin\Cb.BLL.dll
+D:\Parttime\2015\SourceGod\Source\Medical.Web\bin\Cb.DBUtility.dll
+D:\Parttime\2015\SourceGod\Source\Medical.Web\bin\Cb.Localization.dll
+D:\Parttime\2015\SourceGod\Source\Medical.Web\bin\Cb.Model.dll
+D:\Parttime\2015\SourceGod\Source\Medical.Web\bin\Cb.SQLServerDAL.dll
+D:\Parttime\2015\SourceGod\Source\Medical.Web\bin\Cb.Utility.dll
+D:\Parttime\2015\SourceGod\Source\Medical.Web\bin\Cb.WebControls.dll
+D:\Parttime\2015\SourceGod\Source\Medical.Web\bin\CKFinder.dll
+D:\Parttime\2015\SourceGod\Source\Medical.Web\bin\HtmlSanitizationLibrary.dll
+D:\Parttime\2015\SourceGod\Source\Medical.Web\bin\Intelligencia.UrlRewriter.dll
+D:\Parttime\2015\SourceGod\Source\Medical.Web\bin\Cb.IDAL.dll
+D:\Parttime\2015\SourceGod\Source\Medical.Web\bin\Cb.DALFactory.dll
+D:\Parttime\2015\SourceGod\Source\Medical.Web\bin\Microsoft.Practices.EnterpriseLibrary.Data.dll
+D:\Parttime\2015\SourceGod\Source\Medical.Web\bin\Microsoft.Practices.EnterpriseLibrary.Common.dll
+D:\Parttime\2015\SourceGod\Source\Medical.Web\bin\Cb.BLL.pdb
+D:\Parttime\2015\SourceGod\Source\Medical.Web\bin\Cb.DBUtility.pdb
+D:\Parttime\2015\SourceGod\Source\Medical.Web\bin\Cb.Localization.pdb
+D:\Parttime\2015\SourceGod\Source\Medical.Web\bin\Cb.Model.pdb
+D:\Parttime\2015\SourceGod\Source\Medical.Web\bin\Cb.SQLServerDAL.pdb
+D:\Parttime\2015\SourceGod\Source\Medical.Web\bin\Cb.Utility.pdb
+D:\Parttime\2015\SourceGod\Source\Medical.Web\bin\Cb.WebControls.pdb
+D:\Parttime\2015\SourceGod\Source\Medical.Web\bin\Microsoft.Practices.EnterpriseLibrary.Common.xml
+D:\Parttime\2015\SourceGod\Source\Medical.Web\bin\en-US\Cb.Localization.resources.dll
+D:\Parttime\2015\SourceGod\Source\Medical.Web\bin\vi-VN\Cb.Localization.resources.dll
+D:\Parttime\2015\SourceGod\Source\Medical.Web\obj\Debug\Medical.Web.csprojResolveAssemblyReference.cache
+D:\Parttime\2015\SourceGod\Source\Medical.Web\obj\Debug\Cb.Web.Global.resources
+D:\Parttime\2015\SourceGod\Source\Medical.Web\obj\Debug\Medical.Web.csproj.GenerateResource.Cache
+D:\Parttime\2015\SourceGod\Source\Medical.Web\obj\Debug\Cb.Web.dll.licenses
+D:\Parttime\2015\SourceGod\Source\Medical.Web\obj\Debug\Cb.Web.dll
+D:\Parttime\2015\SourceGod\Source\Medical.Web\obj\Debug\Cb.Web.pdb

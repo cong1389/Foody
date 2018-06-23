@@ -1,0 +1,9 @@
+﻿
+Xin chào {0}<br />
+<br />
+Tôi tên là {1}.<br />
+Email của Tôi {2}.<br />
+Tôi cần  hệ theo nội dung dưới đây:<br />
+{3}.<br />
+Mong được sự hỗ trợ.<br />
+Xin cám ơn <br />

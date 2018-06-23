@@ -1,0 +1,12 @@
+User-agent: Googlebot
+Disallow: /Home/
+Disallow: /GioiThieu/
+Disallow: /LienHe/
+User-agent: Slurp
+Disallow: /Home/
+Disallow: /GioiThieu/
+Disallow: /LienHe/
+User-agent: bingbot
+Disallow: /Home/
+Disallow: /GioiThieu/
+Disallow: /LienHe/

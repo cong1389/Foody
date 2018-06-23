@@ -1,0 +1,1517 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{8C83B2CC-810C-4333-95C8-FB9F64CD8F45}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Cb.Web</RootNamespace>
+    <AssemblyName>Cb.Web</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <UseIISExpress>false</UseIISExpress>
+    <TargetFrameworkProfile />
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>4.0</OldToolsVersion>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <JSLintSkip>
+    </JSLintSkip>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <UseGlobalApplicationHostFile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>true</UseVSHostingProcess>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AjaxControlToolkit, Version=3.5.60623.0, Culture=neutral, PublicKeyToken=28f01b0e84b6d53e, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Referrences\AjaxControlToolkit.dll</HintPath>
+    </Reference>
+    <Reference Include="Cb.BLL, Version=4.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\BLL\bin\Debug\Cb.BLL.dll</HintPath>
+    </Reference>
+    <Reference Include="Cb.DBUtility, Version=4.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\DBUtility\bin\Debug\Cb.DBUtility.dll</HintPath>
+    </Reference>
+    <Reference Include="Cb.Localization, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Localization\bin\Debug\Cb.Localization.dll</HintPath>
+    </Reference>
+    <Reference Include="Cb.Model, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Model\bin\Debug\Cb.Model.dll</HintPath>
+    </Reference>
+    <Reference Include="Cb.Utility, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Utility\bin\Debug\Cb.Utility.dll</HintPath>
+    </Reference>
+    <Reference Include="Cb.WebControls">
+      <HintPath>..\WebControls\bin\Debug\Cb.WebControls.dll</HintPath>
+    </Reference>
+    <Reference Include="CKFinder, Version=2.0.1.1132, Culture=neutral, PublicKeyToken=579e7adc719a1423, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Referrences\CKFinder.dll</HintPath>
+    </Reference>
+    <Reference Include="facebook">
+      <HintPath>..\..\..\DGC\Project\thaytroV3\Web\bin\facebook.dll</HintPath>
+    </Reference>
+    <Reference Include="facebook.desktop">
+      <HintPath>..\..\..\DGC\Project\thaytroV3\Web\bin\facebook.desktop.dll</HintPath>
+    </Reference>
+    <Reference Include="facebook.web">
+      <HintPath>..\..\..\DGC\Project\thaytroV3\Web\bin\facebook.web.dll</HintPath>
+    </Reference>
+    <Reference Include="FredCK.FCKeditorV2">
+      <HintPath>..\Referrences\FredCK.FCKeditorV2.dll</HintPath>
+    </Reference>
+    <Reference Include="GMaps, Version=4.1.0.5, Culture=neutral, PublicKeyToken=564d55b144e7aa5a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Referrences\GMaps.dll</HintPath>
+    </Reference>
+    <Reference Include="HtmlSanitizationLibrary">
+      <HintPath>..\Referrences\HtmlSanitizationLibrary.dll</HintPath>
+    </Reference>
+    <Reference Include="Intelligencia.UrlRewriter, Version=2.0.0.1, Culture=neutral, PublicKeyToken=0573f3650687980d, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Referrences\Intelligencia.UrlRewriter.dll</HintPath>
+    </Reference>
+    <Reference Include="itextsharp">
+      <HintPath>..\Referrences\itextsharp.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.Practices.ServiceLocation">
+      <HintPath>Refferrent\Microsoft.Practices.ServiceLocation.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.Unity">
+      <HintPath>Refferrent\Microsoft.Practices.Unity.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.Unity.Configuration">
+      <HintPath>Refferrent\Microsoft.Practices.Unity.Configuration.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\Referrences\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="Obout.Ajax.UI, Version=2.13.925.3, Culture=neutral, PublicKeyToken=24f3c5cea456f322, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.ServiceModel.Activation" />
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.Web.DynamicData.Design" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Admin\Components\App\css\AdminLTE.css" />
+    <Content Include="Admin\Components\App\css\animate.css" />
+    <Content Include="Admin\Components\App\css\content.css" />
+    <Content Include="Admin\Components\App\css\font-awesome.min.css" />
+    <Content Include="Admin\Components\App\css\responsive.css" />
+    <Content Include="Admin\Components\App\fonts\ionicons.svg" />
+    <Content Include="Admin\Components\App\fonts\Roboto-Bold-webfont.svg" />
+    <Content Include="Admin\Components\App\fonts\Roboto-Light-webfont.svg" />
+    <Content Include="Admin\Components\App\fonts\Roboto-Thin-webfont.svg" />
+    <Content Include="Admin\Components\App\fonts\RobotoRegular.svg" />
+    <Content Include="Admin\Components\App\ionicons\ionicons.min.css" />
+    <Content Include="Admin\Components\App\js\app.js" />
+    <Content Include="Admin\Components\App\js\app.min.js" />
+    <Content Include="Admin\Components\App\js\frontend.js" />
+    <Content Include="Admin\Components\App\js\wow.min.js" />
+    <Content Include="Admin\Components\bootstrap-tabdrop\js\bootstrap-tabdrop.js" />
+    <Content Include="Admin\Components\bootstrap-touchspin\bootstrap.touchspin.css" />
+    <Content Include="Admin\Components\bootstrap-touchspin\bootstrap.touchspin.js" />
+    <Content Include="Admin\Components\bootstrap-wizard\jquery.bootstrap.wizard.min.js" />
+    <Content Include="Admin\Components\bootstrap\css\bootstrap.min.css" />
+    <Content Include="Admin\Components\bootstrap\fonts\bootstrap\glyphicons-halflings-regular-2.html" />
+    <Content Include="Admin\Components\bootstrap\fonts\bootstrap\glyphicons-halflings-regular.html" />
+    <Content Include="Admin\Components\bootstrap\fonts\bootstrap\glyphicons-halflings-regular.svg" />
+    <Content Include="Admin\Components\bootstrap\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="Admin\Components\bootstrap\js\bootstrap.min.js" />
+    <Content Include="Admin\Components\fancybox\images\blank.gif" />
+    <Content Include="Admin\Components\fancybox\images\fancybox-x.png" />
+    <Content Include="Admin\Components\fancybox\images\fancybox-y.png" />
+    <Content Include="Admin\Components\fancybox\images\fancybox.png" />
+    <Content Include="Admin\Components\fancybox\images\fancy_close.png" />
+    <Content Include="Admin\Components\fancybox\images\fancy_loading.png" />
+    <Content Include="Admin\Components\fancybox\images\fancy_nav_left.png" />
+    <Content Include="Admin\Components\fancybox\images\fancy_nav_right.png" />
+    <Content Include="Admin\Components\fancybox\images\fancy_shadow_e.png" />
+    <Content Include="Admin\Components\fancybox\images\fancy_shadow_n.png" />
+    <Content Include="Admin\Components\fancybox\images\fancy_shadow_ne.png" />
+    <Content Include="Admin\Components\fancybox\images\fancy_shadow_nw.png" />
+    <Content Include="Admin\Components\fancybox\images\fancy_shadow_s.png" />
+    <Content Include="Admin\Components\fancybox\images\fancy_shadow_se.png" />
+    <Content Include="Admin\Components\fancybox\images\fancy_shadow_sw.png" />
+    <Content Include="Admin\Components\fancybox\images\fancy_shadow_w.png" />
+    <Content Include="Admin\Components\fancybox\images\fancy_title_left.png" />
+    <Content Include="Admin\Components\fancybox\images\fancy_title_main.png" />
+    <Content Include="Admin\Components\fancybox\images\fancy_title_over.png" />
+    <Content Include="Admin\Components\fancybox\images\fancy_title_right.png" />
+    <Content Include="Admin\Components\fancybox\jquery.fancybox-1.3.4.css" />
+    <Content Include="Admin\Components\fancybox\jquery.fancybox-1.3.4.pack.js" />
+    <Content Include="Admin\Components\images\arow-down.png" />
+    <Content Include="Admin\Components\images\circle.png" />
+    <Content Include="Admin\Components\images\circle_ac.png" />
+    <Content Include="Admin\Components\images\close.png" />
+    <Content Include="Admin\Components\images\close_ac.png" />
+    <Content Include="Admin\Components\images\cog.png" />
+    <Content Include="Admin\Components\images\DSBaiViet.png" />
+    <Content Include="Admin\Components\images\DSBaiViet_1.png" />
+    <Content Include="Admin\Components\images\edit-pen.png" />
+    <Content Include="Admin\Components\images\graph_rise.png" />
+    <Content Include="Admin\Components\images\link.png" />
+    <Content Include="Admin\Components\images\list.png" />
+    <Content Include="Admin\Components\images\logo.png" />
+    <Content Include="Admin\Components\images\Logo_admin.png" />
+    <Content Include="Admin\Components\images\minus.png" />
+    <Content Include="Admin\Components\images\notepad.png" />
+    <Content Include="Admin\Components\images\pen_img.png" />
+    <Content Include="Admin\Components\images\pen_white.png" />
+    <Content Include="Admin\Components\images\plus.png" />
+    <Content Include="Admin\Components\images\Polygon 3.png" />
+    <Content Include="Admin\Components\images\slide_1.jpg" />
+    <Content Include="Admin\Components\images\slide_2.jpg" />
+    <Content Include="Admin\Components\images\slide_3.png" />
+    <Content Include="Admin\Components\images\star-black.png" />
+    <Content Include="Admin\Components\images\star.png" />
+    <Content Include="Admin\Components\images\thung-rac.png" />
+    <Content Include="Admin\Components\images\users.png" />
+    <Content Include="Admin\Components\images\view.png" />
+    <Content Include="Admin\Components\images\web-lien-ket.png" />
+    <Content Include="Admin\Components\jquery-slimscroll\jquery.slimscroll.min.js" />
+    <Content Include="Admin\Components\jQuery\jQuery-2.1.4.min.js" />
+    <Content Include="Admin\Components\jQuery\jquery-ui.min.js" />
+    <Content Include="Admin\Components\jQuery\jquery.min 1.5.2.js" />
+    <Content Include="Admin\Components\simple-line-icons\fonts\Simple-Line-Icons.html" />
+    <Content Include="Admin\Components\simple-line-icons\fonts\Simple-Line-Icons.svg" />
+    <Content Include="Admin\Components\simple-line-icons\simple-line-icons.min.css" />
+    <Content Include="Admin\Components\uniform\css\uniform.default.css" />
+    <Content Include="Admin\Components\uniform\images\bg-input-focus.png" />
+    <Content Include="Admin\Components\uniform\images\bg-input.png" />
+    <Content Include="Admin\Components\uniform\images\sprite.png" />
+    <Content Include="Admin\Components\uniform\jquery.uniform.min.js" />
+    <Content Include="Admin\Components\WebOne\css\bootstrap-switch.min.css" />
+    <Content Include="Admin\Components\WebOne\css\components.min.css" />
+    <Content Include="Admin\Components\WebOne\css\login-5.min.css" />
+    <Content Include="Admin\Components\WebOne\css\plugins.min.css" />
+    <Content Include="Admin\Components\WebOne\css\select2-bootstrap.min.css" />
+    <Content Include="Admin\Components\WebOne\css\select2.min.css" />
+    <Content Include="Admin\Components\WebOne\css\simple-line-icons.min.css" />
+    <Content Include="Admin\Components\WebOne\css\uniform.default.css" />
+    <Content Include="Admin\Components\WebOne\img\accordion-plusminus.png" />
+    <Content Include="Admin\Components\WebOne\js\additional-methods.min.js" />
+    <Content Include="Admin\Components\WebOne\js\app.min.js" />
+    <Content Include="Admin\Components\WebOne\js\bootstrap-hover-dropdown.min.js" />
+    <Content Include="Admin\Components\WebOne\js\bootstrap-switch.min.js" />
+    <Content Include="Admin\Components\WebOne\js\form-wizard.min.js" />
+    <Content Include="Admin\Components\WebOne\js\jquery.backstretch.min.js" />
+    <Content Include="Admin\Components\WebOne\js\jquery.blockui.min.js" />
+    <Content Include="Admin\Components\WebOne\js\jquery.slimscroll.min.js" />
+    <Content Include="Admin\Components\WebOne\js\jquery.uniform.min.js" />
+    <Content Include="Admin\Components\WebOne\js\jquery.validate.min.js" />
+    <Content Include="Admin\Components\WebOne\js\js.cookie.min.js" />
+    <Content Include="Admin\Components\WebOne\js\login-5.min.js" />
+    <Content Include="Admin\Components\WebOne\js\select2.full.min.js" />
+    <Content Include="Admin\Controls\block_baseimage.ascx" />
+    <Content Include="Admin\Controls\block_mapsmulti.ascx" />
+    <Content Include="Admin\Controls\block_salesprice.ascx" />
+    <Content Include="Admin\Controls\block_uploadfile.ascx" />
+    <Content Include="Admin\Controls\block_uploadimage.ascx" />
+    <Content Include="Admin\Controls\block_uploadvideo.ascx" />
+    <Content Include="Admin\Controls\breakumb.ascx" />
+    <Content Include="Admin\Controls\footer.ascx" />
+    <Content Include="Admin\Controls\iframe_uploadimage.aspx" />
+    <Content Include="Admin\Controls\leftmenu.ascx" />
+    <Content Include="Admin\Controls\topmenu.ascx" />
+    <Content Include="Admin\Controls\uc_TextBox.ascx" />
+    <Content Include="Admin\default.aspx" />
+    <Content Include="Admin\Images\538-1.jpg" />
+    <Content Include="Admin\Images\581-2.jpg" />
+    <Content Include="Admin\Images\ajax-loader.gif" />
+    <Content Include="Admin\Images\arow-down.png" />
+    <Content Include="Admin\Images\bg1.jpg" />
+    <Content Include="Admin\Images\circle.png" />
+    <Content Include="Admin\Images\circle_ac.png" />
+    <Content Include="Admin\Images\close.png" />
+    <Content Include="Admin\Images\close_ac.png" />
+    <Content Include="Admin\Images\cog.png" />
+    <Content Include="Admin\Images\edit-pen.png" />
+    <Content Include="Admin\Images\fancybox.png" />
+    <Content Include="Admin\Images\favicon.ico" />
+    <Content Include="Admin\Images\graph_rise.png" />
+    <Content Include="Admin\Images\img1464573644Page1.jpg" />
+    <Content Include="Admin\Images\link.png" />
+    <Content Include="Admin\Images\list.png" />
+    <Content Include="Admin\Images\loading.gif" />
+    <Content Include="Admin\Images\logo.png" />
+    <Content Include="Admin\Images\Logo_admin.png" />
+    <Content Include="Admin\Images\minus.png" />
+    <Content Include="Admin\Images\mission-and-vision.jpg" />
+    <Content Include="Admin\Images\notepad.png" />
+    <Content Include="Admin\Images\no_image.gif" />
+    <Content Include="Admin\Images\pdf.png" />
+    <Content Include="Admin\Images\pen_img.png" />
+    <Content Include="Admin\Images\pen_white.png" />
+    <Content Include="Admin\Images\plus.png" />
+    <Content Include="Admin\Images\Polygon 3.png" />
+    <Content Include="Admin\Images\publish_x.png" />
+    <Content Include="Admin\Images\star.png" />
+    <Content Include="Admin\Images\thung-rac.png" />
+    <Content Include="Admin\Images\tick.png" />
+    <Content Include="Admin\Images\users.png" />
+    <Content Include="Admin\Images\value.jpg" />
+    <Content Include="Admin\Images\view.png" />
+    <Content Include="Admin\Images\vision-exercise-1.jpg" />
+    <Content Include="Admin\Images\web-lien-ket.png" />
+    <Content Include="Admin\Images\Youtube.png" />
+    <Content Include="Admin\JavaScript\AjaxRequest.js" />
+    <Content Include="Admin\JavaScript\functions.js" />
+    <Content Include="Admin\JavaScript\jquery.alerts.js" />
+    <Content Include="Admin\LoginAdmin.aspx" />
+    <Content Include="Admin\Pages\BookingGroup\admin_bookinggroup.ascx" />
+    <Content Include="Admin\Pages\BookingPrice\admin_bookingprice.ascx" />
+    <Content Include="Admin\Pages\Config\admin_config.ascx" />
+    <Content Include="Admin\Pages\Config\admin_page.ascx" />
+    <Content Include="Admin\Pages\Config\admin_seo.ascx" />
+    <Content Include="Admin\Pages\ContentStatic\admin_contentstatic.ascx" />
+    <Content Include="Admin\Pages\ContentStatic\admin_editcontentstatic.ascx" />
+    <Content Include="Admin\Pages\ExchangeRate\admin_editexchangerate.ascx" />
+    <Content Include="Admin\Pages\ExchangeRate\admin_exchangerate.ascx" />
+    <Content Include="Admin\Pages\home.ascx" />
+    <Content Include="Admin\Pages\ProductCategory\admin_editproductcategory.ascx" />
+    <Content Include="Admin\Pages\ProductCategory\admin_productcategory.ascx" />
+    <Content Include="Admin\Pages\Product\admin_editproduct.ascx" />
+    <Content Include="Admin\Pages\Product\admin_product.ascx" />
+    <Content Include="Admin\Pages\ProgramTour\admin_editprogramtour.ascx" />
+    <Content Include="Admin\Pages\ProgramTour\admin_programtour.ascx" />
+    <Content Include="Admin\Pages\Slider\admin_editslider.ascx" />
+    <Content Include="Admin\Pages\Slider\admin_slider.ascx" />
+    <Content Include="Admin\Pages\User\admin_edituser.ascx" />
+    <Content Include="Admin\Pages\User\admin_user.ascx" />
+    <Content Include="Admin\Style\images\arrow.gif" />
+    <Content Include="Admin\Style\images\background.gif" />
+    <Content Include="Admin\Style\images\background.jpg" />
+    <Content Include="Admin\Style\images\blank.gif" />
+    <Content Include="Admin\Style\images\header_bg.png" />
+    <Content Include="Admin\Style\images\help.gif" />
+    <Content Include="Admin\Style\images\icon_arrow_next.gif" />
+    <Content Include="Admin\Style\images\icon_arrow_next_dis.gif" />
+    <Content Include="Admin\Style\images\icon_arrow_pre.gif" />
+    <Content Include="Admin\Style\images\icon_arrow_pre_dis.gif" />
+    <Content Include="Admin\Style\images\important.gif" />
+    <Content Include="Admin\Style\images\info.gif" />
+    <Content Include="Admin\Style\images\title.gif" />
+    <Content Include="Admin\Style\jquery.alerts.css" />
+    <Content Include="Admin\Style\LoginAdmin.css" />
+    <Content Include="Admin\Style\style.css" />
+    <Content Include="Admin\Style\user_files\blank.gif" />
+    <Content Include="Admin\Style\user_files\blank.png" />
+    <Content Include="Admin\Style\user_files\global.css" />
+    <Content Include="Admin\Style\user_files\home.png" />
+    <Content Include="Admin\Style\user_files\jquery.js" />
+    <Content Include="Admin\Style\user_files\theme.css" />
+    <Content Include="Admin\Style\user_files\theme.js" />
+    <Content Include="Admin\Style\user_files\tick.png" />
+    <Content Include="App_Browsers\Form.browser" />
+    <Content Include="App_Themes\Blue\layout.js" />
+    <Content Include="assets\code.tidio.co\code.tidio.co.js" />
+    <Content Include="assets\jssor\Images\a20.png" />
+    <Content Include="assets\jssor\Images\a21.png" />
+    <Content Include="assets\jssor\Images\loading.gif" />
+    <Content Include="assets\jssor\jssor.js" />
+    <Content Include="assets\jssor\jssor.slider.js" />
+    <Content Include="assets\my-includes\bootstrap-rating\star-rating.min.css" />
+    <Content Include="assets\my-includes\bootstrap-rating\star-rating.min.js" />
+    <Content Include="assets\my-includes\bootstrap-rating\themes\krajee-svg\theme.css" />
+    <Content Include="assets\my-includes\bootstrap-rating\themes\krajee-svg\theme.js" />
+    <Content Include="assets\my-includes\bootstrap-rating\themes\krajee-svg\theme.min.css" />
+    <Content Include="assets\my-includes\bootstrap-rating\themes\krajee-svg\theme.min.js" />
+    <Content Include="assets\my-includes\bootstrap-rating\themes\locales\es.js" />
+    <Content Include="assets\wp-content\plugins\bootstrap-rating\star-rating.min.css" />
+    <Content Include="assets\wp-content\plugins\bootstrap-rating\star-rating.min.js" />
+    <Content Include="assets\wp-content\plugins\bootstrap-rating\themes\krajee-svg\theme.css" />
+    <Content Include="assets\wp-content\plugins\bootstrap-rating\themes\krajee-svg\theme.js" />
+    <Content Include="assets\wp-content\plugins\bootstrap-rating\themes\krajee-svg\theme.min.css" />
+    <Content Include="assets\wp-content\plugins\bootstrap-rating\themes\krajee-svg\theme.min.js" />
+    <Content Include="assets\wp-content\plugins\bootstrap-rating\themes\locales\es.js" />
+    <Content Include="assets\wp-content\plugins\contact-form-7\includes\css\styles5b31.css" />
+    <Content Include="assets\wp-content\plugins\contact-form-7\includes\js\jquery.form.mind03d.js" />
+    <Content Include="assets\wp-content\plugins\contact-form-7\includes\js\scripts5b31.js" />
+    <Content Include="assets\wp-content\plugins\elevatezoom\jquery.elevateZoom-3.0.8.min.js" />
+    <Content Include="assets\wp-content\plugins\essential-grid\public\assets\css\lightbox.css" />
+    <Content Include="assets\wp-content\plugins\essential-grid\public\assets\css\settings.css" />
+    <Content Include="assets\wp-content\plugins\essential-grid\public\assets\font\egfontdde9.eot" />
+    <Content Include="assets\wp-content\plugins\essential-grid\public\assets\font\egfontdde9.svg" />
+    <Content Include="assets\wp-content\plugins\essential-grid\public\assets\font\egfontdde9.ttf" />
+    <Content Include="assets\wp-content\plugins\essential-grid\public\assets\font\egfontdde9.woff" />
+    <Content Include="assets\wp-content\plugins\essential-grid\public\assets\images\300x200transparent.png" />
+    <Content Include="assets\wp-content\plugins\essential-grid\public\assets\images\ajax-loader.gif" />
+    <Content Include="assets\wp-content\plugins\essential-grid\public\assets\images\blank.gif" />
+    <Content Include="assets\wp-content\plugins\essential-grid\public\assets\images\esgbox_buttons.png" />
+    <Content Include="assets\wp-content\plugins\essential-grid\public\assets\images\esgbox_loading%402x.gif" />
+    <Content Include="assets\wp-content\plugins\essential-grid\public\assets\images\esgbox_loading.gif" />
+    <Content Include="assets\wp-content\plugins\essential-grid\public\assets\images\esgbox_overlay.png" />
+    <Content Include="assets\wp-content\plugins\essential-grid\public\assets\images\esgbox_sprite%402x.png" />
+    <Content Include="assets\wp-content\plugins\essential-grid\public\assets\images\esgbox_sprite.png" />
+    <Content Include="assets\wp-content\plugins\essential-grid\public\assets\images\loader.gif" />
+    <Content Include="assets\wp-content\plugins\essential-grid\public\assets\js\jquery.themepunch.essential.min.js" />
+    <Content Include="assets\wp-content\plugins\essential-grid\public\assets\js\jquery.themepunch.tools.min.js" />
+    <Content Include="assets\wp-content\plugins\essential-grid\public\assets\js\lightbox.js" />
+    <Content Include="assets\wp-content\plugins\Jquery-ui\jquery-ui.css" />
+    <Content Include="assets\wp-content\plugins\js_composer\assets\css\lib\vc-entypo\fonts\vc_entypo.eot" />
+    <Content Include="assets\wp-content\plugins\js_composer\assets\css\lib\vc-entypo\fonts\vc_entypo.svg" />
+    <Content Include="assets\wp-content\plugins\js_composer\assets\css\lib\vc-entypo\fonts\vc_entypo.ttf" />
+    <Content Include="assets\wp-content\plugins\js_composer\assets\css\lib\vc-entypo\fonts\vc_entypo.woff" />
+    <Content Include="assets\wp-content\plugins\js_composer\assets\css\lib\vc-entypo\fonts\vc_entypod41d.eot" />
+    <Content Include="assets\wp-content\plugins\js_composer\assets\css\lib\vc-entypo\vc_entypo.min.css" />
+    <Content Include="assets\wp-content\plugins\js_composer\assets\css\lib\vc-entypo\vc_entypo.min20fd.css" />
+    <Content Include="assets\wp-content\plugins\js_composer\assets\css\lib\vc-linecons\fonts\vc_linecons4906.eot" />
+    <Content Include="assets\wp-content\plugins\js_composer\assets\css\lib\vc-linecons\fonts\vc_linecons4906.svg" />
+    <Content Include="assets\wp-content\plugins\js_composer\assets\css\lib\vc-linecons\fonts\vc_linecons4906.ttf" />
+    <Content Include="assets\wp-content\plugins\js_composer\assets\css\lib\vc-linecons\fonts\vc_linecons4906.woff" />
+    <Content Include="assets\wp-content\plugins\js_composer\assets\css\lib\vc-linecons\vc_linecons_icons.min20fd.css" />
+    <Content Include="assets\wp-content\plugins\js_composer\assets\js\dist\js_composer_front.min.js" />
+    <Content Include="assets\wp-content\plugins\js_composer\assets\js\dist\js_composer_front.min20fd.js" />
+    <Content Include="assets\wp-content\plugins\js_composer\assets\js\vendors\woocommerce-add-to-cart20fd.js" />
+    <Content Include="assets\wp-content\plugins\js_composer\assets\lib\bower\font-awesome\css\font-awesome.min.css" />
+    <Content Include="assets\wp-content\plugins\js_composer\assets\lib\bower\font-awesome\css\font-awesome.min20fd.css" />
+    <Content Include="assets\wp-content\plugins\js_composer\assets\lib\bower\font-awesome\fonts\fontawesome-webfont78ce.eot" />
+    <Content Include="assets\wp-content\plugins\js_composer\assets\lib\bower\font-awesome\fonts\fontawesome-webfont78ce.svg" />
+    <Content Include="assets\wp-content\plugins\js_composer\assets\lib\bower\font-awesome\fonts\fontawesome-webfont78ce.ttf" />
+    <Content Include="assets\wp-content\plugins\js_composer\assets\lib\bower\font-awesome\fonts\fontawesome-webfont78ce.woff" />
+    <Content Include="assets\wp-content\plugins\js_composer\assets\lib\bower\font-awesome\fonts\fontawesome-webfontd41d.eot" />
+    <Content Include="assets\wp-content\plugins\js_composer\assets\lib\bower\jquery-ui-tabs-rotate\jquery-ui-tabs-rotate.min20fd.js" />
+    <Content Include="assets\wp-content\plugins\js_composer\assets\lib\bower\progress-circle\ProgressCircle.min20fd.js" />
+    <Content Include="assets\wp-content\plugins\js_composer\assets\lib\prettyphoto\css\prettyPhoto.min20fd.css" />
+    <Content Include="assets\wp-content\plugins\js_composer\assets\lib\prettyphoto\images\prettyPhoto\dark_rounded\btnNext.png" />
+    <Content Include="assets\wp-content\plugins\js_composer\assets\lib\prettyphoto\images\prettyPhoto\dark_rounded\btnPrevious.png" />
+    <Content Include="assets\wp-content\plugins\js_composer\assets\lib\prettyphoto\images\prettyPhoto\dark_rounded\contentPattern.png" />
+    <Content Include="assets\wp-content\plugins\js_composer\assets\lib\prettyphoto\images\prettyPhoto\dark_rounded\loader.gif" />
+    <Content Include="assets\wp-content\plugins\js_composer\assets\lib\prettyphoto\images\prettyPhoto\dark_rounded\sprite.png" />
+    <Content Include="assets\wp-content\plugins\js_composer\assets\lib\prettyphoto\images\prettyPhoto\dark_square\btnNext.png" />
+    <Content Include="assets\wp-content\plugins\js_composer\assets\lib\prettyphoto\images\prettyPhoto\dark_square\btnPrevious.png" />
+    <Content Include="assets\wp-content\plugins\js_composer\assets\lib\prettyphoto\images\prettyPhoto\dark_square\loader.gif" />
+    <Content Include="assets\wp-content\plugins\js_composer\assets\lib\prettyphoto\images\prettyPhoto\dark_square\sprite.png" />
+    <Content Include="assets\wp-content\plugins\js_composer\assets\lib\prettyphoto\images\prettyPhoto\default\default_thumb.png" />
+    <Content Include="assets\wp-content\plugins\js_composer\assets\lib\prettyphoto\images\prettyPhoto\default\loader.gif" />
+    <Content Include="assets\wp-content\plugins\js_composer\assets\lib\prettyphoto\images\prettyPhoto\default\sprite.png" />
+    <Content Include="assets\wp-content\plugins\js_composer\assets\lib\prettyphoto\images\prettyPhoto\default\sprite_next.png" />
+    <Content Include="assets\wp-content\plugins\js_composer\assets\lib\prettyphoto\images\prettyPhoto\default\sprite_prev.png" />
+    <Content Include="assets\wp-content\plugins\js_composer\assets\lib\prettyphoto\images\prettyPhoto\default\sprite_x.png" />
+    <Content Include="assets\wp-content\plugins\js_composer\assets\lib\prettyphoto\images\prettyPhoto\default\sprite_y.png" />
+    <Content Include="assets\wp-content\plugins\js_composer\assets\lib\prettyphoto\images\prettyPhoto\facebook\btnNext.png" />
+    <Content Include="assets\wp-content\plugins\js_composer\assets\lib\prettyphoto\images\prettyPhoto\facebook\btnPrevious.png" />
+    <Content Include="assets\wp-content\plugins\js_composer\assets\lib\prettyphoto\images\prettyPhoto\facebook\contentPatternBottom.png" />
+    <Content Include="assets\wp-content\plugins\js_composer\assets\lib\prettyphoto\images\prettyPhoto\facebook\contentPatternLeft.png" />
+    <Content Include="assets\wp-content\plugins\js_composer\assets\lib\prettyphoto\images\prettyPhoto\facebook\contentPatternRight.png" />
+    <Content Include="assets\wp-content\plugins\js_composer\assets\lib\prettyphoto\images\prettyPhoto\facebook\contentPatternTop.png" />
+    <Content Include="assets\wp-content\plugins\js_composer\assets\lib\prettyphoto\images\prettyPhoto\facebook\default_thumbnail.gif" />
+    <Content Include="assets\wp-content\plugins\js_composer\assets\lib\prettyphoto\images\prettyPhoto\facebook\loader.gif" />
+    <Content Include="assets\wp-content\plugins\js_composer\assets\lib\prettyphoto\images\prettyPhoto\facebook\sprite.png" />
+    <Content Include="assets\wp-content\plugins\js_composer\assets\lib\prettyphoto\images\prettyPhoto\light_rounded\btnNext.png" />
+    <Content Include="assets\wp-content\plugins\js_composer\assets\lib\prettyphoto\images\prettyPhoto\light_rounded\btnPrevious.png" />
+    <Content Include="assets\wp-content\plugins\js_composer\assets\lib\prettyphoto\images\prettyPhoto\light_rounded\loader.gif" />
+    <Content Include="assets\wp-content\plugins\js_composer\assets\lib\prettyphoto\images\prettyPhoto\light_rounded\sprite.png" />
+    <Content Include="assets\wp-content\plugins\js_composer\assets\lib\prettyphoto\images\prettyPhoto\light_square\btnNext.png" />
+    <Content Include="assets\wp-content\plugins\js_composer\assets\lib\prettyphoto\images\prettyPhoto\light_square\btnPrevious.png" />
+    <Content Include="assets\wp-content\plugins\js_composer\assets\lib\prettyphoto\images\prettyPhoto\light_square\sprite.png" />
+    <Content Include="assets\wp-content\plugins\js_composer\assets\lib\prettyphoto\js\jquery.prettyPhoto.min20fd.js" />
+    <Content Include="assets\wp-content\plugins\js_composer\assets\lib\vc-tta-autoplay\vc-tta-autoplay.min20fd.js" />
+    <Content Include="assets\wp-content\plugins\js_composer\assets\lib\vc_accordion\vc-accordion.min20fd.js" />
+    <Content Include="assets\wp-content\plugins\js_composer\assets\lib\vc_chart\jquery.vc_chart.min20fd.js" />
+    <Content Include="assets\wp-content\plugins\js_composer\assets\lib\vc_tabs\vc-tabs.min20fd.js" />
+    <Content Include="assets\wp-content\plugins\js_composer\assets\lib\waypoints\waypoints.min20fd.js" />
+    <Content Include="assets\wp-content\plugins\photobox\jquery.photobox.js" />
+    <Content Include="assets\wp-content\plugins\photobox\photobox.css" />
+    <Content Include="assets\wp-content\plugins\revslider\public\assets\assets\coloredbg.png" />
+    <Content Include="assets\wp-content\plugins\revslider\public\assets\assets\gridtile.png" />
+    <Content Include="assets\wp-content\plugins\revslider\public\assets\assets\gridtile_3x3.png" />
+    <Content Include="assets\wp-content\plugins\revslider\public\assets\assets\gridtile_3x3_white.png" />
+    <Content Include="assets\wp-content\plugins\revslider\public\assets\assets\gridtile_white.png" />
+    <Content Include="assets\wp-content\plugins\revslider\public\assets\assets\loader.gif" />
+    <Content Include="assets\wp-content\plugins\revslider\public\assets\css\closedhand.cur" />
+    <Content Include="assets\wp-content\plugins\revslider\public\assets\css\openhand.cur" />
+    <Content Include="assets\wp-content\plugins\revslider\public\assets\css\settingsb62d.css" />
+    <Content Include="assets\wp-content\plugins\revslider\public\assets\fonts\font-awesome\css\font-awesome.css" />
+    <Content Include="assets\wp-content\plugins\revslider\public\assets\fonts\font-awesome\fonts\fontawesome-webfont3295.eot" />
+    <Content Include="assets\wp-content\plugins\revslider\public\assets\fonts\font-awesome\fonts\fontawesome-webfont3295.svg" />
+    <Content Include="assets\wp-content\plugins\revslider\public\assets\fonts\font-awesome\fonts\fontawesome-webfont3295.ttf" />
+    <Content Include="assets\wp-content\plugins\revslider\public\assets\fonts\font-awesome\fonts\fontawesome-webfont3295.woff" />
+    <Content Include="assets\wp-content\plugins\revslider\public\assets\fonts\font-awesome\fonts\fontawesome-webfont3295.woff2" />
+    <Content Include="assets\wp-content\plugins\revslider\public\assets\fonts\font-awesome\fonts\fontawesome-webfontd41d.eot" />
+    <Content Include="assets\wp-content\plugins\revslider\public\assets\fonts\revicons\revicons90c6.eot" />
+    <Content Include="assets\wp-content\plugins\revslider\public\assets\fonts\revicons\revicons90c6.svg" />
+    <Content Include="assets\wp-content\plugins\revslider\public\assets\fonts\revicons\revicons90c6.ttf" />
+    <Content Include="assets\wp-content\plugins\revslider\public\assets\fonts\revicons\revicons90c6.woff" />
+    <Content Include="assets\wp-content\plugins\revslider\public\assets\js\jquery.themepunch.revolution.min.js" />
+    <Content Include="assets\wp-content\plugins\revslider\public\assets\js\jquery.themepunch.revolution.minb62d.js" />
+    <Content Include="assets\wp-content\plugins\tablepress\css\default.min97e1.css" />
+    <Content Include="assets\wp-content\plugins\tablepress\css\tablepress.eot" />
+    <Content Include="assets\wp-content\plugins\tablepress\css\tablepressd41d.eot" />
+    <Content Include="assets\wp-content\plugins\userpro\addons\social\scripts\userpro-social.mind22c.js" />
+    <Content Include="assets\wp-content\plugins\userpro\css\font\fontawesome-webfont.svg" />
+    <Content Include="assets\wp-content\plugins\userpro\css\font\fontawesome-webfont93e3.eot" />
+    <Content Include="assets\wp-content\plugins\userpro\css\font\fontawesome-webfont93e3.ttf" />
+    <Content Include="assets\wp-content\plugins\userpro\css\font\fontawesome-webfont93e3.woff" />
+    <Content Include="assets\wp-content\plugins\userpro\css\font\fontawesome-webfontd41d.eot" />
+    <Content Include="assets\wp-content\plugins\userpro\css\lightview\lightviewd22c.css" />
+    <Content Include="assets\wp-content\plugins\userpro\css\lightview\skins\blank.gif" />
+    <Content Include="assets\wp-content\plugins\userpro\css\lightview\skins\dark\sprite.png" />
+    <Content Include="assets\wp-content\plugins\userpro\css\lightview\skins\dark\sprite_ie_lt_7.png" />
+    <Content Include="assets\wp-content\plugins\userpro\css\lightview\skins\light\sprite.png" />
+    <Content Include="assets\wp-content\plugins\userpro\css\lightview\skins\light\sprite_ie_lt_7.png" />
+    <Content Include="assets\wp-content\plugins\userpro\css\lightview\skins\mac\sprite.png" />
+    <Content Include="assets\wp-content\plugins\userpro\css\lightview\skins\mac\sprite_ie_lt_7.png" />
+    <Content Include="assets\wp-content\plugins\userpro\css\userpro-jquery-uid22c.css" />
+    <Content Include="assets\wp-content\plugins\userpro\css\userpro.mind22c.css" />
+    <Content Include="assets\wp-content\plugins\userpro\img\datepicker.png" />
+    <Content Include="assets\wp-content\plugins\userpro\img\file-pdf.png" />
+    <Content Include="assets\wp-content\plugins\userpro\img\file-txt.png" />
+    <Content Include="assets\wp-content\plugins\userpro\img\file-zip.png" />
+    <Content Include="assets\wp-content\plugins\userpro\img\file.png" />
+    <Content Include="assets\wp-content\plugins\userpro\img\social\facebook_signin.png" />
+    <Content Include="assets\wp-content\plugins\userpro\img\social\google_signin.png" />
+    <Content Include="assets\wp-content\plugins\userpro\img\social\instagram_signin.png" />
+    <Content Include="assets\wp-content\plugins\userpro\img\social\linkedin_signin.jpg" />
+    <Content Include="assets\wp-content\plugins\userpro\img\social\twitter_signin.png" />
+    <Content Include="assets\wp-content\plugins\userpro\img\ui-icons_ffffff_256x240.png" />
+    <Content Include="assets\wp-content\plugins\userpro\img\zoom.png" />
+    <Content Include="assets\wp-content\plugins\userpro\scripts\lightview\lightviewd22c.js" />
+    <Content Include="assets\wp-content\plugins\userpro\scripts\performanced22c.js" />
+    <Content Include="assets\wp-content\plugins\userpro\scripts\scripts.mind22c.js" />
+    <Content Include="assets\wp-content\plugins\userpro\scripts\spinners\spinners.mind22c.js" />
+    <Content Include="assets\wp-content\plugins\userpro\scripts\swfobjectd22c.js" />
+    <Content Include="assets\wp-content\plugins\userpro\skins\elegant\img\checked-checkbox.png" />
+    <Content Include="assets\wp-content\plugins\userpro\skins\elegant\img\checked.png" />
+    <Content Include="assets\wp-content\plugins\userpro\skins\elegant\img\chosen-sprite%402x.png" />
+    <Content Include="assets\wp-content\plugins\userpro\skins\elegant\img\chosen-sprite.png" />
+    <Content Include="assets\wp-content\plugins\userpro\skins\elegant\img\close.png" />
+    <Content Include="assets\wp-content\plugins\userpro\skins\elegant\img\help.png" />
+    <Content Include="assets\wp-content\plugins\userpro\skins\elegant\img\icon-link.png" />
+    <Content Include="assets\wp-content\plugins\userpro\skins\elegant\img\overlay.png" />
+    <Content Include="assets\wp-content\plugins\userpro\skins\elegant\img\pattern.png" />
+    <Content Include="assets\wp-content\plugins\userpro\skins\elegant\img\unchecked-checkbox.png" />
+    <Content Include="assets\wp-content\plugins\userpro\skins\elegant\img\unchecked.png" />
+    <Content Include="assets\wp-content\plugins\userpro\skins\elegant\styled22c.css" />
+    <Content Include="assets\wp-content\plugins\whmcs-bridge-sso\css\bridge.css" />
+    <Content Include="assets\wp-content\plugins\whmcs-bridge-sso\css\five.css" />
+    <Content Include="assets\wp-content\plugins\whmcs-bridge\cc.css" />
+    <Content Include="assets\wp-content\plugins\whmcs-bridge\cc.js" />
+    <Content Include="assets\wp-content\plugins\whmpress\includes\DataTables\DataTables-1.10.10\images\sort_asc.png" />
+    <Content Include="assets\wp-content\plugins\whmpress\includes\DataTables\DataTables-1.10.10\images\sort_asc_disabled.png" />
+    <Content Include="assets\wp-content\plugins\whmpress\includes\DataTables\DataTables-1.10.10\images\sort_both.png" />
+    <Content Include="assets\wp-content\plugins\whmpress\includes\DataTables\DataTables-1.10.10\images\sort_desc.png" />
+    <Content Include="assets\wp-content\plugins\whmpress\includes\DataTables\DataTables-1.10.10\images\sort_desc_disabled.png" />
+    <Content Include="assets\wp-content\plugins\whmpress\includes\DataTables\datatables.mind22c.css" />
+    <Content Include="assets\wp-content\plugins\whmpress\includes\DataTables\datatables.mind22c.js" />
+    <Content Include="assets\wp-content\plugins\whmpress\js\jquery.quicksearchd22c.js" />
+    <Content Include="assets\wp-content\plugins\whmpress\js\whmpress8a54.js" />
+    <Content Include="assets\wp-content\plugins\whmpress\styles\defaultd22c.css" />
+    <Content Include="assets\wp-content\plugins\whmpress\templates\whmpressd22c.css" />
+    <Content Include="assets\wp-content\plugins\woocommerce\assets\css\prettyPhoto16b9.css" />
+    <Content Include="assets\wp-content\plugins\woocommerce\assets\css\select216b9.css" />
+    <Content Include="assets\wp-content\plugins\woocommerce\assets\fonts\star.eot" />
+    <Content Include="assets\wp-content\plugins\woocommerce\assets\fonts\star.svg" />
+    <Content Include="assets\wp-content\plugins\woocommerce\assets\fonts\star.ttf" />
+    <Content Include="assets\wp-content\plugins\woocommerce\assets\fonts\star.woff" />
+    <Content Include="assets\wp-content\plugins\woocommerce\assets\fonts\stard41d.eot" />
+    <Content Include="assets\wp-content\plugins\woocommerce\assets\fonts\WooCommerce.eot" />
+    <Content Include="assets\wp-content\plugins\woocommerce\assets\fonts\WooCommerce.svg" />
+    <Content Include="assets\wp-content\plugins\woocommerce\assets\fonts\WooCommerce.ttf" />
+    <Content Include="assets\wp-content\plugins\woocommerce\assets\fonts\WooCommerce.woff" />
+    <Content Include="assets\wp-content\plugins\woocommerce\assets\fonts\WooCommerced41d.eot" />
+    <Content Include="assets\wp-content\plugins\woocommerce\assets\images\icons\loader.svg" />
+    <Content Include="assets\wp-content\plugins\woocommerce\assets\images\select2-spinner.gif" />
+    <Content Include="assets\wp-content\plugins\woocommerce\assets\images\select2.png" />
+    <Content Include="assets\wp-content\plugins\woocommerce\assets\images\select2x2.png" />
+    <Content Include="assets\wp-content\plugins\woocommerce\assets\js\frontend\add-to-cart.min16b9.js" />
+    <Content Include="assets\wp-content\plugins\woocommerce\assets\js\frontend\address-i18n.min16b9.js" />
+    <Content Include="assets\wp-content\plugins\woocommerce\assets\js\frontend\cart-fragments.min16b9.js" />
+    <Content Include="assets\wp-content\plugins\woocommerce\assets\js\frontend\cart.min16b9.js" />
+    <Content Include="assets\wp-content\plugins\woocommerce\assets\js\frontend\country-select.min16b9.js" />
+    <Content Include="assets\wp-content\plugins\woocommerce\assets\js\frontend\lost-password.min16b9.js" />
+    <Content Include="assets\wp-content\plugins\woocommerce\assets\js\frontend\password-strength-meter.min16b9.js" />
+    <Content Include="assets\wp-content\plugins\woocommerce\assets\js\frontend\price-slider.min16b9.js" />
+    <Content Include="assets\wp-content\plugins\woocommerce\assets\js\frontend\single-product.min16b9.js" />
+    <Content Include="assets\wp-content\plugins\woocommerce\assets\js\frontend\woocommerce.min16b9.js" />
+    <Content Include="assets\wp-content\plugins\woocommerce\assets\js\jquery-blockui\jquery.blockUI.min44fd.js" />
+    <Content Include="assets\wp-content\plugins\woocommerce\assets\js\jquery-cookie\jquery_cookie.mine7f0.js" />
+    <Content Include="assets\wp-content\plugins\woocommerce\assets\js\jquery-ui-touch-punch\jquery-ui-touch-punch.min16b9.js" />
+    <Content Include="assets\wp-content\plugins\woocommerce\assets\js\prettyPhoto\jquery.prettyPhoto.init.min16b9.js" />
+    <Content Include="assets\wp-content\plugins\woocommerce\assets\js\prettyPhoto\jquery.prettyPhoto.min005e.js" />
+    <Content Include="assets\wp-content\plugins\woocommerce\assets\js\select2\select2.mine248.js" />
+    <Content Include="assets\wp-content\plugins\wp-domain-checker\assets\bootstrap-flat-extrasd22c.css" />
+    <Content Include="assets\wp-content\plugins\wp-domain-checker\assets\bootstrap-flatd22c.css" />
+    <Content Include="assets\wp-content\plugins\wp-domain-checker\assets\script68b3.js" />
+    <Content Include="assets\wp-content\plugins\wp-domain-checker\assets\styled22c.css" />
+    <Content Include="assets\wp-content\plugins\wp-domain-checker\fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="assets\wp-content\plugins\wp-domain-checker\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="assets\wp-content\plugins\wp-domain-checker\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="assets\wp-content\plugins\wp-domain-checker\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="assets\wp-content\plugins\wp-domain-checker\fonts\glyphicons-halflings-regular.woff2" />
+    <Content Include="assets\wp-content\plugins\wp-domain-checker\fonts\glyphicons-halflings-regulard41d.eot" />
+    <Content Include="assets\wp-content\plugins\wp-pagenavi\pagenavi-css44fd.css" />
+    <Content Include="assets\wp-content\themes\easyweb\css\base.css" />
+    <Content Include="assets\wp-content\themes\easyweb\css\blog.css" />
+    <Content Include="assets\wp-content\themes\easyweb\css\blox.css" />
+    <Content Include="assets\wp-content\themes\easyweb\css\color-skins.css" />
+    <Content Include="assets\wp-content\themes\easyweb\css\dyncssd22c.css" />
+    <Content Include="assets\wp-content\themes\easyweb\css\elements.css" />
+    <Content Include="assets\wp-content\themes\easyweb\css\fancybox.css" />
+    <Content Include="assets\wp-content\themes\easyweb\css\flexslider.css" />
+    <Content Include="assets\wp-content\themes\easyweb\css\icon-box.css" />
+    <Content Include="assets\wp-content\themes\easyweb\css\iconfonts.css" />
+    <Content Include="assets\wp-content\themes\easyweb\css\live-search.css" />
+    <Content Include="assets\wp-content\themes\easyweb\css\main-menu.css" />
+    <Content Include="assets\wp-content\themes\easyweb\css\main-style.css" />
+    <Content Include="assets\wp-content\themes\easyweb\css\master8a54.css" />
+    <Content Include="assets\wp-content\themes\easyweb\css\scaffolding.css" />
+    <Content Include="assets\wp-content\themes\easyweb\css\style-selector.css" />
+    <Content Include="assets\wp-content\themes\easyweb\css\visualcomposer.css" />
+    <Content Include="assets\wp-content\themes\easyweb\css\whmcs.css" />
+    <Content Include="assets\wp-content\themes\easyweb\css\widgets.css" />
+    <Content Include="assets\wp-content\themes\easyweb\fonts\fontawesome-webfont78ce.eot" />
+    <Content Include="assets\wp-content\themes\easyweb\fonts\fontawesome-webfont78ce.svg" />
+    <Content Include="assets\wp-content\themes\easyweb\fonts\fontawesome-webfont78ce.ttf" />
+    <Content Include="assets\wp-content\themes\easyweb\fonts\fontawesome-webfont78ce.woff" />
+    <Content Include="assets\wp-content\themes\easyweb\fonts\fontawesome-webfontd41d.eot" />
+    <Content Include="assets\wp-content\themes\easyweb\fonts\linecons.eot" />
+    <Content Include="assets\wp-content\themes\easyweb\fonts\linecons.svg" />
+    <Content Include="assets\wp-content\themes\easyweb\fonts\linecons.ttf" />
+    <Content Include="assets\wp-content\themes\easyweb\fonts\linecons.woff" />
+    <Content Include="assets\wp-content\themes\easyweb\fonts\lineconsd41d.eot" />
+    <Content Include="assets\wp-content\themes\easyweb\fonts\Simple-Line-Icons6c54.eot" />
+    <Content Include="assets\wp-content\themes\easyweb\fonts\Simple-Line-Icons6c54.svg" />
+    <Content Include="assets\wp-content\themes\easyweb\fonts\Simple-Line-Icons6c54.ttf" />
+    <Content Include="assets\wp-content\themes\easyweb\fonts\Simple-Line-Icons6c54.woff" />
+    <Content Include="assets\wp-content\themes\easyweb\fonts\Simple-Line-Iconsd41d.eot" />
+    <Content Include="assets\wp-content\themes\easyweb\images\accordion-ico.png" />
+    <Content Include="assets\wp-content\themes\easyweb\images\alert-error-ico.png" />
+    <Content Include="assets\wp-content\themes\easyweb\images\alert-info-ico.png" />
+    <Content Include="assets\wp-content\themes\easyweb\images\alert-notice-ico.png" />
+    <Content Include="assets\wp-content\themes\easyweb\images\alert-success-ico.png" />
+    <Content Include="assets\wp-content\themes\easyweb\images\arrows2.png" />
+    <Content Include="assets\wp-content\themes\easyweb\images\avatr1.png" />
+    <Content Include="assets\wp-content\themes\easyweb\images\bdbg1.png" />
+    <Content Include="assets\wp-content\themes\easyweb\images\bg-pricing-table-5.png" />
+    <Content Include="assets\wp-content\themes\easyweb\images\count-border.png" />
+    <Content Include="assets\wp-content\themes\easyweb\images\fancybox\blank.gif" />
+    <Content Include="assets\wp-content\themes\easyweb\images\fancybox\fancybox_loading%402x.gif" />
+    <Content Include="assets\wp-content\themes\easyweb\images\fancybox\fancybox_loading.gif" />
+    <Content Include="assets\wp-content\themes\easyweb\images\fancybox\fancybox_overlay.png" />
+    <Content Include="assets\wp-content\themes\easyweb\images\fancybox\fancybox_sprite%402x.png" />
+    <Content Include="assets\wp-content\themes\easyweb\images\fancybox\fancybox_sprite.png" />
+    <Content Include="assets\wp-content\themes\easyweb\images\find-ico1.png" />
+    <Content Include="assets\wp-content\themes\easyweb\images\li-arrow.png" />
+    <Content Include="assets\wp-content\themes\easyweb\images\li-arrow2.png" />
+    <Content Include="assets\wp-content\themes\easyweb\images\li-check.png" />
+    <Content Include="assets\wp-content\themes\easyweb\images\li-circle.png" />
+    <Content Include="assets\wp-content\themes\easyweb\images\li-cross.png" />
+    <Content Include="assets\wp-content\themes\easyweb\images\li-minus.png" />
+    <Content Include="assets\wp-content\themes\easyweb\images\li-plus.png" />
+    <Content Include="assets\wp-content\themes\easyweb\images\li-square.png" />
+    <Content Include="assets\wp-content\themes\easyweb\images\li-star.png" />
+    <Content Include="assets\wp-content\themes\easyweb\images\ourprocess-mobile-v.png" />
+    <Content Include="assets\wp-content\themes\easyweb\images\ourprocess.png" />
+    <Content Include="assets\wp-content\themes\easyweb\images\patern-bg1.png" />
+    <Content Include="assets\wp-content\themes\easyweb\images\patern-bg2.png" />
+    <Content Include="assets\wp-content\themes\easyweb\images\pattern-bg2.png" />
+    <Content Include="assets\wp-content\themes\easyweb\images\pattern.png" />
+    <Content Include="assets\wp-content\themes\easyweb\images\pattern2.png" />
+    <Content Include="assets\wp-content\themes\easyweb\images\search-icon.png" />
+    <Content Include="assets\wp-content\themes\easyweb\images\sf_loading.gif" />
+    <Content Include="assets\wp-content\themes\easyweb\images\sf_search.png" />
+    <Content Include="assets\wp-content\themes\easyweb\images\spattern.png" />
+    <Content Include="assets\wp-content\themes\easyweb\images\style-selector-img\design-thumb.jpg" />
+    <Content Include="assets\wp-content\themes\easyweb\images\style-selector-img\design.jpg" />
+    <Content Include="assets\wp-content\themes\easyweb\images\style-selector-img\host-slider-bgp1-500x500.jpg" />
+    <Content Include="assets\wp-content\themes\easyweb\images\style-selector-img\seo-thumb.jpg" />
+    <Content Include="assets\wp-content\themes\easyweb\images\style-selector-img\seo.jpg" />
+    <Content Include="assets\wp-content\themes\easyweb\images\v-shadow-left.png" />
+    <Content Include="assets\wp-content\themes\easyweb\images\v-shadow-right.png" />
+    <Content Include="assets\wp-content\themes\easyweb\images\w-divider8-icon-img.png" />
+    <Content Include="assets\wp-content\themes\easyweb\images\woobag%402x.png" />
+    <Content Include="assets\wp-content\themes\easyweb\images\woobag%402xb.png" />
+    <Content Include="assets\wp-content\themes\easyweb\inc\visualcomposer\assets\js_composer.min.css" />
+    <Content Include="assets\wp-content\themes\easyweb\inc\woocommerce\woocommerce.css" />
+    <Content Include="assets\wp-content\themes\easyweb\js\colorize.js" />
+    <Content Include="assets\wp-content\themes\easyweb\js\jquery.masonry.min.js" />
+    <Content Include="assets\wp-content\themes\easyweb\js\jquery.plugins.js" />
+    <Content Include="assets\wp-content\themes\easyweb\js\live-search.js" />
+    <Content Include="assets\wp-content\themes\easyweb\js\webnus-custom.js" />
+    <Content Include="assets\wp-includes\css\buttons.mind22c.css" />
+    <Content Include="assets\wp-includes\css\dashicons.mind22c.css" />
+    <Content Include="assets\wp-includes\css\jquery-ui-dialog.mind22c.css" />
+    <Content Include="assets\wp-includes\js\in5sk4zknpyqoz2pq1z1aj0milum46jn.js" />
+    <Content Include="assets\wp-includes\js\jquery\jquery-migrate.min1576.js" />
+    <Content Include="assets\wp-includes\js\jquery\jquery.js" />
+    <Content Include="assets\wp-includes\js\jquery\jqueryc1d8.js" />
+    <Content Include="assets\wp-includes\js\jquery\ui\button.mine899.js" />
+    <Content Include="assets\wp-includes\js\jquery\ui\core.mine899.js" />
+    <Content Include="assets\wp-includes\js\jquery\ui\datepicker.mine899.js" />
+    <Content Include="assets\wp-includes\js\jquery\ui\dialog.mine899.js" />
+    <Content Include="assets\wp-includes\js\jquery\ui\draggable.mine899.js" />
+    <Content Include="assets\wp-includes\js\jquery\ui\mouse.mine899.js" />
+    <Content Include="assets\wp-includes\js\jquery\ui\position.mine899.js" />
+    <Content Include="assets\wp-includes\js\jquery\ui\resizable.mine899.js" />
+    <Content Include="assets\wp-includes\js\jquery\ui\slider.mine899.js" />
+    <Content Include="assets\wp-includes\js\jquery\ui\tabs.mine899.js" />
+    <Content Include="assets\wp-includes\js\jquery\ui\widget.mine899.js" />
+    <Content Include="assets\wp-includes\js\mediaelement\mediaelement-and-player.min7796.js" />
+    <Content Include="assets\wp-includes\js\mediaelement\mediaelementplayer.mineb0c.css" />
+    <Content Include="assets\wp-includes\js\mediaelement\wp-mediaelementd22c.css" />
+    <Content Include="assets\wp-includes\js\mediaelement\wp-mediaelementd22c.js" />
+    <Content Include="assets\wp-includes\js\wp-embed.mind22c.js" />
+    <Content Include="assets\wp-includes\js\wpdialog.mind22c.js" />
+    <Content Include="bin\AjaxControlToolkit.dll" />
+    <Content Include="bin\GMaps.dll" />
+    <Content Include="Controls\block_booking.ascx" />
+    <Content Include="Controls\block_bookingprice.ascx" />
+    <Content Include="Controls\block_breakumb.ascx" />
+    <Content Include="Controls\block_cart.ascx" />
+    <Content Include="Controls\block_categoryhome.ascx" />
+    <Content Include="Controls\block_category.ascx" />
+    <Content Include="Controls\block_categorypagetemplate.ascx" />
+    <Content Include="Controls\block_featuredvideo.ascx" />
+    <Content Include="Controls\block_googlemap.ascx" />
+    <Content Include="Controls\block_googlemap_detail.ascx" />
+    <Content Include="Controls\block_like.ascx" />
+    <Content Include="Controls\block_productrelate.ascx" />
+    <Content Include="Controls\block_programtour.ascx" />
+    <Content Include="Controls\block_requesthelp.ascx" />
+    <Content Include="Controls\block_right.ascx" />
+    <Content Include="Controls\block_sessiontimeout.ascx" />
+    <Content Include="Controls\block_slide.ascx" />
+    <Content Include="Controls\block_categorytemplate.ascx" />
+    <Content Include="Controls\blog_left.ascx" />
+    <Content Include="Controls\block_choosetemplate.ascx" />
+    <Content Include="Controls\block_request.ascx" />
+    <Content Include="Controls\logo_language.ascx" />
+    <Content Include="default.aspx" />
+    <Content Include="ErrorPages\error.aspx" />
+    <Content Include="GenImage.aspx" />
+    <Content Include="Global.asax" />
+    <Content Include="Images\arrow.png" />
+    <Content Include="Images\ipad.png" />
+    <Content Include="Images\mb.png" />
+    <Content Include="logout.aspx" />
+    <Content Include="Pages\BlogManagement\Blog.ascx" />
+    <Content Include="Pages\BlogManagement\BlogDetail.ascx" />
+    <Content Include="Pages\BookingManagement\Booking.ascx" />
+    <Content Include="Pages\BookingManagement\BookingResutl.ascx" />
+    <Content Include="Pages\Cart\CartView.ascx" />
+    <Content Include="Pages\Cart\Checkout.ascx" />
+    <Content Include="Pages\CategoryManagement\Category.ascx" />
+    <Content Include="Pages\CategoryManagement\CategoryDetail.ascx" />
+    <Content Include="Pages\CompanyManagement\CompanyDetail.ascx" />
+    <Content Include="Pages\Contact\Request.ascx" />
+    <Content Include="Pages\Contact\Contact.ascx" />
+    <Content Include="Pages\TestimonialManagement\Testimonial.ascx" />
+    <Content Include="Pages\GalleryManagement\Picture.ascx" />
+    <Content Include="Pages\GalleryManagement\Picture_Video.ascx" />
+    <Content Include="Pages\GalleryManagement\Video.ascx" />
+    <Content Include="Pages\FAQManagement\FAQ.ascx" />
+    <Content Include="Pages\ServiceManagement\Service.ascx" />
+    <Content Include="Pages\TemplateManagement\Template.ascx" />
+    <Content Include="Pages\TemplateManagement\TemplateDetail.ascx" />
+    <Content Include="Pages\SearchManagement\search.ascx" />
+    <Content Include="robots.txt" />
+    <Content Include="Scripts\previewframe.js" />
+    <Content Include="Controls\footer.ascx" />
+    <Content Include="Controls\top_menu.ascx" />
+    <Content Include="Scripts\script.js" />
+    <Content Include="Styles\Site.css" />
+    <Content Include="Styles\Style.css" />
+    <Content Include="TemplateMail\Booking.html" />
+    <Content Include="TemplateMail\CategoryHeader.txt" />
+    <Content Include="TemplateMail\Contact.txt" />
+    <Content Include="TemplateMail\Kichhoat.txt" />
+    <Content Include="TemplateMail\QuenMatKhau.txt" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="WebServices\Service.asmx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Admin\admin_site.Master.cs">
+      <DependentUpon>admin_site.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\admin_site.Master.designer.cs">
+      <DependentUpon>admin_site.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Controls\block_baseimage.ascx.cs">
+      <DependentUpon>block_baseimage.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Controls\block_baseimage.ascx.designer.cs">
+      <DependentUpon>block_baseimage.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Controls\block_mapsmulti.ascx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>block_mapsmulti.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Controls\block_mapsmulti.ascx.designer.cs">
+      <DependentUpon>block_mapsmulti.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Controls\block_salesprice.ascx.cs">
+      <DependentUpon>block_salesprice.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Controls\block_salesprice.ascx.designer.cs">
+      <DependentUpon>block_salesprice.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Controls\block_uploadfile.ascx.cs">
+      <DependentUpon>block_uploadfile.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Controls\block_uploadfile.ascx.designer.cs">
+      <DependentUpon>block_uploadfile.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Controls\block_uploadimage.ascx.cs">
+      <DependentUpon>block_uploadimage.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Controls\block_uploadimage.ascx.designer.cs">
+      <DependentUpon>block_uploadimage.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Controls\block_uploadvideo.ascx.cs">
+      <DependentUpon>block_uploadvideo.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Controls\block_uploadvideo.ascx.designer.cs">
+      <DependentUpon>block_uploadvideo.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Controls\breakumb.ascx.cs">
+      <DependentUpon>breakumb.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Controls\breakumb.ascx.designer.cs">
+      <DependentUpon>breakumb.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Controls\footer.ascx.cs">
+      <DependentUpon>footer.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Controls\footer.ascx.designer.cs">
+      <DependentUpon>footer.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Controls\iframe_uploadimage.aspx.cs">
+      <DependentUpon>iframe_uploadimage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Controls\iframe_uploadimage.aspx.designer.cs">
+      <DependentUpon>iframe_uploadimage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Controls\leftmenu.ascx.cs">
+      <DependentUpon>leftmenu.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Controls\leftmenu.ascx.designer.cs">
+      <DependentUpon>leftmenu.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Controls\topmenu.ascx.cs">
+      <DependentUpon>topmenu.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Controls\topmenu.ascx.designer.cs">
+      <DependentUpon>topmenu.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Controls\uc_TextBox.ascx.cs">
+      <DependentUpon>uc_TextBox.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Controls\uc_TextBox.ascx.designer.cs">
+      <DependentUpon>uc_TextBox.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\default.aspx.cs">
+      <DependentUpon>default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\default.aspx.designer.cs">
+      <DependentUpon>default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\LoginAdmin.aspx.cs">
+      <DependentUpon>LoginAdmin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\LoginAdmin.aspx.designer.cs">
+      <DependentUpon>LoginAdmin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Pages\BookingGroup\admin_bookinggroup.ascx.cs">
+      <DependentUpon>admin_bookinggroup.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Pages\BookingGroup\admin_bookinggroup.ascx.designer.cs">
+      <DependentUpon>admin_bookinggroup.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Pages\BookingPrice\admin_bookingprice.ascx.cs">
+      <DependentUpon>admin_bookingprice.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Pages\BookingPrice\admin_bookingprice.ascx.designer.cs">
+      <DependentUpon>admin_bookingprice.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Pages\Config\admin_config.ascx.cs">
+      <DependentUpon>admin_config.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Pages\Config\admin_config.ascx.designer.cs">
+      <DependentUpon>admin_config.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Pages\Config\admin_page.ascx.cs">
+      <DependentUpon>admin_page.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Pages\Config\admin_page.ascx.designer.cs">
+      <DependentUpon>admin_page.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Pages\Config\admin_seo.ascx.cs">
+      <DependentUpon>admin_seo.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Pages\Config\admin_seo.ascx.designer.cs">
+      <DependentUpon>admin_seo.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Pages\ContentStatic\admin_contentstatic.ascx.cs">
+      <DependentUpon>admin_contentstatic.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Pages\ContentStatic\admin_contentstatic.ascx.designer.cs">
+      <DependentUpon>admin_contentstatic.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Pages\ContentStatic\admin_editcontentstatic.ascx.cs">
+      <DependentUpon>admin_editcontentstatic.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Pages\ContentStatic\admin_editcontentstatic.ascx.designer.cs">
+      <DependentUpon>admin_editcontentstatic.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Pages\ExchangeRate\admin_editexchangerate.ascx.cs">
+      <DependentUpon>admin_editexchangerate.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Pages\ExchangeRate\admin_editexchangerate.ascx.designer.cs">
+      <DependentUpon>admin_editexchangerate.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Pages\ExchangeRate\admin_exchangerate.ascx.cs">
+      <DependentUpon>admin_exchangerate.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Pages\ExchangeRate\admin_exchangerate.ascx.designer.cs">
+      <DependentUpon>admin_exchangerate.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Pages\home.ascx.cs">
+      <DependentUpon>home.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Pages\home.ascx.designer.cs">
+      <DependentUpon>home.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Pages\ProductCategory\admin_editproductcategory.ascx.cs">
+      <DependentUpon>admin_editproductcategory.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Pages\ProductCategory\admin_editproductcategory.ascx.designer.cs">
+      <DependentUpon>admin_editproductcategory.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Pages\ProductCategory\admin_productcategory.ascx.cs">
+      <DependentUpon>admin_productcategory.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Pages\ProductCategory\admin_productcategory.ascx.designer.cs">
+      <DependentUpon>admin_productcategory.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Pages\Product\admin_editproduct.ascx.cs">
+      <DependentUpon>admin_editproduct.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Pages\Product\admin_editproduct.ascx.designer.cs">
+      <DependentUpon>admin_editproduct.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Pages\Product\admin_product.ascx.cs">
+      <DependentUpon>admin_product.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Pages\Product\admin_product.ascx.designer.cs">
+      <DependentUpon>admin_product.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Pages\ProgramTour\admin_editprogramtour.ascx.cs">
+      <DependentUpon>admin_editprogramtour.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Pages\ProgramTour\admin_editprogramtour.ascx.designer.cs">
+      <DependentUpon>admin_editprogramtour.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Pages\ProgramTour\admin_programtour.ascx.cs">
+      <DependentUpon>admin_programtour.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Pages\ProgramTour\admin_programtour.ascx.designer.cs">
+      <DependentUpon>admin_programtour.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Pages\Slider\admin_editslider.ascx.cs">
+      <DependentUpon>admin_editslider.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Pages\Slider\admin_editslider.ascx.designer.cs">
+      <DependentUpon>admin_editslider.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Pages\Slider\admin_slider.ascx.cs">
+      <DependentUpon>admin_slider.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Pages\Slider\admin_slider.ascx.designer.cs">
+      <DependentUpon>admin_slider.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Pages\User\admin_edituser.ascx.cs">
+      <DependentUpon>admin_edituser.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Pages\User\admin_edituser.ascx.designer.cs">
+      <DependentUpon>admin_edituser.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Pages\User\admin_user.ascx.cs">
+      <DependentUpon>admin_user.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Pages\User\admin_user.ascx.designer.cs">
+      <DependentUpon>admin_user.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Upload.ashx.cs">
+      <DependentUpon>Upload.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Common\BuildControl.cs" />
+    <Compile Include="Common\UtilityLocal.cs" />
+    <Compile Include="ControlAdapter\FormRewriterControlAdapter.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Controls\block_booking.ascx.cs">
+      <DependentUpon>block_booking.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\block_booking.ascx.designer.cs">
+      <DependentUpon>block_booking.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\block_bookingprice.ascx.cs">
+      <DependentUpon>block_bookingprice.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\block_bookingprice.ascx.designer.cs">
+      <DependentUpon>block_bookingprice.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\block_breakumb.ascx.cs">
+      <DependentUpon>block_breakumb.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\block_breakumb.ascx.designer.cs">
+      <DependentUpon>block_breakumb.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\block_cart.ascx.cs">
+      <DependentUpon>block_cart.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\block_cart.ascx.designer.cs">
+      <DependentUpon>block_cart.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\block_categoryhome.ascx.cs">
+      <DependentUpon>block_categoryhome.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\block_categoryhome.ascx.designer.cs">
+      <DependentUpon>block_categoryhome.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\block_category.ascx.cs">
+      <DependentUpon>block_category.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\block_category.ascx.designer.cs">
+      <DependentUpon>block_category.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\block_categorypagetemplate.ascx.cs">
+      <DependentUpon>block_categorypagetemplate.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\block_categorypagetemplate.ascx.designer.cs">
+      <DependentUpon>block_categorypagetemplate.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\block_featuredvideo.ascx.cs">
+      <DependentUpon>block_featuredvideo.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\block_featuredvideo.ascx.designer.cs">
+      <DependentUpon>block_featuredvideo.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\block_googlemap.ascx.cs">
+      <DependentUpon>block_googlemap.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\block_googlemap.ascx.designer.cs">
+      <DependentUpon>block_googlemap.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\block_googlemap_detail.ascx.cs">
+      <DependentUpon>block_googlemap_detail.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\block_googlemap_detail.ascx.designer.cs">
+      <DependentUpon>block_googlemap_detail.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\block_like.ascx.cs">
+      <DependentUpon>block_like.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\block_like.ascx.designer.cs">
+      <DependentUpon>block_like.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\block_productrelate.ascx.cs">
+      <DependentUpon>block_productrelate.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\block_productrelate.ascx.designer.cs">
+      <DependentUpon>block_productrelate.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\block_programtour.ascx.cs">
+      <DependentUpon>block_programtour.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\block_programtour.ascx.designer.cs">
+      <DependentUpon>block_programtour.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\block_requesthelp.ascx.cs">
+      <DependentUpon>block_requesthelp.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\block_requesthelp.ascx.designer.cs">
+      <DependentUpon>block_requesthelp.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\block_right.ascx.cs">
+      <DependentUpon>block_right.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\block_right.ascx.designer.cs">
+      <DependentUpon>block_right.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\block_sessiontimeout.ascx.cs">
+      <DependentUpon>block_sessiontimeout.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\block_sessiontimeout.ascx.designer.cs">
+      <DependentUpon>block_sessiontimeout.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\block_slide.ascx.cs">
+      <DependentUpon>block_slide.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\block_slide.ascx.designer.cs">
+      <DependentUpon>block_slide.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\block_categorytemplate.ascx.cs">
+      <DependentUpon>block_categorytemplate.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\block_categorytemplate.ascx.designer.cs">
+      <DependentUpon>block_categorytemplate.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\blog_left.ascx.cs">
+      <DependentUpon>blog_left.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\blog_left.ascx.designer.cs">
+      <DependentUpon>blog_left.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\block_choosetemplate.ascx.cs">
+      <DependentUpon>block_choosetemplate.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\block_choosetemplate.ascx.designer.cs">
+      <DependentUpon>block_choosetemplate.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\block_request.ascx.cs">
+      <DependentUpon>block_request.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\block_request.ascx.designer.cs">
+      <DependentUpon>block_request.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\logo_language.ascx.cs">
+      <DependentUpon>logo_language.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\logo_language.ascx.designer.cs">
+      <DependentUpon>logo_language.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="default.aspx.cs">
+      <DependentUpon>default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="default.aspx.designer.cs">
+      <DependentUpon>default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ErrorPages\error.aspx.cs">
+      <DependentUpon>error.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ErrorPages\error.aspx.designer.cs">
+      <DependentUpon>error.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GenImage.aspx.cs">
+      <DependentUpon>GenImage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GenImage.aspx.designer.cs">
+      <DependentUpon>GenImage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="logout.aspx.cs">
+      <DependentUpon>logout.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="logout.aspx.designer.cs">
+      <DependentUpon>logout.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\BlogManagement\Blog.ascx.cs">
+      <DependentUpon>Blog.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\BlogManagement\Blog.ascx.designer.cs">
+      <DependentUpon>Blog.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\BlogManagement\BlogDetail.ascx.cs">
+      <DependentUpon>BlogDetail.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\BlogManagement\BlogDetail.ascx.designer.cs">
+      <DependentUpon>BlogDetail.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\BookingManagement\Booking.ascx.cs">
+      <DependentUpon>Booking.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\BookingManagement\Booking.ascx.designer.cs">
+      <DependentUpon>Booking.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\BookingManagement\BookingResutl.ascx.cs">
+      <DependentUpon>BookingResutl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\BookingManagement\BookingResutl.ascx.designer.cs">
+      <DependentUpon>BookingResutl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Cart\CartView.ascx.cs">
+      <DependentUpon>CartView.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Cart\CartView.ascx.designer.cs">
+      <DependentUpon>CartView.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Cart\Checkout.ascx.cs">
+      <DependentUpon>Checkout.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Cart\Checkout.ascx.designer.cs">
+      <DependentUpon>Checkout.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\CategoryManagement\Category.ascx.cs">
+      <DependentUpon>Category.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\CategoryManagement\Category.ascx.designer.cs">
+      <DependentUpon>Category.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\CategoryManagement\CategoryDetail.ascx.cs">
+      <DependentUpon>CategoryDetail.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\CategoryManagement\CategoryDetail.ascx.designer.cs">
+      <DependentUpon>CategoryDetail.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\CompanyManagement\CompanyDetail.ascx.cs">
+      <DependentUpon>CompanyDetail.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\CompanyManagement\CompanyDetail.ascx.designer.cs">
+      <DependentUpon>CompanyDetail.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Contact\Request.ascx.cs">
+      <DependentUpon>Request.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Contact\Request.ascx.designer.cs">
+      <DependentUpon>Request.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Contact\Contact.ascx.cs">
+      <DependentUpon>Contact.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Contact\Contact.ascx.designer.cs">
+      <DependentUpon>Contact.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\TestimonialManagement\Testimonial.ascx.cs">
+      <DependentUpon>Testimonial.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\TestimonialManagement\Testimonial.ascx.designer.cs">
+      <DependentUpon>Testimonial.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\GalleryManagement\Picture.ascx.cs">
+      <DependentUpon>Picture.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\GalleryManagement\Picture.ascx.designer.cs">
+      <DependentUpon>Picture.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\GalleryManagement\Picture_Video.ascx.cs">
+      <DependentUpon>Picture_Video.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\GalleryManagement\Picture_Video.ascx.designer.cs">
+      <DependentUpon>Picture_Video.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\GalleryManagement\Video.ascx.cs">
+      <DependentUpon>Video.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\GalleryManagement\Video.ascx.designer.cs">
+      <DependentUpon>Video.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\FAQManagement\FAQ.ascx.cs">
+      <DependentUpon>FAQ.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\FAQManagement\FAQ.ascx.designer.cs">
+      <DependentUpon>FAQ.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\ServiceManagement\Service.ascx.cs">
+      <DependentUpon>Service.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\ServiceManagement\Service.ascx.designer.cs">
+      <DependentUpon>Service.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\TemplateManagement\Template.ascx.cs">
+      <DependentUpon>Template.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\TemplateManagement\Template.ascx.designer.cs">
+      <DependentUpon>Template.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\TemplateManagement\TemplateDetail.ascx.cs">
+      <DependentUpon>TemplateDetail.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\TemplateManagement\TemplateDetail.ascx.designer.cs">
+      <DependentUpon>TemplateDetail.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\SearchManagement\search.ascx.cs">
+      <DependentUpon>search.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\SearchManagement\search.ascx.designer.cs">
+      <DependentUpon>search.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Template.Master.cs">
+      <DependentUpon>Template.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Template.Master.designer.cs">
+      <DependentUpon>Template.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\footer.ascx.cs">
+      <DependentUpon>footer.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\footer.ascx.designer.cs">
+      <DependentUpon>footer.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\top_menu.ascx.cs">
+      <DependentUpon>top_menu.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\top_menu.ascx.designer.cs">
+      <DependentUpon>top_menu.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\home.ascx.cs">
+      <DependentUpon>home.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\home.ascx.designer.cs">
+      <DependentUpon>home.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="WebServices\Service.asmx.cs">
+      <DependentUpon>Service.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Admin\Components\images\images\" />
+    <Folder Include="assets\wp-content\plugins\userpro\addons\social\scripts\%25s\" />
+    <Folder Include="assets\wp-content\plugins\userpro\addons\social\scripts\ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+\" />
+    <Folder Include="assets\wp-content\plugins\userpro\addons\social\scripts\dialog\" />
+    <Folder Include="assets\wp-content\plugins\userpro\images\" />
+    <Folder Include="assets\wp-content\plugins\userpro\lib\fileupload\" />
+    <Folder Include="assets\wp-content\themes\easyweb\inc\visualcomposer\fonts\vc_grid\" />
+    <Folder Include="assets\wp-content\themes\easyweb\inc\visualcomposer\images\icons\" />
+    <Folder Include="assets\wp-content\themes\easyweb\inc\visualcomposer\vc\" />
+    <Folder Include="assets\wp-content\themes\easyweb\inc\woocommerce\fonts\" />
+    <Folder Include="assets\wp-content\themes\easyweb\inc\woocommerce\images\icons\" />
+    <Folder Include="assets\wp-includes\fonts\" />
+    <Folder Include="fonts\" />
+    <Folder Include="Images\images\" />
+    <Folder Include="Properties\PublishProfiles\" />
+    <Folder Include="Resource\Upload\Banner\" />
+    <Folder Include="Resource\Upload\ContentStatic\" />
+    <Folder Include="Resource\Upload\Logo\" />
+    <Folder Include="Resource\Upload\ProductCategory\" />
+    <Folder Include="Resource\Upload\Products\" />
+    <Folder Include="Resource\Upload\User\" />
+    <Folder Include="Security\" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Global.asax.resx">
+      <DependentUpon>Global.asax.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Pages\home.ascx" />
+    <Content Include="Template.Master" />
+    <Content Include="Admin\admin_site.Master" />
+    <Content Include="Admin\Components\App\fonts\fontawesome-webfont.eot" />
+    <Content Include="Admin\Components\App\fonts\fontawesome-webfont.ttf" />
+    <Content Include="Admin\Components\App\fonts\fontawesome-webfont.woff" />
+    <Content Include="Admin\Components\App\fonts\fontawesome-webfont.woff2" />
+    <Content Include="Admin\Components\App\fonts\FontAwesome.otf" />
+    <Content Include="Admin\Components\App\fonts\ionicons.ttf" />
+    <Content Include="Admin\Components\App\fonts\ionicons.woff" />
+    <Content Include="Admin\Components\App\fonts\Roboto-Black.ttf" />
+    <Content Include="Admin\Components\App\fonts\Roboto-BlackItalic.ttf" />
+    <Content Include="Admin\Components\App\fonts\Roboto-Bold-webfont.eot" />
+    <Content Include="Admin\Components\App\fonts\Roboto-Bold-webfont.woff" />
+    <Content Include="Admin\Components\App\fonts\Roboto-Bold.ttf" />
+    <Content Include="Admin\Components\App\fonts\Roboto-BoldItalic.ttf" />
+    <Content Include="Admin\Components\App\fonts\Roboto-Italic.ttf" />
+    <Content Include="Admin\Components\App\fonts\Roboto-Light-webfont.eot" />
+    <Content Include="Admin\Components\App\fonts\Roboto-Light-webfont.woff" />
+    <Content Include="Admin\Components\App\fonts\Roboto-Light.ttf" />
+    <Content Include="Admin\Components\App\fonts\Roboto-LightItalic.ttf" />
+    <Content Include="Admin\Components\App\fonts\Roboto-Medium.ttf" />
+    <Content Include="Admin\Components\App\fonts\Roboto-MediumItalic.ttf" />
+    <Content Include="Admin\Components\App\fonts\Roboto-Regular.ttf" />
+    <Content Include="Admin\Components\App\fonts\Roboto-Thin-webfont.eot" />
+    <Content Include="Admin\Components\App\fonts\Roboto-Thin-webfont.woff" />
+    <Content Include="Admin\Components\App\fonts\Roboto-Thin.ttf" />
+    <Content Include="Admin\Components\App\fonts\Roboto-ThinItalic.ttf" />
+    <Content Include="Admin\Components\App\fonts\RobotoCondensed-Bold.ttf" />
+    <Content Include="Admin\Components\App\fonts\RobotoCondensed-BoldItalic.ttf" />
+    <Content Include="Admin\Components\App\fonts\RobotoCondensed-Italic.ttf" />
+    <Content Include="Admin\Components\App\fonts\RobotoCondensed-Light.ttf" />
+    <Content Include="Admin\Components\App\fonts\RobotoCondensed-LightItalic.ttf" />
+    <Content Include="Admin\Components\App\fonts\RobotoCondensed-Regular.ttf" />
+    <Content Include="Admin\Components\App\fonts\RobotoRegular.eot" />
+    <Content Include="Admin\Components\App\fonts\RobotoRegular.woff" />
+    <Content Include="Admin\Components\App\fonts\RobotoRegular.woff2" />
+    <Content Include="Admin\Components\bootstrap\fonts\bootstrap\glyphicons-halflings-regular.eot" />
+    <Content Include="Admin\Components\bootstrap\fonts\bootstrap\glyphicons-halflings-regular.ttf" />
+    <Content Include="Admin\Components\bootstrap\fonts\bootstrap\glyphicons-halflings-regulard41d.eot" />
+    <Content Include="Admin\Components\bootstrap\fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="Admin\Components\bootstrap\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="Admin\Components\bootstrap\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="Admin\Components\bootstrap\fonts\glyphicons-halflings-regular.woff2" />
+    <Content Include="Admin\Components\simple-line-icons\fonts\Simple-Line-Icons.eot" />
+    <Content Include="Admin\Components\simple-line-icons\fonts\Simple-Line-Icons.ttf" />
+    <Content Include="Admin\Components\simple-line-icons\fonts\Simple-Line-Iconsd41d.eot" />
+    <Content Include="Admin\Upload.ashx" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Log\error.log" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>16625</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

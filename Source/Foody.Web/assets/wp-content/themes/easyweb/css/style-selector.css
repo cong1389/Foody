@@ -1,0 +1,64 @@
+/* #Style Selector
+================================================== */
+
+#style-selector {background: #222; width: 240px; display:block; position:fixed; right: 0; transition: .4s all ease; top: 0; bottom: 0;z-index:6789251; -webkit-box-shadow: 0 0 6px rgba(0,0,0,0.2);  -moz-box-shadow: 0 0 5px rgba(0,0,0,0.2); box-shadow: 0 0 5px rgba(0,0,0,0.2); font-size:13px; border:1px solid #dedede\9; }
+.ss-inner {padding: 10px 10px 20px; text-align: center;}
+#style-selector select {font-size:12px; min-width:190px ;background-color: #2d2d2d;border: none;}
+#style-selector h5{background:#222; line-height:45px; height:45px; border-bottom:1px solid #dbdbdb; text-align:center; color:#fff;}
+#style-selector h6 {margin: 13px 0 10px;font-weight: 400;font-size: 13px;color: #a0a0a0;}
+#style-selector img, #style-selector .thumb-img {width:25px; height:24px; border: 2px solid #222;}
+#style-selector img:hover, #style-selector img.selected-ss , #style-selector .thumb-img:hover { border-color:#f6dc15; cursor:pointer;}
+#style-selector a.thumb-img { background:url(../images/style-selector-img/sprite.png) no-repeat; display:inline-block; margin-right:1px; margin-bottom:1px;}
+#style-selector .thumb-img.img1 { background-position:0 0;}
+#style-selector .thumb-img.img2 { background-position:-31px 0;}
+#style-selector .thumb-img.img3 { background-position:-62px 0;}
+#style-selector .thumb-img.img4 { background-position:-93px 0;}
+#style-selector .thumb-img.img5 { background-position:-124px 0;}
+#style-selector .thumb-img.pat1 { background-position:0 -30px;}
+#style-selector .thumb-img.pat2 { background-position:-31px -30px;}
+#style-selector .thumb-img.pat3 { background-position:-62px -30px;}
+#style-selector .thumb-img.pat4 { background-position:-93px -30px;}
+#style-selector .thumb-img.pat5 { background-position:-124px -30px;}
+#style-selector .thumb-img.pat6 { background-position:0 -60px;}
+#style-selector .thumb-img.pat7 { background-position:-31px -60px;}
+#style-selector .thumb-img.pat8 { background-position:-62px -60px;}
+#style-selector .thumb-img.pat9 { background-position:-93px -60px;}
+#style-selector .thumb-img.pat10 { background-position:-124px -60px;}
+#style-selector .thumb-img.clr1 { background:#1bbc9b;}
+#style-selector .thumb-img.clr2 { background:#0093d0;}
+#style-selector .thumb-img.clr3 { background:#e53f51;}
+#style-selector .thumb-img.clr4 { background:#f1c40f;}
+#style-selector .thumb-img.clr5 { background:#e64883;}
+#style-selector .thumb-img.clr6 { background:#45ab48;}
+#style-selector .thumb-img.clr7 { background:#9661ab;}
+#style-selector .thumb-img.clr8 { background:#0aad80;}
+#style-selector .thumb-img.clr9 { background:#03acdc;}
+#style-selector .thumb-img.clr10 { background:#ff5a00;}
+#style-selector .thumb-img.clr11 { background:#c3512f;}
+#style-selector .thumb-img.clr12 { background:#55606e;}
+#style-selector .thumb-img.clr13 { background:#fe8178;}
+#style-selector .thumb-img.clr14 { background:#7c6853;}
+#style-selector .thumb-img.clr15 { background:#bed431;}
+#style-selector .thumb-img.clr16 { background:#2d5c88;}
+#style-selector .thumb-img.clr17 { background:#77da55;}
+#style-selector .thumb-img.clr18 { background:#2997ab;}
+#style-selector .thumb-img.clr19 { background:#734854;}
+#style-selector .thumb-img.clr20 { background:#a81010;}
+#style-selector .templates { position: relative; }
+#style-selector .templates a { margin: 0; }
+#style-selector .templates img { width: 80px; height: auto; margin: 7px 5px; }
+#wrap #style-selector a .large-template { position: absolute; right: 230px; top: 0; background-color: #222; padding: 12px; z-index: 6789256; width: 274px; height: 480px; display: none; }
+#wrap #style-selector .large-template img { width: auto; height: auto; margin: 0; display: block; }
+#style-selector .large-template h3 { color: #fff; font-size: 13px; margin-top: 15px; text-transform: uppercase; font-weight: bold; letter-spacing: 2px; }
+#wrap #style-selector .templates a:hover .large-template { display: block; }
+#style-selector .btn-layout { color: #fff; border-radius: 0; }
+#wrap #style-selector .btn-layout:hover { background-color: #444; border-color: transparent; }
+
+
+#ss-on, #ss-off  {cursor:pointer; padding: 13px; background: #222;  width: 45px; height: 50px; display:block; position:fixed; right: 240px; top: 100px; z-index: 99999; /* -webkit-box-shadow: 2px 0 3px rgba(0,0,0,0.1); */  -moz-box-shadow: 2px 0 2px rgba(0,0,0,0.1); /* box-shadow: 2px 0 2px rgba(0,0,0,0.1); */ border-top:1px solid #dedede\9; transition: .4s all ease;}
+#ss-off { right: 0; z-index:6789250; }
+#ss-on i, #ss-off i {font-size:24px; color: #eee; cursor:pointer;}
+#ss-off:hover i, #ss-on i{color: #eee;}
+@media only screen and (max-width: 767px) { 
+#style-selector, #ss-on, #ss-off  { visibility:hidden }
+}

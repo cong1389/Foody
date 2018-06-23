@@ -1,0 +1,120 @@
+D:\DAMBRI\trunk\DAL\bin\Release\Cb.DAL.dll
+D:\DAMBRI\trunk\DAL\bin\Release\Cb.DAL.pdb
+D:\DAMBRI\trunk\DAL\bin\Release\Cb.DALFactory.dll
+D:\DAMBRI\trunk\DAL\bin\Release\Cb.DBUtility.dll
+D:\DAMBRI\trunk\DAL\bin\Release\Cb.IDAL.dll
+D:\DAMBRI\trunk\DAL\bin\Release\Cb.Model.dll
+D:\DAMBRI\trunk\DAL\bin\Release\Cb.SQLServerDAL.dll
+D:\DAMBRI\trunk\DAL\bin\Release\Microsoft.Practices.EnterpriseLibrary.Data.dll
+D:\DAMBRI\trunk\DAL\bin\Release\Cb.Utility.dll
+D:\DAMBRI\trunk\DAL\bin\Release\Microsoft.Practices.EnterpriseLibrary.Common.dll
+D:\DAMBRI\trunk\DAL\bin\Release\CuteWebUI.AjaxUploader.dll
+D:\DAMBRI\trunk\DAL\bin\Release\Cb.Utility.pdb
+D:\DAMBRI\trunk\DAL\obj\Release\DAL.csprojResolveAssemblyReference.cache
+D:\DAMBRI\trunk\DAL\obj\Release\Cb.DAL.dll
+D:\DAMBRI\trunk\DAL\obj\Release\Cb.DAL.pdb
+C:\Users\User\Desktop\New folder (4)\DAL\bin\Release\Cb.DAL.dll
+C:\Users\User\Desktop\New folder (4)\DAL\bin\Release\Cb.DAL.pdb
+C:\Users\User\Desktop\New folder (4)\DAL\bin\Release\Cb.DALFactory.dll
+C:\Users\User\Desktop\New folder (4)\DAL\bin\Release\Cb.DBUtility.dll
+C:\Users\User\Desktop\New folder (4)\DAL\bin\Release\Cb.IDAL.dll
+C:\Users\User\Desktop\New folder (4)\DAL\bin\Release\Cb.Model.dll
+C:\Users\User\Desktop\New folder (4)\DAL\bin\Release\Cb.SQLServerDAL.dll
+C:\Users\User\Desktop\New folder (4)\DAL\bin\Release\Microsoft.Practices.EnterpriseLibrary.Data.dll
+C:\Users\User\Desktop\New folder (4)\DAL\bin\Release\Cb.Utility.dll
+C:\Users\User\Desktop\New folder (4)\DAL\bin\Release\Microsoft.Practices.EnterpriseLibrary.Common.dll
+C:\Users\User\Desktop\New folder (4)\DAL\bin\Release\CuteWebUI.AjaxUploader.dll
+C:\Users\User\Desktop\New folder (4)\DAL\bin\Release\Cb.Utility.pdb
+C:\Users\User\Desktop\New folder (4)\DAL\obj\Release\ResolveAssemblyReference.cache
+C:\Users\User\Desktop\New folder (4)\DAL\obj\Release\Cb.DAL.dll
+C:\Users\User\Desktop\New folder (4)\DAL\obj\Release\Cb.DAL.pdb
+D:\DAMBRI\Dambri3107\DAL\bin\Release\Cb.DAL.dll
+D:\DAMBRI\Dambri3107\DAL\bin\Release\Cb.DAL.pdb
+D:\DAMBRI\Dambri3107\DAL\bin\Release\Cb.DALFactory.dll
+D:\DAMBRI\Dambri3107\DAL\bin\Release\Cb.DBUtility.dll
+D:\DAMBRI\Dambri3107\DAL\bin\Release\Cb.IDAL.dll
+D:\DAMBRI\Dambri3107\DAL\bin\Release\Cb.Model.dll
+D:\DAMBRI\Dambri3107\DAL\bin\Release\Cb.SQLServerDAL.dll
+D:\DAMBRI\Dambri3107\DAL\bin\Release\Microsoft.Practices.EnterpriseLibrary.Data.dll
+D:\DAMBRI\Dambri3107\DAL\bin\Release\Cb.Utility.dll
+D:\DAMBRI\Dambri3107\DAL\bin\Release\Microsoft.Practices.EnterpriseLibrary.Common.dll
+D:\DAMBRI\Dambri3107\DAL\bin\Release\CuteWebUI.AjaxUploader.dll
+D:\DAMBRI\Dambri3107\DAL\bin\Release\Cb.Utility.pdb
+D:\DAMBRI\Dambri3107\DAL\obj\Release\DAL.csprojResolveAssemblyReference.cache
+D:\DAMBRI\Dambri3107\DAL\obj\Release\Cb.DAL.dll
+D:\DAMBRI\Dambri3107\DAL\obj\Release\Cb.DAL.pdb
+D:\DAMBRI\dambri0108\Dambri3107\DAL\bin\Release\Cb.DAL.dll
+D:\DAMBRI\dambri0108\Dambri3107\DAL\bin\Release\Cb.DAL.pdb
+D:\DAMBRI\dambri0108\Dambri3107\DAL\bin\Release\Cb.DALFactory.dll
+D:\DAMBRI\dambri0108\Dambri3107\DAL\bin\Release\Cb.DBUtility.dll
+D:\DAMBRI\dambri0108\Dambri3107\DAL\bin\Release\Cb.IDAL.dll
+D:\DAMBRI\dambri0108\Dambri3107\DAL\bin\Release\Cb.Model.dll
+D:\DAMBRI\dambri0108\Dambri3107\DAL\bin\Release\Cb.SQLServerDAL.dll
+D:\DAMBRI\dambri0108\Dambri3107\DAL\bin\Release\Microsoft.Practices.EnterpriseLibrary.Data.dll
+D:\DAMBRI\dambri0108\Dambri3107\DAL\bin\Release\Cb.Utility.dll
+D:\DAMBRI\dambri0108\Dambri3107\DAL\bin\Release\Microsoft.Practices.EnterpriseLibrary.Common.dll
+D:\DAMBRI\dambri0108\Dambri3107\DAL\bin\Release\CuteWebUI.AjaxUploader.dll
+D:\DAMBRI\dambri0108\Dambri3107\DAL\bin\Release\Cb.Utility.pdb
+D:\DAMBRI\dambri0108\Dambri3107\DAL\obj\Release\DAL.csprojResolveAssemblyReference.cache
+D:\DAMBRI\dambri0108\Dambri3107\DAL\obj\Release\Cb.DAL.dll
+D:\DAMBRI\dambri0108\Dambri3107\DAL\obj\Release\Cb.DAL.pdb
+D:\DAMBRI\dambri0108\Dambri3107\Dambri3107\DAL\bin\Release\Cb.DAL.dll
+D:\DAMBRI\dambri0108\Dambri3107\Dambri3107\DAL\bin\Release\Cb.DAL.pdb
+D:\DAMBRI\dambri0108\Dambri3107\Dambri3107\DAL\bin\Release\Cb.DALFactory.dll
+D:\DAMBRI\dambri0108\Dambri3107\Dambri3107\DAL\bin\Release\Cb.DBUtility.dll
+D:\DAMBRI\dambri0108\Dambri3107\Dambri3107\DAL\bin\Release\Cb.IDAL.dll
+D:\DAMBRI\dambri0108\Dambri3107\Dambri3107\DAL\bin\Release\Cb.Model.dll
+D:\DAMBRI\dambri0108\Dambri3107\Dambri3107\DAL\bin\Release\Cb.SQLServerDAL.dll
+D:\DAMBRI\dambri0108\Dambri3107\Dambri3107\DAL\bin\Release\Microsoft.Practices.EnterpriseLibrary.Data.dll
+D:\DAMBRI\dambri0108\Dambri3107\Dambri3107\DAL\bin\Release\Cb.Utility.dll
+D:\DAMBRI\dambri0108\Dambri3107\Dambri3107\DAL\bin\Release\Microsoft.Practices.EnterpriseLibrary.Common.dll
+D:\DAMBRI\dambri0108\Dambri3107\Dambri3107\DAL\bin\Release\CuteWebUI.AjaxUploader.dll
+D:\DAMBRI\dambri0108\Dambri3107\Dambri3107\DAL\bin\Release\Cb.Utility.pdb
+D:\DAMBRI\dambri0108\Dambri3107\Dambri3107\DAL\obj\Release\DAL.csprojResolveAssemblyReference.cache
+D:\DAMBRI\dambri0108\Dambri3107\Dambri3107\DAL\obj\Release\Cb.DAL.dll
+D:\DAMBRI\dambri0108\Dambri3107\Dambri3107\DAL\obj\Release\Cb.DAL.pdb
+D:\SkyDrive\Dambri\DAL\bin\Release\Cb.DAL.dll
+D:\SkyDrive\Dambri\DAL\bin\Release\Cb.DAL.pdb
+D:\SkyDrive\Dambri\DAL\bin\Release\Cb.DALFactory.dll
+D:\SkyDrive\Dambri\DAL\bin\Release\Cb.DBUtility.dll
+D:\SkyDrive\Dambri\DAL\bin\Release\Cb.IDAL.dll
+D:\SkyDrive\Dambri\DAL\bin\Release\Cb.Model.dll
+D:\SkyDrive\Dambri\DAL\bin\Release\Cb.SQLServerDAL.dll
+D:\SkyDrive\Dambri\DAL\bin\Release\Microsoft.Practices.EnterpriseLibrary.Data.dll
+D:\SkyDrive\Dambri\DAL\bin\Release\Cb.Utility.dll
+D:\SkyDrive\Dambri\DAL\bin\Release\Microsoft.Practices.EnterpriseLibrary.Common.dll
+D:\SkyDrive\Dambri\DAL\bin\Release\CuteWebUI.AjaxUploader.dll
+D:\SkyDrive\Dambri\DAL\bin\Release\Cb.Utility.pdb
+D:\SkyDrive\Dambri\DAL\obj\Release\DAL.csprojResolveAssemblyReference.cache
+D:\SkyDrive\Dambri\DAL\obj\Release\Cb.DAL.dll
+D:\SkyDrive\Dambri\DAL\obj\Release\Cb.DAL.pdb
+H:\ \2808\Dambri\DAL\bin\Release\Cb.DAL.dll
+H:\ \2808\Dambri\DAL\bin\Release\Cb.DAL.pdb
+H:\ \2808\Dambri\DAL\bin\Release\Cb.DALFactory.dll
+H:\ \2808\Dambri\DAL\bin\Release\Cb.DBUtility.dll
+H:\ \2808\Dambri\DAL\bin\Release\Cb.IDAL.dll
+H:\ \2808\Dambri\DAL\bin\Release\Cb.Model.dll
+H:\ \2808\Dambri\DAL\bin\Release\Cb.SQLServerDAL.dll
+H:\ \2808\Dambri\DAL\bin\Release\Microsoft.Practices.EnterpriseLibrary.Data.dll
+H:\ \2808\Dambri\DAL\bin\Release\Cb.Utility.dll
+H:\ \2808\Dambri\DAL\bin\Release\Microsoft.Practices.EnterpriseLibrary.Common.dll
+H:\ \2808\Dambri\DAL\bin\Release\CuteWebUI.AjaxUploader.dll
+H:\ \2808\Dambri\DAL\bin\Release\Cb.Utility.pdb
+H:\ \2808\Dambri\DAL\obj\Release\DAL.csprojResolveAssemblyReference.cache
+H:\ \2808\Dambri\DAL\obj\Release\Cb.DAL.dll
+H:\ \2808\Dambri\DAL\obj\Release\Cb.DAL.pdb
+D:\SkyDrive\3108\DAL\bin\Release\Cb.DAL.dll
+D:\SkyDrive\3108\DAL\bin\Release\Cb.DAL.pdb
+D:\SkyDrive\3108\DAL\bin\Release\Cb.DALFactory.dll
+D:\SkyDrive\3108\DAL\bin\Release\Cb.DBUtility.dll
+D:\SkyDrive\3108\DAL\bin\Release\Cb.IDAL.dll
+D:\SkyDrive\3108\DAL\bin\Release\Cb.Model.dll
+D:\SkyDrive\3108\DAL\bin\Release\Cb.SQLServerDAL.dll
+D:\SkyDrive\3108\DAL\bin\Release\Microsoft.Practices.EnterpriseLibrary.Data.dll
+D:\SkyDrive\3108\DAL\bin\Release\Cb.Utility.dll
+D:\SkyDrive\3108\DAL\bin\Release\Microsoft.Practices.EnterpriseLibrary.Common.dll
+D:\SkyDrive\3108\DAL\bin\Release\CuteWebUI.AjaxUploader.dll
+D:\SkyDrive\3108\DAL\bin\Release\Cb.Utility.pdb
+D:\SkyDrive\3108\DAL\obj\Release\DAL.csprojResolveAssemblyReference.cache
+D:\SkyDrive\3108\DAL\obj\Release\Cb.DAL.dll
+D:\SkyDrive\3108\DAL\obj\Release\Cb.DAL.pdb

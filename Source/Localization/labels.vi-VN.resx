@@ -1,0 +1,387 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="enuRoleUser_admin" xml:space="preserve">
+    <value>Quản trị hệ thống</value>
+  </data>
+  <data name="enuRoleUser_mod" xml:space="preserve">
+    <value>Quản trị viên</value>
+  </data>
+  <data name="enuRoleUser_user" xml:space="preserve">
+    <value>Người dùng</value>
+  </data>
+  <data name="ltrAddress" xml:space="preserve">
+    <value>Địa chỉ</value>
+  </data>
+  <data name="ltrAddress2" xml:space="preserve">
+    <value>Địa chỉ 2</value>
+  </data>
+  <data name="ltrAdminIntro" xml:space="preserve">
+    <value>Chi tiết</value>
+  </data>
+  <data name="ltrAdnMeta" xml:space="preserve">
+    <value>Thông tin SEO</value>
+  </data>
+  <data name="ltrAminCategory" xml:space="preserve">
+    <value>Gắn vào menu</value>
+  </data>
+  <data name="ltrAminName" xml:space="preserve">
+    <value>Tên</value>
+  </data>
+  <data name="ltrAminNameEng" xml:space="preserve">
+    <value>Name</value>
+  </data>
+  <data name="ltrAminPublish" xml:space="preserve">
+    <value>Hiển thị</value>
+  </data>
+  <data name="ltrBaseImage" xml:space="preserve">
+    <value>Hình đại diện</value>
+  </data>
+  <data name="ltrCity" xml:space="preserve">
+    <value>Thành phố</value>
+  </data>
+  <data name="ltrConfirmPassword" xml:space="preserve">
+    <value>Xác nhận mật khẩu</value>
+  </data>
+  <data name="ltrContact" xml:space="preserve">
+    <value>Liên hệ</value>
+  </data>
+  <data name="ltrContinus" xml:space="preserve">
+    <value>Tiếp tục</value>
+  </data>
+  <data name="ltrDetailEng" xml:space="preserve">
+    <value>Detail</value>
+  </data>
+  <data name="ltrEmail" xml:space="preserve">
+    <value>Email</value>
+  </data>
+  <data name="ltrFax" xml:space="preserve">
+    <value>Fax</value>
+  </data>
+  <data name="ltrFullName" xml:space="preserve">
+    <value>Họ tên</value>
+  </data>
+  <data name="ltrFunction" xml:space="preserve">
+    <value>Tính năng</value>
+  </data>
+  <data name="ltrGeneral" xml:space="preserve">
+    <value>Tổng quan</value>
+  </data>
+  <data name="ltrGeneralEng" xml:space="preserve">
+    <value>General Info</value>
+  </data>
+  <data name="ltrH1" xml:space="preserve">
+    <value>Thẻ H1</value>
+  </data>
+  <data name="ltrH1TagEng" xml:space="preserve">
+    <value>H1 tag info</value>
+  </data>
+  <data name="ltrH2" xml:space="preserve">
+    <value>Thẻ H2</value>
+  </data>
+  <data name="ltrH2TagEng" xml:space="preserve">
+    <value>H2 tag info</value>
+  </data>
+  <data name="ltrH3" xml:space="preserve">
+    <value>Thẻ H3</value>
+  </data>
+  <data name="ltrH3TagEng" xml:space="preserve">
+    <value>H3 tag info</value>
+  </data>
+  <data name="ltrIntro" xml:space="preserve">
+    <value>Giới thiệu</value>
+  </data>
+  <data name="ltrIntroEng" xml:space="preserve">
+    <value>Introduction</value>
+  </data>
+  <data name="ltrLatitude" xml:space="preserve">
+    <value>Vĩ độ</value>
+  </data>
+  <data name="ltrLongitude" xml:space="preserve">
+    <value>Kinh độ</value>
+  </data>
+  <data name="ltrMetaDescription" xml:space="preserve">
+    <value>Mô tả ngắn</value>
+  </data>
+  <data name="ltrMetaDescriptionEng" xml:space="preserve">
+    <value>Description page info</value>
+  </data>
+  <data name="ltrMetaKeyWord" xml:space="preserve">
+    <value>Từ khoá</value>
+  </data>
+  <data name="ltrMetaKeywordEng" xml:space="preserve">
+    <value>Keyword page info</value>
+  </data>
+  <data name="ltrMetaTitle" xml:space="preserve">
+    <value>Tiêu đề</value>
+  </data>
+  <data name="ltrMetaTitleEng" xml:space="preserve">
+    <value>Title page info</value>
+  </data>
+  <data name="ltrMobile" xml:space="preserve">
+    <value>Mobile</value>
+  </data>
+  <data name="ltrPage" xml:space="preserve">
+    <value>Đường dẫn danh mục</value>
+  </data>
+  <data name="ltrPageDetail" xml:space="preserve">
+    <value>Đường dẫn chi tiết</value>
+  </data>
+  <data name="ltrPassword" xml:space="preserve">
+    <value>Mật khẩu</value>
+  </data>
+  <data name="ltrPermission" xml:space="preserve">
+    <value>Nhóm quyền</value>
+  </data>
+  <data name="ltrPhone" xml:space="preserve">
+    <value>Điện thoại</value>
+  </data>
+  <data name="ltrPrice" xml:space="preserve">
+    <value>Bảng giá</value>
+  </data>
+  <data name="ltrProductCategory" xml:space="preserve">
+    <value>Danh mục sản phẩm</value>
+  </data>
+  <data name="ltrPromotion" xml:space="preserve">
+    <value>Khuyến mãi</value>
+  </data>
+  <data name="ltrRequireCus" xml:space="preserve">
+    <value>CHO CHÚNG TÔI BIẾT NHU CẦU VỀ WEBSITE CỦA BẠN</value>
+  </data>
+  <data name="ltrSend" xml:space="preserve">
+    <value>Gửi</value>
+  </data>
+  <data name="ltrSEOEng" xml:space="preserve">
+    <value>SEO Info</value>
+  </data>
+  <data name="ltrSignOut" xml:space="preserve">
+    <value>Đăng xuất</value>
+  </data>
+  <data name="ltrSkypeAcc" xml:space="preserve">
+    <value>Tài khoản Skype</value>
+  </data>
+  <data name="ltrSort" xml:space="preserve">
+    <value>Sắp xếp</value>
+  </data>
+  <data name="ltrStatus" xml:space="preserve">
+    <value>Tình trạng</value>
+  </data>
+  <data name="ltrSupportHome" xml:space="preserve">
+    <value>Hỗ trợ 7 ngày trong tuần với hotline 1900.636.099</value>
+  </data>
+  <data name="ltrTopic" xml:space="preserve">
+    <value>Chuyên đề</value>
+  </data>
+  <data name="ltrUserName" xml:space="preserve">
+    <value>Tên đăng nhập</value>
+  </data>
+  <data name="ltrWebsite" xml:space="preserve">
+    <value>Xem thực tế</value>
+  </data>
+  <data name="ltrYahooAcc" xml:space="preserve">
+    <value>Tài khoản Yahoo</value>
+  </data>
+  <data name="mesConfirmDelete" xml:space="preserve">
+    <value>Bạn thật sự muốn xóa mẫu tin đã chọn?</value>
+  </data>
+  <data name="next_clause" xml:space="preserve">
+    <value>Sau »</value>
+  </data>
+  <data name="next_to_page_clause" xml:space="preserve">
+    <value>Trang</value>
+  </data>
+  <data name="of_clause" xml:space="preserve">
+    <value>của</value>
+  </data>
+  <data name="page_clause" xml:space="preserve">
+    <value>Trang</value>
+  </data>
+  <data name="previous_clause" xml:space="preserve">
+    <value>« Trước</value>
+  </data>
+  <data name="show_result_clause" xml:space="preserve">
+    <value>Hiển thị từ</value>
+  </data>
+  <data name="ltrAddressName" xml:space="preserve">
+    <value>Address</value>
+  </data>
+  <data name="ltrPhoneName" xml:space="preserve">
+    <value>Điện thoại</value>
+  </data>
+  <data name="ltrContactSocial" xml:space="preserve">
+    <value>Contact us</value>
+  </data>
+  <data name="ltrOffice" xml:space="preserve">
+    <value>Văn phòng</value>
+  </data>
+  <data name="ltrSocail" xml:space="preserve">
+    <value>Mạng xã hội</value>
+  </data>
+  <data name="ltrLastNews" xml:space="preserve">
+    <value>Recent posts</value>
+  </data>
+  <data name="ltrLastWork" xml:space="preserve">
+    <value>Mẫu webiste mới nhất</value>
+  </data>
+  <data name="ltrPricing" xml:space="preserve">
+    <value>Bảng giá</value>
+  </data>
+  <data name="ltrReciveEmail" xml:space="preserve">
+    <value>Đăng ký email nhận thông báo mới nhất</value>
+  </data>
+  <data name="ltrRequest" xml:space="preserve">
+    <value>Yêu cầu</value>
+  </data>
+  <data name="ltrService" xml:space="preserve">
+    <value>Dịch vụ</value>
+  </data>
+  <data name="ltrAboutUs" xml:space="preserve">
+    <value>About us</value>
+  </data>
+  <data name="ltrPartnerHeader" xml:space="preserve">
+    <value>Our partner</value>
+  </data>
+  <data name="ltrAll" xml:space="preserve">
+    <value>Tất cả</value>
+  </data>
+  <data name="ltrQuestion" xml:space="preserve">
+    <value>Bạn còn thắc mắc, vui lòng liên hệ</value>
+  </data>
+  <data name="ltrRegistration" xml:space="preserve">
+    <value>Đăng ký</value>
+  </data>
+  <data name="ltrSendRequest" xml:space="preserve">
+    <value>Gửi yêu cầu cho chúng tôi</value>
+  </data>
+  <data name="ltrThemeOther" xml:space="preserve">
+    <value>Các theme khác</value>
+  </data>
+  <data name="block_mostPopularDailyTourName" xml:space="preserve">
+    <value>Most Popular Daily Tour</value>
+  </data>
+  <data name="block_otherTour" xml:space="preserve">
+    <value>Other Tour</value>
+  </data>
+  <data name="ltrCartView" xml:space="preserve">
+    <value>Giỏ hàng</value>
+  </data>
+  <data name="ltrCateNameTitle" xml:space="preserve">
+    <value>Get in Touch</value>
+  </data>
+</root>

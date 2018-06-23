@@ -1,0 +1,768 @@
+﻿html, body {
+    background: #ECF0F5;
+}
+
+.bg-green-haze, .bg-hover-green-haze:hover {
+    background: #44b6ae!important;
+}
+
+.noPM {
+    padding: 0px !important;
+    margin: 0px !important;
+}
+
+.noPMR {
+    padding-right: 0px !Important;
+    margin-right: 0px !important;
+}
+
+.noPML {
+    padding-left: 0px !Important;
+    margin-left: 0px !important;
+}
+
+/*********************************/ /* block_baseimage */ /*************************************/
+/*.editCotent .checkbox input[type=checkbox], .editCotent .checkbox-inline input[type=checkbox], .editCotent .radio input[type=radio], .editCotent .radio-inline input[type=radio] {
+    margin-left: 0px !important;
+}*/
+
+.loadingUploadImage img {
+    width: 100px;
+}
+
+.loadingUploadImage {
+    border-width: 0px;
+    z-index: 4434;
+    position: absolute;
+    text-align: center;
+    left: 35%;
+}
+
+.FileUploadClass :after {
+    font-family: FontAwesome;
+    content: "\f093";
+}
+
+.FileUploadClass {
+    /*height: 22px;     background: none !important;*/
+    display: block;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+    .FileUploadClass div {
+        background: none !important;
+        min-width: 330px !important;
+    }
+
+    .FileUploadClass input {
+        width: 80% !important;
+        height: 24px;
+        padding: 10px 12px;
+        margin-right: 15px;
+        line-height: -0.571429;
+        color: #555;
+        background-color: #fff;
+        background-image: none;
+        border: 1px solid #ccc;
+        -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+        box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+        -webkit-transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
+        -o-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+        transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+        border: 1px dashed #f17f21 !important;
+    }
+
+.jcrop_custom .jcrop-vline, .jcrop_custom .jcrop-hline {
+    background: #FF0;
+}
+
+.jcrop_custom .jcrop-handle {
+    background-color: #FF4B4B;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-color: #FFF;
+}
+
+#block_baseimage img {
+    border-width: 0px;
+    border: dotted 2px #28c973;
+    -moz-border-radius-topleft: 3px;
+    -moz-border-radius-topright: 9px;
+    -moz-border-radius-bottomleft: 5px;
+    -moz-border-radius-bottomright: 5px;
+    -webkit-border-top-left-radius: 3px;
+    -webkit-border-top-right-radius: 9px;
+    -webkit-border-bottom-left-radius: 5px;
+    -webkit-border-bottom-right-radius: 5px;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 9px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    -moz-box-shadow: 12px 9px 69px #2ca360;
+    -webkit-box-shadow: 12px 9px 69px #2ca360;
+    box-shadow: 12px 9px 69px #2ca360;
+    max-width: 400px;
+}
+
+.ajax__fileupload {
+    border: none !important;
+}
+
+.iframe {
+    border: none !important;
+}
+
+.ui-widget-header {
+    background: rgba(228, 226, 226, 0.4);
+}
+
+.fuImage {
+    width: 150px;
+    float: left;
+}
+
+.ajax__fileupload_selectFileButton {
+    background-color: #008d4c !important;
+    color: #fff !important;
+}
+
+.GridPager a, .GridPager span {
+    display: block;
+    height: 23px;
+    width: 32px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.GridPager a {
+    background-color: #f5f5f5;
+    color: #3c8dbc;
+    position: relative;
+    border-radius: 4px;
+}
+
+.GridPager span {
+    color: #fff;
+    position: relative;
+    border-radius: 4px;
+    background-color: #337ab7;
+    border-color: #337ab7;
+}
+/**********************************************************************************************/
+/***********************************/ /* Setting SEO */ /*************************************/
+.iPadding5 {
+    padding-right: 5px;
+}
+/********************************************************************************************/
+
+.box-header .box-title {
+    font-size: 14px !Important;
+}
+
+.inputSearch {
+    width: 60% !important;
+    float: left;
+}
+
+.ui-state-active a, .ui-state-active a:link, .ui-state-active a:visited {
+    color: #000;
+}
+
+.ui-state-default a, .ui-state-default a:link, .ui-state-default a:visited {
+    color: #4BD305;
+}
+
+.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default {
+    background-color: #fff;
+    border: #fff;
+}
+
+.divUserName {
+    font-size: 20px;
+}
+
+    .divUserName a {
+        color: #fff;
+    }
+
+/****************************************/ /* paging */ /****************************************/
+.pages {
+    padding: 0px 15px 15px 15px;
+    text-align: center;
+}
+
+.current {
+    border: 1px solid #5B938F;
+    border-radius: 50%;
+    padding: 4px 9px;
+    margin: 3px;
+}
+
+.nocurrent, .nextprev {
+    margin: 0px 1px;
+    padding: 5px 9px;
+}
+
+/**********************************************************************************************/
+
+/*****************************************edit_productcategory********************************/
+
+
+/* Start by setting display:none to make this hidden.
+   Then we position it in relation to the viewport window
+   with position:fixed. Width, height, top and left speak
+   for themselves. Background we set to 80% white with
+   our animation centered, and no-repeating */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(238, 238, 238, 0.48) url('/Admin/Images/ajax-loader.gif') 50% 25% no-repeat !important;
+}
+
+/* When the body has the loading class, we turn
+   the scrollbar off with overflow:hidden */
+body.loading {
+    overflow: hidden;
+}
+
+    /* Anytime the body has the loading class, our
+   modal element will be visible */
+    body.loading .modal {
+        display: block;
+    }
+
+.btnGroup .dropdown-toggle {
+    width: 30px !important;
+}
+
+.btnGroup .btn {
+    margin: 0px 5px 5px 0px;
+    border-radius: 3px;
+    width: 125px;
+    float: left;
+}
+
+.baseImageGrid {
+    max-width: 50px;
+    max-height: 50px;
+}
+
+.txtOrder {
+    padding: 0px !Important;
+}
+
+.ValidationSummary ul {
+    background-color: #f39c12 !important;
+    border-radius: 3px;
+    color: #fff;
+    border-color: #e08e0b;
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 1px solid transparent;
+}
+
+.ValidationSummary li {
+    list-style: none;
+}
+
+.tab-content a {
+    color: #000;
+}
+
+.cke_chrome {
+    margin-left: -15px !Important;
+}
+
+.main {
+    padding: 10px;
+}
+
+.width190 {
+    width: 190px;
+}
+
+.width180 {
+    width: 180px;
+}
+
+.validator {
+    display: table-column-group;
+}
+
+.success {
+}
+
+.btn-social > :first-child {
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 32px;
+    line-height: 34px;
+    font-size: 1.6em;
+    text-align: center;
+    border-right: 1px solid rgba(0,0,0,0.2);
+    background: #3C8DBC;
+    color: #fff;
+}
+
+.btnTransparent {
+    color: rgba(255,255,255,.87);
+    border: none;
+    background: transparent;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    padding: 0px;
+    -webkit-transition: color .1s linear;
+    -o-transition: color .1s linear;
+    transition: color .1s linear;
+}
+
+.content-header .breadcrumb > li + li:before {
+    content: none !Important;
+}
+
+.breadcrumb {
+    background-color: #ECF0F5 !important;
+    padding: 0 !important;
+}
+
+    .breadcrumb a {
+        color: #34495e !Important;
+    }
+
+.content-header ul {
+    width: 100%;
+}
+
+.ulBtn {
+    padding: 15px 15px 0px 15px;
+}
+
+    .ulBtn ul {
+        margin: 0px auto 0px 0px !important;
+        padding: 0px;
+    }
+
+    .ulBtn li, .content .drp {
+        list-style: none;
+        margin-bottom: 5px;
+    }
+
+/*  .ulBtn button {
+        background-color: #f4f4f4;
+        color: #444;
+        display: inline-block;
+        padding: 6px 12px;
+        margin-bottom: 0;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 1.42857143;
+        text-align: center;
+        white-space: nowrap;
+        vertical-align: middle;
+        border-radius: 4px;
+    }
+
+.btnEdit button {
+    width: 95px;
+    /* background-color: #3c8dbc; 
+    color: #000;
+    border: 1px solid rgba(0, 0, 0, 0.42);
+    padding: 3px 0px 1px 2px;
+    transition: all 0.7s;
+    -webkit-transition: all 0.7s;
+    -moz-transition: all 0.7s;
+    -o-transition: all 0.7s;
+}*/
+
+.editCotent .section {
+    position: relative;
+    padding: 0;
+    border-bottom: 1px solid #d1dce4;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+/*****************************************Footer********************************/
+
+.page-footer {
+    height: 50px;
+    clear: both;
+    bottom: 0;
+    position: fixed;
+}
+/*****************************************home page********************************/
+input[type=checkbox] {
+    opacity: 6;
+    filter: alpha(opacity=0);
+    -moz-opacity: 0;
+    border: none;
+    background: none;
+    display: -moz-inline-box;
+    display: inline-block;
+    zoom: 1;
+    width: 19px;
+    height: 19px;
+}
+
+.main-sidebar {
+    position: fixed !important;
+    top: 0;
+    height: 100% !important;
+    overflow-y: auto !important;
+    background-color: #ecf0f5;
+    border-right: 7px solid #ddd;
+}
+
+footer .footerimg {
+    width: 28px;
+    height: 28px;
+    margin: 0 15px 0 5px;
+}
+
+.user-header {
+    background-color: #44b6ae;
+}
+
+.user-menu a:hover, .useruser-menu a:active, .useruser-menu a:focus, .user-menu a, .user-menu .open > a:focus, .user-menu .open > a:hover {
+    background-color: #44b6ae !important;
+}
+
+.nav li a i {
+    font-size: 15px;
+}
+
+.navbar .sidebar-toggle, header .logo, .navbar a, .user-header i {
+    color: #fff !important;
+}
+
+.main-header {
+    background: #44b6ae;
+    top: 0;
+    right: 0;
+    left: 0;
+    position: fixed !important;
+    z-index: 103;
+    max-height: 103px;
+    max-height: 100px;
+}
+
+.content {
+    min-height: 250px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.info-box {
+    display: block;
+    min-height: 90px;
+    background: #ecf0f5;
+    width: 100%;
+    box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+    border-radius: 2px;
+    margin-bottom: 15px;
+}
+
+.bg-aqua, .callout.callout-info, .alert-info, .label-info, .modal-info .modal-body {
+    background-color: #00c0ef !important;
+}
+
+.bg-red, .bg-yellow, .bg-aqua, .bg-blue, .bg-light-blue, .bg-green, .bg-navy, .bg-teal, .bg-olive, .bg-lime, .bg-orange, .bg-fuchsia, .bg-purple, .bg-maroon, .bg-black, .bg-red-active, .bg-yellow-active, .bg-aqua-active, .bg-blue-active, .bg-light-blue-active, .bg-green-active, .bg-navy-active, .bg-teal-active, .bg-olive-active, .bg-lime-active, .bg-orange-active, .bg-fuchsia-active, .bg-purple-active, .bg-maroon-active, .bg-black-active, .callout.callout-danger, .callout.callout-warning, .callout.callout-info, .callout.callout-success, .alert-success, .alert-danger, .alert-error, .alert-warning, .alert-info, .label-danger, .label-info, .label-warning, .label-primary, .label-success, .modal-primary .modal-body, .modal-primary .modal-header, .modal-primary .modal-footer, .modal-warning .modal-body, .modal-warning .modal-header, .modal-warning .modal-footer, .modal-info .modal-body, .modal-info .modal-header, .modal-info .modal-footer, .modal-success .modal-body, .modal-success .modal-header, .modal-success .modal-footer, .modal-danger .modal-body, .modal-danger .modal-header, .modal-danger .modal-footer {
+    color: #fff !important;
+}
+
+.info-box-icon {
+    border-top-left-radius: 2px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 2px;
+    display: block;
+    float: left;
+    height: 90px;
+    width: 90px;
+    text-align: center;
+    font-size: 45px;
+    line-height: 90px;
+    background: rgba(0,0,0,0.2);
+}
+
+.bg-red, .callout.callout-danger, .alert-danger, .alert-error, .label-danger, .modal-danger .modal-body {
+    background-color: #dd4b39 !important;
+}
+
+.bg-green, .callout.callout-success, .alert-success, .label-success, .modal-success .modal-body {
+    background-color: #00a65a !important;
+}
+
+.bg-yellow, .callout.callout-warning, .alert-warning, .label-warning, .modal-warning .modal-body {
+    background-color: #f39c12 !important;
+}
+
+.info-box-content {
+    padding: 5px 10px;
+    margin-left: 90px;
+}
+
+.info-box-text {
+    text-transform: uppercase;
+}
+
+.progress-description, .info-box-text {
+    display: block;
+    font-size: 14px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.info-box-number {
+    display: block;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.info-box .progress, .info-box .progress .progress-bar {
+    border-radius: 0;
+}
+
+.progress {
+    height: 20px;
+    margin-bottom: 20px;
+    overflow: hidden;
+    background-color: #f5f5f5;
+    border-radius: 4px;
+    -webkit-box-shadow: inset 0 1px 2px rgba(0,0,0,.1);
+    box-shadow: inset 0 1px 2px rgba(0,0,0,.1);
+}
+
+.info-box .progress {
+    background: rgba(0,0,0,0.2);
+    margin: 5px -10px 5px -10px;
+    height: 2px;
+}
+
+.progress, .progress > .progress-bar {
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+.progress-description {
+    margin: 0;
+}
+
+.info-box .progress .progress-bar {
+    background: #fff;
+}
+
+.box.box-success {
+    border-top-color: #00a65a;
+}
+
+.box {
+    position: relative;
+    border-radius: 3px;
+    background: #ffffff;
+    border-top: 3px solid #d2d6de;
+    margin-bottom: 20px;
+    width: 100%;
+    box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+}
+
+.box-header {
+    color: #444;
+    display: block;
+    padding: 10px;
+    position: relative;
+}
+
+    .box-header > .fa, .box-header > .glyphicon, .box-header > .ion, .box-header .box-title {
+        display: inline-block;
+        font-size: 18px;
+        margin: 0;
+        line-height: 1;
+    }
+
+    .box-header.with-border {
+        border-bottom: 1px solid #f4f4f4;
+    }
+
+    .box-header > .box-tools {
+        position: absolute;
+        right: 10px;
+        top: 5px;
+    }
+
+.box-body {
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 3px;
+    border-bottom-left-radius: 3px;
+    /*padding: 0px !important;*/
+}
+
+.pad {
+    padding: 5px;
+}
+
+.box-body .box-pane-right {
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 3px;
+    border-bottom-left-radius: 0;
+}
+
+.description-block.margin-bottom {
+    margin-bottom: 25px;
+}
+
+.description-block {
+    display: block;
+    margin: 10px 0;
+    text-align: center;
+}
+
+    .description-block > .description-header {
+        margin: 0;
+        padding: 0;
+        font-weight: 600;
+        font-size: 16px;
+    }
+
+    .description-block > .description-text {
+        text-transform: uppercase;
+    }
+/*************************************block_leftmenu************************************/
+.title-parent p i {
+    color: rgba(0, 0, 0, 0.52);
+    font-size: 16px;
+}
+
+.tbl-news .tbl-title th {
+    text-transform: uppercase;
+}
+
+.logo-lg img {
+    width: 100%;
+    max-width: 45px;
+    height: auto;
+}
+
+.navbar-custom-menu a:hover {
+    background: #44b6ae !important;
+    color: #fff !important;
+}
+
+.block-menu-icon i {
+    font-size: 20px;
+    color: #fff;
+}
+
+
+/* ============================================== */
+/* iPad Portrait                                  */
+/*                                       768x1024 */
+/* ============================================== */
+@media screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation:portrait) {
+    .btn-social {
+        margin-top: 7px !important;
+    }
+
+    section#conten-admin {
+        margin-top: 85px;
+    }
+}
+
+/* ============================================== */
+/* Small Tablet Landscape/Portrait                */
+/*                                        800x600 */
+/* ============================================== */
+@media screen and (min-width: 600px) and (max-width: 800px) {
+    .btn-social {
+        margin-top: 7px !important;
+    }
+
+    section#conten-admin {
+        margin-top: 85px;
+    }
+}
+
+/* ============================================== */
+/* iPhone6/Android landscape (& narrow browser)   */
+/*                                        568x320 */
+/* ============================================== */
+@media screen and (min-width: 320px) and (max-width:568px) {
+    .btn-social {
+        margin-top: 7px !important;
+    }
+
+    .main-sidebar, .left-side {
+        padding-top: 65px !important;
+    }
+}
+
+/* ============================================== */
+/* iPhone4/Android landscape (& narrow browser)   */
+/*                                        480x320 */
+/* ============================================== */
+@media screen and (min-width: 320px) and (max-width:480px) {
+    .btn-social {
+        margin-top: 7px !important;
+    }
+}
+
+/* ============================================== */
+/* iPhone4/Android landscape (& narrow browser)   */
+/*                                        480x320 */
+/* ============================================== */
+@media screen and (min-width: 320px) and (max-width:480px) {
+    .btn-social {
+        margin-top: 7px !important;
+    }
+}
+
+/* ============================================== */
+/* iPhone4/Android portrait               320x480 */
+/* iPhone5 portrait                       320x568 */
+/* ============================================== */
+@media screen and (max-width:320px) {
+    .btn-social {
+        margin-top: 7px !important;
+    }
+}
+
+/* ============================================== */
+/* Smaller devices                                */
+/* Android Landscape                      320x240 */
+/* ============================================== */
+@media screen and (min-width:240px) and (max-width:320px) {
+    .btn-social {
+        margin-top: 7px !important;
+    }
+}
+
+/* ============================================== */
+/* Smaller devices                                */
+/* Android Portrait                       240x320 */
+/* ============================================== */
+@media screen and (max-width:240px) {
+    .btn-social {
+        margin-top: 7px;
+    }
+}
+
+
+ .form-section, .portlet-form .form-section {
+    margin: 30px 0;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #e7ecf1;
+}

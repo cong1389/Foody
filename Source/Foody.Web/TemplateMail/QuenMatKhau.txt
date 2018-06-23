@@ -1,0 +1,8 @@
+﻿Xin Chào mừng bạn đã đến website thaytro.vn
+<br/>
+Tên đăng nhập là: {0}.<br />
+Email của bạn là: {1}.<br />
+Password mới của bạn là: {2}.<br />
+Vui lòng nhấn vào đường dẫn dưới đây để vào website thaytro.vn:<br />
+<a href='http://thaytro.vn/home'>http://thaytro.vn/home</a>.<br/>
+Xin cám ơn bạn đã đến với website của chúng tôi.<br />

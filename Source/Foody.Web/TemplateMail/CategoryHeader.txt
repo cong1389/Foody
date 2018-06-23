@@ -1,0 +1,20 @@
+﻿<section class="blox  dark  page-title-x    w-animate max-pat2 w-start_animation" style="padding-top: px; padding-bottom: px; background: url('{0}') 50% -32.4px / cover no-repeat; background-position: center center; min-height: 340px;">
+    <div class="max-overlay" style="background-color: "></div>
+    <div class="wpb_row vc_row-fluid full-row">
+        <div class="container">
+            <div class="wpb_column vc_column_container vc_col-sm-12">
+                <div class="vc_column-inner ">
+                    <div class="wpb_wrapper">
+                        <hr class="vertical-space5">
+                        
+                        <div class="wpb_text_column wpb_content_element  aligncenter">
+                            <div class="wpb_wrapper">
+                                <h2><strong><span style="color: #ffffff;">{1}</span></strong></h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

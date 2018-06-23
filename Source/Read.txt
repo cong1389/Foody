@@ -1,0 +1,14 @@
+Màu đỏ chủ đạo: #ED4024
+
+-----------------------------Thứ tự build-----------------------------
+1.DBUtility
+2.Localization
+3.Utility
+4.IDAL
+5.DALFactory
+6.SQLServerDAL
+7.Model
+8.BLL
+-----------------------------------------------------------------------
+Project: *.Web:
+	BLL, Model: include DLL trực tiếp. Để tiện cho việc thay đổi
